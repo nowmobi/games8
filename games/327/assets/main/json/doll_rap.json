@@ -1,0 +1,214 @@
+{
+  "body": {
+    "body": "dollTrio_body"
+  },
+  "bottom": {
+    "bf1": "dollTrio_bf1",
+    "bf10": "dollTrio_bf10",
+    "bf11": "dollTrio_bf11",
+    "bf12": "dollTrio_bf12",
+    "bf13": "dollTrio_bf13",
+    "bf14": "dollTrio_bf14",
+    "bf15": "dollTrio_bf15",
+    "bf3": "dollTrio_bf3",
+    "bf4": "dollTrio_bf4",
+    "bf2": "dollTrio_bf2",
+    "bf5": "dollTrio_bf5",
+    "bf6": "dollTrio_bf6",
+    "bf7": "dollTrio_bf7",
+    "bf8": "dollTrio_bf8",
+    "bf9": "dollTrio_bf9"
+  },
+  "dress": {
+    "df0_RAP": "dollRap_df0_RAP",
+    "df1": "dollTrio_df1",
+    "df10": "dollTrio_df10",
+    "df11": "dollTrio_df11",
+    "df12": "dollTrio_df12",
+    "df13": "dollTrio_df13",
+    "df14": "dollTrio_df14",
+    "df15": "dollTrio_df15",
+    "df2": "dollTrio_df2",
+    "df3": "dollTrio_df3",
+    "df4": "dollTrio_df4",
+    "df5": "dollTrio_df5",
+    "df6": "dollTrio_df6",
+    "df7": "dollTrio_df7",
+    "df8": "dollTrio_df8",
+    "df9": "dollTrio_df9"
+  },
+  "earBoth": {
+    "jf1": "dollRap_jf1",
+    "jf2": "dollRap_jf2",
+    "jf3": "dollRap_jf3",
+    "jf4": "dollRap_jf4",
+    "jf5": "dollRap_jf5"
+  },
+  "eyelashes": {
+    "rf0": "dollRap_rf0",
+    "rf1": "dollRap_rf1",
+    "rf2": "dollRap_rf2",
+    "rf3": "dollRap_rf3",
+    "rf4": "dollRap_rf4",
+    "rf5": "dollRap_rf5"
+  },
+  "eyeshadows": {
+    "sef1": "dollRap_sef1",
+    "sef2": "dollRap_sef2",
+    "sef3": "dollRap_sef3",
+    "sef4": "dollRap_sef4",
+    "sef5": "dollRap_sef5"
+  },
+  "face": {
+    "zf1": "dollRap_zf1",
+    "zf2": "dollRap_zf2",
+    "zf3": "dollRap_zf3",
+    "zf4": "dollRap_zf4",
+    "zf5": "dollRap_zf5"
+  },
+  "glasses": {
+    "kf1": "dollRap_kf1",
+    "kf5": "dollRap_kf5"
+  },
+  "hair": {
+    "hf0": "dollRap_hf0",
+    "hf1": [
+      "dollRap_hf1",
+      "dollRap_hf1_back"
+    ],
+    "hf2": [
+      "dollRap_hf2",
+      "dollRap_hf2_back"
+    ],
+    "hf3": [
+      "dollRap_hf3",
+      "dollRap_hf3_back"
+    ],
+    "hf4": [
+      "dollRap_hf4",
+      "dollRap_hf4_back"
+    ],
+    "hf5": [
+      "dollRap_hf5",
+      "dollRap_hf5_back"
+    ],
+    "hf6": [
+      "dollRap_hf6",
+      "dollRap_hf6_back"
+    ],
+    "hf7": "dollRap_hf7",
+    "hf8": [
+      "dollRap_hf8",
+      "dollRap_hf8_back"
+    ]
+  },
+  "hand": {
+    "hand": "dollTrio_hand"
+  },
+  "handRight": {
+    "cf5": "dollTrio_cf5",
+    "cf6": "dollTrio_cf6",
+    "cf8": "dollTrio_cf8"
+  },
+  "hat": {
+    "kf2": "dollRap_kf2",
+    "kf3": "dollRap_kf3",
+    "kf4": [
+      "dollRap_kf4",
+      "dollRap_kf4_back"
+    ],
+    "kf6": "dollRap_kf6",
+    "kf7": "dollRap_kf7"
+  },
+  "head": {
+    "head": "dollRap_head_RAP"
+  },
+  "lips": {
+    "lf0": "dollRap_lf0",
+    "lf1": "dollRap_lf1",
+    "lf2": "dollRap_lf2",
+    "lf3": "dollRap_lf3",
+    "lf4": "dollRap_lf4",
+    "lf5": "dollRap_lf5"
+  },
+  "neck": {
+    "jb1": "dollTrio_jb1",
+    "jb2": "dollTrio_jb2",
+    "jb3": "dollTrio_jb3",
+    "jb4": "dollTrio_jb4",
+    "jb5": "dollTrio_jb5"
+  },
+  "pantyhose": {
+    "af1": "dollTrio_af1",
+    "af2": "dollTrio_af2",
+    "af3": "dollTrio_af3",
+    "af4": "dollTrio_af4"
+  },
+  "shoes": {
+    "sf1": "dollTrio_sf1",
+    "sf10": "dollTrio_sf10",
+    "sf11": "dollTrio_sf11",
+    "sf12": "dollTrio_sf12",
+    "sf13": "dollTrio_sf13",
+    "sf14": "dollTrio_sf14",
+    "sf15": "dollTrio_sf15",
+    "sf2": "dollTrio_sf2",
+    "sf3": "dollTrio_sf3",
+    "sf4": "dollTrio_sf4",
+    "sf5": "dollTrio_sf5",
+    "sf6": "dollTrio_sf6",
+    "sf7": "dollTrio_sf7",
+    "sf8": "dollTrio_sf8",
+    "sf9": "dollTrio_sf9"
+  },
+  "shoulderBoth": {
+    "cf7": "dollTrio_cf7"
+  },
+  "shoulderRight": {
+    "cf3": [
+      "dollTrio_cf3",
+      "dollTrio_cf3_back"
+    ],
+    "cf4": [
+      "dollTrio_cf4",
+      "dollTrio_cf4_back"
+    ],
+    "cf9": [
+      "dollTrio_cf9",
+      "dollTrio_cf9_back"
+    ]
+  },
+  "top": {
+    "tf1": "dollTrio_tf1",
+    "tf10": "dollTrio_tf10",
+    "tf11": "dollTrio_tf11",
+    "tf12": "dollTrio_tf12",
+    "tf13": "dollTrio_tf13",
+    "tf14": "dollTrio_tf14",
+    "tf15": "dollTrio_tf15",
+    "tf2": [
+      "dollTrio_tf2",
+      "dollTrio_tf2_back"
+    ],
+    "tf3": "dollTrio_tf3",
+    "tf4": "dollTrio_tf4",
+    "tf5": "dollTrio_tf5",
+    "tf6": "dollTrio_tf6",
+    "tf7": "dollTrio_tf7",
+    "tf8": [
+      "dollTrio_tf8",
+      "dollTrio_tf8_back"
+    ],
+    "tf9": "dollTrio_tf9"
+  },
+  "underBottom": {
+    "underBottom": "dollTrio_underBottom"
+  },
+  "underTop": {
+    "underTop": "dollTrio_underTop"
+  },
+  "wristLeft": {
+    "cf1": "dollTrio_cf1",
+    "cf2": "dollTrio_cf2"
+  }
+}

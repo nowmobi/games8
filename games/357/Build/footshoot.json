@@ -1,0 +1,24 @@
+{
+  "companyName": "Gbs Studio",
+  "productName": "e football Storm Strike 2020",
+  "productVersion": "1.0",
+  "dataUrl": "footshoot.data.unityweb",
+  "wasmCodeUrl": "footshoot.wasm",
+  "wasmFrameworkUrl": "footshoot.wasm.framework.unityweb",
+  "graphicsAPI": [
+    "WebGL 2.0",
+    "WebGL 1.0"
+  ],
+  "webglContextAttributes": {
+    "preserveDrawingBuffer": false
+  },
+  "backgroundUrl": "footshoot.jpg",
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#FFFFFF",
+  "cacheControl": {
+    "default": "must-revalidate"
+  },
+  "developmentBuild": false,
+  "multithreading": false,
+  "unityVersion": "2019.2.21f1"
+}

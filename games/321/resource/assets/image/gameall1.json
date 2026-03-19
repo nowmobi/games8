@@ -1,0 +1,1115 @@
+{
+  "file": "gameall1.png",
+  "frames": {
+    "endranktitle_png": {
+      "x": 583,
+      "y": 1487,
+      "w": 397,
+      "h": 31,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 400,
+      "sourceH": 32
+    },
+    "endrankbg_png": {
+      "x": 1,
+      "y": 1055,
+      "w": 540,
+      "h": 280,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 540,
+      "sourceH": 280
+    },
+    "endrankview2_png": {
+      "x": 551,
+      "y": 1709,
+      "w": 54,
+      "h": 54,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 54,
+      "sourceH": 54
+    },
+    "endrankview1_png": {
+      "x": 583,
+      "y": 1417,
+      "w": 54,
+      "h": 54,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 54,
+      "sourceH": 54
+    },
+    "endrankbtn1_png": {
+      "x": 903,
+      "y": 447,
+      "w": 120,
+      "h": 48,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 120,
+      "sourceH": 48
+    },
+    "endrankbtn3_png": {
+      "x": 620,
+      "y": 1707,
+      "w": 120,
+      "h": 48,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 120,
+      "sourceH": 48
+    },
+    "endrankbtn2_png": {
+      "x": 337,
+      "y": 1677,
+      "w": 120,
+      "h": 48,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 120,
+      "sourceH": 48
+    },
+    "game11_png": {
+      "x": 323,
+      "y": 1357,
+      "w": 346,
+      "h": 58,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 346,
+      "sourceH": 58
+    },
+    "game10_png": {
+      "x": 987,
+      "y": 1,
+      "w": 20,
+      "h": 136,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 20,
+      "sourceH": 136
+    },
+    "game2_png": {
+      "x": 131,
+      "y": 1429,
+      "w": 158,
+      "h": 88,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 158,
+      "sourceH": 88
+    },
+    "gamehelp1_png": {
+      "x": 903,
+      "y": 303,
+      "w": 96,
+      "h": 142,
+      "offX": 1,
+      "offY": 1,
+      "sourceW": 98,
+      "sourceH": 144
+    },
+    "game3_png": {
+      "x": 431,
+      "y": 1753,
+      "w": 38,
+      "h": 44,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 38,
+      "sourceH": 44
+    },
+    "game1_png": {
+      "x": 905,
+      "y": 603,
+      "w": 100,
+      "h": 100,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 100,
+      "sourceH": 100
+    },
+    "gamehelp2_png": {
+      "x": 551,
+      "y": 1774,
+      "w": 232,
+      "h": 24,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 232,
+      "sourceH": 24
+    },
+    "game4_png": {
+      "x": 337,
+      "y": 1800,
+      "w": 300,
+      "h": 14,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 300,
+      "sourceH": 14
+    },
+    "game5_png": {
+      "x": 337,
+      "y": 1727,
+      "w": 108,
+      "h": 24,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 108,
+      "sourceH": 24
+    },
+    "game7_png": {
+      "x": 1009,
+      "y": 1,
+      "w": 11,
+      "h": 20,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 11,
+      "sourceH": 20
+    },
+    "game8_png": {
+      "x": 383,
+      "y": 1753,
+      "w": 46,
+      "h": 39,
+      "offX": 28,
+      "offY": 26,
+      "sourceW": 100,
+      "sourceH": 92
+    },
+    "game9_png": {
+      "x": 337,
+      "y": 1753,
+      "w": 44,
+      "h": 44,
+      "offX": 28,
+      "offY": 24,
+      "sourceW": 100,
+      "sourceH": 92
+    },
+    "hero13s_png": {
+      "x": 49,
+      "y": 1867,
+      "w": 45,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero10h_png": {
+      "x": 929,
+      "y": 1780,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero3h_png": {
+      "x": 975,
+      "y": 881,
+      "w": 46,
+      "h": 82,
+      "offX": 0,
+      "offY": 2,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero24b_png": {
+      "x": 896,
+      "y": 1650,
+      "w": 64,
+      "h": 128,
+      "offX": 2,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero1b_png": {
+      "x": 201,
+      "y": 1519,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero12b_png": {
+      "x": 620,
+      "y": 1579,
+      "w": 68,
+      "h": 126,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero13b_png": {
+      "x": 70,
+      "y": 1649,
+      "w": 66,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero24s_png": {
+      "x": 969,
+      "y": 1868,
+      "w": 44,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "herocheck_png": {
+      "x": 987,
+      "y": 139,
+      "w": 34,
+      "h": 82,
+      "offX": 6,
+      "offY": 63,
+      "sourceW": 46,
+      "sourceH": 170
+    },
+    "hero1s_png": {
+      "x": 138,
+      "y": 1777,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero2h_png": {
+      "x": 1,
+      "y": 1777,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero11h_png": {
+      "x": 801,
+      "y": 1357,
+      "w": 40,
+      "h": 86,
+      "offX": 2,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero12s_png": {
+      "x": 570,
+      "y": 1816,
+      "w": 46,
+      "h": 85,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero19s_png": {
+      "x": 522,
+      "y": 1816,
+      "w": 46,
+      "h": 85,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero9h_png": {
+      "x": 1,
+      "y": 1689,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero20h_png": {
+      "x": 70,
+      "y": 1559,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero23s_png": {
+      "x": 975,
+      "y": 1317,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero7b_png": {
+      "x": 1,
+      "y": 1559,
+      "w": 67,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero14b_png": {
+      "x": 131,
+      "y": 1519,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero15s_png": {
+      "x": 923,
+      "y": 1868,
+      "w": 44,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero16h_png": {
+      "x": 975,
+      "y": 1053,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero5h_png": {
+      "x": 975,
+      "y": 793,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero6s_png": {
+      "x": 975,
+      "y": 705,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero22b_png": {
+      "x": 905,
+      "y": 835,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero18b_png": {
+      "x": 481,
+      "y": 1676,
+      "w": 68,
+      "h": 119,
+      "offX": 0,
+      "offY": 4,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero19b_png": {
+      "x": 138,
+      "y": 1649,
+      "w": 67,
+      "h": 126,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero23b_png": {
+      "x": 905,
+      "y": 705,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero7s_png": {
+      "x": 330,
+      "y": 1816,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero4h_png": {
+      "x": 282,
+      "y": 1807,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero17h_png": {
+      "x": 238,
+      "y": 1895,
+      "w": 43,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero14s_png": {
+      "x": 234,
+      "y": 1807,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero15b_png": {
+      "x": 830,
+      "y": 1650,
+      "w": 64,
+      "h": 128,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero6b_png": {
+      "x": 411,
+      "y": 1547,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero22s_png": {
+      "x": 687,
+      "y": 1800,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero21h_png": {
+      "x": 639,
+      "y": 1800,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero8h_png": {
+      "x": 283,
+      "y": 1895,
+      "w": 43,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero18s_png": {
+      "x": 712,
+      "y": 1888,
+      "w": 46,
+      "h": 81,
+      "offX": 0,
+      "offY": 2,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero16b_png": {
+      "x": 690,
+      "y": 1579,
+      "w": 68,
+      "h": 126,
+      "offX": 0,
+      "offY": 1,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero5b_png": {
+      "x": 341,
+      "y": 1547,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero21s_png": {
+      "x": 833,
+      "y": 1780,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero22h_png": {
+      "x": 785,
+      "y": 1780,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero8s_png": {
+      "x": 522,
+      "y": 1903,
+      "w": 43,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero18h_png": {
+      "x": 145,
+      "y": 1895,
+      "w": 46,
+      "h": 81,
+      "offX": 0,
+      "offY": 2,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero9b_png": {
+      "x": 551,
+      "y": 1579,
+      "w": 67,
+      "h": 128,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero20b_png": {
+      "x": 271,
+      "y": 1547,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero4s_png": {
+      "x": 975,
+      "y": 1141,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero7h_png": {
+      "x": 967,
+      "y": 497,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero14h_png": {
+      "x": 474,
+      "y": 1816,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero17s_png": {
+      "x": 193,
+      "y": 1895,
+      "w": 43,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero16s_png": {
+      "x": 426,
+      "y": 1816,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero15h_png": {
+      "x": 877,
+      "y": 1868,
+      "w": 44,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero6h_png": {
+      "x": 378,
+      "y": 1816,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero5s_png": {
+      "x": 186,
+      "y": 1807,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero21b_png": {
+      "x": 928,
+      "y": 1520,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero8b_png": {
+      "x": 207,
+      "y": 1677,
+      "w": 63,
+      "h": 128,
+      "offX": 2,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero19h_png": {
+      "x": 1,
+      "y": 1865,
+      "w": 46,
+      "h": 85,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero9s_png": {
+      "x": 783,
+      "y": 1868,
+      "w": 45,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero23h_png": {
+      "x": 881,
+      "y": 1780,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero20s_png": {
+      "x": 49,
+      "y": 1779,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero4b_png": {
+      "x": 858,
+      "y": 1520,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero17b_png": {
+      "x": 272,
+      "y": 1677,
+      "w": 63,
+      "h": 128,
+      "offX": 2,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero2s_png": {
+      "x": 977,
+      "y": 1780,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero1h_png": {
+      "x": 975,
+      "y": 1229,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero12h_png": {
+      "x": 97,
+      "y": 1865,
+      "w": 46,
+      "h": 85,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero11s_png": {
+      "x": 982,
+      "y": 1405,
+      "w": 40,
+      "h": 86,
+      "offX": 2,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero10b_png": {
+      "x": 481,
+      "y": 1547,
+      "w": 68,
+      "h": 127,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero3b_png": {
+      "x": 760,
+      "y": 1650,
+      "w": 68,
+      "h": 122,
+      "offX": 0,
+      "offY": 3,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero24h_png": {
+      "x": 618,
+      "y": 1888,
+      "w": 44,
+      "h": 86,
+      "offX": 1,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero2b_png": {
+      "x": 788,
+      "y": 1520,
+      "w": 68,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero11b_png": {
+      "x": 962,
+      "y": 1650,
+      "w": 58,
+      "h": 128,
+      "offX": 4,
+      "offY": 0,
+      "sourceW": 68,
+      "sourceH": 128
+    },
+    "hero10s_png": {
+      "x": 735,
+      "y": 1800,
+      "w": 46,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero13h_png": {
+      "x": 830,
+      "y": 1868,
+      "w": 45,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "hero3s_png": {
+      "x": 664,
+      "y": 1888,
+      "w": 46,
+      "h": 82,
+      "offX": 0,
+      "offY": 2,
+      "sourceW": 46,
+      "sourceH": 86
+    },
+    "map1h_png": {
+      "x": 685,
+      "y": 1,
+      "w": 300,
+      "h": 300,
+      "offX": 150,
+      "offY": 0,
+      "sourceW": 600,
+      "sourceH": 300
+    },
+    "map7h_png": {
+      "x": 343,
+      "y": 1,
+      "w": 340,
+      "h": 600,
+      "offX": 130,
+      "offY": 0,
+      "sourceW": 600,
+      "sourceH": 600
+    },
+    "mapbg1_png": {
+      "x": 845,
+      "y": 1315,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    },
+    "mapbg0_png": {
+      "x": 845,
+      "y": 1185,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    },
+    "mapbg2_png": {
+      "x": 845,
+      "y": 1055,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    },
+    "mapbg3_png": {
+      "x": 1,
+      "y": 1429,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    },
+    "mapbg4_png": {
+      "x": 453,
+      "y": 1417,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    },
+    "map7_png": {
+      "x": 1,
+      "y": 1,
+      "w": 340,
+      "h": 600,
+      "offX": 130,
+      "offY": 0,
+      "sourceW": 600,
+      "sourceH": 600
+    },
+    "map1_png": {
+      "x": 543,
+      "y": 1055,
+      "w": 300,
+      "h": 300,
+      "offX": 150,
+      "offY": 0,
+      "sourceW": 600,
+      "sourceH": 300
+    },
+    "map3_png": {
+      "x": 453,
+      "y": 603,
+      "w": 450,
+      "h": 450,
+      "offX": 150,
+      "offY": 150,
+      "sourceW": 600,
+      "sourceH": 600
+    },
+    "map3h_png": {
+      "x": 1,
+      "y": 603,
+      "w": 450,
+      "h": 450,
+      "offX": 150,
+      "offY": 150,
+      "sourceW": 600,
+      "sourceH": 600
+    },
+    "overbtn4_png": {
+      "x": 801,
+      "y": 1445,
+      "w": 172,
+      "h": 31,
+      "offX": 4,
+      "offY": 6,
+      "sourceW": 180,
+      "sourceH": 40
+    },
+    "overbtn1_png": {
+      "x": 905,
+      "y": 965,
+      "w": 80,
+      "h": 86,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 80,
+      "sourceH": 86
+    },
+    "overbtn3_png": {
+      "x": 685,
+      "y": 521,
+      "w": 280,
+      "h": 80,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 280,
+      "sourceH": 80
+    },
+    "overbtn2_png": {
+      "x": 1,
+      "y": 1337,
+      "w": 320,
+      "h": 90,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 320,
+      "sourceH": 90
+    },
+    "overpass2_png": {
+      "x": 685,
+      "y": 303,
+      "w": 216,
+      "h": 216,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 216,
+      "sourceH": 216
+    },
+    "overpass1_png": {
+      "x": 671,
+      "y": 1357,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    },
+    "overview1_png": {
+      "x": 583,
+      "y": 1520,
+      "w": 203,
+      "h": 57,
+      "offX": 18,
+      "offY": 19,
+      "sourceW": 240,
+      "sourceH": 90
+    },
+    "interbg_png": {
+      "x": 323,
+      "y": 1417,
+      "w": 128,
+      "h": 128,
+      "offX": 0,
+      "offY": 0,
+      "sourceW": 128,
+      "sourceH": 128
+    }
+  }
+}

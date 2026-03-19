@@ -1,0 +1,119 @@
+{
+  "bottom": [
+    {
+      "bf14": "wardrobeTrio_bf14",
+      "bf15": "wardrobeTrio_bf15"
+    },
+    {
+      "bf12": "wardrobeTrio_bf12",
+      "bf13": "wardrobeTrio_bf13"
+    },
+    {
+      "bf10": "wardrobeTrio_bf10",
+      "bf11": "wardrobeTrio_bf11"
+    },
+    {
+      "bf8": "wardrobeTrio_bf8",
+      "bf9": "wardrobeTrio_bf9"
+    },
+    {
+      "bf6": "wardrobeTrio_bf6",
+      "bf7": "wardrobeTrio_bf7"
+    },
+    {
+      "bf5": "wardrobeTrio_bf5",
+      "bf4": "wardrobeTrio_bf4"
+    },
+    {
+      "bf1": "wardrobeTrio_bf1",
+      "bf3": "wardrobeTrio_bf3",
+      "b_more": "wardrobeTrio_b_more",
+      "bf2": "wardrobeTrio_bf2"
+    }
+  ],
+  "dress": [
+    {
+      "df14": "wardrobeTrio_df14",
+      "df15": "wardrobeTrio_df15"
+    },
+    {
+      "df12": "wardrobeTrio_df12",
+      "df13": "wardrobeTrio_df13"
+    },
+    {
+      "df11": "wardrobeTrio_df11",
+      "df10": "wardrobeTrio_df10"
+    },
+    {
+      "df8": "wardrobeTrio_df8",
+      "df9": "wardrobeTrio_df9"
+    },
+    {
+      "df6": "wardrobeTrio_df6",
+      "df7": "wardrobeTrio_df7"
+    },
+    {
+      "df5": "wardrobeTrio_df5",
+      "df4": "wardrobeTrio_df4"
+    },
+    {
+      "df2": "wardrobeTrio_df2",
+      "df3": "wardrobeTrio_df3"
+    },
+    {
+      "d_more": "wardrobeTrio_d_more",
+      "df1": "wardrobeTrio_df1"
+    }
+  ],
+  "shoes": [
+    {
+      "sf12": "wardrobeTrio_sf12",
+      "sf13": "wardrobeTrio_sf13",
+      "sf14": "wardrobeTrio_sf14",
+      "sf15": "wardrobeTrio_sf15"
+    },
+    {
+      "sf10": "wardrobeTrio_sf10",
+      "sf11": "wardrobeTrio_sf11",
+      "sf8": "wardrobeTrio_sf8",
+      "sf9": "wardrobeTrio_sf9"
+    },
+    {
+      "sf4": "wardrobeTrio_sf4",
+      "sf5": "wardrobeTrio_sf5",
+      "sf6": "wardrobeTrio_sf6",
+      "sf7": "wardrobeTrio_sf7"
+    },
+    {
+      "sf1": "wardrobeTrio_sf1",
+      "sf2": "wardrobeTrio_sf2",
+      "sf3": "wardrobeTrio_sf3",
+      "sf_more": "wardrobeTrio_sf_more"
+    }
+  ],
+  "top": [
+    {
+      "tf12": "wardrobeTrio_tf12",
+      "tf13": "wardrobeTrio_tf13",
+      "tf14": "wardrobeTrio_tf14",
+      "tf15": "wardrobeTrio_tf15"
+    },
+    {
+      "tf10": "wardrobeTrio_tf10",
+      "tf11": "wardrobeTrio_tf11",
+      "tf8": "wardrobeTrio_tf8",
+      "tf9": "wardrobeTrio_tf9"
+    },
+    {
+      "tf4": "wardrobeTrio_tf4",
+      "tf5": "wardrobeTrio_tf5",
+      "tf6": "wardrobeTrio_tf6",
+      "tf7": "wardrobeTrio_tf7"
+    },
+    {
+      "tf1": "wardrobeTrio_tf1",
+      "tf2": "wardrobeTrio_tf2",
+      "tf3": "wardrobeTrio_tf3"
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+
+<html id="mainHtml">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KickAround Live is a skill-based multiplayer football game. Play with friends online with 1 to 8 people per match!">
+<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styleGame.css" />
+<link rel="stylesheet" href="css/stylelib.css" />
+
+<script src="js/jquery-3.5.1.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap4.5.2.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+   var _sdkReady = false;
+   var _sdkGamePause = null, _sdkGameStart = null;
+   var _showAdOnStart = true;
+   var _sdkShowA = function() {
+   		console.log("show a");
+   		try {
+			if(typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+				sdk.showBanner();
+			}
+		}
+		catch(e) { console.log(e); }
+   };
+   window.SDK_OPTIONS = {
+      gameId: "mom5khuvflfzz3arwps4knbzjrlmhag3",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               if(_sdkGamePause !== null) _sdkGamePause();
+               break;
+            case "SDK_GAME_START":
+               if(_sdkGameStart !== null) _sdkGameStart();
+               break;
+            case "SDK_READY":
+               _sdkReady = true;
+               if(_showAdOnStart) {
+               		_showAdOnStart = false;
+               		_sdkShowA();
+               }
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+</head>
+
+
+<body oncontextmenu="return false;" id="mainBody">
+
+<script src="lib/lib2.js"></script>
+<script src="lib/lib.js"></script>
+<script src="js/three119.min.js"></script>
+<script src="js/GLTFLoader.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/SkeletonUtils.js"></script>
+<script src="js/CopyShader.js"></script>
+<script src="js/BlendShader.js"></script>
+<script src="js/EffectComposer.js"></script>
+<script src="js/ShaderPass.js"></script>
+<script src="js/RenderPass.js"></script>
+<script src="js/SavePass.js"></script>
+<!--<script src="js/simplequery.js"></script>-->
+<script src="js/stats.js"></script>
+<script src="js/lib3.js"></script>
+<script src="js/game.js"></script>
+
+
+
+<div class="overlay">
+	<!--<button onclick="startLoop()">start</button>
+	<button onclick="pauseLoop()">pause</button>
+	<button onclick="flipCanvas()">flip view</button> -->
+
+	<div id="state16384" class="d-none">
+		<div id="gInfo">
+			<span id="logdrills"></span>
+			<span id="logscore">0-0</span>
+			<span id="logtime">4:00</span>
+		</div> 
+		
+		<div id="gGoalGui" class="goalGui0 d-none">
+			<div class="goalGui">
+				<div id="logscore2" class="goalGui2"><span id="logscoreO">0</span> - <span id="logscoreK">0</span></div>
+			</div>
+		</div>
+
+		<span id="logptable"> 
+			<table class="table tableB table-xs" style="width:100px;">
+				  <!--<thead>
+					<tr>
+					  <th scope="col"><label id="team12" class="btn btn-success w-100">Team O</label></th>
+					</tr>
+				  </thead> -->
+				  <tbody id="stable13" style="text-align:left;">
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+				  </tbody>
+				</table>
+
+				<table class="table tableB table-xs" style="width:100px;">
+				  <!--<thead>
+					<tr>
+					  <th scope="col"><label id="team22" class="btn btn-success w-100">Team K</label></th>
+					</tr>
+				  </thead>-->
+				  <tbody id="stable23" style="text-align:left;">
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+					<tr>
+					  	<td>&nbsp;</td>
+					</tr>
+				  </tbody>
+				</table>
+		</span>
+		<span id="logtext"><p></p><p></p><p></p><p></p><p></p></span>
+		<!--<div id="logdir"> </div> 
+		<div id="logmouse"> </div> 
+		<div id="logmouse2"> </div> 
+		<div id="logstep"> </div> 
+		<div id="logball"> </div> 
+		<div id="logball2"> </div> 
+		<div id="logball3"> </div> 
+		<div id="logrot"> </div> 
+		<div id="logdash"> </div> 
+		<div id="log0"> </div>
+		<div id="log1"> </div>
+		<div id="log2"> </div>
+		<div id="log3"> </div>
+		<div id="log4"> </div>
+		<div id="log5"> </div>
+	
+		<div id="loglag"></div>
+		<div id="logmsg"></div>
+		<div id="logmsg2"></div>
+		<div id="logmsg3"></div>
+		<div id="logmsg4"></div>
+		<div id="logmsg5"></div>
+
+		<div id="loggTime"></div>
+		<div id="logfps"></div>-->
+		<div id="logms" style="position:fixed;left:3px;bottom:60px;display:none;"></div>
+
+		<div class="container d-none" id="gMenu" style="color:#343434;width:200px;pointer-events: auto;">
+			<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+			  <div class="card-header cardA">
+				Menu
+			  </div>
+			  <div class="card-body" style="padding:0px;text-align: center;">
+				<p>
+					<br>
+					<label class="btn btn-success" style="width:120px;" onclick="toggleMenu();">Continue</label>
+					<br>
+					<label class="btn alert-warning" style="width:120px;margin-top:10px;" onclick="toggleOptions();">Options</label>
+					<br>
+					<label class="btn alert-warning" style="width:120px;margin-top:10px;" onclick="toggleChat();">Toggle Chat</label>
+					<br>
+					<label class="btn alert-warning" style="width:120px;margin-top:10px;" onclick="toggleFps();">Toggle FPS</label>
+					<br>
+					<label class="btn alert-danger" style="width:120px;margin-top:10px;" onclick="gl.joinGame(-1);">To Lobby</label>
+					</p>		  
+				</div>
+			</div>
+		</div>
+
+		<div id="gOps" class="container d-none" style="color:#343434;width:500px;pointer-events: auto;">
+			<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+				<div class="card-header cardA">Options</div>
+				<div class="card-body" style="padding:0px;text-align: center;">
+					<div id="gOpsItems" style="text-align:left;"></div>
+					<br>
+					<label class="btn btn-warning" style="padding-left:25px;padding-right:25px;float:left;" onclick="loadDefaultSettings();">Load Defaults</label>
+					<label class="btn btn-success" style="padding-left:25px;padding-right:25px;float:right;" onclick="saveSettings();">Save</label>
+					<label class="btn btn-default" style="padding-left:25px;padding-right:25px;float:right;" onclick="closeOptions();">Close</label>
+				</div>
+			</div>
+		</div>
+		<div id="gVars" class="d-none" style="pointer-events: auto;">
+			Vars
+			<div>
+				<span style="display:inline-block;width:100px;">Name:</span><span style="display:inline-block;width:100px;">1.24654</span><input type="text" id="val1" name="vol" style="width:100px;">
+				<br>
+				<input type="range" style="width:200px;" id="val2" name="vol" min="0" max="1000" oninput="document.getElementById('val1').value = this.value;" onchange="document.getElementById('val1').value = this.value;"><label class="btn btn-light" style="padding-left:25px;padding-right:25px;padding-top: 0px;padding-bottom: 0px;width:100px;" onclick="">123</label>
+			</div>
+		
+			<br>
+			<label class="btn btn-warning" style="padding-left:25px;padding-right:25px;float:right;" onclick="">Update</label>
+		</div>
+		
+	</div>
+	
+	<div class="container d-none" id="state-3" style="color:#343434;pointer-events: auto;">
+		<br>
+		<img src="img/p/kickaroundmultiplayer.png" alt="KickAround Multiplayer Football" style="width:100%;margin-bottom:-5px;">
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA progressWCol"><span class="navbar-brand progressWCol" style="line-height:0;"><div><span class="progressWCol">KickAr<small><span class="oi oi-globe progressWCol" style="color: #57d045 !important;background: #2eceff;border-radius: 5px;"></span></small>und</span></div><span class="progressWCol" style="font-size: 12px;text-align: right;width: 100%;display: inline-block;position: relative;">Live</span></span></div>
+		  <div class="card-body">
+		  	<h5 class="progressWCol">Welcome:</h5>
+			<p>Would you like to play through the tutorial?.
+		    </p>
+		    <div>
+			<label class="btn btn-success" onclick="gl.welcome(1);">Tutorial</label>
+			<label class="btn btn-warning" style="margin-left:10px;color:#865700;" onclick="gl.welcome(2);">Quick Game</label>
+			<label class="btn btn-danger" style="margin-left:10px;" onclick="gl.welcome(3);">Multiplayer Lobby</label>
+		  	</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="container d-none" id="state-2" style="color:#343434;pointer-events: auto;max-width: 540px;">
+		<br>
+		<div class="row" style="padding-left: 15px;">
+			<div class="col-xs-12">
+				<label type="button" class="btn alert-warning" onclick="window.location.reload();">Reload</label>
+				<!--<button type="button" class="btn alert-warning">Market</button>-->
+			</div>
+		</div>
+		<br>
+		
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA progressWCol">Multiplayer Info:</div>
+		  <div class="card-body">
+			<p class="card-text" style="color:#124616;">Connection to the server was closed - either by logging in through another tab or due to timeout.</p> 
+		  </div>
+		</div>
+	</div>
+
+	
+	<div class="container" id="state-1" style="color:#343434;pointer-events: auto;">
+		<br>
+		<img src="img/p/kickaroundmultiplayer.png" alt="KickAround Multiplayer Football" style="width:100%;margin-bottom:-5px;">	
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA" style="padding-bottom:5px;"><span class="navbar-brand progressWCol" style="line-height:0;"><div><span class="progressWCol">KickAr<small><span class="oi oi-globe progressWCol" style="color: #57d045 !important;background: #2eceff;border-radius: 5px;"></span></small>und</span></div><span class="progressWCol" style="font-size: 12px;text-align: right;width: 100%;display: inline-block;position: relative;">Live</span></span>
+		  <span class="float-right">
+		  	<a type="button" class="btn alert-warning l125" href="https://mirafungames.com" target="_blank">news</a>
+			<a id="linkr1" class="btn alert-warning rsl" href="https://www.reddit.com/r/kickaroundlive" target="_blank">
+			  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/></svg>
+				</div>
+			  </div>
+			</a>
+		  </div>
+		  <div class="card-body">
+		  	<!--<div class="progressWCol">Welcome to Multiplayer:</div>-->
+			<p class="card-text" style="color:#124616;">Select the server you would like to join:</p> 
+			<small id="ssHelp" class="form-text text-danger" style="margin-top:0px;"></small>
+			<table class="table tableA table-xs table-scrollbar">
+			<thead>
+				<tr>
+				  <th scope="col" class="progressWCol">Name</th>
+				  <th scope="col" class="progressWCol" style="width:33.333%;">Players</th>
+				  <th scope="col" class="progressWCol">Action</th>
+				</tr>
+			  </thead>
+			  <tbody id="sstable">
+			  	<tr>
+				  <td colspan="3" class="progressWCol">Connecting...</td>
+				</tr>
+			  </tbody>
+			</table>
+			<div id="saveProgress">To save progress, you can <a href="https://mirafungames.com/login" target="_blank">login</a> or <a href="https://mirafungames.com/register" target="_blank">register.</a></div>
+			<div id="linkd2">You can join <a href="https://discord.com/invite/ZaKa3UMVWn" target="_blank">Disc. community</a> to find players or invite your friends to play with.</div>
+			<div style="height:5px;"></div>
+			<table class="progressWCol" style="width:822px;max-width:100%;text-align:center;margin-bottom:-10px;position:relative;">
+			<tbody>
+			<tr>
+				  <td style="width:25%;">Pass</td>
+				  <td style="width:25%;">Loft</td>
+				  <td style="width:25%;">Head</td>
+				  <td>Tackle</td>
+			</tr>
+			</tbody>
+			</table>
+			<img src="img/p/inputmouse.jpg" alt="KickAround Mouse Input" style="max-width: 100%;">	
+			<div class="row" style="margin-left:0px;">
+			<div class="col-auto">
+				Movement and Dash<br>
+				<div style="display:inline-block;"><br><span class="key">A</span></div><div style="display:inline-block;"><span class="key">w</span><br><span class="key">s</span></div><div style="display:inline-block;"><br><span class="key">D</span></div>
+				*
+				<div style="display:inline-block;"><br><span class="key">&larr;</span></div><div style="display:inline-block;"><span class="key">&uarr;</span><br><span class="key">&darr;</span></div><div style="display:inline-block;"><br><span class="key">&rarr;</span></div>
+				<br>
+				<span class="key" style="margin:0px 13px;">space</span>* <span class="key">ctrl</span> <span class="key">shift</span> 
+			</div>
+			<div class="col-auto">
+				<span style="display:inline-block;width:50px;"><span class="key">rmb</span></span>Switch Player<br>
+				<span style="display:inline-block;width:50px;"><span class="key">wheel</span></span>Zoom<br>
+				<span style="display:inline-block;width:50px;"><span class="key">mmb</span></span>Jump, Tackle 				
+			</div>
+			<div class="col-auto">
+				<span style="display:inline-block;width:35px;"><span class="key">esc</span></span>Toggle Menu<br>
+				<span style="display:inline-block;width:35px;"><span class="key">tab</span></span>Toggle Chat
+			</div>
+			</div>
+			<div style="padding-left:15px;">* customizable</div>
+			<div class="progressWCol">Tips:</div>
+			<ul>
+			<li>Pass ball to unguarded players before getting tackled!</li>
+			<li>To reduce network lag, you can use cable internet instead of WiFi or a different browser.</li>
+			<li>To reduce lag, you can toggle FPS counter. Then stretch the window as desired while keeping 30 FPS. </li>
+			<li>Certain keyboards - do not register the <span class="key">space</span> key being pressed while holding <span class="key">w</span><span class="key">a</span>. Test this out in Sandbox, to work around this, options provide a convenience EDSF button to remap the movement to <span class="key">e</span><span class="key">d</span><span class="key">s</span><span class="key">f</span> instead of <span class="key">w</span><span class="key">a</span><span class="key">s</span><span class="key">d</span>.</li>
+			</ul>
+		  </div>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+
+	<div class="fluid-container ms15 d-none" id="state0" style="color:#343434;pointer-events: auto;">
+		<br>
+		<img src="img/p/kickaroundmultiplayer.png" alt="KickAround Multiplayer Football" style="width:100%;margin-bottom:-5px;">
+		<div class="row">
+			<!-- row -->
+
+			<div class="col-sm-4">
+				<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+				  <div class="card-header cardA progressWCol"><span class="progressWCol cardATitle" id="lobbyRoom">Lobby</span>
+				  <button type="button" class="btn alert-warning float-right" onclick="gl.exit();">log out</button>
+				  </div>
+				  <div class="card-body" style="padding:0px;">
+					<!-- card -->
+
+					<div class="table-responsive table-responsiveA">
+						<table class="table tableA table-xs table-scrollbar">
+							<thead>
+							<tr style="text-align:left;">
+							  <th scope="col" class="progressWCol" style="padding-left: 24px;">Player</th>
+							  <th scope="col" class="progressWCol" style="padding-left: 5px;">Rank</th>
+							</tr>
+						  </thead>
+						  <tbody id="rtable" style="text-align:left;"></tbody>
+						</table>
+					</div>
+					
+					<!-- card -->
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+				  <div class="card-header cardA"><span class="progressWCol cardATitle">Games</span>
+				  <span style="float:right;">
+				    <span id="gamebu">
+				    	<button type="button" class="btn btn-warning l125" style="color:#865700;" onclick="gl.quickGame();">Quick Game</button>
+						<button type="button" class="btn btn-success l125" onclick="gl.newGame();">New Game</button>
+						<button type="button" id="playrated" class="btn btn-success l125" onclick="gl.newGame2();">Play Rated</button>
+						<button type="button" class="btn btn-success l125" onclick="gl.newGame3();">Play with AI</button>
+						<button type="button" class="btn btn-success l125" onclick="gl.sandbox(0);">Sandbox</button>
+						<button type="button" class="btn alert-warning l125" onclick="gl.sandbox(1);">Tutorial</button>
+					</span>	
+					<!--<a class="btn alert-warning" href="https://mirafungames.com/management" target="_blank">Management</a>
+					<a class="btn alert-warning" href="store" target="_blank">Store</a>
+					<button type="button" class="btn alert-warning">Market</button>-->
+				  </span>	
+				  </div>
+				  <div class="card-body" style="padding:0px;">
+					<!-- card -->
+
+						<div id="gamesA" class="table-responsive table-responsiveA">
+							<table class="table tableA table-xs table-scrollbar">
+							  <thead>
+								<tr>
+								  <th scope="col"></th>
+								  <th scope="col" class="progressWCol">Hosted by</th>
+								  <th scope="col" class="progressWCol">Players</th>
+								  <th scope="col" class="progressWCol">Options</th>
+								</tr>
+							  </thead>
+							  <tbody id="gtable"></tbody>
+							</table>
+						</div>
+
+					<table id="gamesB" class="table tableA table-xs d-none">
+					  <thead>
+						<tr>
+						  <th scope="col" class="progressWCol">New Game</th>
+						  <th scope="col" class="progressWCol">Settings</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th scope="row">Players</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+							  <label id="option2" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,2);">2</label>
+							  <label id="option4" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,4);">4</label>
+							  <label id="option6" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,6);">6</label>
+							  <label id="option8" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,8);">8</label>
+							</div>
+
+							</td>
+						</tr>
+						<tr>
+						  <th scope="row">Minutes</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+								  <label id="option32" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_M,32);">4m</label>
+								  <label id="option64" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_M,64);">8m</label>
+								  <label id="option96" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_M,96);">12m</label>
+								</div>
+
+							</td>
+						</tr>
+						<tr>
+						  <th scope="row">Team selection</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+								  <label id="option128" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_T,128);">Select</label>
+								  <label id="option256" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_T,256);">Random</label>
+								  <label id="option384" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_T,384);">Ordered</label>
+								</div>
+							</td>
+						</tr>
+						<!--<tr>
+						  <th scope="row">Player order</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+								  <label id="option0" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_O,0);">Random</label>
+								  <label id="option512" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_O,512);">Ordered</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						  <th scope="row">Can</th>
+						  <td>
+								<div class="btn-group btn-group-toggle w-100">
+								  <label id="option1024" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_A,1024);">Join</label>
+								  <label id="option2048" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_A,2048);">Observe</label>
+								  <label id="option3072" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_A,3072);">None</label>
+								</div>
+							</td>
+						</tr>-->
+						<tr>
+						  <th scope="row"><button type="button" class="btn alert-danger w-100" onclick="gl.joinGame(-1);">Leave</button></th>
+						  <td>
+							 <button id="start" type="button" class="btn btn-success w-100" onclick="gl.startGame();">Start</button>
+							</td>
+						</tr>
+					  </tbody>
+					</table>
+
+					<table id="gamesR" class="table tableA table-xs d-none">
+					  <thead>
+						<tr>
+						  <th scope="col" class="progressWCol">New Game</th>
+						  <th scope="col" class="progressWCol">Settings</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<!--<tr>
+						  <th scope="row">Players</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+							  <label id="option2r" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,2);">2</label>
+							  <label id="option4r" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,4);">4</label>
+							  <label id="option6r" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,6);">6</label>
+							  <label id="option8r" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,8);">8</label>
+							</div>
+
+							</td>
+						</tr>-->
+						<tr>
+						  <th scope="row">Minutes</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+								  <label id="option32r" class="btn btn-success active" onclick="gl.setGameOps2(B.MSG_CLIENT_SET_M,32);">4m</label>
+								  <label id="option64r" class="btn btn-success" onclick="gl.setGameOps2(B.MSG_CLIENT_SET_M,64);">8m</label>
+								  <label id="option96r" class="btn btn-success" onclick="gl.setGameOps2(B.MSG_CLIENT_SET_M,96);">12m</label>
+								</div>
+
+							</td>
+						</tr>
+						<tr>
+						  <th scope="row"><button type="button" class="btn alert-danger w-100" onclick="gl.joinGame(-1);">Leave</button></th>
+						  <td>
+							 <button id="rbutton" type="button" class="btn btn-success w-100" onclick="gl.startGame2();">Start</button>
+							</td>
+						</tr>
+					  </tbody>
+					</table>
+					
+					<table id="gamesI" class="table tableA table-xs d-none">
+					  <thead>
+						<tr>
+						  <th scope="col" class="progressWCol">New Game</th>
+						  <th scope="col" class="progressWCol">Settings</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<!--<tr>
+						  <th scope="row">Players</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+							  <label id="option2r" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,2);">2</label>
+							  <label id="option4r" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,4);">4</label>
+							  <label id="option6r" class="btn btn-success" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,6);">6</label>
+							  <label id="option8r" class="btn btn-success active" onclick="gl.setGameOps(B.MSG_CLIENT_SET_P,8);">8</label>
+							</div>
+
+							</td>
+						</tr>-->
+						<tr>
+						  <th scope="row">AI Skill</th>
+						  <td>
+							<div class="btn-group btn-group-toggle w-100">
+								  <label id="optionI1" class="btn btn-success active" onclick="gl.setGame3Type(1);">Low</label>
+								  <label id="optionI2" class="btn btn-success" onclick="gl.setGame3Type(2);">Mid</label>
+								  <label id="optionI3" class="btn btn-success" onclick="gl.setGame3Type(3);">High</label>
+								</div>
+
+							</td>
+						</tr>
+						<tr>
+						  <th scope="row"><button type="button" class="btn alert-danger w-100" onclick="gl.joinGame(-1);">Leave</button></th>
+						  <td>
+							 <button id="ibutton" type="button" class="btn btn-success w-100" onclick="gl.startGame3();">Start</button>
+							</td>
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- card -->
+				  </div>
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+		<br>
+		
+	</div>
+
+
+
+
+	<!-- select team -->
+
+	<div class="fluid-container ms15 d-none" id="state4096" style="color:#343434;pointer-events: auto;">
+		<br>
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA">
+			Team Select <span id="time4096" class="float-right"></span>
+		  </div>
+		  <div class="card-body" style="padding:0px;">
+
+			<table class="table tableA table-xs">
+			  <thead>
+				<tr>
+				  <th scope="col" style="width: 33.3%"><label class="btn btn-success w-100" onclick="gl.team(1);">Team O</label></th>
+				  <th scope="col" style="width: 33.3%"><label class="btn btn-success w-100" onclick="gl.team(3);">Random</label></th>
+				  <th scope="col" style="width: 33.3%"><label class="btn btn-success w-100" onclick="gl.team(2);">Team K</label></th>
+				</tr>
+			  </thead>
+			  <tbody id="stable" style="text-align:center;">
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+			  </tbody>
+			</table>
+
+		  </div>
+		</div>
+		<br>
+	</div>
+
+
+	<!-- team pos-->
+	<div class="fluid-container ms15 d-none" id="state8192" style="color:#343434;pointer-events: auto;">
+		<br>
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA">
+			Team position <span id="time8192" class="float-right"></span>
+		  </div>
+		  <div class="card-body">
+			<h5 class="card-title" id="posName">Box</h5>
+			 <p class="card-text">Team captains can select default position for team.</p> 
+
+
+			<div class="row">
+
+				 <div class="col-auto">
+			<table class="table tableA table-xs" style="width:100px;">
+			  <thead>
+				<tr>
+				  <th scope="col"><label id="team1" class="btn btn-success w-100">Team O</label></th>
+				</tr>
+			  </thead>
+			  <tbody id="stable1" style="text-align:center;">
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+			  </tbody>
+			</table>
+
+			<table class="table tableA table-xs" style="width:100px;">
+			  <thead>
+				<tr>
+				  <th scope="col"><label id="team2" class="btn btn-success w-100">Team K</label></th>
+				</tr>
+			  </thead>
+			  <tbody id="stable2" style="text-align:center;">
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+				<tr>
+				  	<td>&nbsp;</td>
+				</tr>
+			  </tbody>
+			</table>
+
+				</div>
+
+			  <div class="col-auto">
+			
+
+			<!--<div style="display:inline-block;position:relative;width:122px;height:194px;">-->
+			<div style="display:inline-block;position:relative;width:163.5px;height:260px;">
+				<img src="img/field122.jpg" style="width:100%;border:1px solid #aaaaaa;border-radius: 5px;">
+				<span id="posLocation1"></span>		
+			</div>
+			  </div>
+			  <div class="col" id="formList"></div>
+			</div>
+
+			<br>
+
+			<label class="btn btn-success" style="padding-left:25px;padding-right:25px;" onclick="gl.teampos(-1);">Ok</label>
+		  </div>
+		</div>
+		<br>
+	</div>
+
+
+	<!-- Field Players -->
+	<div class="fluid-container ms15 d-none" id="state12288" style="color:#343434;pointer-events: auto;">
+		<br>
+		<div class="row">
+			<div class="col-auto">
+		
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA">
+			Field Players <span id="time12288" class="float-right"></span>
+		  </div>
+		  <div class="card-body">
+			<div class="row" style="flex-wrap: nowrap;">
+				<div class="col-auto">
+ 					<p class="card-text" style="width: 250px;">Select field players by selecting positions(1-4) and players from squad.</p> 
+					<div class="row" style="flex-wrap: nowrap;">
+						<div class="col-auto">
+							<table class="table tableA table-xs" style="width:100px;">
+							  <thead>
+								<tr>
+								  <th scope="col"><label id="team12" class="btn btn-success w-100">Team O</label></th>
+								</tr>
+							  </thead>
+							  <tbody id="stable12" style="text-align:center;">
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+							  </tbody>
+							</table>
+
+							<table class="table tableA table-xs" style="width:100px;">
+							  <thead>
+								<tr>
+								  <th scope="col"><label id="team22" class="btn btn-success w-100">Team K</label></th>
+								</tr>
+							  </thead>
+							  <tbody id="stable22" style="text-align:center;">
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+								<tr>
+								  	<td>&nbsp;</td>
+								</tr>
+							  </tbody>
+							</table>
+						</div>
+						<div class="col-auto">
+							<div style="display:inline-block;position:relative;width:163.5px;height:260px;">
+								<img src="img/field122.jpg" style="width:100%;border:1px solid #aaaaaa;border-radius: 5px;">
+								<span id="posLocation12"></span>		
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="col-auto">
+					<div id="gameChars">
+						<div id="slot0" class="playerBox" onclick="selectSlot(0);">
+							<span>1</span>
+						</div>
+						<div id="slot1" class="playerBox" onclick="selectSlot(1);">
+							<span>2</span>
+						</div>
+						<br>
+						<div id="slot2" class="playerBox" onclick="selectSlot(2);">
+							<span>3</span>
+						</div>
+						<div id="slot3" class="playerBox" onclick="selectSlot(3);">
+							<span>4</span>
+						</div>	
+					</div>		
+				</div>	
+			</div>
+			
+			<br>
+			<label class="btn btn-success" style="padding-left:25px;padding-right:25px;" onclick="gl.ready();">Ready</label>
+
+		  </div>
+		</div>
+		</div>
+		<div class="col">
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA">
+			Squad <button type="button" class="btn btn-success float-right autoFillBtn" onclick="gl.autoFill();">auto-fill</button>
+		  </div>
+		  <div class="card-body">
+				<div class="row">
+					<div class="col-auto" id="playerChars" style="padding:0px;overflow-y:auto;height:410px;"></div>
+				</div>
+		  </div>
+		</div> 
+		
+		</div>
+		</div>
+				
+		<div class="modal fade" id="modalDialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title fontAf" id="modalDialogTitle"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body" id="modalDialogText">
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-success" id="modalDialogYes" data-dismiss="modal">Yes</button>
+				<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<br>
+	</div>
+	
+	
+	<div class="fluid-container ms15 d-none" id="stateChat">
+		<div class="row">
+		<!-- row -->
+		<div class="col-12">
+				<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+				  <div class="card-header cardA progressWCol">Chat</div>
+				  <div class="card-body" style="padding:0px;">
+					<!-- card -->
+
+					<input class="form-control" id="textbox" type="text" placeholder=".......">
+
+					<div class="text-scrollbar" id="textbox2"></div>
+			
+					<!-- card -->
+				  </div>
+				</div>
+		</div>
+		<!-- row -->
+		</div>
+	</div>
+	
+			<!--gstats-->
+	<div class="container d-none" id="state32768" style="color:#343434;width:670px;pointer-events: auto;margin-top: 25px;">
+		<div class="card borderA" style="box-shadow: -2px 2px #d7d7d7;">
+		  <div class="card-header cardA" style="text-align:center;color:white;background:#28a745;">
+			<span class="">Results</span> <span id="gStatsScore">0 - 0</span> <span id="time32768" class="float-right"></span>
+		  </div>
+		  <div class="card-body" style="text-align:center;">
+			<div class="row justify-content-between">
+				 <div class="col-auto">
+					<table class="table tableA table-xs">
+					  <thead>
+						<tr>
+						  <th scope="col" style="width:100px;"><label class="btn btn-success w-100 resultLabel">Team O</label></th>
+						  <th scope="col"><label class="btn btn-success w-100 resultLabel">Goals</label></th>
+						  <th scope="col"><label class="btn btn-success w-100 resultLabel">Assists</label></th>
+						</tr>
+					  </thead>
+					  <tbody id="rtable1" style="text-align:center;">
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+
+				<div class="col-auto">
+
+					<table class="table tableA table-xs">
+					  <thead>
+						<tr>
+						  <th scope="col" style="width:100px;"><label class="btn btn-success w-100 resultLabel">Team K</label></th>
+						  <th scope="col"><label class="btn btn-success w-100 resultLabel">Goals</label></th>
+						  <th scope="col"><label class="btn btn-success w-100 resultLabel">Assists</label></th>
+						</tr>
+					  </thead>
+					  <tbody id="rtable2" style="text-align:center;">
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+						  	<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+					  </tbody>
+					</table>
+
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col">
+					<div id="rinfo2" class="well p-3" style="text-align:left;background:var(--faze);">
+						<div class="progressWCol" style="margin-bottom:7px;margin-top:-5px;">Squad</div>
+						<div id="rsquad"></div>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="well p-3" style="text-align:left;width:125px;min-height:221px;background:var(--faze);">
+						<div class="progressWCol" style="margin-bottom:7px;margin-top:-5px;">Info</div>
+						<div id="rinfo"></div>
+					</div>
+				</div>
+			</div>
+
+				<br>
+				<label class="btn btn-success" style="padding-left:25px;padding-right:25px;" onclick="gl.rematch();">Rematch</label>
+				<a href="https://mirafungames.com/management" target="_blank" class="btn alert-warning" style="padding-left:25px;padding-right:25px;">Management</a>				
+				<label class="btn btn-light" style="padding-left:25px;padding-right:25px;" onclick="gl.joinGame(-1);">To Lobby</label>
+					  
+		  </div>
+		</div>
+	</div>
+<!--gstats-->
+
+
+</div>
+
+
+<script>
+//updatePosLocations();
+initGui();
+initS();doInit0Early();
+//init0();
+//init2();
+//updateRTable();
+//updateGTable();
+</script>
+
+</body>
+
+</html>

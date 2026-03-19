@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+<strings>
+<string id="PLAY" >
+<en>Play</en>
+<de>Spielen</de>
+<es>Jugar</es>
+<fr>Jouer</fr>
+<it>Gioca</it>
+<pt>Jogar</pt>
+<ru>Играть</ru>
+
+</string>
+<string id="CUSTOMIZE" >
+<en>Customize</en>
+<de>Anpassen</de>
+<es>Personalizar</es>
+<fr>Personnaliser</fr>
+<it>Personalizza</it>
+<pt>Personalizar</pt>
+<ru>Настроить</ru>
+</string>
+
+<string id="HOME" >
+<en>Home</en>
+<de>Startseite</de>
+<es>Inicio</es>
+<fr>Accueil</fr>
+<it>Inizio</it>
+<pt>Inicial</pt>
+<ru>Домой</ru>
+</string>
+
+<string id="EQUIP" >
+<en>Equip</en>
+<de>Verwenden</de>
+<es>Equipar</es>
+<fr>Équiper</fr>
+<it>Usa</it>
+<pt>Equipar</pt>
+<ru>Экипировать</ru>
+</string>
+
+
+<string id="EQUIPPED" >
+<en>Equipped</en>
+<de>Verwendet</de>
+<es>Equipado</es>
+<fr>Équipé</fr>
+<it>Usato</it>
+<pt>Equipado</pt>
+<ru>Экипировано</ru>
+</string>
+
+<string id="SPEED" >
+<en>Speed</en>
+<de>Geschwindigkeit</de>
+<es>Velocidad</es>
+<fr>Vitesse</fr>
+<it>Velocità</it>
+<pt>Rapidez</pt>
+<ru>Скорость</ru>
+</string>
+
+<string id="JUMP" >
+<en>Jump</en>
+<de>Springen</de>
+<es>Salto</es>
+<fr>Sauter</fr>
+<it>Salto</it>
+<pt>Salto</pt>
+<ru>Прыжок</ru>
+</string>
+
+<string id="SIZE" >
+<en>Size</en>
+<de>Größe</de>
+<es>Tamaño</es>
+<fr>Taille</fr>
+<it>Taglia</it>
+<pt>Tamanho</pt>
+<ru>Размер</ru>
+</string>
+
+<string id="POWER" >
+<en>Power</en>
+<de>Kraft</de>
+<es>Potencia</es>
+<fr>Puissance</fr>
+<it>Energia</it>
+<pt>Poder</pt>
+<ru>Мощность</ru>
+</string>
+<string id="DIVISION" >
+<en>Division</en>
+<de>Liga</de>
+<es>División</es>
+<fr>Division</fr>
+<it>Divisione</it>
+<pt>Divisão</pt>
+<ru>Разделение</ru>
+</string>
+
+<string id="TROPHIES" >
+<en>Trophies</en>
+<de>Trophäen</de>
+<es>Trofeos</es>
+<fr>Trophées</fr>
+<it>Trofei</it>
+<pt>Troféus</pt>
+<ru>Трофеи</ru>
+</string>
+
+<string id="BRONZE" >
+<en>Bronze</en>
+<de>Bronze</de>
+<es>Bronce</es>
+<fr>Bronze</fr>
+<it>Bronzo</it>
+<pt>Bronze</pt>
+<ru>Бронза</ru>
+</string>
+
+<string id="GOLD" >
+<en>Gold</en>
+<de>Gold</de>
+<es>Oro</es>
+<fr>Or</fr>
+<it>Oro</it>
+<pt>Ouro</pt>
+<ru>Золото</ru>
+</string>
+
+<string id="IRON" >
+<en>Iron</en>
+<de>Eisen</de>
+<es>Hierro</es>
+<fr>Fer</fr>
+<it>Ferro</it>
+<pt>Ferro</pt>
+<ru>Железо</ru>
+</string>
+
+<string id="DIAMOND" >
+<en>Diamond</en>
+<de>Diamant</de>
+<es>Diamante</es>
+<fr>Diamant</fr>
+<it>Diamante</it>
+<pt>Diamante</pt>
+<ru>Алмаз</ru>
+</string>
+
+<string id="GRANDMASTER" >
+<en>Grandmaster</en>
+<de>Großmeister</de>
+<es>Gran maestro</es>
+<fr>Grand maître</fr>
+<it>Grande maestro</it>
+<pt>Grande mestre</pt>
+<ru>Гроссмейстер</ru>
+</string>
+
+<string id="MASTER" >
+<en>Master</en>
+<de>Meister</de>
+<es>Maestro</es>
+<fr>Maître</fr>
+<it>Maestro</it>
+<pt>Mestre</pt>
+<ru>Мастер</ru>
+</string>
+
+
+<string id="CHALLENGER" >
+<en>Challenger</en>
+<de>Herausforderer</de>
+<es>Rival</es>
+<fr>Challenger</fr>
+<it>Rivale</it>
+<pt>Rival</pt>
+<ru>Претендент</ru>
+</string>
+
+<string id="LEGEND" >
+<en>Legend</en>
+<de>Legende</de>
+<es>Leyenda</es>
+<fr>Légende</fr>
+<it>Leggenda</it>
+<pt>Lenda</pt>
+<ru>Легенда</ru>
+</string>
+
+<string id="PLATINUM" >
+<en>Platinum</en>
+<de>Platin</de>
+<es>Platino</es>
+<fr>Platine</fr>
+<it>Platino</it>
+<pt>Platina</pt>
+<ru>Платина</ru>
+</string>
+
+<string id="SILVER" >
+<en>Silver</en>
+<de>Silber</de>
+<es>Plata</es>
+<fr>Argent</fr>
+<it>Argento</it>
+<pt>Prata</pt>
+<ru>Серебро</ru>
+</string>
+
+<string id="CLAIM" >
+<en>Claim</en>
+<de>Abholen</de>
+<es>Canjear</es>
+<fr>Récupérer</fr>
+<it>Riscuoti</it>
+<pt>Reivindicar</pt>
+<ru>ПОЛУЧИТЬ</ru>
+</string>
+
+<string id="UNLOCK IN" >
+<en>Unlocks in</en>
+<de>Freigeschaltet in</de>
+<es>Se desbloquea en la</es>
+<fr>Déverrouillé en</fr>
+<it>Sbloccato nella</it>
+<pt>Desbloqueia na</pt>
+<ru>Открывается в</ru>
+</string>
+
+<string id="AT" >
+<en>at</en>
+<de>bei</de>
+<es>con</es>
+<fr>à</fr>
+<it>con</it>
+<pt>com</pt>
+<ru>за</ru>
+</string>
+
+<string id="INSTRUCTIONS" >
+<en>Move sideways and jump with the arrow buttons. Perform various kicks with the ball buttons. Score more goals in the given time and win the match. Climb divisions and unlock all rewards. Random match powerups and player emotes are available.\n Good luck!</en>
+<de>Bewege dich seitwärts und springe mit den Pfeiltasten. Führe mit den Balltasten verschiedene Schüsse aus. Erziele in der vorgegebenen Zeit mehr Tore und gewinne das Spiel. Steige durch die Ligen auf und schalte alle Belohnungen frei. Zufällige Spiel-Powerups und Spieler-Emotes verfügbar.\n Viel Erfolg!</de>
+<es>Desplázate hacia los lados y salta con los botones de flecha. Realiza varios disparos con los botones del balón. Mete más goles dentro del tiempo y gana el partido. Sube de división y desbloquea todas las recompensas. Potenciadores al azar y emoticonos de jugadores.\n ¡Buena suerte!</es>
+<fr>Déplacez-vous sur le côté et sautez avec les boutons des flèches. Effectuez divers coups de pied avec les boutons de ballon. Marquez le plus de buts possible dans le temps imparti et gagnez le match. Grimpez dans les divisions et déverrouillez toutes les récompenses. Des bonus de match aléatoires et des émoticones de joueurs sont disponibles.\n Bonne chance !</fr>
+<it>Usa i pulsanti freccia per spostarti lateralmente e saltare. Calcia la palla con i relativi pulsanti. Segna più goal nel tempo predefinito e vinci la partita. Scala le categorie e sblocca tutte le ricompense. Sono disponibili potenziamenti per le partite casuali e le emoticon dei giocatori.\n In bocca al lupo!</it>
+<pt>Mova-se para os lados e pule com os botões de seta. Execute vários chutes com os botões de bola. Marque mais gols no tempo determinado e vença a partida. Suba nas divisões e desbloqueie todas as recompensas. Power-ups aleatórios e emotes do jogador estão disponíveis.\n Boa sorte!</pt>
+<ru>Перемещайтесь в сторону и прыгайте с помощью кнопок со стрелками. Выполняйте различные удары с помощью кнопок с мячом. Забейте больше голов за отведенное время и выиграйте матч. Поднимайтесь по дивизионам и разблокируйте все награды. Доступны случайные бонусы и эмоции игроков.\n Удачи!</ru>
+</string>
+
+
+</strings>
+</stringresources>

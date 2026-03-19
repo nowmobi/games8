@@ -1,0 +1,106 @@
+{
+  "SubTexture": [
+    {
+      "x": 198,
+      "y": 1,
+      "width": 40,
+      "name": "zuo1",
+      "height": 61
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "width": 109,
+      "name": "tui",
+      "height": 309
+    },
+    {
+      "x": 1,
+      "y": 370,
+      "width": 96,
+      "name": "qugan",
+      "height": 104
+    },
+    {
+      "x": 99,
+      "y": 370,
+      "width": 84,
+      "name": "tou2",
+      "height": 89
+    },
+    {
+      "x": 112,
+      "y": 1,
+      "width": 84,
+      "name": "tou",
+      "height": 89
+    },
+    {
+      "x": 1,
+      "y": 312,
+      "width": 217,
+      "name": "maozi",
+      "height": 56
+    },
+    {
+      "x": 220,
+      "y": 116,
+      "width": 23,
+      "name": "zuo2",
+      "height": 62
+    },
+    {
+      "x": 185,
+      "y": 370,
+      "width": 50,
+      "name": "zuo3",
+      "height": 108
+    },
+    {
+      "x": 159,
+      "y": 461,
+      "width": 20,
+      "name": "zui1",
+      "height": 7
+    },
+    {
+      "x": 205,
+      "y": 480,
+      "width": 28,
+      "name": "zui3",
+      "height": 10
+    },
+    {
+      "x": 205,
+      "y": 492,
+      "width": 25,
+      "name": "zui2",
+      "height": 8
+    },
+    {
+      "x": 99,
+      "y": 461,
+      "width": 58,
+      "name": "you1",
+      "height": 44
+    },
+    {
+      "x": 198,
+      "y": 64,
+      "width": 46,
+      "name": "you2",
+      "height": 50
+    },
+    {
+      "x": 159,
+      "y": 480,
+      "width": 44,
+      "name": "you3",
+      "height": 24
+    }
+  ],
+  "width": 256,
+  "name": "hero2",
+  "imagePath": "hero2_tex.png",
+  "height": 512
+}

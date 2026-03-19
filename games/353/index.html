@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Basket King pro</title>
+    <link rel="manifest" href="appmanifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="yes" />
+    <meta name="screen-orientation" content="portrait" />
+
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+            touch-action: none;
+            -ms-touch-action: none;
+        }
+
+        canvas {
+            touch-action-delay: none;
+            touch-action: none;
+            -ms-touch-action: none;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <div id="c2canvasdiv">
+        <canvas id="c2canvas" width="720" height="1280">
+        </canvas>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+
+    <script>
+        let preloadedInterstitial = null;
+        let preloadedRewardedVideo = null;
+        window.onload = function() {
+            // FBInstant.initializeAsync()
+            //     .then(FBInstant.startGameAsync)
+            //    .then(onStart);
+
+            FBInstant.initializeAsync().then(function() {
+                // for (let i in assets) {
+                //    FBInstant.setLoadingProgress(i / assets.length * 100);
+                // }
+                FBInstant.startGameAsync().then(function() {
+                    onStart();
+                    // preloadInterstitial();
+
+                });
+            });
+
+
+
+        };
+
+        // (function (i, s, o, g, r, a, m) {
+        //     i['GoogleAnalyticsObject'] = r;
+        //     i[r] = i[r] || function () {
+        //         (i[r].q = i[r].q || []).push(arguments)
+        //     }, i[r].l = 1 * new Date();
+        //     a = s.createElement(o),
+        //         m = s.getElementsByTagName(o)[0];
+        //     a.async = 1;
+        //     a.src = g;
+        //     m.parentNode.insertBefore(a, m)
+        // })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        // ga('create', 'UA-131481567-6', 'auto');
+        // ga('send', 'pageview');
+
+        function onStart() {
+            console.log("fb api active");
+            let supportedAPIs = FBInstant.getSupportedAPIs();
+            let canShowAds = supportedAPIs.includes('getInterstitialAdAsync');
+            if (!canShowAds) {
+                console.log("Ads not supported in this session");
+            }
+            preloadInterstitial();
+            preloadRewarded();
+        }
+
+        function preloadInterstitial() {
+            FBInstant.getInterstitialAdAsync("244902336706711_246959406501004")
+                .then(function(interstitial) {
+                    preloadedInterstitial = interstitial;
+                    return preloadedInterstitial.loadAsync();
+                })
+                .then(function() {
+                    console.log("Interstitial ready");
+                })
+                .catch(function(error) {
+                    console.log("Interstitial faild to preload: " + error.message);
+                });
+        }
+
+        function preloadRewarded() {
+            FBInstant.getRewardedVideoAsync("244902336706711_246959053167706")
+                .then(function(rewarded) {
+                    preloadedRewardedVideo = rewarded;
+                    return preloadedRewardedVideo.loadAsync();
+                })
+                .then(function() {
+                    console.log("rewarded ad load successfully");
+                })
+                .catch(function(error) {
+                    console.log('Rewarded Video failed to preload: ' + error.message);
+                });
+        }
+
+
+        function showInterstitial() {
+            preloadedInterstitial.showAsync()
+                .then(function() {
+                    preloadInterstitial();
+                    console.log("Interstitial Watched");
+                })
+                .catch(function(error) {
+                    console.log(error.message);
+                });
+        }
+
+        function showRewarded() {
+            preloadedRewardedVideo.showAsync()
+                .then(function() {
+                    console.log('Rewarded Video watched!');
+                })
+                .catch(function(error) {
+                    display.error(error.message);
+                });
+        }
+
+
+
+        function show_fb_ad(play_count) {
+            console.log("Play Count is : " + play_count);
+            if (play_count == 1) {
+                console.log("Show first fb Ad");
+                sdk.showBanner();
+            }
+
+            if (play_count == 4) {
+                console.log("show Rewarded ad here");
+                sdk.showBanner();
+            }
+
+            if (play_count == 8) {
+                console.log("show second fb ad here");
+                sdk.showBanner();
+            }
+
+
+        }
+
+
+
+
+        jQuery(document).ready(function() {
+            cr_createRuntime("c2canvas");
+        });
+
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+                cr_setSuspended(true);
+            else
+                cr_setSuspended(false);
+        };
+
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+        function OnRegisterSWError(e) {
+            console.warn("Failed to register service worker: ", e);
+        };
+
+        window.C2_RegisterSW = function C2_RegisterSW() {
+            if (!navigator.serviceWorker)
+                return;
+
+            try {
+                navigator.serviceWorker.register("sw.js", {
+                        scope: "./"
+                    })
+                    .then(function(reg) {
+                        console.log("Registered service worker on " + reg.scope);
+                    })
+                    .catch(OnRegisterSWError);
+            } catch (e) {
+                OnRegisterSWError(e);
+            }
+        };
+    </script>
+</body>
+<script type="text/javascript">
+    window.SDK_OPTIONS = {
+        gameId: "phcyqu2ue93up31jmzn4nj1xv4t9nrqd",
+        onEvent: function(a) {
+            switch (a.name) {
+                case "SDK_GAME_PAUSE":
+                    // pause game logic / mute audio
+                    break;
+                case "SDK_GAME_START":
+                    // advertisement done, resume game logic and unmute audio
+                    break;
+                case "SDK_READY":
+                    // when sdk is ready
+                    break;
+            }
+        }
+    };
+    (function(a, b, c) {
+        var d = a.getElementsByTagName(b)[0];
+        a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+    })(document, "script", "gamemonetize-sdk");
+</script>
+
+</html>

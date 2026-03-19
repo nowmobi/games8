@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var str = "" + window.location.href;
+        if (str.indexOf("www.") >= 0) {
+            window.location.href = (str.replace("www.", ""));
+        }
+    </script>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="developed-by" content="gamesrishti studio">
+    <meta name="description" content="Halloween Hidden  is a classic point and click hidden object game.">
+    <meta name="keywords" content="Halloween Games, Mobile Games, Html 5 Games, Hidden Object Games">
+    <title>Halloween Hidden Object Games : Haunted House</title>
+    <style>
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #canvas {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        loaderset {
+            position: absolute;
+            display: none;
+            width: 10px;
+            height: 10px;
+        }
+
+        .img1 {
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: none;
+        }
+
+        .img2 {
+            position: absolute;
+            z-index: 2;
+            top: 10px;
+            left: 10px;
+            width: 5;
+            height: 11;
+            display: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+	<script src="https://lofgames.com/games/lofapi.tjj.js" type="text/javascript"></script>
+    <script src="halloween_hidden_objects.js?1602442054829"></script>
+    <script>
+        // Global Scripts
+        var str = "" + window.location.href;
+        if (str.indexOf('gamemonetize.com') >= 0) {
+            window.SDK_OPTIONS = {
+                gameId: "c1drlfdpx7nm6xpm6g9pa8eto2zh678i",
+                onEvent: function(a) {
+                    switch (a.name) {
+                        case "SDK_GAME_PAUSE":
+                            if (gv) {
+                                gv.paused = true;
+                                gv.sndPause = true;
+                            }
+                            createjs.Ticker.paused = true;
+                            puaseSoundMusic();
+                            break;
+                        case "SDK_GAME_START":
+                            createjs.Ticker.paused = false;
+                            if (gv) {
+                                gv.paused = false;
+                                gv.sndPause = false;
+                            }
+                            resumeSoundMusic();
+                            if (gv.nextCallFunction) {
+                                gv.nextCallFunction.call(null);
+                                gv.nextCallFunction = null;
+                            }
+                            break;
+                        case "SDK_READY":
+                            // when sdk is ready
+                            break;
+                    }
+                }
+            };
+            (function(a, b, c) {
+                var d = a.getElementsByTagName(b)[0];
+                a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+            })(document, "script", "gamemonetize-sdk");
+        }
+    </script>
+    <script>
+        var canvas, stage, exportRoot, fnStartAnimation, loadingBar, preloadBG, loadingAnim, preloaderDiv, beforeBG;
+        var gameWidth = 1280;
+        var gameHeight = 720;
+        var barMaxWidth = 100;
+        var barMaxHeight = 100;
+        var barWidth = 426;
+        var barHeigth = 16;
+        var barXP = 427;
+        var barYP = 582;
+        var txtXP = 545;
+        var txtYP = 630;
+        var txtht = 50;
+        var txtwt = 185;
+        window.addEventListener('resize', resizePreloader);
+
+        function init() {
+            var key = Object.keys(AdobeAn.compositions)[0];
+            var comp = AdobeAn.getComposition(key);
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(true);
+            loader.setMaxConnections(9);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("fileload", function(evt) {
+                handleFileLoad(evt, comp)
+            });
+            loader.addEventListener("complete", function(evt) {
+                handleComplete(evt, comp)
+            });
+            loader.addEventListener("progress", handleProgress);
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+            canvas.style.display = 'none';
+            preloaderDiv.style.display = 'none';
+        }
+
+        function handleProgress(e) {
+            loadingBar.style.width = (e.loaded / e.total) * barMaxWidth + "px";
+            loadingAnim.innerHTML = "LOADING:" + Math.ceil(e.loaded / e.total * 100) + "%";
+            loadingBar.style.height = barMaxHeight + "px";
+            resizePreloader();
+        }
+
+        function hidePreloader() {
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            window.removeEventListener('resize', resizePreloader);
+        }
+
+        function handleFileLoad(evt, comp) {
+            var images = comp.getImages();
+            if (evt && (evt.item.type == "image")) {
+                images[evt.item.id] = evt.result;
+            }
+        }
+
+        function handleComplete(evt, comp) {
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+                    "images": [queue.getResult(ssMetadata[i].name)],
+                    "frames": ssMetadata[i].frames
+                })
+            }
+            exportRoot = new lib.halloween_hidden_objects();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            fnStartAnimation = function() {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+
+                function resizeCanvas() {
+                    var w = lib.properties.width,
+                        h = lib.properties.height;
+                    var iw = window.innerWidth,
+                        ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1,
+                        xRatio = iw / w,
+                        yRatio = ih / h,
+                        sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        } else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        } else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        } else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = w * sRatio + 'px';
+                    canvas.style.height = h * sRatio + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw;
+                    lastH = ih;
+                    lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', true, 1);
+            hidePreloader();
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+
+        function playSound(id, loop) {
+            return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+        }
+
+        function resizePreloader() {
+            try {
+                var iw = window.innerWidth;
+                var ih = window.innerHeight;
+                var hR = ih / gameHeight;
+                var wR = iw / gameWidth;
+                wR = (hR > wR) ? wR : hR;
+                barMaxWidth = barWidth * wR;
+                barMaxHeight = barHeigth * wR;
+                beforeBG.style.width = preloadBG.style.width = (gameWidth * wR) + 'px';
+                beforeBG.style.height = preloadBG.style.height = (gameHeight * wR) + 'px';
+                beforeBG.style.left = preloadBG.style.left = ((window.innerWidth - gameWidth * wR) / 2) + 'px';
+                beforeBG.style.top = preloadBG.style.top = ((window.innerHeight - gameHeight * wR) / 2) + 'px';
+                loadingBar.style.left = ((window.innerWidth - gameWidth * wR) / 2 + barXP * wR) + 'px';
+                loadingBar.style.top = ((window.innerHeight - gameHeight * wR) / 2 + barYP * wR) + 'px';
+                loadingAnim.style.left = ((window.innerWidth - gameWidth * wR) / 2 + txtXP * wR) + 'px';
+                loadingAnim.style.top = ((window.innerHeight - gameHeight * wR) / 2 + txtYP * wR) + 'px';
+                loadingAnim.style.width = (txtwt * wR) + 'px';
+                loadingAnim.style.height = (txtht * wR) + 'px';
+                if (canvas.style.display != 'block') {
+                    if (beforeBG.style.display != 'block') {
+                        preloadBG.style.display = 'block';
+                        loadingBar.style.display = 'block';
+                        loadingAnim.style.display = 'block';
+                        preloaderDiv.style.display = 'block';
+                    }
+                }
+            } catch (e) {
+                console.log("Error");
+            }
+        }
+
+        function addListner() {
+            canvas = document.getElementById("canvas");
+            loadingBar = document.getElementById("loadingBar");
+            preloadBG = document.getElementById("preloadBG");
+            loadingAnim = document.getElementById("loadingAnim");
+            preloaderDiv = document.getElementById("loaderset");
+            beforeBG = document.getElementById("beforeBG");
+            beforeBG.style.display = 'block';
+            window.addEventListener("click", onClick);
+            resizePreloader();
+
+            function onClick(e) {
+                if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+                    sdk.showBanner();
+                }
+                beforeBG.style.display = 'none';
+                window.removeEventListener("click", onClick);
+                init();
+            }
+        }
+    </script>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+
+<body onload="addListner();" style="margin:0px;overflow:hidden;background-color:rgba(153, 255, 0, 1.00);">
+    <script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"df43982ea900f43fb94eda187eead1551627d20e-1634483048-31536000"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img id="beforeBG" class="img1" data-cfsrc="https://www13.0zz0.com/2021/04/08/17/531134043.jpg" style="display:none;visibility:hidden;" /><noscript><img id="beforeBG" class="img1" src="https://www13.0zz0.com/2021/04/08/17/531134043.jpg" /></noscript>
+    <div class="loaderset" id="loaderset">
+        <img id="preloadBG" class="img1" data-cfsrc="images/preload_mc.jpg?halloween_hidden_objects" style="display:none;visibility:hidden;" /><noscript><img id="preloadBG" class="img1" src="images/preload_mc.jpg?halloween_hidden_objects" /></noscript>
+        <img id="loadingBar" class="img2" data-cfsrc="images/bar_mc.png?halloween_hidden_objects" style="display:none;visibility:hidden;" /><noscript><img id="loadingBar" class="img2" src="images/bar_mc.png?halloween_hidden_objects" /></noscript>
+        <img id="loadingAnim" class="img2" data-cfsrc="https://lofgames.com/games/loader.gif" style="display:none;visibility:hidden;" /><noscript><img id="loadingAnim" class="img2" src="https://lofgames.com/games/loader.gif" /></noscript>
+    </div>
+    <canvas id="canvas" width="1280" height="720" style="position: absolute; display: none; background-color:rgba(153, 255, 0, 1.00);"></canvas>
+    </div>
+    </div>
+
+<script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+</body>
+<script>
+    if ('serviceWorker' in navigator) {
+        console.log("Will the service worker register?");
+        navigator.serviceWorker.register('https://lofgames.com/service-worker.js')
+            .then(function(reg) {
+                console.log("Yes, it did.");
+            }).catch(function(err) {
+                console.log("No it didn't. This happened: ", err)
+            });
+    }
+</script>
+
+</html>

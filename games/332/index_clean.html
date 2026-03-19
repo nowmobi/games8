@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Drift Racing</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html,
+        body {
+            -ms-touch-action: none;
+            background: #5E5858;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+		
+		#links #imgr {
+            position: absolute;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            animation: rotatei 4s infinite;
+        }
+
+        .imgs {
+            position: absolute;
+            z-index: 999999999;
+            right: 120px;
+            top: 10px;
+        }
+
+        .arrow {
+            position: absolute;
+            left: 14px;
+            top: 1px;
+            animation: uptop 1s infinite;
+            -webkit-animation: uptop 1s infinite;
+            -moz-animation: uptop 1s infinite;
+        }
+
+        @keyframes uptop {
+            0% {
+                top: 1px;
+            }
+            50% {
+                top: 25px;
+            }
+            100% {
+                top: 1px;
+            }
+        }
+
+        @keyframes rotatei {
+            0% {
+                -webkit-transform: rotate(0deg) scale(1);
+                -moz-transform: rotate(0deg) scale(1);
+                -ms-transform: rotate(0deg) scale(1);
+                -o-transform: rotate(0deg) scale(1);
+                transform: rotate(0deg) scale(1);
+            }
+            25% {
+                -webkit-transform: rotate(10deg) scale(1.3);
+                -moz-transform: rotate(10deg) scale(1.3);
+                -ms-transform: rotate(10deg) scale(1.3);
+                -o-transform: rotate(10deg) scale(1.3);
+                transform: rotate(10deg) scale(1.3);
+            }
+            50% {
+                -webkit-transform: rotate(0deg) scale(1);
+                -moz-transform: rotate(0deg) scale(1);
+                -ms-transform: rotate(0deg) scale(1);
+                -o-transform: rotate(0deg) scale(1);
+                transform: rotate(0deg) scale(1);
+            }
+            75% {
+                -webkit-transform: rotate(-10deg) scale(1.3);
+                -moz-transform: rotate(-10deg) scale(1.3);
+                -ms-transform: rotate(-10deg) scale(1.3);
+                -o-transform: rotate(-10deg) scale(1.3);
+                transform: rotate(-10deg) scale(1.3);
+            }
+            100% {
+                -webkit-transform: rotate(0deg) scale(1);
+                -moz-transform: rotate(0deg) scale(1);
+                -ms-transform: rotate(0deg) scale(1);
+                -o-transform: rotate(0deg) scale(1);
+                transform: rotate(0deg) scale(1);
+            }
+        }
+    </style>
+    <script src="js/adsdk.min_6955df2a.js"></script>
+    <script>
+        window["GD_OPTIONS"] = {
+            "gameId": "i9jruya2miqcrn0hvqstcdy2w0ztgp2z",
+            "onEvent": function(event) {
+                switch (event.name) {
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        window.egret && window.egret.ticker.resume();
+                        break;
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        window.egret && window.egret.ticker.pause();
+                        break;
+                    case "SDK_GDPR_TRACKING":
+                        // this event is triggered when your user doesn't want to be tracked
+                        break;
+                    case "SDK_GDPR_TARGETING":
+                        // this event is triggered when your user doesn't want personalised targeting of ads and such
+                        break;
+                    case "AD_SDK_REQUEST_ADS":
+                        break;
+                    case "AD_SDK_FINISHED":
+
+                        break;
+                    case "AD_SDK_ERROR":
+                    case "AD_CANCELED":
+
+                        break;
+                    case "SDK_READY":
+                        window.adSDK = new adService();
+                        window.adSDK.startPreLoad();
+                        break;
+                }
+            },
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://api.gamemonetize.com/sdk.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'gamemonetize-sdk'));
+    </script>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+
+<body>
+    <script>
+        window.$T_GAME_VERSION = "1.0.6"
+        window.$T_GAME_ARGS = {};
+        window.$T__RES__FILE = "resource/default.res.json";
+        window.$T__THE__FILE = "resource/default.thm.json";
+    </script>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="60" data-content-width="640" data-content-height="1136" data-multi-fingered="2" data-show-fps="false"
+        data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <script>
+        var loadScript = function(list, callback) {
+            var loaded = 0;
+            var loadNext = function() {
+                loadSingleScript(list[loaded], function() {
+                    loaded++;
+                    if (loaded >= list.length) {
+                        callback();
+                    } else {
+                        loadNext();
+                    }
+                })
+            };
+            loadNext();
+        };
+
+        var loadSingleScript = function(src, callback) {
+            var s = document.createElement('script');
+            s.async = false;
+            s.src = src;
+            s.addEventListener('load', function() {
+                s.parentNode.removeChild(s);
+                s.removeEventListener('load', arguments.callee, false);
+                callback();
+            }, false);
+            document.body.appendChild(s);
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+        xhr.addEventListener("load", function() {
+            var manifest = JSON.parse(xhr.response);
+            var list = manifest.initial.concat(manifest.game);
+            loadScript(list, function() {
+                egret.runEgret({
+                    renderMode: "webgl",
+                    audioType: 0,
+                    calculateCanvasScaleFactor: function(context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }
+                });
+            });
+        });
+        xhr.send(null);
+    </script>
+    <script>
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "" + Date.now(), d.parentNode.insertBefore(a, d))
+        })(document, "script", "gamemonetize-mobile-api");
+    </script>
+	
+	<div class="imgs">
+        <a id="links" href="" target="_blank">
+        <img  id="imgr" class="imgr" src="" alt="">
+        <img  class="arrow" src="./imgs/arrow.png" width="45px" height="45px" alt="">
+       </a>
+
+    </div>
+    <script src="./main.js"></script>
+	
+</body>
+<script type="text/javascript">
+    window.SDK_OPTIONS = {
+        gameId: "i9jruya2miqcrn0hvqstcdy2w0ztgp2z",
+        onEvent: function(a) {
+            switch (a.name) {
+                case "SDK_GAME_PAUSE":
+                    // pause game logic / mute audio
+                    break;
+                case "SDK_GAME_START":
+                    // advertisement done, resume game logic and unmute audio
+                    break;
+                case "SDK_READY":
+                    // when sdk is ready
+                    break;
+            }
+        }
+    };
+    (function(a, b, c) {
+        var d = a.getElementsByTagName(b)[0];
+        a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+    })(document, "script", "gamemonetize-sdk");
+</script>
+<script type="text/javascript">
+    function google_analytics() {
+        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+            sdk.showBanner();
+        }
+    };
+
+    function google_analytics_ID() {
+        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+            sdk.showBanner();
+        }
+    };
+    setTimeout(function() {
+        google_analytics();
+    }, 1000);
+    setInterval(function() {
+        google_analytics_ID();
+    }, 65000);
+</script>
+</html>

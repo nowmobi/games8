@@ -1,0 +1,23 @@
+{
+  "companyName": "Fox Games",
+  "productName": "3D Amazing VolleyBall",
+  "productVersion": "1.0",
+  "dataUrl": "Pill_Soccer_Gm_02.data.unityweb",
+  "wasmCodeUrl": "Pill_Soccer_Gm_02.wasm.code.unityweb",
+  "wasmFrameworkUrl": "Pill_Soccer_Gm_02.wasm.framework.unityweb",
+  "graphicsAPI": [
+    "WebGL 2.0",
+    "WebGL 1.0"
+  ],
+  "webglContextAttributes": {
+    "preserveDrawingBuffer": false
+  },
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#231F20",
+  "cacheControl": {
+    "default": "must-revalidate"
+  },
+  "developmentBuild": false,
+  "multithreading": false,
+  "unityVersion": "2019.2.8f1"
+}

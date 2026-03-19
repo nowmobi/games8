@@ -1,0 +1,1993 @@
+{
+  "type": "View",
+  "props": {
+    "y": 0,
+    "x": 0,
+    "width": 750,
+    "positionVariance_0": 100,
+    "maxPartices": 100,
+    "height": 1670
+  },
+  "compId": 1,
+  "child": [
+    {
+      "type": "Script",
+      "props": {
+        "runtime": "script/GameUI.ts"
+      },
+      "compId": 21
+    },
+    {
+      "type": "Image",
+      "props": {
+        "zOrder": 10,
+        "y": 667,
+        "x": 375,
+        "width": 750,
+        "visible": false,
+        "name": "TeachUI",
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 1026,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "top": 0,
+            "right": 0,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 1027,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "top": 326,
+                "skin": "StartUI/title.png",
+                "name": "title",
+                "centerX": 0
+              },
+              "compId": 1146
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 1260,
+                "skin": "StartUI/word_1.png",
+                "name": "word",
+                "centerX": 0
+              },
+              "compId": 1147
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 704,
+                "skin": "StartUI/good2.png",
+                "name": "good",
+                "centerX": 0
+              },
+              "compId": 1148
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/TeachUICtrl.ts"
+          },
+          "compId": 1029
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "zOrder": 10,
+        "y": 667,
+        "visible": false,
+        "right": 0,
+        "name": "GameOverUI",
+        "left": 0,
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 33,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "top": 0,
+            "right": 0,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 35,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 5,
+                "x": 0,
+                "skin": "GameBoxUI/bg2.png"
+              },
+              "compId": 1164
+            },
+            {
+              "type": "Button",
+              "props": {
+                "top": 950,
+                "stateNum": 1,
+                "skin": "StartUI/skin.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "right": 38,
+                "name": "skinBtn",
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1095
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 531,
+                "skin": "GameOverUI/title_win.png",
+                "name": "titleBg",
+                "centerX": 0
+              },
+              "compId": 47
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1211,
+                "x": 146,
+                "top": 1151,
+                "stateNum": 1,
+                "skin": "GameOverUI/return.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "returnBtn",
+                "centerX": -229,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 56
+            },
+            {
+              "type": "Button",
+              "props": {
+                "visible": false,
+                "top": 1386,
+                "stateNum": 1,
+                "skin": "GameOverUI/share.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "shareBtn",
+                "centerX": -20,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1088
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1210,
+                "x": 614,
+                "visible": false,
+                "top": 1150,
+                "stateNum": 1,
+                "skin": "GameOverUI/next.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "nextBtn",
+                "centerX": 239,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1089
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 701,
+                "skin": "GameOverUI/get.png",
+                "name": "get",
+                "centerX": -73
+              },
+              "compId": 1090,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 9.5,
+                    "x": 143,
+                    "skin": "GameOverUI/c_9.png",
+                    "name": "hun"
+                  },
+                  "compId": 1091
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 9,
+                    "x": 168,
+                    "skin": "GameOverUI/c_9.png",
+                    "name": "ten"
+                  },
+                  "compId": 1092
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 9,
+                    "x": 193,
+                    "skin": "GameOverUI/c_9.png",
+                    "name": "ge"
+                  },
+                  "compId": 1093
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 3,
+                    "x": 230,
+                    "skin": "GameOverUI/coin.png",
+                    "name": "coin"
+                  },
+                  "compId": 1094
+                }
+              ]
+            },
+            {
+              "type": "Button",
+              "props": {
+                "top": 1167,
+                "stateNum": 1,
+                "skin": "GameOverUI/video_five.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "video_five",
+                "centerX": 6,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1096
+            },
+            {
+              "type": "Image",
+              "props": {
+                "width": 646,
+                "visible": false,
+                "top": 574,
+                "name": "gameBoxNinePanel",
+                "mouseThrough": true,
+                "height": 646,
+                "centerX": 4
+              },
+              "compId": 1097,
+              "child": [
+                {
+                  "type": "List",
+                  "props": {
+                    "width": 580,
+                    "spaceY": 20,
+                    "spaceX": 34,
+                    "repeatY": 3,
+                    "repeatX": 3,
+                    "name": "gameBoxSixList",
+                    "height": 580,
+                    "centerY": 0,
+                    "centerX": 0
+                  },
+                  "compId": 405,
+                  "child": [
+                    {
+                      "type": "Box",
+                      "props": {
+                        "y": 0,
+                        "x": 11,
+                        "width": 160,
+                        "renderType": "render",
+                        "height": 160
+                      },
+                      "compId": 406,
+                      "child": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 0,
+                            "x": 0,
+                            "skin": "GameBoxUI/box2.png",
+                            "name": "boder",
+                            "mouseThrough": true
+                          },
+                          "compId": 1098
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 4,
+                            "x": 4,
+                            "width": 152,
+                            "skin": "GameBoxUI/gameIcon0.png",
+                            "name": "gameIcon",
+                            "height": 152
+                          },
+                          "compId": 407,
+                          "child": [
+                            {
+                              "type": "Script",
+                              "props": {
+                                "runtime": "script/MoreGameManager/UIManager/GameBoxNineItemClick.ts"
+                              },
+                              "compId": 410
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/MoreGameManager/UIManager/GameBoxNineCtrl.ts"
+                  },
+                  "compId": 411
+                }
+              ]
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1212,
+                "x": 614,
+                "visible": false,
+                "top": 1152,
+                "stateNum": 1,
+                "skin": "GameOverUI/replay.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "replay",
+                "centerX": 239,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1099
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/GameOverUICtrl.ts"
+          },
+          "compId": 50
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "y": 667,
+        "visible": false,
+        "skin": "GameBoxUI/bg.png",
+        "right": 0,
+        "name": "LoadPlayerUI",
+        "left": 0,
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 36,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "top": 0,
+            "right": 0,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 37,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "visible": true,
+                "top": 351,
+                "skin": "LoadPlayerUI/BG.png",
+                "name": "loadPlayerBg",
+                "centerX": 0
+              },
+              "compId": 38,
+              "child": [
+                {
+                  "type": "List",
+                  "props": {
+                    "y": 221,
+                    "width": 534,
+                    "spaceY": 40,
+                    "spaceX": 40,
+                    "repeatY": 2,
+                    "repeatX": 3,
+                    "name": "headList",
+                    "height": 360,
+                    "centerX": 1
+                  },
+                  "compId": 39,
+                  "child": [
+                    {
+                      "type": "Box",
+                      "props": {
+                        "y": 0,
+                        "x": 1,
+                        "width": 150,
+                        "scaleY": 1,
+                        "scaleX": 1,
+                        "renderType": "render",
+                        "name": "headBox",
+                        "height": 150
+                      },
+                      "compId": 41,
+                      "child": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 0,
+                            "x": 0,
+                            "width": 150,
+                            "skin": "LoadPlayerUI/head_boder.png",
+                            "name": "headBg",
+                            "height": 150
+                          },
+                          "compId": 42
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 75,
+                            "x": 75,
+                            "width": 140,
+                            "visible": true,
+                            "skin": "HeadUI/0.png",
+                            "scaleY": 1,
+                            "scaleX": 1,
+                            "pivotY": 70,
+                            "pivotX": 70,
+                            "name": "head",
+                            "height": 140
+                          },
+                          "compId": 43,
+                          "child": [
+                            {
+                              "type": "Script",
+                              "props": {
+                                "runtime": "script/Component/HeadRotate.ts"
+                              },
+                              "compId": 44
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 0,
+                            "x": 0,
+                            "width": 150,
+                            "skin": "LoadPlayerUI/head_boder.png",
+                            "name": "bodder",
+                            "height": 150
+                          },
+                          "compId": 1085
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Box",
+                  "props": {
+                    "zOrder": 1,
+                    "visible": true,
+                    "top": 593,
+                    "name": "words",
+                    "centerX": 0
+                  },
+                  "compId": 1086,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 60,
+                        "x": -20,
+                        "skin": "LoadPlayerUI/z0.png",
+                        "pivotY": 21.5,
+                        "pivotX": 21.5,
+                        "name": "0"
+                      },
+                      "compId": 684,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 722
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 1,
+                        "x": 14,
+                        "skin": "LoadPlayerUI/z1.png",
+                        "name": "1"
+                      },
+                      "compId": 687,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 723
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 1,
+                        "x": 65,
+                        "skin": "LoadPlayerUI/z2.png",
+                        "name": "2"
+                      },
+                      "compId": 688,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 724
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 117,
+                        "skin": "LoadPlayerUI/z3.png",
+                        "name": "3"
+                      },
+                      "compId": 689,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 725
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 168,
+                        "skin": "LoadPlayerUI/z4.png",
+                        "name": "4"
+                      },
+                      "compId": 690,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 726
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 219,
+                        "skin": "LoadPlayerUI/z5.png",
+                        "name": "5"
+                      },
+                      "compId": 691,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 727
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 269,
+                        "skin": "LoadPlayerUI/z6.png",
+                        "name": "6"
+                      },
+                      "compId": 692,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 728
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 321,
+                        "skin": "LoadPlayerUI/z7.png",
+                        "name": "7"
+                      },
+                      "compId": 693,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 729
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 372,
+                        "skin": "LoadPlayerUI/z8.png",
+                        "name": "8"
+                      },
+                      "compId": 694,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 730
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 423,
+                        "skin": "LoadPlayerUI/z9.png",
+                        "name": "9"
+                      },
+                      "compId": 695,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 731
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 473,
+                        "skin": "LoadPlayerUI/z10.png",
+                        "name": "10"
+                      },
+                      "compId": 696,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 732
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 60,
+                        "x": 435,
+                        "width": 10,
+                        "skin": "LoadPlayerUI/z11.png",
+                        "name": "11",
+                        "height": 10
+                      },
+                      "compId": 697,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 733
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 60,
+                        "x": 450,
+                        "skin": "LoadPlayerUI/z11.png",
+                        "name": "12"
+                      },
+                      "compId": 698,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 734
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 60,
+                        "x": 465,
+                        "skin": "LoadPlayerUI/z11.png",
+                        "name": "13"
+                      },
+                      "compId": 699,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/WordJumpCtrl.ts"
+                          },
+                          "compId": 735
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/LoadPlayerUICtrl.ts"
+          },
+          "compId": 45
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "zOrder": 50,
+        "y": 835,
+        "x": 375,
+        "width": 750,
+        "skin": "GameBoxUI/bg.png",
+        "name": "CoinUI",
+        "mouseThrough": true,
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 48,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "visible": true,
+            "top": 0,
+            "right": 0,
+            "mouseThrough": true,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 51,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "top": 190,
+                "skin": "StartUI/coinBg.png",
+                "name": "coinBg_up",
+                "mouseThrough": true,
+                "mouseEnabled": true,
+                "left": 15
+              },
+              "compId": 52,
+              "child": [
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 7,
+                    "x": 59,
+                    "width": 101,
+                    "valign": "middle",
+                    "text": "99999",
+                    "name": "coinCount",
+                    "height": 48,
+                    "fontSize": 36,
+                    "font": "Helvetica",
+                    "color": "#ffffff",
+                    "bold": true,
+                    "align": "right"
+                  },
+                  "compId": 53
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 0,
+                    "x": 158,
+                    "skin": "StartUI/addCoin.png",
+                    "name": "addCoin",
+                    "mouseEnabled": true
+                  },
+                  "compId": 1101
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 1411,
+                "skin": "StartUI/coinBg.png",
+                "right": 48,
+                "name": "coinBg_down"
+              },
+              "compId": 1102,
+              "child": [
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 7,
+                    "x": 59,
+                    "width": 101,
+                    "valign": "middle",
+                    "text": "99999",
+                    "name": "coinCount",
+                    "height": 48,
+                    "fontSize": 36,
+                    "font": "Helvetica",
+                    "color": "#ffffff",
+                    "bold": true,
+                    "align": "right"
+                  },
+                  "compId": 1103
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 0,
+                    "x": 158,
+                    "skin": "StartUI/addCoin.png",
+                    "name": "addCoin"
+                  },
+                  "compId": 1104
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "visible": false,
+                "top": 390,
+                "skin": "StartUI/collect_bg.png",
+                "name": "collectBG",
+                "centerX": 0
+              },
+              "compId": 1105,
+              "child": [
+                {
+                  "type": "Button",
+                  "props": {
+                    "y": 513,
+                    "x": 375,
+                    "stateNum": 1,
+                    "skin": "StartUI/video_coin.png",
+                    "runtime": "script/Component/BtnScalChange.ts",
+                    "name": "video_coin",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 1106
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "y": 76,
+                    "x": 695,
+                    "stateNum": 1,
+                    "skin": "StartUI/close.png",
+                    "runtime": "script/Component/BtnScalChange.ts",
+                    "name": "closeBtn",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 1107
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/CoinUICtrl.ts"
+          },
+          "compId": 1108
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/Component/goldani.ts"
+          },
+          "compId": 1265
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "y": 667,
+        "x": 375,
+        "visible": false,
+        "right": 0,
+        "name": "SkinStoreUI",
+        "left": 0,
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 1122,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "top": 0,
+            "right": 0,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 1123,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "width": 750,
+                "skin": "SkinUI/skinBG.png",
+                "name": "skinBg",
+                "height": 808,
+                "centerX": 0,
+                "bottom": -2
+              },
+              "compId": 1124,
+              "child": [
+                {
+                  "type": "List",
+                  "props": {
+                    "y": 83,
+                    "x": 0,
+                    "width": 750,
+                    "spaceY": 23,
+                    "spaceX": 10,
+                    "repeatY": 2,
+                    "repeatX": 4,
+                    "name": "skinList",
+                    "height": 442
+                  },
+                  "compId": 1125,
+                  "child": [
+                    {
+                      "type": "Box",
+                      "props": {
+                        "y": 0,
+                        "x": 19,
+                        "width": 172,
+                        "renderType": "render",
+                        "height": 204
+                      },
+                      "compId": 1127,
+                      "child": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "x": 0,
+                            "skin": "SkinUI/normal.png",
+                            "name": "item_bg"
+                          },
+                          "compId": 1128,
+                          "child": [
+                            {
+                              "type": "Script",
+                              "props": {
+                                "runtime": "script/Component/SkinImgChoose.ts"
+                              },
+                              "compId": 1237
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 83,
+                            "x": 87,
+                            "skin": "SkinUI/color_0.png",
+                            "name": "skin",
+                            "mouseThrough": true,
+                            "mouseEnabled": false,
+                            "anchorY": 0.5,
+                            "anchorX": 0.5
+                          },
+                          "compId": 1131
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 161,
+                            "x": 88,
+                            "skin": "SkinUI/price_1000.png",
+                            "name": "info",
+                            "mouseThrough": true,
+                            "mouseEnabled": false,
+                            "anchorY": 0.5,
+                            "anchorX": 0.5
+                          },
+                          "compId": 1132
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 46,
+                            "x": 55,
+                            "skin": "SkinUI/lock.png",
+                            "name": "lock",
+                            "mouseThrough": true,
+                            "mouseEnabled": false
+                          },
+                          "compId": 1136
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -70,
+                    "x": 171,
+                    "skin": "SkinUI/hat_choose.png",
+                    "name": "index_hat"
+                  },
+                  "compId": 1129
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -70,
+                    "x": 383,
+                    "skin": "SkinUI/color_no.png",
+                    "name": "index_color"
+                  },
+                  "compId": 1130
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "y": 577,
+                    "x": 119,
+                    "stateNum": 1,
+                    "skin": "SkinUI/use.png",
+                    "runtime": "script/Component/BtnScalChange.ts",
+                    "name": "stateBtn",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 1134
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "y": 577,
+                    "x": 367,
+                    "stateNum": 1,
+                    "skin": "SkinUI/video_skin.png",
+                    "runtime": "script/Component/BtnScalChange.ts",
+                    "name": "videoBtn",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 1135
+                }
+              ]
+            },
+            {
+              "type": "Button",
+              "props": {
+                "top": 176,
+                "stateNum": 1,
+                "skin": "SkinUI/return.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "returnBtn",
+                "left": 9
+              },
+              "compId": 1137
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/SkinStoreUICtrl.ts"
+          },
+          "compId": 1235
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "y": 667,
+        "x": 375,
+        "right": 0,
+        "name": "GameInfoUI",
+        "left": 0,
+        "height": 1624,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 25,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "width": 750,
+            "height": 1334
+          },
+          "compId": 26,
+          "child": [
+            {
+              "type": "Label",
+              "props": {
+                "y": 190,
+                "x": 12.6767578125,
+                "width": 300,
+                "visible": false,
+                "valign": "middle",
+                "text": "label",
+                "name": "playerState",
+                "height": 60,
+                "fontSize": 50,
+                "align": "left"
+              },
+              "compId": 57
+            },
+            {
+              "type": "Label",
+              "props": {
+                "y": 256,
+                "x": 12,
+                "width": 300,
+                "visible": false,
+                "text": "label",
+                "name": "gameState",
+                "height": 70,
+                "fontSize": 50,
+                "align": "left"
+              },
+              "compId": 58
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 502,
+                "skin": "StartUI/timer_circle.png",
+                "name": "timer_circle",
+                "centerX": -1
+              },
+              "compId": 1119,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 163,
+                    "x": 158,
+                    "skin": "StartUI/timer_0.png",
+                    "name": "time",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 1120
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "visible": false,
+                "top": 282,
+                "skin": "StartUI/has_bg.png",
+                "name": "has_bg",
+                "left": -165
+              },
+              "compId": 1138,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 63,
+                    "x": 104,
+                    "skin": "StartUI/p_8.png",
+                    "name": "count_img"
+                  },
+                  "compId": 1139
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "visible": true,
+                "top": 155,
+                "skin": "StartUI/boxLine.png",
+                "rotation": -90,
+                "name": "boxLine",
+                "centerX": -14,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1238,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -73,
+                    "x": -32,
+                    "skin": "StartUI/key_has.png",
+                    "rotation": 360,
+                    "name": "key1"
+                  },
+                  "compId": 1046
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 27,
+                    "x": -32,
+                    "skin": "StartUI/key_no.png",
+                    "rotation": 360,
+                    "name": "key2"
+                  },
+                  "compId": 1047
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 128,
+                    "x": -33,
+                    "skin": "StartUI/key_no.png",
+                    "rotation": 360,
+                    "name": "key3"
+                  },
+                  "compId": 1048
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 288,
+                    "x": 7.5,
+                    "skin": "StartUI/box_has_bg.png",
+                    "rotation": 90,
+                    "name": "boxBg",
+                    "mouseThrough": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 1049,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 13.5,
+                        "x": 10.5,
+                        "skin": "StartUI/box_canOpen.png",
+                        "name": "box",
+                        "mouseThrough": true
+                      },
+                      "compId": 1050
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/GameInfoUICtrl.ts"
+          },
+          "compId": 28
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "zOrder": 10,
+        "y": 667,
+        "x": 375,
+        "visible": false,
+        "skin": "GameBoxUI/bg2.png",
+        "right": 0,
+        "name": "RelifeUI",
+        "left": 0,
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 29,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "top": 0,
+            "right": 0,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 30,
+          "child": [
+            {
+              "type": "Button",
+              "props": {
+                "y": 1093,
+                "x": 375,
+                "top": 1033,
+                "stateNum": 1,
+                "skin": "GameOverUI/relifeBtn.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "relifeBtn",
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 31
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1211,
+                "x": 375,
+                "top": 1194,
+                "stateNum": 1,
+                "skin": "GameOverUI/noBtn.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "noBtn",
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 32
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 424,
+                "skin": "GameOverUI/tite_relife.png",
+                "name": "title",
+                "centerX": 0
+              },
+              "compId": 1110
+            },
+            {
+              "type": "Image",
+              "props": {
+                "width": 646,
+                "visible": false,
+                "top": 440,
+                "name": "gameBoxNinePanel",
+                "mouseThrough": true,
+                "height": 646,
+                "centerX": 5
+              },
+              "compId": 1111,
+              "child": [
+                {
+                  "type": "List",
+                  "props": {
+                    "width": 580,
+                    "spaceY": 20,
+                    "spaceX": 34,
+                    "repeatY": 3,
+                    "repeatX": 3,
+                    "name": "gameBoxSixList",
+                    "height": 580,
+                    "centerY": 0,
+                    "centerX": 0
+                  },
+                  "compId": 1112,
+                  "child": [
+                    {
+                      "type": "Box",
+                      "props": {
+                        "y": 0,
+                        "x": 11,
+                        "width": 160,
+                        "renderType": "render",
+                        "height": 160
+                      },
+                      "compId": 1113,
+                      "child": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 0,
+                            "x": 0,
+                            "skin": "GameBoxUI/box2.png",
+                            "name": "boder",
+                            "mouseThrough": true
+                          },
+                          "compId": 1114
+                        },
+                        {
+                          "type": "Image",
+                          "props": {
+                            "y": 4,
+                            "x": 4,
+                            "width": 152,
+                            "skin": "GameBoxUI/gameIcon0.png",
+                            "name": "gameIcon",
+                            "height": 152
+                          },
+                          "compId": 1115,
+                          "child": [
+                            {
+                              "type": "Script",
+                              "props": {
+                                "runtime": "script/MoreGameManager/UIManager/GameBoxNineItemClick.ts"
+                              },
+                              "compId": 1116
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/MoreGameManager/UIManager/GameBoxNineCtrl.ts"
+                  },
+                  "compId": 1117
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/RelifeUICtrl.ts"
+          },
+          "compId": 46
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "zOrder": 0,
+        "y": 835,
+        "x": 375,
+        "width": 750,
+        "name": "StartUI",
+        "height": 1670,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 22,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "y": 0,
+            "x": 0,
+            "width": 750,
+            "mouseThrough": true,
+            "mouseEnabled": true,
+            "height": 1670
+          },
+          "compId": 23,
+          "child": [
+            {
+              "type": "Button",
+              "props": {
+                "y": 1228,
+                "x": 375,
+                "stateNum": 1,
+                "skin": "StartUI/start.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "start_btn",
+                "labelSize": 20,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 20
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1046,
+                "x": 66,
+                "width": 750,
+                "visible": false,
+                "top": 983,
+                "stateNum": 1,
+                "skin": "StartUI/rank.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "rankBtn",
+                "left": 8,
+                "height": 1670,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1037
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 860,
+                "x": 65,
+                "visible": false,
+                "top": 797,
+                "stateNum": 1,
+                "skin": "StartUI/share.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "shareBtn",
+                "left": 7,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1038
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 325,
+                "x": 53,
+                "stateNum": 1,
+                "skin": "StartUI/music.png",
+                "name": "musicBtn",
+                "mouseThrough": true,
+                "mouseEnabled": true,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1040,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 5,
+                    "x": 5,
+                    "skin": "StartUI/music_off.png"
+                  },
+                  "compId": 1042
+                }
+              ]
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1037,
+                "x": 673,
+                "stateNum": 1,
+                "skin": "StartUI/skin.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "skinBtn",
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1043,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -11,
+                    "x": 8,
+                    "skin": "StartUI/point.png",
+                    "name": "point",
+                    "mouseThrough": true,
+                    "mouseEnabled": false
+                  },
+                  "compId": 1044
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 616,
+                "x": 679,
+                "visible": true,
+                "skin": "StartUI/boxLine.png",
+                "name": "boxLine"
+              },
+              "compId": 1045,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 223,
+                    "x": -35,
+                    "skin": "StartUI/key_has.png",
+                    "name": "key1"
+                  },
+                  "compId": 1239
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 125,
+                    "x": -35,
+                    "skin": "StartUI/key_no.png",
+                    "name": "key2"
+                  },
+                  "compId": 1240
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 29,
+                    "x": -35,
+                    "skin": "StartUI/key_no.png",
+                    "name": "key3"
+                  },
+                  "compId": 1241
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -105,
+                    "x": -49.5,
+                    "skin": "StartUI/box_has_bg.png",
+                    "name": "boxBg"
+                  },
+                  "compId": 1242,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 13.5,
+                        "x": 10.5,
+                        "skin": "StartUI/box_canOpen.png",
+                        "name": "box"
+                      },
+                      "compId": 1243
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 292,
+                "visible": false,
+                "skin": "LoadUI/logo.png",
+                "name": "logo"
+              },
+              "compId": 1144
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/StartUICtrl.ts"
+          },
+          "compId": 24
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "zOrder": 11,
+        "y": 667,
+        "width": 750,
+        "visible": false,
+        "skin": "BoxUI/background.png",
+        "name": "BoxUI",
+        "height": 1670,
+        "centerX": 0,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 1246,
+      "child": [
+        {
+          "type": "Box",
+          "props": {
+            "top": 0,
+            "right": 0,
+            "left": 0,
+            "bottom": 0
+          },
+          "compId": 1248,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 277,
+                "x": 0,
+                "top": 277,
+                "skin": "BoxUI/title.png",
+                "name": "title",
+                "centerX": 0
+              },
+              "compId": 1257,
+              "child": [
+                {
+                  "type": "Button",
+                  "props": {
+                    "y": 46,
+                    "stateNum": 1,
+                    "skin": "StartUI/close.png",
+                    "name": "closeBtn",
+                    "centerX": 300
+                  },
+                  "compId": 1261
+                }
+              ]
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1287,
+                "x": 375,
+                "visible": false,
+                "top": 1219,
+                "stateNum": 1,
+                "skin": "BoxUI/shareBtn.png",
+                "runtime": "script/Component/BtnScalChange.ts",
+                "name": "shareBtn",
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1264
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 434,
+                "x": 179,
+                "top": 434,
+                "skin": "BoxUI/special.png",
+                "name": "special",
+                "centerX": 20
+              },
+              "compId": 1253
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 1286,
+                "x": 378,
+                "top": 1218,
+                "stateNum": 1,
+                "skin": "BoxUI/videoBtn.png",
+                "name": "videoBtn",
+                "centerX": 3,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1255,
+              "child": [
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/Component/BtnScalChange.ts"
+                  },
+                  "compId": 1256
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "top": 1154,
+                "skin": "BoxUI/word.png",
+                "name": "word",
+                "centerX": 0
+              },
+              "compId": 1254
+            },
+            {
+              "type": "List",
+              "props": {
+                "width": 542,
+                "top": 584,
+                "spaceY": 40,
+                "spaceX": 44,
+                "repeatY": 3,
+                "repeatX": 3,
+                "name": "boxList",
+                "height": 541,
+                "centerX": 3
+              },
+              "compId": 1249,
+              "child": [
+                {
+                  "type": "Box",
+                  "props": {
+                    "width": 151,
+                    "renderType": "render",
+                    "height": 151
+                  },
+                  "compId": 1250,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "BoxUI/boxBg.png",
+                        "name": "itemBg"
+                      },
+                      "compId": 1251
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 75,
+                        "x": 75,
+                        "skin": "BoxUI/hat.png",
+                        "name": "item",
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 1252,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Component/BoxItemCtrl.ts"
+                          },
+                          "compId": 1263
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/UIManager/BoxUICtrl.ts"
+          },
+          "compId": 1262
+        }
+      ]
+    }
+  ],
+  "loadList": [
+    "GameBoxUI/boxBg.png",
+    "GameBoxUI/ocBtn_open.png",
+    "GameBoxUI/boundle.png",
+    "GameBoxUI/gameIcon1.png",
+    "StartUI/title.png",
+    "StartUI/word_1.png",
+    "StartUI/good2.png",
+    "GameBoxUI/bg2.png",
+    "StartUI/skin.png",
+    "GameOverUI/title_win.png",
+    "GameOverUI/return.png",
+    "GameOverUI/share.png",
+    "GameOverUI/next.png",
+    "GameOverUI/get.png",
+    "GameOverUI/c_9.png",
+    "GameOverUI/coin.png",
+    "GameOverUI/video_five.png",
+    "GameBoxUI/box2.png",
+    "GameBoxUI/gameIcon0.png",
+    "GameOverUI/replay.png",
+    "GameBoxUI/bg.png",
+    "RankUI/list_bg.png",
+    "RankUI/closeBtn.png",
+    "RankUI/title.png",
+    "RankUI/shareBtn.png",
+    "LoadPlayerUI/BG.png",
+    "LoadPlayerUI/head_boder.png",
+    "HeadUI/0.png",
+    "LoadPlayerUI/z0.png",
+    "LoadPlayerUI/z1.png",
+    "LoadPlayerUI/z2.png",
+    "LoadPlayerUI/z3.png",
+    "LoadPlayerUI/z4.png",
+    "LoadPlayerUI/z5.png",
+    "LoadPlayerUI/z6.png",
+    "LoadPlayerUI/z7.png",
+    "LoadPlayerUI/z8.png",
+    "LoadPlayerUI/z9.png",
+    "LoadPlayerUI/z10.png",
+    "LoadPlayerUI/z11.png",
+    "StartUI/coinBg.png",
+    "StartUI/addCoin.png",
+    "StartUI/collect_bg.png",
+    "StartUI/video_coin.png",
+    "StartUI/close.png",
+    "SkinUI/skinBG.png",
+    "SkinUI/normal.png",
+    "SkinUI/color_0.png",
+    "SkinUI/price_1000.png",
+    "SkinUI/lock.png",
+    "SkinUI/hat_choose.png",
+    "SkinUI/color_no.png",
+    "SkinUI/use.png",
+    "SkinUI/video_skin.png",
+    "SkinUI/return.png",
+    "StartUI/timer_circle.png",
+    "StartUI/timer_0.png",
+    "StartUI/has_bg.png",
+    "StartUI/p_8.png",
+    "StartUI/boxLine.png",
+    "StartUI/key_has.png",
+    "StartUI/key_no.png",
+    "StartUI/box_has_bg.png",
+    "StartUI/box_canOpen.png",
+    "GameOverUI/relifeBtn.png",
+    "GameOverUI/noBtn.png",
+    "GameOverUI/tite_relife.png",
+    "StartUI/start.png",
+    "StartUI/rank.png",
+    "StartUI/share.png",
+    "StartUI/music.png",
+    "StartUI/music_off.png",
+    "StartUI/point.png",
+    "LoadUI/logo.png",
+    "GameBoxUI/iconBtnType3.png",
+    "GameBoxUI/guessLike.png",
+    "GameBoxUI/box.png",
+    "GameBoxUI/iconBox1.png",
+    "BoxUI/background.png",
+    "BoxUI/title.png",
+    "BoxUI/shareBtn.png",
+    "BoxUI/special.png",
+    "BoxUI/videoBtn.png",
+    "BoxUI/word.png",
+    "BoxUI/boxBg.png",
+    "BoxUI/hat.png"
+  ],
+  "loadList3D": []
+}

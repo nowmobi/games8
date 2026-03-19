@@ -1,0 +1,187 @@
+{
+  "type": "View",
+  "props": {
+    "zOrder": 10,
+    "width": 750,
+    "height": 1334
+  },
+  "compId": 2,
+  "child": [
+    {
+      "type": "Box",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "width": 750,
+        "height": 1334
+      },
+      "compId": 24,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": 667,
+            "x": 375,
+            "width": 750,
+            "skin": "LoadUI/loadBg.png",
+            "name": "LoadUI",
+            "height": 1670,
+            "anchorY": 0.5,
+            "anchorX": 0.5
+          },
+          "compId": 3,
+          "child": [
+            {
+              "type": "Box",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "width": 750,
+                "height": 1670
+              },
+              "compId": 4,
+              "child": [
+                {
+                  "type": "Box",
+                  "props": {
+                    "width": 600,
+                    "top": 1182,
+                    "name": "loadCube",
+                    "height": 57,
+                    "centerX": 0
+                  },
+                  "compId": 11,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 34,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube1"
+                      },
+                      "compId": 23
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 87,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube2"
+                      },
+                      "compId": 13
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 140,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube3"
+                      },
+                      "compId": 14
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 194,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube4"
+                      },
+                      "compId": 15
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 247,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube5"
+                      },
+                      "compId": 16
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 301,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube6"
+                      },
+                      "compId": 17
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 355,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube7"
+                      },
+                      "compId": 18
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 408,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube8"
+                      },
+                      "compId": 19
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 461,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube9"
+                      },
+                      "compId": 20
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 0,
+                        "x": 513,
+                        "skin": "LoadUI/off.png",
+                        "name": "cube10"
+                      },
+                      "compId": 21
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "top": 458,
+                    "skin": "LoadUI/logo.png",
+                    "name": "logo",
+                    "centerX": 0
+                  },
+                  "compId": 22
+                }
+              ]
+            },
+            {
+              "type": "Script",
+              "props": {
+                "runtime": "script/UIManager/LoadUICtrl.ts"
+              },
+              "compId": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "loadList": [
+    "LoadUI/loadBg.png",
+    "LoadUI/off.png",
+    "LoadUI/logo.png"
+  ],
+  "loadList3D": []
+}

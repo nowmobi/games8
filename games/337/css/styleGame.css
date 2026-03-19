@@ -1,0 +1,381 @@
+/*html, body {*/
+.mainHtml {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  /*overflow: hidden; /*  Disable scrollbars */
+  display: block;  /* No floating content on sides */
+}
+.mainBody {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  /*overflow: hidden; /*  Disable scrollbars */
+  display: block;  /* No floating content on sides */
+}
+body {
+	font-family: "Chewy", sans-serif; 
+	line-height: 1.25;
+	background: url("../img/grasstexBG.jpg") repeat;	
+}
+img {
+	vertical-align: inherit;
+}
+div {
+	vertical-align: top;
+}
+.well {
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+}
+#mainBody {
+    background-color: #f7f7f7;
+}
+#mainCanvasWrapper {
+	position: relative;
+}
+#mainCanvas {
+	position:absolute; left:0px; top:0px; 
+}
+.hideOverflow {
+	overflow: hidden;
+}
+#logptable {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+.tableB th, .tableB td {
+	border: none !important;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	color: white;
+}
+#logstats {
+	position: fixed;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	top: auto;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	color: white;
+}
+#gInfo {
+	text-align: center;
+	padding: 10px;
+}
+#logdrills, #logscore, #logtime {
+	display: inline-block;
+	min-width: 50px;
+	padding:3px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+#gVars {	
+	position: absolute;
+	right: 10px;
+	margin-right:10px;
+	float:right;
+	padding:10px;
+	background-color: #7b7b7b;
+	border-radius: 5px;
+	height: 600px;
+	overflow-y: scroll;
+}
+#gVars div {
+	border: 1px solid #5c5c5c;
+}
+/*
+#gOps {	
+	position: absolute;
+	right: 10px;
+	margin-right:10px;
+	float:right;
+	padding:10px;
+	background-color: #7b7b7b;
+	border-radius: 5px;
+	height: 600px;
+	overflow-y: scroll;
+}
+#gOps div {
+	border: 1px solid #5c5c5c;
+}*/
+#logdrills {
+	float: left;
+	line-height: 1;
+	min-width: unset;
+}
+#logtime {
+	float: right;
+}
+button {
+	pointer-events: auto;
+	position: relative;
+	z-index: 2;
+}
+label {
+	margin-bottom: 0px;
+}
+.l125 {
+	line-height: 1.25;
+}
+.resultLabel {
+	cursor: default !important;
+	padding: 0 12px;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+padding-right: 7px;
+padding-left: 7px;
+}
+.overlay {
+	color:white;
+	position:absolute;
+	pointer-events: none;
+	width: 100%;
+}
+.table-scrollbar {
+	/*position: relative;
+	height: 300px;
+	overflow: auto;*/
+}
+
+.text-scrollbar {
+	position: relative;
+	height: 300px;
+	overflow: auto;
+	display: block;
+}
+.text-scrollbar p {
+	margin-left: 20px; 
+	margin-bottom: 0px;
+}
+.w-100 {
+	width: 100% !important;
+}
+.ms15 {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+.formSmall {
+	cursor: pointer;
+	display:inline-block;
+	position:relative;
+	/*width:61px;
+	height:97px;*/
+	width:80px;
+	height:127px;
+	margin-right:3px;
+	margin-bottom:3px;
+	/*background-color:darkgreen;
+	outline:1px dashed rgba(77,121,23,0.25);
+	outline-offset: 3px;
+	margin:1.6px;*/
+}
+.borderA {
+	border: 4px double #f0f0f0; /*#e7f0e7;*/
+	border-radius: 0.5rem;
+}
+.cardA {
+	color: #343434;
+	background: #f0f0f0;
+	padding: 5px 10px;
+}
+.cardATitle {
+	padding-top: 7px;
+	display: inline-block;
+}
+.table-xs td, .table-xs th {
+    padding: 0px;
+}
+.table-responsiveA {
+	min-height:180px;
+	max-height:300px;
+}
+.tableA th, .tableA td {
+	border: none !important;
+	border-radius: 5px;
+	/*background: #f7f7f7; rgba(157, 202, 111, 0.7)*/
+	background: var(--faze);
+	color: #124616;
+}
+.table {
+	margin-bottom: 0px;
+	border-collapse: inherit;
+	text-align:center;
+}
+.progressY {
+	/*998c00*/
+	margin-top:1px;
+	background: #403a00;
+	border: 1px solid #403a00;
+}
+.progressYCol {
+	color: #f3e220;
+	text-shadow:
+		-1px -1px 0 #998c00,
+		1px -1px 0 #998c00,
+		-1px 1px 0 #998c00,
+		1px 1px 0 #998c00,
+		-1px 0px 0 #998c00,
+		1px 0px 0 #998c00,
+		0px 1px 0 #998c00,
+		0px -1px 0 #998c00;
+}
+.progressG {
+	/*3b8217*/
+	background: #1d400b;
+	border: 1px solid #1d400b;
+}
+.progressGCol {
+	color: #6edc38;
+	text-shadow:
+		-1px -1px 0 #3b8217,
+		1px -1px 0 #3b8217,
+		-1px 1px 0 #3b8217,
+		1px 1px 0 #3b8217,
+		-1px 0px 0 #3b8217,
+		1px 0px 0 #3b8217,
+		0px 1px 0 #3b8217,
+		0px -1px 0 #3b8217;
+}
+.progressR {
+	/*861818*/
+	background: #400b0b;
+	border: 1px solid #400b0b;
+}
+.progressRCol {
+	color: #dc3838;
+	text-shadow:
+		-1px -1px 0 #861818,
+		1px -1px 0 #861818,
+		-1px 1px 0 #861818,
+		1px 1px 0 #861818,
+		-1px 0px 0 #861818,
+		1px 0px 0 #861818,
+		0px 1px 0 #861818,
+		0px -1px 0 #861818;
+}
+.progressW {
+	background: #4d4d4d;
+	border: 1px solid #4d4d4d;
+}
+.progressWCol {
+	color: #faf9f7 !important;
+	text-shadow:
+		-1px -1px 0 #5a5a5a,
+		1px -1px 0 #5a5a5a,
+		-1px 1px 0 #5a5a5a,
+		1px 1px 0 #5a5a5a,
+		-1px 0px 0 #5a5a5a,
+		1px 0px 0 #5a5a5a,
+		0px 1px 0 #5a5a5a,
+		0px -1px 0 #5a5a5a;
+}
+/*.progress {
+	background: #f0f0f0;
+	border: 1px solid #f7f7f7;
+}*/
+.progress-bar {
+	overflow: visible;
+}
+.progress-bar span {
+	/*color:#808080;*/
+	/*color: #808080;
+	mix-blend-mode: difference;*/
+	text-align: left;
+	padding-left: 30px;
+}
+.hflip {
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+.vflip {
+	-moz-transform: scale(1, -1);
+	-webkit-transform: scale(1, -1);
+	-o-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	transform: scale(1, -1);
+}
+.hvflip {
+	-moz-transform: scale(-1, -1);
+	-webkit-transform: scale(-1, -1);
+	-o-transform: scale(-1, -1);
+	-ms-transform: scale(-1, -1);
+	transform: scale(-1, -1);
+}
+#stateChat {
+	color:#343434;
+	pointer-events: auto;
+}
+.gameChat {
+	color:#fff8eb;
+	position: fixed;
+	bottom: 5px;
+}
+.gameChat .card, .gameChat .cardA {
+	background-color: transparent;
+	color:#fff8eb;
+}
+.gameChat .borderA {
+	border: 1px solid rgba(0,0,0,.125);
+	box-shadow: none !important;
+}
+.gameChat #textbox {
+	color: #fff8eb;
+	background-color: transparent;
+}
+.gameChat #textbox:focus {
+	background-color: transparent;
+}
+.gameChat #textbox::placeholder {
+	color: #fff8e4d0;
+}
+.gameChat .cardA {
+	display: none;
+}
+#logtext {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+}
+#logtext p {
+	margin-bottom: 0px;
+}
+.joinBtn {
+	padding: 2px 0;
+	margin: 2px 0;
+	width: 90%;
+	line-height: 1;
+	height: 21px;
+	font-size: 16px;
+}
+.autoFillBtn {
+	padding: 0px 8px;
+	margin: -4px -8px;
+}
+.card {
+	background-color:rgba(255, 255, 255, 0.7);
+}
+.cardA {
+	background-color: rgba(255, 239, 190, 0.7);
+	/*background-color: rgba(157, 202, 111, 0.5);*/
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+ 
