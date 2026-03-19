@@ -1,0 +1,525 @@
+/* ========= INFORMATION ============================
+
+- document:  FlyOut website banners positions
+- author:    Capelle @ Codecanyon
+- profile:   http://codecanyon.net/user/Capelle
+- version:   1.0
+
+==================================================== */
+
+/* ========================
+   1. Basics
+   ======================== */
+
+#bom {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 93;
+    /* Banner must have the highest z-index, so it doesn't hide behind the other elements on the website */
+}
+
+input.hiddenBtn {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* ========================
+   2. Banners dimensions
+   ======================== */
+
+/* Horizontal Banners */
+
+#bom.dim-234x60 {
+    width: 234px;
+    height: 60px;
+}
+
+#bom.dim-468x60 {
+    width: 468px;
+    height: 60px;
+}
+
+#bom.dim-728x90 {
+    width: 728px;
+    height: 90px;
+}
+
+/* Vertical Banners */
+
+#bom.dim-120x240 {
+    width: 120px;
+    height: 240px;
+}
+
+#bom.dim-120x600 {
+    width: 120px;
+    height: 600px;
+}
+
+#bom.dim-160x600 {
+    width: 160px;
+    height: 600px;
+}
+
+#bom.dim-300x600 {
+    width: 300px;
+    height: 600px;
+}
+
+/* Rectangular Banners */
+
+#bom.dim-88x31 {
+    width: 88px;
+    height: 31px;
+}
+
+#bom.dim-180x150 {
+    width: 180px;
+    height: 150px;
+}
+
+#bom.dim-300x250 {
+    width: 300px;
+    height: 250px;
+}
+
+#bom.dim-336x280 {
+    width: 336px;
+    height: 280px;
+}
+
+/* Square Banners */
+
+#bom.dim-125x125 {
+    width: 125px;
+    height: 125px;
+}
+
+#bom.dim-200x200 {
+    width: 200px;
+    height: 200px;
+}
+
+#bom.dim-250x250 {
+    width: 250px;
+    height: 250px;
+}
+
+/* Your custom dimension */
+
+#bom.dim-custom {
+    width: auto;
+    /* Add your custom width in px here */
+    height: auto;
+    /* Add your custom height in px here */
+}
+
+/* ========================
+   3. Banners positions
+   ======================== */
+
+/* Common positions */
+
+#bom.top-left {
+    top: 0;
+    left: 0;
+}
+
+#bom.top-middle {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#bom.top-right {
+    top: 0;
+    right: 0;
+}
+
+#bom.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+#bom.bottom-middle {
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#bom.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+#bom.center {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+}
+
+#bom.center,
+#bom.top-middle,
+#bom.bottom-middle {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Your custom position */
+
+#bom.position-custom {
+    top: auto;
+    /* Add a value in px for the top position eg. deviation from the top */
+    right: auto;
+    /* Add a value in px for the right position eg. deviation from the right */
+    bottom: auto;
+    /* Add a value in px for the bottom position eg. deviation from the bottom */
+    left: auto;
+    /* Add a value in px for the left position eg. deviation from the left */
+}
+
+/* ========================
+   4. Margins
+   ======================== */
+
+/* Common margins */
+
+#bom.margin-1 {
+    margin: 1%;
+}
+
+#bom.margin-2 {
+    margin: 2%;
+}
+
+#bom.margin-4 {
+    margin: 4%;
+}
+
+#bom.margin-6 {
+    margin: 6%;
+}
+
+#bom.margin-8 {
+    margin: 8%;
+}
+
+#bom.margin-10 {
+    margin: 10%;
+}
+
+/* Custom margins */
+
+#bom.margin-custom {
+    margin: auto;
+    /* Add a custom margin value in % or px */
+}
+
+/* ========================
+   5. Visual effects
+   ======================== */
+
+#bom.shadow {}
+
+#bom.border {
+    outline: solid 2px #6783cb;
+    /* Adjust the width and HEX color of the border here */
+}
+
+#bom.transparency {
+    opacity: 0.7;
+}
+
+#bom.transparency:hover {
+    opacity: 1;
+}
+
+/* ========================
+   6. Transitions
+   ======================== */
+
+/* Transition easings */
+
+#bom.linear {
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -ms-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+#bom.ease {
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+#bom.ease-in {
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -ms-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+
+#bom.ease-out {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#bom.ease-in-out {
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+/* Transition speeds */
+
+#bom.fast {
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+#bom.medium {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#bom.slow {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+/* Slide animation */
+
+input#close-banner:checked~#bom.bottom-left.slide,
+input#close-banner:checked~#bom.bottom-middle.slide,
+input#close-banner:checked~#bom.bottom-right.slide,
+#bom.bottom-left.hidden,
+#bom.bottom-middle.hidden,
+#bom.bottom-right.hidden {
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    transform: translateY(200%);
+}
+
+input#close-banner:checked~#bom.top-left.slide,
+input#close-banner:checked~#bom.top-middle.slide,
+input#close-banner:checked~#bom.top-right.slide,
+#bom.top-left.hidden,
+#bom.top-middle.hidden,
+#bom.top-right.hidden {
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    transform: translateY(-200%);
+}
+
+input#close-banner:checked~#bom.center.slide,
+#bom.center.hidden {
+    -webkit-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    transform: translateY(-300%);
+}
+
+input#close-banner:checked~#bom {
+    z-index: -1;
+}
+
+/* Fade animation */
+
+input#close-banner:checked~#bom.fade {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ========================
+   7. Close button
+   ======================== */
+
+#bom .close {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+/* Circled button 1 */
+
+#bom .close.circle-1:before {
+    color: #ddd;
+    content: "\00d7";
+    text-align: center;
+    font-size: 1em;
+    background: #000;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+}
+
+#bom .close.circle-1:hover:before {
+    color: #fff;
+}
+
+/* Circled button 2 */
+
+#bom .close.circle-2:before {
+    color: #000;
+    content: "\00d7";
+    text-align: center;
+    font-size: 13px;
+    background: none;
+    background: transparent;
+    border-radius: 50%;
+    border: solid 2px #000;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+}
+
+#bom .close.circle-2:after {
+    color: #000;
+    content: "close";
+    font-size: 10px;
+    right: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 7px;
+}
+
+#bom .close.circle-2 {
+    opacity: 0.3;
+}
+
+#bom .close.circle-2:hover {
+    opacity: 1;
+}
+
+#bom .close.circle-2:hover:before {
+    background: #000;
+    color: #fff;
+}
+
+/* Labeled */
+
+#bom .close.labeled:before {
+    color: #fff;
+    content: "close";
+    font-size: 8px;
+    text-transform: uppercase;
+    background: #000;
+    padding: 6px 12px;
+}
+
+#bom .close.labeled {
+    opacity: 0.3;
+}
+
+#bom .close.labeled:hover {
+    opacity: 1;
+}
+
+/* Text button */
+
+#bom .close.text:before {
+    color: #000;
+    content: "Close window";
+    font-size: 8px;
+    text-transform: uppercase;
+    background: transparent;
+    display: block;
+    opacity: 0.5;
+}
+
+#bom .close.text:hover:before {
+    opacity: 1;
+}
+
+/* Button positions depending on choosen banner position */
+
+#bom.top-left>.close.circle-1,
+#bom.top-middle>.close.circle-1,
+#bom.top-right>.close.circle-1 {
+    bottom: -13px;
+    right: -13px;
+}
+
+#bom.bottom-middle>.close.circle-1,
+#bom.bottom-left>.close.circle-1,
+#bom.bottom-right>.close.circle-1,
+#bom.center>.close.circle-1 {
+    top: -13px;
+    right: -13px;
+}
+
+#bom.top-left>.close.circle-2,
+#bom.top-middle>.close.circle-2,
+#bom.top-right>.close.circle-2 {
+    bottom: -32px;
+    right: 0;
+}
+
+#bom.bottom-middle>.close.circle-2,
+#bom.bottom-left>.close.circle-2,
+#bom.bottom-right>.close.circle-2,
+#bom.center>.close.circle-2 {
+    top: -32px;
+    right: 0;
+}
+
+#bom.top-left>.close.labeled,
+#bom.top-middle>.close.labeled,
+#bom.top-right>.close.labeled {
+    bottom: -30px;
+    right: 0;
+}
+
+#bom.bottom-middle>.close.labeled,
+#bom.bottom-left>.close.labeled,
+#bom.bottom-right>.close.labeled,
+#bom.center>.close.labeled {
+    top: -30px;
+    right: 0;
+}
+
+#bom.top-left>.close.text,
+#bom.top-middle>.close.text,
+#bom.top-right>.close.text {
+    bottom: -18px;
+    right: 10px;
+}
+
+#bom.bottom-right>.close.text,
+#bom.bottom-middle>.close.text,
+#bom.bottom-left>.close.text,
+#bom.center>.close.text {
+    top: -18px;
+    right: 10px;

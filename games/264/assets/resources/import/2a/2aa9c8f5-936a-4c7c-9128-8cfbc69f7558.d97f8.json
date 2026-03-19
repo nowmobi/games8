@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "a72PXCjHBEC6Ni+OvtEh9f"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "logo_3",
+      "rect": [
+        0,
+        0,
+        692,
+        259
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        692,
+        259
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

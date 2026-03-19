@@ -1,0 +1,13 @@
+{
+  "uniqueID": 0,
+  "highscore": 0,
+  "name": "",
+  "coins": 100,
+  "gems": 3,
+  "exp": 0,
+  "dailyChallenge": null,
+  "freeTicketDate": "1995-12-17T03:24:00",
+  "tutorial": false,
+  "music": true,
+  "sound": true
+}

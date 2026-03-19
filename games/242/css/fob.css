@@ -1,0 +1,452 @@
+/* ========= INFORMATION ============================
+
+- document:  FlyOut website banners positions
+- author:    Capelle @ Codecanyon
+- profile:   http://codecanyon.net/user/Capelle
+- version:   1.0
+
+==================================================== */
+
+/* ========================
+   1. Basics
+   ======================== */
+
+#fob {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(spin.gif);
+	onclick: "myFunction()";
+	position: fixed;
+	z-index: 93; /* Banner must have the highest z-index, so it doesn't hide behind the other elements on the website */
+}
+input.hiddenBtn {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* ========================
+   2. Banners dimensions
+   ======================== */
+
+/* Horizontal Banners */
+#fob.dim-234x60 {
+	width: 234px;
+	height: 60px;
+}
+#fob.dim-468x60 {
+	width: 468px;
+	height: 60px;
+}
+#fob.dim-728x90 {
+	width: 728px;
+	height: 90px;
+}
+
+/* Vertical Banners */
+#fob.dim-120x240 {
+	width: 120px;
+	height: 240px;
+}
+#fob.dim-120x600 {
+	width: 120px;
+	height: 600px;
+}
+#fob.dim-160x600 {
+	width: 160px;
+	height: 600px;
+}
+#fob.dim-300x600 {
+	width: 300px;
+	height: 600px;
+}
+
+/* Rectangular Banners */
+#fob.dim-88x31 {
+	width: 88px;
+	height: 31px;
+}
+#fob.dim-180x150 {
+	width: 180px;
+	height: 150px;
+}
+#fob.dim-300x250 {
+	width: 300px;
+	height: 250px;
+}
+#fob.dim-336x280 {
+	width: 336px;
+	height: 280px;
+}
+
+/* Square Banners */
+#fob.dim-125x125 {
+	width: 125px;
+	height: 125px;
+}
+#fob.dim-200x200 {
+	width: 200px;
+	height: 200px;
+}
+#fob.dim-250x250 {
+	width: 250px;
+	height: 250px;
+}
+
+/* Your custom dimension */
+#fob.dim-custom {
+	width: auto; /* Add your custom width in px here */
+	height: auto; /* Add your custom height in px here */
+}
+
+
+/* ========================
+   3. Banners positions
+   ======================== */
+
+/* Common positions */
+#fob.top-left {
+	top: 0;
+	left: 0;
+}
+#fob.top-middle {
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#fob.top-right {
+	top: 0;
+	right: 0;
+}
+#fob.bottom-right {
+	bottom: 0;
+	right: 0;
+}
+#fob.bottom-middle {
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+#fob.bottom-left {
+	bottom: 0;
+	left: 0;
+}
+#fob.center {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto !important;
+}
+#fob.center,
+#fob.top-middle,
+#fob.bottom-middle {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* Your custom position */
+#fob.position-custom {
+	top: auto; /* Add a value in px for the top position eg. deviation from the top */
+	right: auto; /* Add a value in px for the right position eg. deviation from the right */
+	bottom: auto; /* Add a value in px for the bottom position eg. deviation from the bottom */
+	left: auto; /* Add a value in px for the left position eg. deviation from the left */
+}
+
+/* ========================
+   4. Margins
+   ======================== */
+
+/* Common margins */
+#fob.margin-1 {
+	margin: 1%;
+}
+#fob.margin-2 {
+	margin: 2%;
+}
+#fob.margin-4 {
+	margin: 4%;
+}
+#fob.margin-6 {
+	margin: 6%;
+}
+#fob.margin-8 {
+	margin: 8%;
+}
+#fob.margin-10 {
+	margin: 10%;
+}
+
+/* Custom margins */
+#fob.margin-custom {
+	margin: auto; /* Add a custom margin value in % or px */
+}
+
+/* ========================
+   5. Visual effects
+   ======================== */
+
+#fob.shadow {
+}
+#fob.border {
+	outline: solid 2px #6783cb; /* Adjust the width and HEX color of the border here */
+}
+#fob.transparency {
+	opacity: 0.7;
+}
+#fob.transparency:hover {
+	opacity: 1;
+}
+
+/* ========================
+   6. Transitions
+   ======================== */
+
+/* Transition easings */
+#fob.linear {
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+#fob.ease {
+	-webkit-transition-timing-function: ease;
+	-moz-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+#fob.ease-in {
+	-webkit-transition-timing-function: ease-in;
+	-moz-transition-timing-function: ease-in;
+	-ms-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+#fob.ease-out {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+#fob.ease-in-out {
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+/* Transition speeds */
+#fob.fast {
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+#fob.medium {
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#fob.slow {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+/* Slide animation */
+input#close-banner:checked ~ #fob.bottom-left.slide,
+input#close-banner:checked ~ #fob.bottom-middle.slide,
+input#close-banner:checked ~ #fob.bottom-right.slide,
+#fob.bottom-left.hidden,
+#fob.bottom-middle.hidden,
+#fob.bottom-right.hidden {
+	-webkit-transform: translateY(200%);
+	-moz-transform: translateY(200%);
+	-ms-transform: translateY(200%);
+	transform: translateY(200%);
+}
+input#close-banner:checked ~ #fob.top-left.slide,
+input#close-banner:checked ~ #fob.top-middle.slide,
+input#close-banner:checked ~ #fob.top-right.slide,
+#fob.top-left.hidden,
+#fob.top-middle.hidden,
+#fob.top-right.hidden {
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+}
+input#close-banner:checked ~ #fob.center.slide,
+#fob.center.hidden {
+	-webkit-transform: translateY(-300%);
+	-moz-transform: translateY(-300%);
+	-ms-transform: translateY(-300%);
+	transform: translateY(-300%);
+}
+input#close-banner:checked ~ #fob {
+	z-index: -1;
+}
+
+/* Fade animation */
+input#close-banner:checked ~ #fob.fade {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* ========================
+   7. Close button
+   ======================== */
+
+#fob .close {
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+/* Circled button 1 */
+#fob .close.circle-1:before {
+	color: #ddd;
+	content: "\00d7";
+	text-align: center;
+	font-size: 1em;
+	background: #000;
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	display: block;
+}
+#fob .close.circle-1:hover:before {
+	color: #fff;
+}
+
+/* Circled button 2 */
+#fob .close.circle-2:before {
+	color: #000;
+	content: "\00d7";
+	text-align: center;
+	font-size: 13px;
+	background: none;
+	background: transparent;
+	border-radius: 50%;
+	border: solid 2px #000;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+}
+#fob .close.circle-2:after {
+	color: #000;
+    content: "close";
+    font-size: 10px;
+    right: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 7px;
+}
+#fob .close.circle-2 {
+	opacity: 0.3;
+}
+#fob .close.circle-2:hover {
+	opacity: 1;
+}
+#fob .close.circle-2:hover:before {
+	background: #000;
+	color: #fff;
+}
+
+/* Labeled */
+#fob .close.labeled:before {
+	color: #fff;
+	content: "close";
+	font-size: 8px;
+	text-transform: uppercase;
+	background: #000;
+	padding: 6px 12px;
+}
+#fob .close.labeled {
+	opacity: 0.3;
+}
+#fob .close.labeled:hover {
+	opacity: 1;
+}
+
+/* Text button */
+#fob .close.text:before {
+	color: #000;
+	content: "Close window";
+	font-size: 8px;
+	text-transform: uppercase;
+	background: transparent;
+	display: block;
+	opacity: 0.5;
+}
+#fob .close.text:hover:before {
+	opacity: 1;
+}
+
+/* Button positions depending on choosen banner position */
+#fob.top-left > .close.circle-1,
+#fob.top-middle > .close.circle-1,
+#fob.top-right > .close.circle-1 {
+	bottom: -13px;
+	right: -13px;
+}
+#fob.bottom-middle > .close.circle-1,
+#fob.bottom-left > .close.circle-1,
+#fob.bottom-right > .close.circle-1,
+#fob.center > .close.circle-1 {
+	top: -13px;
+	right: -13px;
+}
+#fob.top-left > .close.circle-2,
+#fob.top-middle > .close.circle-2,
+#fob.top-right > .close.circle-2 {
+	bottom: -32px;
+	right: 0;
+}
+#fob.bottom-middle > .close.circle-2,
+#fob.bottom-left > .close.circle-2,
+#fob.bottom-right > .close.circle-2,
+#fob.center > .close.circle-2 {
+	top: -32px;
+	right: 0;
+}
+#fob.top-left > .close.labeled,
+#fob.top-middle > .close.labeled,
+#fob.top-right > .close.labeled {
+	bottom: -30px;
+	right: 0;
+}
+#fob.bottom-middle > .close.labeled,
+#fob.bottom-left > .close.labeled,
+#fob.bottom-right > .close.labeled,
+#fob.center > .close.labeled {
+	top: -30px;
+	right: 0;
+}
+#fob.top-left > .close.text,
+#fob.top-middle > .close.text,
+#fob.top-right > .close.text {
+	bottom: -18px;
+	right: 10px;
+}
+#fob.bottom-right > .close.text,
+#fob.bottom-middle > .close.text,
+#fob.bottom-left > .close.text,
+#fob.center > .close.text {
+	top: -18px;
+	right: 10px;

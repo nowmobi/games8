@@ -1,0 +1,20 @@
+{
+  "companyName": "BizarreArts",
+  "productName": "BallInHole",
+  "productVersion": "2.0",
+  "dataUrl": "ball hole.data.unityweb",
+  "wasmCodeUrl": "ball hole.wasm.code.unityweb",
+  "wasmFrameworkUrl": "ball hole.wasm.framework.unityweb",
+  "graphicsAPI": [
+    "WebGL 2.0",
+    "WebGL 1.0"
+  ],
+  "webglContextAttributes": {
+    "preserveDrawingBuffer": false
+  },
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#231F20",
+  "developmentBuild": false,
+  "multithreading": false,
+  "unityVersion": "2019.2.17f1"
+}

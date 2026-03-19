@@ -1,0 +1,20 @@
+{
+  "en_US": {
+    "INVITE": "Invite",
+    "INVITE_DESCRIPTION_1": "Playing with friends",
+    "INVITE_DESCRIPTION_2": "is more fun!",
+    "ERROR_TITLE": "Attendez!",
+    "NO_AD": "There was a problem getting a sponsored video. Please try again later.",
+    "CONGRATULATIONS": "Congratulations",
+    "VIDEO_REWARD_COMPLETE": "You have been awarded {0} Tickets!"
+  },
+  "fr_FR": {
+    "INVITE": "Inviter",
+    "INVITE_DESCRIPTION_1": "Jouer avec des amis",
+    "INVITE_DESCRIPTION_2": "est plus amusant!",
+    "ERROR_TITLE": "Attendez!",
+    "NO_AD": "Impossible d'afficher une vidéo sponsorisée. Veuillez réessayez plus tard.",
+    "CONGRATULATIONS": "Félicitations",
+    "VIDEO_REWARD_COMPLETE": "Vous avez reçu {0} tickets!"
+  }
+}

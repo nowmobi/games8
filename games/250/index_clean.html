@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Snaker.io Online Official</title>
+    <meta name="Author" content="Snaker.io">
+    <link rel="canonical" href="https://Snaker.io"/>
+    <meta name="description" content="Snaker.io is fun online multiplayer fighting .io game by voodoo! The most addictive game!Enter the arena and face the other snakes in a fierce battle. 
+Eat all energy in sight with your snake and grow it to win ! Show off who is the biggest snake in town!." />
+    <link rel="shortcut icon" href="share.jpg">
+    <link rel="stylesheet" href="TemplateData/game.css">
+    <link rel="stylesheet" href="libs/game.css">
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Snaker.json", {onProgress: UnityProgress});
+    </script>
+
+  
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+  <body>
+
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%;"></div>
+    </div>
+
+    <link rel="stylesheet" href="libs/tingle.min.css">
+    <script src="libs/tingle.min.js"></script>
+
+    <div id="links">
+      <ul>
+        <li><a onclick="showAboutGameModal();" href="#popup-about">About</a></li>
+        <li><a href="https://io.gamemonetize.com/partners.html" target="_blank">Partners</a></li>
+        <li><a href="mailt:info@snakers.io">Contact</a></li> 
+        <li><a href="http://iogames.space" target="_blank">More .io Games</a></li></li>
+      </ul>
+    </div>
+
+    <div id="popup-about">
+      <h1>Snaker.io</h1>
+      <p>The most addictive game!Enter the arena and face the other snakes in a fierce battle. 
+Eat all energy in sight with your snake and grow it to win ! Show off who is the biggest snake in town!</p>
+      <h2>Snaker.io play online</h2>
+      <p>The smash-hit game! Battle the snakes! Snaker.io</p>
+      <p>Enjoy this cool io game Snaker.io!</p>
+      <p>Can you beat all others without hit other snakes? Try Snaker.io!</p>
+      <p><img style="float: center; margin-right: 10px; margin-top: 3px;" width="150" src="share.jpg" alt="Snaker.io.io" /></p>
+    </div>
+
+<script>
+    function showAboutGameModal() {
+      var modal = new tingle.modal({
+        footer: false,
+        stickyFooter: false,
+        closeMethods: ['overlay', 'button', 'escape'],
+        closeLabel: "Close",
+        cssClass: ['custom-class-1', 'custom-class-2'],
+        onOpen: function () {
+          console.log('modal open');
+        },
+        onClose: function () {
+          console.log('modal closed');
+        },
+        beforeClose: function () {
+          return true;
+        }
+      });
+      modal.setContent($("#popup-about").html());
+      modal.open();
+    }
+    </script>
+
+  </body>
+</html>

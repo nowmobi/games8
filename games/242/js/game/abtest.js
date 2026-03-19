@@ -1,0 +1,1 @@
+var ABTest=function(){var e={};return e.version="T8",e.create=function(){var r={},t=Math.random();return r.type=t<.5?0:1,t=Math.random(),r.type2=t<.5?0:1,r.version=e.version,platform.logEvent(e.version+"Type-"+r.type),platform.logEvent(e.version+"Type2-"+r.type2),r},e}();

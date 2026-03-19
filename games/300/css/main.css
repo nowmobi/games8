@@ -1,0 +1,20 @@
+@font-face {
+    font-family: OtomanopeeOne;
+    src: url(../font/OtomanopeeOne-Regular.ttf);
+}
+
+body {
+    overflow: hidden;
+    touch-action: none;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+canvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

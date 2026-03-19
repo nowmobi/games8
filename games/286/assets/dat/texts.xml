@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+
+    <languages>
+        <language>en</language>
+        <language>sk</language>
+        <language>es</language>
+        <language>cz</language>
+        <language>de</language>
+        <language>it</language>
+        <language>fr</language>
+        <language>pt</language>
+        <language>ru</language>
+        <language>tw</language>
+    </languages>
+
+    <strings>
+
+        <string id="Shop" index="1">
+            <en>Shop</en>
+            <sk/>
+            <es>Tienda</es>
+            <cz/>
+            <de>Shop</de>
+            <it>Negozio</it>
+            <fr>Boutique</fr>
+            <br>Loja</br>
+            <ru>Магазин</ru>
+            <tw/>
+        </string>
+
+        <string id="Skins" index="2">
+            <en>Skins</en>
+            <sk/>
+            <es>Temas</es>
+            <cz/>
+            <de>Skins</de>
+            <it>Skin</it>
+            <fr>Skins</fr>
+            <br>Skins</br>
+            <ru>Скины</ru>
+            <tw/>
+        </string>
+
+        <string id="Upgrades" index="3">
+            <en>Upgrades</en>
+            <sk/>
+            <es>Mejorar</es>
+            <cz/>
+            <de>Verbessern</de>
+            <it>Miglioria</it>
+            <fr>Amélioration</fr>
+            <br>Atualização</br>
+            <ru>Улучшение</ru>
+            <tw/>
+        </string>
+
+        <string id="Pause" index="4">
+            <en>Pause</en>
+            <sk/>
+            <es>Pausa</es>
+            <cz/>
+            <de>Pause</de>
+            <it>Pausa</it>
+            <fr>Pause</fr>
+            <br>Pausa</br>
+            <ru>Пауза</ru>
+            <tw/>
+        </string>
+
+        <string id="Equip" index="5">
+            <en>Equip</en>
+            <sk/>
+            <es>Agregar</es>
+            <cz/>
+            <de>Ausrüsten</de>
+            <it>Equipaggia</it>
+            <fr>Équiper</fr>
+            <br>Equipar</br>
+            <ru>Оснащать</ru>
+            <tw/>
+        </string>
+
+        <string id="Ready" index="6">
+            <en>Ready</en>
+            <sk/>
+            <es>Listo</es>
+            <cz/>
+            <de>Bereit</de>
+            <it>Pronta</it>
+            <fr>Prêt</fr>
+            <br>Pronto</br>
+            <ru>Готовый</ru>
+            <tw/>
+        </string>
+
+        <string id="Continue" index="7">
+            <en>Continue running? </en>
+            <sk/>
+            <es>¿Seguir corriendo?</es>
+            <cz/>
+            <de>Weiterlaufen? </de>
+            <it>Continuare a correre? </it>
+            <fr>Continuer la course?</fr>
+            <br>Continuar correndo?</br>
+            <ru>Продолжить бежать?</ru>
+            <tw/>
+        </string>
+
+        <string id="InstructionsO" index="8">
+            <en>Instructions</en>
+            <de>Anleitung</de>
+            <es>Instrucciones</es>
+            <fr>Instructions</fr>
+            <it>Istruzioni</it>
+            <br>Instruções</br>
+            <ru>Инструкция</ru>
+        </string>
+
+        <string id="Languages" index="9">
+            <en>Languages</en>
+            <de>Sprachen</de>
+            <es>Idiomas</es>
+            <fr>Langues</fr>
+            <it>Lingue</it>
+            <br>Idioamas</br>
+        </string>
+
+        <string id="Instructions" index="10">
+            <en>Run on the railway and evade obstacles by jumping and sliding to get as far as possible. Collect coins to purchase upgrades, making your powerups more potent.</en>
+            <de>Renne auf der Eisenbahn und weiche Hindernissen durch Springen und Rutschen aus, um möglichst weit zu kommen. Sammle Münzen, um Verbesserungen zu erwerben und so deine Power-ups zu verstärken.</de>
+            <es>Corre por las vías y evita obstáculos saltando y desplazándote lateralmente. Recoge monedas para comprar mejoras que harán que los potenciadores sean más potentes.</es>
+            <fr>Courez sur la voie ferrée et évitez les obstacles en sautant et en glissant pour aller le plus loin possible. Amassez des pièces pour acheter des améliorations, rendant ainsi vos power-ups plus puissants.</fr>
+            <it>Corri sul binario ed evita gli ostacoli saltando e scivolando per andare avanti che puoi. Raccogli le monete per acquistare miglioramenti e rendere fortissimi i tuoi potenziamenti.</it>
+            <br>Corra na ferrovia e evite obstáculos, saltando e deslizando para chegar o mais longe possível. Recolha moedas para comprar upgrades, aumentando a potência deles.</br>
+            <ru>Беги по железной дороге и преодолевай препятствия, перепрыгивая через них или проскальзывая под ними. Твоя задача - пробежать как можно дальше. Собирай монетки для покупки апгрейдов, они тебе помогут стать сильнее.</ru>
+        </string>
+
+        <string id="ControlsKey" index="11">
+            <en>Press space-bar to jump \nPress down arrow to slide</en>
+            <de>Drücke zum Springen Leertaste \nDrücke zum Rutschen untere Pfeil</de>
+            <es>Pulsa espaciador para saltar \nPulsa flecha hacia abajo para desplazar al personaje</es>
+            <fr>Appuyez sur barre d'espacement pour sauter \nAppuyez sur flèche vers le bas pour glisser</fr>
+            <it>Premi barra spaziatrice per saltare \nPremi freccia in giù per scivolare</it>
+            <br>Pressione barra de espaço para saltar \nPressione seta para baixo para deslizar </br>
+            <ru>Нажмите пробел, чтобы прыгнуть\nНажмите стрелку вниз, чтобы скользить</ru>
+        </string>
+
+        <string id="ControlsTouch" index="12">
+            <en>Tap the screen to jump \nTap icons for corresponding respons</en>
+            <de>Tippe zum Springen auf den Bildschirm \nTippe für andere Aktionen auf Symbole</de>
+            <es>Toca la pantalla para saltar \nToca los iconos para realizar la acción correspondiente</es>
+            <fr>Touchez l'écran pour sauter \nTouchez les icônes pour obtenir le résultat correspondant</fr>
+            <it>Tocca lo schermo per saltare \nTocca le icone per le azioni corrispondenti</it>
+            <br>Toque na tela para saltar \nToque nos ícones para ter a reação correspondente</br>
+            <ru>Дотронься до экрана, чтобы прыгнуть \nНажимай на иконки для выполнения соответствущего действия</ru>
+        </string>
+
+        <string id="GAME_OVER" index="13">
+            <en>GAME OVER</en>
+            <sk/>
+            <es>FIN DE JUEGO</es>
+            <cz/>
+            <de>SPIELE ENDE</de>
+            <it>FINE DEL GIOCO</it>
+            <fr>GAME OVER</fr>
+            <br>FIM DO JOGO</br>
+            <ru/>
+            <tw/>
+        </string>
+
+        <string id="Buy" index="14">
+            <en>Buy</en>
+            <sk/>
+            <es>Comprar</es>
+            <cz/>
+            <de>Kaufe</de>
+            <it>Compra</it>
+            <fr>Acheter</fr>
+            <br>Comprar</br>
+            <ru>Покупайте</ru>
+            <tw/>
+        </string>
+
+        <string id="Crashed" index="15">
+            <en>You crashed!</en>
+            <sk/>
+            <es>¡Te has chocado!</es>
+            <cz/>
+            <de>Du hattest einen Unfall!</de>
+            <it>Hai sbattuto!</it>
+            <fr>Vous êtes entré en collision !</fr>
+            <br>Você caiu!</br>
+            <ru>Вы разбились!</ru>
+            <tw/>
+        </string>
+
+        <string id="Again" index="16">
+            <en>Play again</en>
+            <sk/>
+            <es>Jugar de nuevo</es>
+            <cz/>
+            <de>Neues Spiel,</de>
+            <it>gioca di nuovo</it>
+            <fr>Rejouez</fr>
+            <br>Reproduzir novamente</br>
+            <ru>Play again po rusky</ru>
+            <tw/>
+        </string>
+
+        <string id="Best" index="17">
+            <en>Best</en>
+            <de>Bestleistung</de>
+            <es>Récord</es>
+            <fr>Meilleur</fr>
+            <it>Record</it>
+            <br>Melhor</br>
+            <ru>Рекорд</ru>
+        </string>
+
+        <string id="Distance" index="18">
+            <en>Distance</en>
+            <de>Distanz</de>
+            <es>Distancia</es>
+            <fr>Distance</fr>
+            <it>Distanza</it>
+            <br>Distância</br>
+            <ru>Расстояние</ru>
+        </string>
+
+        <string id="Collected" index="19">
+            <en>Cash collected:</en>
+            <de>Gesammeltes Geld:</de>
+            <es>Dinero recogido:</es>
+            <fr>Argent récupéré:</fr>
+            <it>Denaro ottenuto:</it>
+            <br>Dinheiro coletado:</br>
+            <ru>Собрано денег:</ru>
+        </string>
+
+        <string id="Yes" index="20">
+            <en>Yes</en>
+            <de>Ja</de>
+            <es>Sí</es>
+            <fr>Oui</fr>
+            <it>Sì</it>
+            <br>Sim</br>
+            <ru>Да</ru>
+        </string>
+
+        <string id="No" index="21">
+            <en>No</en>
+            <de>Nein</de>
+            <es>No</es>
+            <fr>Non</fr>
+            <it>No</it>
+            <br>Não</br>
+            <ru>Нет</ru>
+        </string>
+
+    </strings>
+</stringresources>

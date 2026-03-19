@@ -1,0 +1,39 @@
+{
+  "exp": [
+    {
+      "expRequired": 0,
+      "nameKey": "_1v1Cat_Rookie",
+      "reward": 0
+    },
+    {
+      "expRequired": 30,
+      "nameKey": "_1v1Cat_Amateur",
+      "reward": 100
+    },
+    {
+      "expRequired": 100,
+      "nameKey": "_1v1Cat_Rookie_New",
+      "reward": 300
+    },
+    {
+      "expRequired": 600,
+      "nameKey": "_1v1Cat_Professional",
+      "reward": 700
+    },
+    {
+      "expRequired": 3000,
+      "nameKey": "_1v1Cat_Superstar",
+      "reward": 1500
+    },
+    {
+      "expRequired": 30000,
+      "nameKey": "_1v1Cat_Champion",
+      "reward": 3100
+    },
+    {
+      "expRequired": 999999,
+      "nameKey": "_1v1Cat_Champion_New",
+      "reward": 999999
+    }
+  ]
+}

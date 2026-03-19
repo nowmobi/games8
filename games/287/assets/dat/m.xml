@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <languages>
+        <language>en</language>
+        <language>de</language>
+        <language>es</language>
+        <language>fr</language>
+        <language>it</language>
+        <language>pt</language>
+        <language>ru</language>
+    </languages>
+    <strings>
+        <string id="REACHTHETARGETSCORE" index="0">
+            <en>REACH THE TARGET SCORE TO\nUNLOCK BONUSES!</en>
+            <de>ERREICHE DAS PUNKTEZIEL,\nUM BONI FREIZUSCHALTEN!</de>
+            <es>¡ALCANZA LA PUNTUACIÓN OBJETIVO\nPARA DESBLOQUEAR BONIFICACIONES!</es>
+            <fr>ATTEIGNEZ LE SCORE OBJECTIF\nPOUR DÉBLOQUER DES BONUS !</fr>
+            <it>RAGGIUNGI IL PUNTEGGIO NECESSARIO\nPER SBLOCCARE I BONUS!</it>
+            <pt>ALCANCE A PONTUAÇÃO OBJETIVO\nPARA DESBLOQUEAR BÔNUS!</pt>
+            <ru>НУЖНО НАБРАТЬ НЕОБХОДИМОЕ КОЛИЧЕСТВО\nОЧКОВ, ЧТОБЫ РАЗБЛОКИРОВАТЬ БОНУСЫ</ru>
+        </string>
+        <string id="TARGETSCORE" index="1">
+            <en>TARGET SCORE</en>
+            <de>PUNKTEZIEL</de>
+            <es>PUNTUACIÓN OBJETIVO</es>
+            <fr>SCORE OBJECTIF</fr>
+            <it>PUNTEGGIO NECESSARIO</it>
+            <pt>PONTUAÇÃO OBJETIVO</pt>
+            <ru>НЕОБХОДИМОЕ\nКОЛИЧЕСТВО ОЧКОВ</ru>
+        </string>
+        <string id="BONUS" index="2">
+            <en>BONUS</en>
+            <de>BONUS</de>
+            <es>BONIFICACIÓN</es>
+            <fr>BONUS</fr>
+            <it>BONUS</it>
+            <pt>BÔNUS</pt>
+            <ru>БОНУС</ru>
+        </string>
+        <string id="CLAIM" index="3">
+            <en>CLAIM</en>
+            <de>ABHOLEN</de>
+            <es>SOLICITAR</es>
+            <fr>DEMANDER</fr>
+            <it>RISCUOTI</it>
+            <pt>PEDIR</pt>
+            <ru>ЗАПРОС</ru>
+        </string>
+        <string id="CHALLENGES" index="4">
+            <en>CHALLENGES</en>
+            <de>HERAUSFORDERUNGEN</de>
+            <es>DESAFÍOS</es>
+            <fr>DÉFIS</fr>
+            <it>SFIDE</it>
+            <pt>DESAFIOS</pt>
+            <ru>ВЫЗОВЫ</ru>
+        </string>
+        <string id="INSTRUCTIONS" index="5">
+            <en>Jump with the ball and shoot the basket within the time limit.  Earn massive scores. Each score contributes to unlocking of a new ball. Play, unlock, repeat!</en>
+            <de>Springe mit dem Ball und wirf ihn innerhalb des Zeitlimits in den Korb. Sammle gewaltig viele Punkte. Gesammelte Punkte tragen zum Freischalten eines neuen Balls bei. Spielen, freischalten, wiederholen!</de>
+            <es>Salta con el balón y encesta dentro del límite de tiempo. Mejora tu puntuación y podrás desbloquear un balón nuevo. ¡Juega, desbloquea y repite!</es>
+            <fr>Sautez avec le ballon et faites des paniers avant la fin du temps imparti. Réalisez des scores incroyables. Chaque score permet de déverrouiller un nouveau ballon. Jouez, déverrouillez, recommencez !</fr>
+            <it>Salta con la palla e fai canestro entro il tempo limite. Ottieni più punti possibile. Ogni punto contribuisce allo sblocco di una nuova palla. Gioca, sblocca, ripeti!</it>
+            <pt>Pule com a bola e arremese dentro do prazo. Sua pontuação será maciça. Cada ponto contribui para destravar uma nova bola. Jogue, destrave, repita!</pt>
+            <ru>Прыгайте с мячом и бросайте его в корзину в течение установленного времени. Получайте как можно больше очков. Каждое заработанное очко дает возможность разблокировать новый мяч. Играйте, разблокируйте, повторяйте!</ru>
+        </string>
+        <string id="BEST" index="6">
+            <en>BEST</en>
+            <de>REKORD</de>
+            <es>RECORD</es>
+            <fr>RECORD</fr>
+            <it>MIGLIOR</it>
+            <pt>MELHOR</pt>
+            <ru>ЛУЧШИЙ</ru>
+        </string>
+        <string id="OPEN" index="7">
+            <en>OPEN</en>
+            <de>öffnen</de>
+            <es>abierto</es>
+            <fr>OUVRIR</fr>
+            <it>aperto</it>
+            <pt>aberto</pt>
+            <ru>ОТКРЫТЬ</ru>
+        </string>
+        <string id="COMBO" index="8">
+            <en>COMBO</en>
+            <de>KOMBO</de>
+            <es>COMBO</es>
+            <fr>COMBO</fr>
+            <it>COMBO</it>
+            <pt>COMBO</pt>
+            <ru>КОМБО</ru>
+        </string>
+        <string id="BALLS" index="9">
+            <en>BALLS</en>
+            <de>BÄLLE</de>
+            <es>BALONES</es>
+            <fr>BALLONS</fr>
+            <it>PALLE</it>
+            <pt>BOLAS </pt>
+            <ru>МЯЧИ</ru>
+        </string>
+        -<string id="NEWHIGHSCORE" index="10">
+        <en>NEW HIGHSCORE</en>
+        <de>NEU HIGHSCORE</de>
+        <es>NUEVO RÉCORD</es>
+        <fr>NOUVEAU MEILLEUR SCORE</fr>
+        <it>NOVITÀ RECORD</it>
+        <pt>NOVO PONTUAÇÃO ALTA</pt>
+        <ru>НОВЫЙ РЕКОРД</ru>
+    </string>
+        <string id="SCORE" index="11">
+            <en>SCORE</en>
+            <de>PUNKTE</de>
+            <es>PUNTUACIÓN</es>
+            <fr>SCORE</fr>
+            <it>PUNTEGGIO</it>
+            <pt>PONTO</pt>
+            <ru>СЧЕТ</ru>
+        </string>
+        <string id="TAP" index="12">
+            <en>TAP</en>
+            <de>TIPPE</de>
+            <es>TOCA</es>
+            <fr>TOUCHEZ</fr>
+            <it>TOCCA</it>
+            <pt>TOQUE</pt>
+            <ru>НАЖМИТЕ</ru>
+        </string>
+        <string id="MORE_GAMES" index="3">
+            <en>MORE GAMES</en>
+            <de>MEHR SPIELE</de>
+            <es>MÁS JUEGOS</es>
+            <fr>PLUS DE JEUX</fr>
+            <it>ALTRI GIOCHI</it>
+            <pt>MAIS JOGOS</pt>
+            <ru>MORE GAMES</ru>
+            <nl>MORE GAMES</nl>
+            <tr>MORE GAMES</tr>
+        </string>
+    </strings>
+</stringresources>

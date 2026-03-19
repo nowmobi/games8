@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--script src="//cdn.jsdelivr.net/npm/phaser@3.12.0/dist/phaser.min.js"></script> -->
+    <title>Inky Snakes</title>
+    <script src="js/phaser.min.js" ></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+        <!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" sizes="128x128" href="icon-128x128.png" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Chrome for Android web app tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+
+    <meta property="og:title" content="Inky Snakes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://gameonhai.com" />
+    <meta property="og:image" content="http://gameonhai.com" />
+    <meta property="og:site_name" content="Inky Snakes" />
+    <meta property="og:description" content="Inky snakes is slithering io snake game without a touch of paper theme, there is only one rule to play game. Eat others to grow bigger. Choose awesome snakes and join the battle. Good Luck"/>
+    
+    <script type="text/javascript" src="js/compressed.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+
+    
+
+    <link rel="shortcut icon" sizes="128x128" href="icon-128x128.png" />
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: gamefont_regular;
+        src: url(fonts/UbuntuTitling-Bold.ttf);
+    }
+    @font-face {
+        font-family: gamefont_bold;
+        src: url(fonts/Roboto-Bold.ttf);
+    }
+    *
+    {
+        font-family: gamefont_regular !important;
+    }
+    body
+    {
+        margin: 0px;
+    }
+    canvas{
+        display:block;
+        margin: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+    <script src="js/fbintgames.js"></script>
+    <script type="text/javascript">
+
+        var adInitialized = false; 
+        var isGameLoaded = false;
+        var isPageLoaded = false;
+        
+        setTimeout(function(){ 
+            document.getElementById("logo").style.animation = "fade 1s"; 
+            setTimeout(function(){ 
+                document.getElementById("splash").style.display = "none"; 
+            }, 1000);
+
+        }, 3500);
+
+        if(platform == PLATFORMS.GD)
+        {
+            var isGameLoaded = false;
+            window.SDK_OPTIONS = {
+                gameId: "5s5zgsz0oejgblg3h7a8ycib7u1cwtg1",
+                onEvent: function (a) {
+                    switch (a.name) {
+                        case "SDK_GAME_PAUSE":
+                           // pause game logic / mute audio
+                           break;
+                        case "SDK_GAME_START":
+                        console.log("Game Resumed");
+                        if(isGameLoaded && gameScreen==100)
+                        {
+                            MenuScene.Show_ConnectionScreen();
+                        }
+                        break;
+                        case "SDK_READY":
+                        adInitialized = true;
+                           break;
+                     }
+                  }
+               };
+            (function (a, b, c) {
+               var d = a.getElementsByTagName(b)[0];
+               a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+            })(document, "script", "gamemonetize-sdk"); 
+
+        }
+
+
+
+        
+        
+        function OnGameLoaded()
+        {
+            isGameLoaded = true;
+            //updateFBAssetsLoaded();
+        }
+        function Show_Ads()
+        {
+            console.log("Show Ads Called");
+            console.log("<Game Monetize> Show Ads Called");
+            sdk.showBanner();
+        }
+
+        var namesPool;
+        var maxNames;
+        fetch('mix/names.txt')
+        .then(response => response.text())
+        .then(text => OnNamesFetched(text) );
+        function OnNamesFetched(data)
+        {
+            namesPool = data.split("\n");
+            maxNames = namesPool.length;
+        }
+        function onPageReady()
+        {
+            Config = {
+                type: Phaser.AUTO,
+                width: window.innerWidth,
+                height: window.innerHeight,
+                title : "Paper Snakes",
+                resolution:  window.devicePixelRatio,
+                parent: 'gameContainer',
+                autoResize: true,
+                preserveDrawingBuffer : true,
+                scene : scenes,
+                physics: {
+                    default: 'arcade',
+                    arcade: {
+                        debug: false
+                    }
+                }
+            };
+            game = new Phaser.Game(Config);
+            var pathURL = window.location.origin+window.location.pathname;
+            game.baseURL= pathURL.substring(0, pathURL.lastIndexOf('/')) + "/";
+            GetLocalProfile();
+            setMobileParams();
+            isPageLoaded = true;
+        }
+        function onNameChanged(input) {
+            myName = input.value;
+            sessionStorage.setItem(PREFIX +"name",myName);
+        }
+        function onGameStarted(myStartLength) {
+            switch(platform)
+            {
+                case PLATFORMS.WEB:
+                document.getElementById('header').style.display  = "none";
+                break;
+
+                case PLATFORMS.GD:
+                document.getElementById('header').style.display  = "none";
+                break;
+
+                case PLATFORMS.FACEBOOK:
+                if(isFBInstSDKReady)
+                {
+                    if(entryData != null)
+                    {
+                        if(!isChallengeDefeated)
+                        {
+                            document.getElementById('header').style.display  = "block";
+                            document.getElementById('welcome').innerHTML  = 'Beat '+entryData['name'];
+                            document.getElementById('name').innerHTML  = 'Length ' +(parseInt(entryData['score']) - myStartLength);
+                            document.getElementById('pic').src  = entryData['pic_url'];
+                        }
+                        else
+                        {
+                            document.getElementById('header').style.display  = "none";
+                        }
+                        
+                    }
+                }
+                break;
+            }
+        }
+        function onGameOver() {
+            if(isFBInstSDKReady)
+            {
+                document.getElementById("name").style.textDecoration = "none";
+                document.getElementById('header').style.display  = "block";
+                document.getElementById('name').innerHTML  = fbData.profile.name;
+                document.getElementById("pic").src = fbData.profile.pic;
+                document.getElementById('welcome').innerHTML  = 'Welcome';
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+<body onload="onPageReady();onFBStart();">
+    <div id="gameContainer">
+        
+    </div>
+    <div id="header" style="display: none;">
+        <div class="line"></div>
+        <div class="content">
+            <script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"aCj.QNwGUOfLrCmu67eagpL0xPleX_OUL2kyVMsyHGk-31536000-0"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img class="frame" data-cfsrc="images/ui/header.png" data-cfstyle="" style="display:none;visibility:hidden;" /><noscript><img class="frame" src="images/ui/header.png" style="" /></noscript>
+            <img id="pic" class="pic" src="" style="" />
+            <h3 id="welcome" class="welcome">Welcome</h3>
+            <h3 id="name" class="name">Waqas Siddique</h3>
+        </div>
+
+  
+        
+    </div>
+    <input id="yourname" type="text" name="name" autocomplete="off" onkeyup="onNameChanged(this)" placeholder="your name here...." style="display: none;">
+
+    <div id="splash" style="display: none;">
+        <img class="logo" id="logo" data-cfsrc="beedo-games.png" style="display:none;visibility:hidden;"><noscript><img class="logo" id="logo" src="beedo-games.png"></noscript>
+        
+    </div>
+    <div id="leaderboard_frame" style="display: none;">
+        <div class="leaderboard">
+          <div class="leaderboard__header">
+            <div class="b_logo"><img data-cfsrc="images/ui/lb_icon.png" width="32" alt="" style="display:none;visibility:hidden;"><noscript><img src="images/ui/lb_icon.png" width="32" alt=""></noscript></div>
+            <div class="b_caption">
+              <p>LEADERBOARD</p>
+
+            </div>
+            <img data-cfsrc="images/ui/close_button.png" class="close_button" height="28px" onclick="closeFBLeaderboard();" style="display:none;visibility:hidden;"><noscript><img src="images/ui/close_button.png" class="close_button" height="28px" onclick="closeFBLeaderboard();"></noscript>
+
+            <div class="modes">
+                <div class="mode_button" id="lb_button_0" onclick="setLbtype(0)" style="">Global</div>
+                <div class="mode_button" id="lb_button_1" onclick="setLbtype(1)" style="left: 50%; opacity: 0.5;">Friends</div>
+                
+            </div>
+          </div>
+
+          <div id="leaderboard_content" class="leaderboard__content">
+            <ul >
+              <li>
+                <div class="graphic"><img src="" alt=""></div>
+                <div class="name"><span class="header">Jeff Bezoz</span><span class="stat">47.5</span><span class="sub">units</span></div>
+              </li>
+              <li>
+                <div class="graphic"><img src="" alt=""></div>
+                <div class="name"><span class="header">Barack Obama</span><span class="stat">43.5</span><span class="sub">B</span></div>
+              </li>
+              <li>
+                <div class="graphic"><img src="" alt=""></div>
+                <div class="name"><span class="header">Bill Gates</span><span class="stat">40.5</span><span class="sub">B</span></div>
+              </li>
+              <li>
+                <div class="graphic"><img src="" alt=""></div>
+                <div class="name"><span class="header">Sundar Pichai</span><span class="stat">38.2</span><span class="sub">B</span></div>
+              </li>
+              <li>
+                <div class="graphic"><img src="" alt=""></div>
+                <div class="name"><span class="header">Mark Zukerberg</span><span class="stat">37.5</span><span class="sub">B</span></div>
+              </li>
+              <li>
+                <div class="graphic"><img src="" alt=""></div>
+                <div class="name"><span class="header">Mark Zukerberg</span><span class="stat">37.5</span><span class="sub">B</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    
+
+<script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+</body>
+</html>

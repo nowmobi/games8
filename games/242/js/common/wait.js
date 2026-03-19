@@ -1,0 +1,1 @@
+var Wait=function(){function n(){i&&i(),a.stopWait()}var t,i,a={};return a.wait=function(a){i=a,t.popup(),Laya.timer.once(5e3,null,n)},a.stopWait=function(){Laya.timer.clear(null,n),t.close()},a.init=function(){t=new waitingUI},a}();
