@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,minimal-ui" />
+        <meta name="msapplication-tap-highlight" content="no"/>
+
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/createjs-2015.11.26.min.js"></script>
+        <script type="text/javascript" src="js/Three.js"></script>
+        <script type="text/javascript" src="js/Stats.js"></script>
+		<script type="text/javascript" src="js/cannon.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">(function() {
+	function GameLoader() {
+    this.init = function() {
+      this._gameId = "tzvoybc5guau14mv4k852s9sshins9cm";
+      this._container = document.getElementById("game");
+      this._loader=this._getLoaderData();
+      this._hasImpression=false;
+      this._hasSuccess=false;
+      this._insertGameSDK();
+    };
+	
+	this._getLoaderData=function(){
+      return {"enabled":true};
+    }
+
+    this._insertGameSDK = function() {
+      if (!this._gameId) return;
+
+      window.SDK_OPTIONS = {
+        gameId: this._gameId,
+        loader:this._loader,
+        onLoaderEvent: this._onLoaderEvent.bind(this),
+        onEvent: this._onEvent.bind(this)
+      };
+
+	(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+    };
+
+	
+	this._onLoaderEvent = function(a) {
+      switch (a.name) {
+        case "LOADER_DATA":
+          this._bridge = a.message.bridge;
+          this._game = a.message.game;
+          break;
+      }
+    };
+
+    this._onEvent = function(a) {
+	
+	switch (a.name) {
+        case "SDK_GAME_START":
+          this._bridge&&this._loadGame({
+            hasImpression: this._hasImpression,
+            display:true
+          });
+          break;
+        case "AD_ERROR":
+        case "AD_SDK_CANCELED":
+          this._hasImpression=false||this._hasSuccess;
+          break;
+        case "ALL_ADS_COMPLETED":
+        case "COMPLETE":
+        case "USER_CLOSE":
+        case "SKIPPED":
+          this._hasImpression=true;
+          this._hasSuccess=true;
+          break;
+		 
+      }
+    };
+  }
+  new GameLoader().init();
+})();</script>
+
+    </head>
+    <body ondragstart="return false;" ondrop="return false;" >
+        <div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div>
+        <script>
+            $(document).ready(function () {
+                var oMain = new CMain({
+                    area_goal: [{id: 0, probability: 100}, {id: 1, probability: 80}, {id: 2, probability: 60},
+                        {id: 3, probability: 80}, {id: 4, probability: 100}, {id: 5, probability: 75},
+                        {id: 6, probability: 60}, {id: 7, probability: 50}, {id: 8, probability: 60},
+                        {id: 9, probability: 75}, {id: 10, probability: 80}, {id: 11, probability: 65},
+                        {id: 12, probability: 70}, {id: 13, probability: 65}, {id: 14, probability: 80}], //PROBABILITY AREA GOALS START TO LEFT UP TO RIGHT DOWN 
+                    //0 1 2 3 4
+                    //5 6 7 8 9
+                    //10 11 12 13 14
+                    num_of_penalty: 15, //MAX NUMBER OF PENALTY FOR END GAME
+                    multiplier_step: 0.1, //INCREASE MULTIPLIER EVERY GOAL
+                    fullscreen: true, //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
+                    num_levels_for_ads: 2//NUMBER OF TURNS PLAYED BEFORE AD SHOWING //
+                });
+                $(oMain).on("start_session", function (evt) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeStartSession();
+						
+                    }
+					sdk.showBanner();
+                });
+
+                $(oMain).on("end_session", function (evt) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeEndSession();
+                    }
+                });
+
+                $(oMain).on("start_level", function (evt, iLevel) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeStartLevel({level: iLevel});
+						sdk.showBanner();
+                    }
+					sdk.showBanner();
+                });
+
+                $(oMain).on("restart_level", function (evt, iLevel) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeRestartLevel({level: iLevel});
+					sdk.showBanner();
+                    }
+					sdk.showBanner();
+                });
+
+                $(oMain).on("end_level", function (evt, iLevel) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeEndLevel({level: iLevel});
+                    }
+                });
+
+                $(oMain).on("save_score", function (evt, iScore, szMode) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeSaveScore({score: iScore, mode: szMode});
+                    }
+                });
+
+                $(oMain).on("show_interlevel_ad", function (evt) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeShowInterlevelAD();
+						sdk.showBanner();
+                    }
+				sdk.showBanner();
+                });
+
+                $(oMain).on("share_event", function (evt, iScore) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeShareEvent({img: TEXT_SHARE_IMAGE,
+                            title: TEXT_SHARE_TITLE,
+                            msg: TEXT_SHARE_MSG1 + iScore + TEXT_SHARE_MSG2,
+                            msg_share: TEXT_SHARE_SHARE1 + iScore + TEXT_SHARE_SHARE1});
+                    }
+					sdk.showBanner();
+                });
+
+
+                if (isIOS()) {
+                    setTimeout(function () {
+                        sizeHandler();
+                    }, 200);
+                } else {
+                    sizeHandler();
+                }
+            });
+
+        </script>
+        <canvas id="canvas" class='ani_hack' width="1360" height="640"> </canvas>
+        <div id="block_game" style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%; display:none"></div>
+		<div class="game-footer"><div class="jss31 jss39 jss51"><div class="jss32" style="flex: 1 1 0%;"><div class="jss31 jss39"><div class="jss32"><div style="place-content: center; align-items: center; box-sizing: border-box; display: flex; flex-flow: row nowrap;"><div class="game-footer-logo game-footer-btn"><a href="https://alisgame.com" class="game-footer-link" target="_blank">онлайн игры</a></div></div></div></div></div><div class="jss32"><div class="jss31 jss51"><div class="jss32"><div class="game-footer-btn game-footer-more"><div style="/* place-content: center; *//* align-items: center; *//* box-sizing: border-box; *//* display: flex; *//* flex-flow: row nowrap; *//* height: 100%; */"><a href="https://alisgame.com" class="game-footer-link" target="_blank">all games</a></div></div></div></div></div></div></div></div>
+
+    
+</body>
+</html>
