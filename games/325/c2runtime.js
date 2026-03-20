@@ -11271,6 +11271,8 @@ function zc(f) {
                 f.b.trigger(zc.prototype.d.Eq, f)
             };
             this.$c.InitAds = function() {
+                // 拦截广告 SDK 初始化
+                console.log("InitAds blocked");
                 window.GD_OPTIONS = {
                     gameId: f.u[0],
                     userId: f.u[1],
@@ -11278,25 +11280,12 @@ function zc(f) {
                         autoplay: !1
                     },
                     onEvent: function(r) {
-                        switch (r.name) {
-                            case "SDK_GAME_START":
-                                f.$c.onResumeGame();
-                                break;
-                            case "SDK_GAME_PAUSE":
-                                f.$c.onPauseGame();
-                                break;
-                            case "SDK_READY":
-                                f.$c.onInit();
-                                break;
-                            case "SDK_ERROR":
-                                f.$c.onError()
-                        }
+                        // 拦截所有事件，不执行任何操作
+                        console.log("GD_OPTIONS event blocked:", r.name);
                     }
                 };
-                (function(f, b, a) {
-                    var g = f.getElementsByTagName(b)[0];
-                    f.getElementById(a) || (f = f.createElement(b), f.id = a, f.src = "//api.gamemonetize.com/sdk.js", g.parentNode.insertBefore(f, g))
-                })(document, "script", "gamemonetize-sdk")
+                // 阻止 SDK 加载
+                console.log("SDK loading blocked");
             }
         } else D("[Construct 2] gamemonetize.com SDK is required to show advertisements within Cordova; other platforms are not supported.")
     };
@@ -11314,13 +11303,18 @@ function zc(f) {
     };
     n.d = new f;
     p.prototype.qt = function() {
-        t && ("undefined" === typeof window.sdk.showBanner ? (D("gamemonetize.com SDK is not loaded or an ad blocker is present."), this.$c.onResumeGame()) : (window.sdk.showBanner(), D("ShowBanner"), this.bk = !0))
+        // 拦截广告显示
+        console.log("showBanner blocked");
+        this.$c.onResumeGame();
     };
     p.prototype.bt = function() {
-        t && ("undefined" === typeof window.sdk.play ? (D("gamemonetize.com SDK is not loaded."), this.$c.onResumeGame()) : window.sdk.play())
+        // 拦截广告播放
+        console.log("play blocked");
+        this.$c.onResumeGame();
     };
     p.prototype.qs = function() {
-        t && this.$c.InitAds()
+        // 拦截 InitAds 调用
+        console.log("qs (InitAds call) blocked");
     };
     n.C = new p;
     n.ga = new function() {}

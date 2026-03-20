@@ -25,11 +25,18 @@
       iframe[src*="googlesyndication"],
       iframe[title="Advertisement"],
       div[id*="google_ads"],
-      div[id*="aswift"] {
+      div[id*="aswift"],
+      #gamemonetize-sdk,
+      .gamemonetize-ad,
+      [class*="ad-container"],
+      [id*="banner"] {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        position: absolute !important;
+        left: -9999px !important;
+        z-index: -9999 !important;
       }
     </style>
     <script>
@@ -45,24 +52,45 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift"]',
+          '#gamemonetize-sdk',
+          '.gamemonetize-ad',
+          '[class*="ad-container"]',
+          '[id*="banner"]'
         ];
         
         adSelectors.forEach(function(selector) {
           var elements = document.querySelectorAll(selector);
           elements.forEach(function(el) {
             if (el && el.parentNode) {
-              el.parentNode.removeChild(el);
+              try {
+                el.parentNode.removeChild(el);
+              } catch(e) {}
             }
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
-        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.sdk) window.sdk = { 
+          showBanner: function() {}, 
+          requestAd: function() {},
+          showInterstitial: function() {},
+          showReward: function() {}
+        };
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
+        if (window.GameMonetize) window.GameMonetize = {};
       }, 500);
+      
+      // 拦截 SDK 加载
+      window.SDK_OPTIONS = {
+        gameId: "",
+        onEvent: function (a) {
+          // 阻止所有广告事件
+          console.log("Blocked ad event:", a.name);
+        }
+      };
     </script>
 
   </head>
@@ -135,15 +163,13 @@ to accomplish this. See the section below for more detail on that.
 			var loadingElement = document.getElementById('gse-loading');
 			var playerDelegate = {
 				onSceneAboutToChange: function(sceneKey, sceneName, adType) {
-				  if (adType > 0) {
-				    sdk.showBanner();
-				  }
+				  // 阻止广告显示
+				  return;
 				},
-				// Show gamemonetize banner ad.
+				// 阻止横幅广告显示
 				onShowBannerShow: function(position) {
-				  if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
-				    sdk.showBanner();
-				  }
+				  // 阻止所有广告
+				  return;
 				},
 				onLoadingBegin: function() {
 					engine.showOverlay();
@@ -258,41 +284,43 @@ Note that the "gse" namespace is global but the "engine" object is not.
 
 -->
 <script type="text/javascript" src="js/gse/gse-export.js" async onload="onEngineLoad()"></script>
-<script type="text/javascript">
-  var GAMEMONETIZE_GAME_ID = "5y6gjagh93gmo9djb7gy8722p0wlsdb4";
-  window.SDK_OPTIONS = {
-    gameId: GAMEMONETIZE_GAME_ID,
-    onEvent: function (a) {
-       switch (a.name) {
-          case "SDK_GAME_PAUSE":
-            // pause game logic / mute audio 
-            console.log("GameMonetize Message: SDK_GAME_PAUSE");
-            if (gse) gse.pause();
-            break;
-          case "SDK_GAME_START":
-            // advertisement done, resume game logic and unmute audio
-            console.log("GameMonetize Message: SDK_GAME_START");
-            if (gse) gse.unpause();
-            break;
-          case "SDK_SHOW_BANNER":
-            console.log("Show ad event.");
-          case "SDK_READY":
-            console.log("GameMonetize Message: SDK_READY");
-            break;
-       }
-    }
- };
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-sdk"); 
-</script>
   
 <script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
+// 拦截并阻止 GameMonetize SDK 加载
+(function() {
+  console.log("Blocking GameMonetize SDK");
+  
+  // 创建假的 SDK 对象阻止真实 SDK 功能
+  window.sdk = {
+    showBanner: function() { console.log("Blocked banner ad"); },
+    hideBanner: function() {},
+    showInterstitial: function() { console.log("Blocked interstitial ad"); },
+    showReward: function() { console.log("Blocked reward ad"); },
+    requestAd: function() {},
+    init: function() {}
+  };
+  
+  // 阻止 SDK 脚本加载
+  var originalCreateElement = document.createElement;
+  document.createElement = function(tagName) {
+    var element = originalCreateElement.call(document, tagName);
+    if (tagName === 'script') {
+      Object.defineProperty(element, 'src', {
+        set: function(value) {
+          if (value && value.indexOf('gamemonetize') !== -1) {
+            console.log("Blocked SDK load:", value);
+            return;
+          }
+          this.setAttribute('src', value);
+        },
+        get: function() {
+          return this.getAttribute('src');
+        }
+      });
+    }
+    return element;
+  };
+})();
 </script>
 
 

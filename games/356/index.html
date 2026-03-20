@@ -39,9 +39,7 @@
 		}
     </style>
 	
-
-
-    <style>
+	<style>
       /* 隐藏所有广告容器 */
       #imaContainer,
       #imaContainer_new,
@@ -52,14 +50,45 @@
       iframe[src*="googlesyndication"],
       iframe[title="Advertisement"],
       div[id*="google_ads"],
-      div[id*="aswift"] {
+      div[id*="aswift"],
+      #gamemonetize-ads,
+      .ad-container,
+      .ads-banner,
+      #adsense,
+      #ad-banner {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        position: absolute !important;
+        left: -9999px !important;
+        top: -9999px !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
       }
     </style>
     <script>
+      // 拦截广告 SDK 加载
+      (function() {
+        // 拦截 gamemonetize SDK
+        var originalCreateElement = document.createElement;
+        document.createElement = function(tagName) {
+          var element = originalCreateElement.call(document, tagName);
+          return element;
+        };
+        
+        // 拦截脚本加载
+        var originalSetAttribute = HTMLElement.prototype.setAttribute;
+        HTMLElement.prototype.setAttribute = function(name, value) {
+          if (name === 'src' && (value.includes('gamemonetize') || value.includes('ads') || value.includes('advertisement'))) {
+            console.log('拦截广告脚本:', value);
+            return;
+          }
+          return originalSetAttribute.call(this, name, value);
+        };
+      })();
+      
       // 定期清除动态插入的广告元素
       setInterval(function() {
         var adSelectors = [
@@ -72,7 +101,14 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift"]',
+          '#gamemonetize-ads',
+          '.ad-container',
+          '.ads-banner',
+          '#adsense',
+          '#ad-banner',
+          '[class*="ad-"]',
+          '[id*="ad-"]'
         ];
         
         adSelectors.forEach(function(selector) {
@@ -84,12 +120,26 @@
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
         if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
+        if (window.GameMonetize) window.GameMonetize = {};
+        if (window.gamemonetize) window.gamemonetize = {};
       }, 500);
+      
+      // 拦截 console.log 防止广告调试
+      (function() {
+        var originalLog = console.log;
+        console.log = function() {
+          var args = Array.prototype.slice.call(arguments);
+          if (args.some(arg => typeof arg === 'string' && (arg.includes('ad') || arg.includes('advert')))) {
+            return;
+          }
+          return originalLog.apply(console, arguments);
+        };
+      })();
     </script>
 
   </head> 
@@ -184,15 +234,5 @@
 			}
 		};
     </script>
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
-
-
-
 </body> 
 </html> 

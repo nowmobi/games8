@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8" />
@@ -43,55 +43,280 @@ touch-action: none;
 
 
 
-    <style>
-      /* 隐藏所有广告容器 */
-      #imaContainer,
-      #imaContainer_new,
-      #sdk__advertisement,
-      #gmLoadingText,
-      iframe[src*="imasdk"],
-      iframe[src*="doubleclick"],
-      iframe[src*="googlesyndication"],
-      iframe[title="Advertisement"],
-      div[id*="google_ads"],
-      div[id*="aswift"] {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
-      }
-    </style>
     <script>
-      // 定期清除动态插入的广告元素
-      setInterval(function() {
-        var adSelectors = [
-          '#imaContainer',
-          '#imaContainer_new', 
-          '#sdk__advertisement',
-          '#gmLoadingText',
-          'iframe[src*="imasdk"]',
-          'iframe[src*="doubleclick"]',
-          'iframe[src*="googlesyndication"]',
-          'iframe[title="Advertisement"]',
-          'div[id*="google_ads"]',
-          'div[id*="aswift"]'
-        ];
+      // 立即执行：阻止广告 SDK 加载和初始化
+      (function() {
+        // ===== 第一层：拦截所有可能的全局对象 =====
         
-        adSelectors.forEach(function(selector) {
-          var elements = document.querySelectorAll(selector);
-          elements.forEach(function(el) {
-            if (el && el.parentNode) {
-              el.parentNode.removeChild(el);
-            }
+        // 拦截 gamemonetize SDK
+        window.gamemonetize = window.gamemonetize || {};
+        window.gamemonetize.showBanner = function() { console.log('Ad blocked: showBanner'); };
+        window.gamemonetize.requestAd = function() { console.log('Ad blocked: requestAd'); };
+        window.gamemonetize.init = function() { console.log('Ad blocked: init'); };
+        window.gamemonetize.loadAd = function() { console.log('Ad blocked: loadAd'); };
+        window.gamemonetize.displayAd = function() { console.log('Ad blocked: displayAd'); };
+        
+        // 拦截通用广告函数
+        window.sdk_init = function() { console.log('Ad blocked: sdk_init'); };
+        window.sdk = { 
+          showBanner: function() { console.log('Ad blocked: sdk.showBanner'); }, 
+          requestAd: function() { console.log('Ad blocked: sdk.requestAd'); },
+          init: function() { console.log('Ad blocked: sdk.init'); },
+          showAd: function() { console.log('Ad blocked: sdk.showAd'); },
+          loadAd: function() { console.log('Ad blocked: sdk.loadAd'); },
+          destroy: function() { console.log('Ad blocked: sdk.destroy'); }
+        };
+        window.adBreak = function() { console.log('Ad blocked: adBreak'); };
+        window.adConfig = function() { console.log('Ad blocked: adConfig'); };
+        window.showAd = function() { console.log('Ad blocked: showAd'); };
+        window.loadAd = function() { console.log('Ad blocked: loadAd'); };
+        window.initAd = function() { console.log('Ad blocked: initAd'); };
+        window.displayAd = function() { console.log('Ad blocked: displayAd'); };
+        
+        // 拦截 Google AdSense
+        window.adsbygoogle = window.adsbygoogle || [];
+        window.adsbygoogle.push = function() { console.log('Ad blocked: adsbygoogle.push'); return []; };
+        
+        // 拦截 IMA SDK
+        window.google = window.google || {};
+        window.google.ima = window.google.ima || {};
+        window.google.ima.AdDisplayMode = function() {};
+        window.google.ima.AdsManager = function() {};
+        window.google.ima.AdsLoader = function() {};
+        window.google.ima.settings = { setLocale: function() {}, setDisableCustomPlaybackForIOS10Plus: function() {} };
+        
+        // 拦截其他常见广告 SDK
+        window.PubAdsService = function() {};
+        window.SlotDefine = function() {};
+        window.display = function() { console.log('Ad blocked: display'); };
+        
+        // ===== 第二层：CSS 注入强化 =====
+        
+        var adStyles = document.createElement('style');
+        adStyles.textContent = `
+          /* 隐藏所有可能的广告容器 */
+          #imaContainer,
+          #imaContainer_new,
+          #sdk__advertisement,
+          #gmLoadingText,
+          #gamemonetize-ad,
+          #ad-container,
+          #ad-banner,
+          #ads-container,
+          .adsbygoogle,
+          .ad-banner,
+          .advertisement,
+          .ad-container,
+          .ads-container,
+          .ad-banner-container,
+          .google-ad,
+          .dfp-ad,
+          .doubleclick-ad,
+          iframe[src*="imasdk"],
+          iframe[src*="doubleclick"],
+          iframe[src*="googlesyndication"],
+          iframe[title="Advertisement"],
+          div[id*="google_ads"],
+          div[id*="aswift"],
+          div[id*="gamemonetize"],
+          div[id*="ads-"],
+          div[id*="ad-"],
+          div[class*="ad-"],
+          div[class*="ads-"],
+          div[class*="advertisement"],
+          object[data*="ad"],
+          embed[src*="ad"] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            position: absolute !important;
+            left: -9999px !important;
+            top: -9999px !important;
+            width: 0 !important;
+            height: 0 !important;
+            overflow: hidden !important;
+            border: none !important;
+            z-index: -999999 !important;
+          }
+        `;
+        document.head.appendChild(adStyles);
+        
+        // ===== 第三层：DOM 清理 =====
+        
+        // 清除已存在的广告元素
+        function removeAds() {
+          var adSelectors = [
+            '#imaContainer',
+            '#imaContainer_new', 
+            '#sdk__advertisement',
+            '#gmLoadingText',
+            '#gamemonetize-ad',
+            '#ad-container',
+            '#ad-banner',
+            '.adsbygoogle',
+            '.ad-banner',
+            '.advertisement',
+            '.ad-container',
+            '.ads-container',
+            'iframe[src*="imasdk"]',
+            'iframe[src*="doubleclick"]',
+            'iframe[src*="googlesyndication"]',
+            'iframe[title="Advertisement"]',
+            'div[id*="google_ads"]',
+            'div[id*="aswift"]',
+            'div[id*="gamemonetize"]',
+            'div[id*="ads-"]',
+            'div[id*="ad-"]',
+            '[class*="ad-"]',
+            '[class*="ads-"]',
+            '[class*="advertisement"]'
+          ];
+          
+          adSelectors.forEach(function(selector) {
+            var elements = document.querySelectorAll(selector);
+            elements.forEach(function(el) {
+              if (el && el.parentNode) {
+                try {
+                  el.style.display = 'none';
+                  el.style.visibility = 'hidden';
+                  el.style.opacity = '0';
+                  if (el.parentNode) {
+                    el.parentNode.removeChild(el);
+                  }
+                } catch(e) {
+                  console.log('Failed to remove ad element:', selector);
+                }
+              }
+            });
           });
-        });
-
-        // 阻止广告SDK函数
-        if (window.sdk_init) window.sdk_init = function() {};
-        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
-        if (window.adBreak) window.adBreak = function() {};
-        if (window.adConfig) window.adConfig = function() {};
-      }, 500);
+        }
+        
+        // 立即清除一次
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', removeAds);
+        } else {
+          removeAds();
+        }
+        
+        // 定期清除动态插入的广告元素（更快频率）
+        setInterval(removeAds, 300);
+        
+        // ===== 第四层：MutationObserver 监控 =====
+        
+        // 拦截 DOM 变化，阻止广告元素添加
+        if (window.MutationObserver) {
+          var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+              if (mutation.addedNodes.length) {
+                for (var i = 0; i < mutation.addedNodes.length; i++) {
+                  var node = mutation.addedNodes[i];
+                  if (node.nodeType === 1) { // Element node
+                    var className = node.className || '';
+                    var id = node.id || '';
+                    var tagName = node.tagName || '';
+                    var src = node.src || '';
+                    
+                    // 检查是否是广告元素
+                    var isAd = false;
+                    
+                    // 检查 ID
+                    if (id.toString().match(/^(ad|ads|advert|banner|sponsor|promo|gamemonetize|doubleclick|google.*ad)/i)) {
+                      isAd = true;
+                    }
+                    
+                    // 检查 Class
+                    if (className.toString().match(/(ad|ads|advert|banner|sponsor|promo|gamemonetize|doubleclick|google.*ad)/i)) {
+                      isAd = true;
+                    }
+                    
+                    // 检查标签类型
+                    if (tagName === 'IFRAME' || tagName === 'EMBED' || tagName === 'OBJECT') {
+                      isAd = true;
+                    }
+                    
+                    // 检查 src 属性
+                    if (src.toString().match(/(ad[s]?|doubleclick|googlesyndication|imasdk|gamemonetize)/i)) {
+                      isAd = true;
+                    }
+                    
+                    if (isAd) {
+                      try {
+                        node.style.display = 'none';
+                        node.style.visibility = 'hidden';
+                        node.style.opacity = '0';
+                        if (node.parentNode) {
+                          node.parentNode.removeChild(node);
+                          console.log('Removed ad node:', node.tagName || 'unknown');
+                        }
+                      } catch(e) {
+                        console.log('Failed to remove ad node:', e);
+                      }
+                    }
+                  }
+                }
+              }
+            });
+          });
+          
+          observer.observe(document.body || document.documentElement, {
+            childList: true,
+            subtree: true
+          });
+        }
+        
+        // ===== 第五层：网络请求拦截 =====
+        
+        // 拦截 XMLHttpRequest
+        if (window.XMLHttpRequest) {
+          var originalXHROpen = XMLHttpRequest.prototype.open;
+          var originalXHRSend = XMLHttpRequest.prototype.send;
+          
+          XMLHttpRequest.prototype.open = function(method, url) {
+            this._url = url;
+            return originalXHROpen.apply(this, arguments);
+          };
+          
+          XMLHttpRequest.prototype.send = function() {
+            if (this._url && (
+                this._url.match(/ad[s]?[-_.]/i) ||
+                this._url.match(/doubleclick/i) ||
+                this._url.match(/googlesyndication/i) ||
+                this._url.match(/imasdk/i) ||
+                this._url.match(/gamemonetize/i) ||
+                this._url.match(/adserver/i) ||
+                this._url.match(/adtrack/i)
+            )) {
+              console.log('Blocked ad XHR request:', this._url);
+              this.abort();
+              return;
+            }
+            return originalXHRSend.apply(this, arguments);
+          };
+        }
+        
+        // 拦截 fetch API
+        if (window.fetch) {
+          var originalFetch = window.fetch;
+          window.fetch = function(input, init) {
+            var url = typeof input === 'string' ? input : (input.url || '');
+            
+            if (url.match(/ad[s]?[-_.]/i) ||
+                url.match(/doubleclick/i) ||
+                url.match(/googlesyndication/i) ||
+                url.match(/imasdk/i) ||
+                url.match(/gamemonetize/i) ||
+                url.match(/adserver/i)) {
+              console.log('Blocked ad fetch request:', url);
+              return Promise.reject(new Error('Ad blocked'));
+            }
+            
+            return originalFetch.apply(this, arguments);
+          };
+        }
+        
+        console.log('Ad blocker initialized successfully');
+      })();
     </script>
 
   </head>
@@ -203,16 +428,6 @@ OnRegisterSWError(e);
 }
 };
 </script>
-
-      
-
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
 
 </body>
 </html>

@@ -115,28 +115,46 @@
             }
         }
     </style>
-
-
-
-    <style>
-      /* 隐藏所有广告容器 */
-      #imaContainer,
-      #imaContainer_new,
-      #sdk__advertisement,
-      #gmLoadingText,
-      iframe[src*="imasdk"],
-      iframe[src*="doubleclick"],
-      iframe[src*="googlesyndication"],
-      iframe[title="Advertisement"],
-      div[id*="google_ads"],
-      div[id*="aswift"] {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
-      }
-    </style>
     <script>
+      // 立即执行：阻止 SDK 初始化和加载
+      (function() {
+        // 覆盖全局变量
+        window.sdk = null;
+        window.SDK_OPTIONS = {};
+        
+        // 拦截所有可能的广告函数
+        var originalDefine = window.define;
+        window.define = function() {
+          // 阻止通过 define 加载广告 SDK
+          if (arguments[0] && arguments[0].indexOf('gamemonetize') !== -1) {
+            console.log('Blocked gamemonetize SDK load');
+            return;
+          }
+          if (originalDefine) originalDefine.apply(this, arguments);
+        };
+        
+        // 拦截 script 标签创建
+        var originalCreateElement = document.createElement;
+        document.createElement = function(tagName) {
+          var element = originalCreateElement.call(document, tagName);
+          if (tagName === 'script') {
+            Object.defineProperty(element, 'src', {
+              set: function(value) {
+                if (value && value.indexOf('gamemonetize') !== -1) {
+                  console.log('Blocked SDK script:', value);
+                  return;
+                }
+                this.setAttribute('src', value);
+              },
+              get: function() {
+                return this.getAttribute('src');
+              }
+            });
+          }
+          return element;
+        };
+      })();
+      
       // 定期清除动态插入的广告元素
       setInterval(function() {
         var adSelectors = [
@@ -149,7 +167,7 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift]'
         ];
         
         adSelectors.forEach(function(selector) {
@@ -161,11 +179,29 @@
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
-        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.sdk) {
+          window.sdk.showBanner = function() { 
+            console.log('Ad blocked: showBanner');
+            return false;
+          };
+          window.sdk.requestAd = function() { 
+            console.log('Ad blocked: requestAd');
+            return false;
+          };
+          window.sdk.play = function() { 
+            console.log('Ad blocked: play');
+            return false;
+          };
+        }
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
+        if (window.GD_OPTIONS && window.GD_OPTIONS.onEvent) {
+          window.GD_OPTIONS.onEvent = function() {
+            console.log('GD_OPTIONS event blocked');
+          };
+        }
       }, 500);
     </script>
 
@@ -206,8 +242,6 @@
 
     <!-- Construct 2 exported games require jQuery. -->
     <script src="jquery-2.1.1.min.js"></script>
-
-
 
     <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
     This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
@@ -256,70 +290,6 @@
             }
         };
     </script>
-	<div class="imgs">
-        <a id="links" href="" target="_blank">
-        <img  id="imgr" class="imgr" src="" alt="">
-        <script type="text/javascript" style="display:none">
-//<![CDATA[
-window.__mirage2 = {petok:"aCj.QNwGUOfLrCmu67eagpL0xPleX_OUL2kyVMsyHGk-31536000-0"};
-//]]>
-</script>
-<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-<img class="arrow" data-cfsrc="./imgs/arrow.png" width="45px" height="45px" alt="" style="display:none;visibility:hidden;"><noscript><img  class="arrow" src="./imgs/arrow.png" width="45px" height="45px" alt=""></noscript>
-       </a>
+</original_code>```
 
-    </div>
-    <script src="./main.js"></script>
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
-
-
-
-</body>
-<script type="text/javascript">
-    window.SDK_OPTIONS = {
-        gameId: "0g0rvlq9qp5umlaut1k4qr650e0r9io6",
-        onEvent: function(a) {
-            switch (a.name) {
-                case "SDK_GAME_PAUSE":
-                    // pause game logic / mute audio
-                    break;
-                case "SDK_GAME_START":
-                    // advertisement done, resume game logic and unmute audio
-                    break;
-                case "SDK_READY":
-                    // when sdk is ready
-                    break;
-            }
-        }
-    };
-    (function(a, b, c) {
-        var d = a.getElementsByTagName(b)[0];
-        a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
-    })(document, "script", "gamemonetize-sdk");
-</script>
-<script type="text/javascript">
-    function google_analytics() {
-        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
-            sdk.showBanner();
-        }
-    };
-
-    function google_analytics_ID() {
-        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
-            sdk.showBanner();
-        }
-    };
-    setTimeout(function() {
-        google_analytics();
-    }, 1000);
-    setInterval(function() {
-        google_analytics_ID();
-    }, 65000);
-</script>
-</html>
+```

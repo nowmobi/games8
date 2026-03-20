@@ -6,17 +6,19 @@ var goal=5;
 var next_logo=new logo();
 function drawPicture()
 {
-	if(on_ad)
-	{
-		ctx.fillStyle="black";
-		ctx.fillRect(0,0,stage.width,stage.height);
-	}
-	else
-	{
-		if(ads_ready)
-		{
-			time_to_ad--;
-		}
+	// 广告显示检查已禁用
+	// if(on_ad)
+	// {
+	// 	ctx.fillStyle="black";
+	// 	ctx.fillRect(0,0,stage.width,stage.height);
+	// }
+	// else
+	// {
+		// 广告计时器已禁用，但保留逻辑以避免错误
+		// if(ads_ready)
+		// {
+		// 	time_to_ad--;
+		// }
 		
 		if(stage_change=="NEW")
 		{
@@ -49,7 +51,7 @@ function drawPicture()
 		cursor.draw();
 		cursor.functionality();
 		mouse_refresh();
-	}
+	// }
 }
 
 function logo()

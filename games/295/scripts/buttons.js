@@ -170,10 +170,6 @@ function create_ball(x,y,size,wind,weigth,goal,filename,color)
         {
             if(this.speedY<-1 && stage_change=="PLAY")
             {
-                if(time_to_ad<0)
-                {
-                    advertisment();
-                }
                 touch_down_play();
             }
             this.speedY= -this.speedY*0.4;

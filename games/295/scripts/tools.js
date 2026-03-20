@@ -1,10 +1,15 @@
 
 function advertisment()
 {
-    if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') 
-    {
-        sdk.showBanner();
-    }
+    // 广告功能已禁用 - 完全拦截广告显示
+    console.log('广告调用已拦截');
+    return false;
+    
+    // 原始代码已注释
+    // if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') 
+    // {
+    //     sdk.showBanner();
+    // }
 
 }
 var mykeys;
