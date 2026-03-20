@@ -61,7 +61,7 @@
     </style>
     <script>
       // 定期清除动态插入的广告元素
-      setInterval(function() {
+      (function() {
         var adSelectors = [
           '#imaContainer',
           '#imaContainer_new', 
@@ -72,24 +72,53 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift"]',
+          '#gamemonetize-ads',
+          '[class*="ad-container"]',
+          '[id*="banner-ad"]'
         ];
         
-        adSelectors.forEach(function(selector) {
-          var elements = document.querySelectorAll(selector);
-          elements.forEach(function(el) {
-            if (el && el.parentNode) {
-              el.parentNode.removeChild(el);
-            }
+        function removeAds() {
+          adSelectors.forEach(function(selector) {
+            try {
+              var elements = document.querySelectorAll(selector);
+              elements.forEach(function(el) {
+                if (el && el.parentNode) {
+                  el.parentNode.removeChild(el);
+                }
+              });
+            } catch(e) {}
           });
-        });
+        }
+        
+        // 页面加载时立即执行一次
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', removeAds);
+        } else {
+          removeAds();
+        }
+        
+        // 然后定期清理
+        setInterval(removeAds, 1000);
 
-        // 阻止广告SDK函数
-        if (window.sdk_init) window.sdk_init = function() {};
-        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
-        if (window.adBreak) window.adBreak = function() {};
-        if (window.adConfig) window.adConfig = function() {};
-      }, 500);
+        // 阻止广告 SDK 函数
+        if (window.sdk_init) window.sdk_init = function() { console.log("[Ad Blocked] sdk_init blocked"); };
+        if (window.sdk) window.sdk = { 
+          showBanner: function() { console.log("[Ad Blocked] showBanner blocked"); }, 
+          requestAd: function() { console.log("[Ad Blocked] requestAd blocked"); },
+          play: function() { console.log("[Ad Blocked] play blocked"); },
+          customLog: function() { console.log("[Ad Blocked] customLog blocked"); }
+        };
+        if (window.adBreak) window.adBreak = function() { console.log("[Ad Blocked] adBreak blocked"); };
+        if (window.adConfig) window.adConfig = function() { console.log("[Ad Blocked] adConfig blocked"); };
+        if (window.gamemonetize) window.gamemonetize = {
+          onInit: function() { console.log("[Ad Blocked] gamemonetize.onInit blocked"); },
+          onError: function() { console.log("[Ad Blocked] gamemonetize.onError blocked"); },
+          onResumeGame: function() { console.log("[Ad Blocked] gamemonetize.onResumeGame blocked"); },
+          onPauseGame: function() { console.log("[Ad Blocked] gamemonetize.onPauseGame blocked"); },
+          InitAds: function() { console.log("[Ad Blocked] gamemonetize.InitAds blocked"); }
+        };
+      })();
     </script>
 
   </head> 
@@ -184,14 +213,6 @@
 			}
 		};
     </script>
-
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
 
 </body> 
 </html> 

@@ -11,28 +11,74 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ParkourRun3D.json", {onProgress: UnityProgress});
     </script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22342610-8"></script>
+	
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-22342610-8');
-	</script>
+      // 拦截广告 SDK 加载
+      (function() {
+        // 阻止 gamemonetize SDK
+        window.gamemonetize = {};
+        
+        // 拦截脚本加载
+        var originalCreateElement = document.createElement;
+        document.createElement = function(tagName) {
+          var element = originalCreateElement.call(document, tagName);
+          if (tagName.toLowerCase() === 'script') {
+            var originalSetAttribute = element.setAttribute;
+            element.setAttribute = function(name, value) {
+              // 拦截广告相关的脚本
+              if (name.toLowerCase() === 'src' && (
+                  value.indexOf('gamemonetize') !== -1 ||
+                  value.indexOf('googleads') !== -1 ||
+                  value.indexOf('doubleclick') !== -1 ||
+                  value.indexOf('googlesyndication') !== -1 ||
+                  value.indexOf('imasdk') !== -1 ||
+                  value.indexOf('googletagmanager') !== -1
+                )) {
+                console.log('Blocked ad script:', value);
+                return;
+              }
+              return originalSetAttribute.call(element, name, value);
+            };
+          }
+          return element;
+        };
+        
+        // 定期清除动态插入的广告元素
+        setInterval(function() {
+          var adSelectors = [
+            '#imaContainer',
+            '#imaContainer_new', 
+            '#sdk__advertisement',
+            '#gmLoadingText',
+            'iframe[src*="imasdk"]',
+            'iframe[src*="doubleclick"]',
+            'iframe[src*="googlesyndication"]',
+            'iframe[title="Advertisement"]',
+            'div[id*="google_ads"]',
+            'div[id*="aswift"]'
+          ];
+          
+          adSelectors.forEach(function(selector) {
+            var elements = document.querySelectorAll(selector);
+            elements.forEach(function(el) {
+              if (el && el.parentNode) {
+                el.parentNode.removeChild(el);
+              }
+            });
+          });
+
+          // 阻止广告 SDK 函数
+          if (window.sdk_init) window.sdk_init = function() {};
+          if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+          if (window.adBreak) window.adBreak = function() {};
+          if (window.adConfig) window.adConfig = function() {};
+        }, 500);
+      })();
+    </script>
   </head>
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 420px; height: 700px"></div>
     </div>
-
-          
-
-  <script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
-
-</body>
+  </body>
 </html>

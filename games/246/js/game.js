@@ -1,6 +1,3 @@
-
-
-
 var CANVAS_WIDTH = 1280;
 var CANVAS_HEIGHT = 960;
 var ARENA_WIDTH = 10000;
@@ -174,19 +171,14 @@ function ProceedToGameEnd()
             {
                 isPlayAgainAvailable = false;
             }
-            isVideoAdPreloaded = false;
 
             if(isPlayAgainAvailable)
             {
-                GameHudScene.ShowResume(isVideoAdPreloaded);
+                GameHudScene.ShowResume(false);
                 isPlayAgainAvailable = false;
             }
             else
             {
-                if (supportedAPIs.includes('getInterstitialAdAsync'))
-                {
-                    preloadFBInterstatial();
-                }
                 setTimeout(GameOver,2500);
                 setTimeout(function(){ GameHudScene.cameras.main.fadeOut(500,0,0,0); }, 2000);
             }

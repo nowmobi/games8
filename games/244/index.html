@@ -13,7 +13,7 @@
     }
 
     body {
-      <!--overflow: hidden;-->
+      /* overflow: hidden; */
     }
 
     #gameContainer canvas {
@@ -35,13 +35,13 @@
         transform: translate(-50%, -50%);
       }
 
-      <!--div#webgl-content {
+      /*div#webgl-content {
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-    } -->
+    } */
 
     div#loadingBox {
       width: 100%;
@@ -304,13 +304,133 @@
 
     
 
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
+    <style>
+      /* 增强广告屏蔽规则 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"],
+      div[id*="ads"],
+      div[class*="ads"],
+      .ad-banner,
+      .ad-container,
+      #advertisement,
+      #adsense,
+      #ads_container,
+      #pre_roll_ad,
+      #mid_roll_ad,
+      #post_roll_ad {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: absolute !important;
+        left: -9999px !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+      }
+    </style>
+    <script>
+      // 立即清除并持续监控广告元素
+      (function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]',
+          'div[id*="ads"]',
+          'div[class*="ads"]',
+          '.ad-banner',
+          '.ad-container',
+          '#advertisement',
+          '#adsense',
+          '#ads_container',
+          '#pre_roll_ad',
+          '#mid_roll_ad',
+          '#post_roll_ad'
+        ];
+        
+        // 立即执行一次
+        function removeAds() {
+          adSelectors.forEach(function(selector) {
+            try {
+              var elements = document.querySelectorAll(selector);
+              elements.forEach(function(el) {
+                if (el && el.parentNode) {
+                  el.parentNode.removeChild(el);
+                }
+              });
+            } catch(e) {}
+          });
+        }
+        
+        // 立即清除
+        removeAds();
+        
+        // 持续监控并清除
+        setInterval(removeAds, 100);
+        
+        // MutationObserver 监控 DOM 变化
+        if (window.MutationObserver) {
+          var observer = new MutationObserver(removeAds);
+          observer.observe(document.body || document.documentElement, {
+            childList: true,
+            subtree: true
+          });
+        }
+        
+        // 阻止广告 SDK 函数
+        window.sdk_init = function() {};
+        window.sdk = { 
+          showBanner: function() {}, 
+          requestAd: function() {},
+          showAd: function() {},
+          init: function() {}
+        };
+        window.adBreak = function() {};
+        window.adConfig = function() {};
+        window.showAd = function() {};
+        window.loadAd = function() {};
+        
+        // 阻止 gamemonetize
+        window.GameMonetize = {};
+        window.gm = {};
+        
+        // 拦截广告请求
+        if (window.XMLHttpRequest) {
+          var originalXHR = window.XMLHttpRequest;
+          var patchedXHR = function() {
+            var xhr = new originalXHR();
+            var originalOpen = xhr.open;
+            xhr.open = function(method, url) {
+              if (url && (url.indexOf('ads') !== -1 || 
+                  url.indexOf('doubleclick') !== -1 || 
+                  url.indexOf('googlesyndication') !== -1 ||
+                  url.indexOf('gamemonetize') !== -1)) {
+                console.log('Blocked ad request:', url);
+                return;
+              }
+              return originalOpen.apply(xhr, arguments);
+            };
+            return xhr;
+          };
+          window.XMLHttpRequest = patchedXHR;
+        }
+      })();
+    </script>
 
-
-</body>
+  </body>
 </html>

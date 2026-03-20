@@ -1,8 +1,0 @@
-{
-	"front":"sc_sky_01_PositiveZ.png",
-	"back":"sc_sky_01_NegativeZ.png",
-	"left":"sc_sky_01_PositiveX.png",
-	"right":"sc_sky_01_NegativeX.png",
-	"up":"sc_sky_01_PositiveY.png",
-	"down":"sc_sky_01_NegativeY.png"
-}

@@ -16,6 +16,137 @@
 <link rel="stylesheet" href="style.css">
 
 
+    <script>
+      // 拦截并阻止所有广告 SDK 加载
+      (function() {
+        // 保存原始函数
+        const originalCreateElement = document.createElement;
+        const originalSetAttribute = Element.prototype.setAttribute;
+        
+        // 重写 createElement 以拦截广告元素创建
+        document.createElement = function(tagName) {
+          const element = originalCreateElement.call(document, tagName);
+          
+          // 拦截 script 标签
+          if (tagName.toLowerCase() === 'script') {
+            const originalSrcSetter = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src').set;
+            Object.defineProperty(element, 'src', {
+              set: function(value) {
+                // 检查是否为广告 SDK
+                const adKeywords = ['gamemonetize', 'imasdk', 'doubleclick', 'googlesyndication', 
+                                   'googleads', 'adservice', 'admob', 'adcolony', 'unityads',
+                                   'chartboost', 'vungle', 'applovin', 'ironsource', 'facebook',
+                                   'audienceetwork', 'admob', 'inmobi', 'millennial', 'smaato'];
+                
+                for (const keyword of adKeywords) {
+                  if (value.toLowerCase().includes(keyword)) {
+                    console.log('[广告拦截] 阻止广告 SDK 加载:', value);
+                    return; // 不设置 src，阻止加载
+                  }
+                }
+                originalSrcSetter.call(this, value);
+              },
+              get: function() {
+                return originalCreateElement.call(document, tagName).src;
+              }
+            });
+          }
+          
+          // 拦截 iframe 标签
+          if (tagName.toLowerCase() === 'iframe') {
+            const originalSrcSetter = Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype, 'src').set;
+            Object.defineProperty(element, 'src', {
+              set: function(value) {
+                const adKeywords = ['imasdk', 'doubleclick', 'googlesyndication', 'gamemonetize',
+                                   'googleads', 'adservice', 'admob'];
+                
+                for (const keyword of adKeywords) {
+                  if (value.toLowerCase().includes(keyword)) {
+                    console.log('[广告拦截] 阻止广告 iframe 加载:', value);
+                    return;
+                  }
+                }
+                originalSrcSetter.call(this, value);
+              },
+              get: function() {
+                return originalCreateElement.call(document, tagName).src;
+              }
+            });
+          }
+          
+          return element;
+        };
+        
+        // 拦截 setAttribute 调用
+        Element.prototype.setAttribute = function(name, value) {
+          if (name.toLowerCase() === 'src' && this.tagName === 'SCRIPT') {
+            const adKeywords = ['gamemonetize', 'imasdk', 'doubleclick', 'googlesyndication',
+                               'googleads', 'adservice', 'admob', 'adcolony', 'unityads'];
+            
+            for (const keyword of adKeywords) {
+              if (value.toLowerCase().includes(keyword)) {
+                console.log('[广告拦截] 阻止广告脚本属性设置:', value);
+                return; // 阻止设置
+              }
+            }
+          }
+          
+          if (name.toLowerCase() === 'src' && this.tagName === 'IFRAME') {
+            const adKeywords = ['imasdk', 'doubleclick', 'googlesyndication', 'gamemonetize',
+                               'googleads', 'adservice'];
+            
+            for (const keyword of adKeywords) {
+              if (value.toLowerCase().includes(keyword)) {
+                console.log('[广告拦截] 阻止广告 iframe 属性设置:', value);
+                return;
+              }
+            }
+          }
+          
+          return originalSetAttribute.call(this, name, value);
+        };
+        
+        // 拦截 XMLHttpRequest
+        const originalXHR = window.XMLHttpRequest;
+        window.XMLHttpRequest = function() {
+          const xhr = new originalXHR();
+          const originalOpen = xhr.open;
+          const originalSend = xhr.send;
+          
+          xhr.open = function(method, url) {
+            const adKeywords = ['gamemonetize', 'imasdk', 'doubleclick', 'googlesyndication',
+                               'googleads', 'adservice', 'admob', 'analytics'];
+            
+            for (const keyword of adKeywords) {
+              if (url.toLowerCase().includes(keyword)) {
+                console.log('[广告拦截] 阻止广告 XHR 请求:', url);
+                return; // 阻止打开请求
+              }
+            }
+            return originalOpen.apply(this, arguments);
+          };
+          
+          return xhr;
+        };
+        
+        // 拦截 fetch API
+        const originalFetch = window.fetch;
+        window.fetch = function(url, options) {
+          const urlString = typeof url === 'string' ? url : url.url || '';
+          const adKeywords = ['gamemonetize', 'imasdk', 'doubleclick', 'googlesyndication',
+                             'googleads', 'adservice', 'admob', 'analytics'];
+          
+          for (const keyword of adKeywords) {
+            if (urlString.toLowerCase().includes(keyword)) {
+              console.log('[广告拦截] 阻止广告 fetch 请求:', urlString);
+              return Promise.reject(new Error('Ad blocked'));
+            }
+          }
+          
+          return originalFetch.apply(this, arguments);
+        };
+      })();
+    </script>
 
     <style>
       /* 隐藏所有广告容器 */
@@ -28,11 +159,30 @@
       iframe[src*="googlesyndication"],
       iframe[title="Advertisement"],
       div[id*="google_ads"],
-      div[id*="aswift"] {
+      div[id*="aswift"],
+      .ad-container,
+      .advertisement,
+      .adsbygoogle,
+      #adsense,
+      #ad-banner,
+      .ad-banner,
+      #banner-ad,
+      .interstitial-ad,
+      #rewarded-ad,
+      .video-ad,
+      #preroll,
+      #midroll,
+      #postroll {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        position: absolute !important;
+        left: -9999px !important;
+        top: -9999px !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
       }
     </style>
     <script>
@@ -48,23 +198,41 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift"]',
+          '.ad-container',
+          '.advertisement',
+          '.adsbygoogle',
+          '#adsense',
+          '#ad-banner',
+          '.ad-banner',
+          '#banner-ad',
+          '.interstitial-ad',
+          '#rewarded-ad',
+          '.video-ad',
+          '#preroll',
+          '#midroll',
+          '#postroll'
         ];
         
         adSelectors.forEach(function(selector) {
           var elements = document.querySelectorAll(selector);
           elements.forEach(function(el) {
             if (el && el.parentNode) {
+              console.log('[广告清理] 移除广告元素:', selector);
               el.parentNode.removeChild(el);
             }
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
         if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
+        if (window.showAd) window.showAd = function() {};
+        if (window.loadAd) window.loadAd = function() {};
+        if (window.initAds) window.initAds = function() {};
+        if (window.gamemonetize) window.gamemonetize = {};
       }, 500);
     </script>
 
@@ -89,12 +257,6 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
 
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
 
 
 </body>

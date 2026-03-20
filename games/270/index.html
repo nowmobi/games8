@@ -26,6 +26,57 @@
       }
     </style>
     <script>
+      // 拦截并禁用所有广告相关的函数和对象
+      (function() {
+        // 保存原始函数
+        var originalOpen = XMLHttpRequest.prototype.open;
+        var originalSend = XMLHttpRequest.prototype.send;
+        
+        // 拦截 XHR 请求
+        XMLHttpRequest.prototype.open = function(method, url) {
+          if (typeof url === 'string' && (
+              url.includes('ads') || 
+              url.includes('doubleclick') || 
+              url.includes('googlesyndication') ||
+              url.includes('gamemonetize') ||
+              url.includes('adserver')
+          )) {
+            console.log('Blocked ad request:', url);
+            this._blocked = true;
+          }
+          return originalOpen.apply(this, arguments);
+        };
+        
+        XMLHttpRequest.prototype.send = function() {
+          if (this._blocked) {
+            return;
+          }
+          return originalSend.apply(this, arguments);
+        };
+        
+        // 阻止 document.createElement 创建广告相关元素
+        var originalCreateElement = document.createElement;
+        document.createElement = function(tagName) {
+          var element = originalCreateElement.apply(document, arguments);
+          if (tagName === 'iframe' || tagName === 'IFRAME') {
+            var originalSetAttribute = element.setAttribute;
+            element.setAttribute = function(name, value) {
+              if ((name === 'src' || name === 'SRC') && (
+                  value.includes('imasdk') ||
+                  value.includes('doubleclick') ||
+                  value.includes('googlesyndication') ||
+                  value.includes('gamemonetize')
+              )) {
+                console.log('Blocked ad iframe src:', value);
+                return;
+              }
+              return originalSetAttribute.apply(this, arguments);
+            };
+          }
+          return element;
+        };
+      })();
+      
       // 定期清除动态插入的广告元素
       setInterval(function() {
         var adSelectors = [
@@ -50,16 +101,15 @@
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
         if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
       }, 500);
     </script>
-
-  </head>
-  <body>
+</head>
+<body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=800 height=480></canvas>
       <div id="unity-loading-bar">
@@ -155,13 +205,6 @@
       };
       document.body.appendChild(script);
     </script>
-  <script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
 
 </body>
 </html>

@@ -25,14 +25,33 @@
       iframe[src*="googlesyndication"],
       iframe[title="Advertisement"],
       div[id*="google_ads"],
-      div[id*="aswift"] {
+      div[id*="aswift"],
+      #gamemonetize-sdk,
+      .gamemonetize-ad,
+      [class*="ad-container"],
+      [id*="banner"] {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        overflow: hidden !important;
       }
     </style>
     <script>
+      // 阻止广告 SDK 加载
+      window.GAMEMONETIZE_GAME_ID = null;
+      window.SDK_OPTIONS = null;
+      
+      // 拦截广告函数
+      window.sdk = {
+        showBanner: function() {},
+        hideBanner: function() {},
+        requestAd: function() {},
+        showAd: function() {}
+      };
+      
       // 定期清除动态插入的广告元素
       setInterval(function() {
         var adSelectors = [
@@ -45,7 +64,11 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift"]',
+          '#gamemonetize-sdk',
+          '.gamemonetize-ad',
+          '[class*="ad-container"]',
+          '[id*="banner"]'
         ];
         
         adSelectors.forEach(function(selector) {
@@ -57,11 +80,11 @@
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
-        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
+        if (window.showAd) window.showAd = function() {};
       }, 500);
     </script>
 
@@ -135,15 +158,11 @@ to accomplish this. See the section below for more detail on that.
 			var loadingElement = document.getElementById('gse-loading');
 			var playerDelegate = {
 				onSceneAboutToChange: function(sceneKey, sceneName, adType) {
-				  if (adType > 0) {
-				    sdk.showBanner();
-				  }
+				  // 广告已禁用
 				},
 				// Show gamemonetize banner ad.
 				onShowBannerShow: function(position) {
-				  if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
-				    sdk.showBanner();
-				  }
+				  // 广告已禁用
 				},
 				onLoadingBegin: function() {
 					engine.showOverlay();
@@ -258,41 +277,6 @@ Note that the "gse" namespace is global but the "engine" object is not.
 
 -->
 <script type="text/javascript" src="js/gse/gse-export.js" async onload="onEngineLoad()"></script>
-<script type="text/javascript">
-  var GAMEMONETIZE_GAME_ID = "2eeizpsva0s0kdpw0zf5trn08s98fsva";
-  window.SDK_OPTIONS = {
-    gameId: GAMEMONETIZE_GAME_ID,
-    onEvent: function (a) {
-       switch (a.name) {
-          case "SDK_GAME_PAUSE":
-            // pause game logic / mute audio 
-            console.log("GameMonetize Message: SDK_GAME_PAUSE");
-            if (gse) gse.pause();
-            break;
-          case "SDK_GAME_START":
-            // advertisement done, resume game logic and unmute audio
-            console.log("GameMonetize Message: SDK_GAME_START");
-            if (gse) gse.unpause();
-            break;
-          case "SDK_SHOW_BANNER":
-            console.log("Show ad event.");
-          case "SDK_READY":
-            console.log("GameMonetize Message: SDK_READY");
-            break;
-       }
-    }
- };
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-sdk"); 
-</script>
-  <script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
 
 
 </body>

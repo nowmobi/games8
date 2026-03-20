@@ -78,52 +78,17 @@
 
         }, 3500);
 
-        if(platform == PLATFORMS.GD)
+        // GD 平台的广告 SDK 已移除 - platform 变量在 game.js 中定义
+        if(typeof platform !== 'undefined' && platform == PLATFORMS.GD)
         {
-            var isGameLoaded = false;
-            window.SDK_OPTIONS = {
-                gameId: "5s5zgsz0oejgblg3h7a8ycib7u1cwtg1",
-                onEvent: function (a) {
-                    switch (a.name) {
-                        case "SDK_GAME_PAUSE":
-                           // pause game logic / mute audio
-                           break;
-                        case "SDK_GAME_START":
-                        console.log("Game Resumed");
-                        if(isGameLoaded && gameScreen==100)
-                        {
-                            MenuScene.Show_ConnectionScreen();
-                        }
-                        break;
-                        case "SDK_READY":
-                        adInitialized = true;
-                           break;
-                     }
-                  }
-               };
-            (function (a, b, c) {
-               var d = a.getElementsByTagName(b)[0];
-               a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
-            })(document, "script", "gamemonetize-sdk"); 
-
+            console.log("GD Platform detected");
+            // GD 平台的广告 SDK 已移除
         }
-
-
-
-        
-        
         function OnGameLoaded()
         {
             isGameLoaded = true;
             //updateFBAssetsLoaded();
         }
-        function Show_Ads()
-        {
-            console.log("Show Ads Called");
-            console.log("<Game Monetize> Show Ads Called");
-            sdk.showBanner();
-        }
-
         var namesPool;
         var maxNames;
         fetch('mix/names.txt')
@@ -234,7 +199,7 @@
       }
     </style>
     <script>
-      // 定期清除动态插入的广告元素
+      // 定期清除动态插入的广告元素并拦截广告 SDK
       setInterval(function() {
         var adSelectors = [
           '#imaContainer',
@@ -258,11 +223,27 @@
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
         if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
         if (window.adBreak) window.adBreak = function() {};
         if (window.adConfig) window.adConfig = function() {};
+        
+        // 拦截 Facebook 广告
+        if (window.FBInstant) {
+          if (FBInstant.getInterstitialAdAsync) {
+            FBInstant.getInterstitialAdAsync = function() {
+              console.log('广告已拦截：getInterstitialAdAsync');
+              return Promise.resolve(null);
+            };
+          }
+          if (FBInstant.getRewardedVideoAsync) {
+            FBInstant.getRewardedVideoAsync = function() {
+              console.log('广告已拦截：getRewardedVideoAsync');
+              return Promise.resolve(null);
+            };
+          }
+        }
       }, 500);
     </script>
 
@@ -344,13 +325,6 @@ window.__mirage2 = {petok:"aCj.QNwGUOfLrCmu67eagpL0xPleX_OUL2kyVMsyHGk-31536000-
     </div>
 
     
-
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
 
 
 </body>

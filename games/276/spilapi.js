@@ -1,1 +1,1 @@
-$('head').append('<script src="http://cdn.gameplayer.io/api/js/game.js">' + '<\/script>');
+// This file has been disabled to prevent ad SDK loading

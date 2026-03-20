@@ -9,3 +9,6 @@
       a.src = g;
       m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+// Google Analytics 已禁用 - 广告拦截
+// 原始 GA 代码已被移除

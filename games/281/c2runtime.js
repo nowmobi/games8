@@ -18014,33 +18014,33 @@ cr.plugins_.GD_SDK = function(runtime) {
     pluginProto.Instance = function(type) {
         this.type = type;
         this.runtime = type.runtime;
-        window["sdk"] = {};
+        // 广告已禁用 - 拦截 SDK
+        window["sdk"] = {
+            showBanner: function() { console.log("广告已禁用"); },
+            requestAd: function() { console.log("广告已禁用"); }
+        };
         window["GD_OPTIONS"] = {};
     };
     var instanceProto = pluginProto.Instance.prototype;
     var isSupported = false;
     instanceProto.onCreate = function() {
-        if (!window["sdk"] && !window["GD_OPTIONS"]) {
-            cr.logexport(
-                "[Construct 2] Gamedistribution.com SDK is required to show advertisements within Cordova; other platforms are not supported."
-            );
-            return;
-        }
-        isSupported = true;
+        // 广告已禁用
+        isSupported = false;
         this.sdk = window["sdk"];
         var self = this;
+        // 所有回调都立即触发，不加载广告
         this.sdk["onInit"] = function() {
-            cr.logexport("Gamedistribution.com SDK: onInit");
+            cr.logexport("GD_SDK: 广告已禁用");
             self.isShowingBannerAd = false;
             self.runtime.trigger(cr.plugins_.GD_SDK.prototype.cnds.onInit, self);
         };
         this.sdk["onError"] = function() {
-            cr.logexport("Gamedistribution.com SDK: onError");
-            self.isShowingBannerAd = true;
+            cr.logexport("GD_SDK: 广告已禁用");
+            self.isShowingBannerAd = false;
             self.runtime.trigger(cr.plugins_.GD_SDK.prototype.cnds.onError, self);
         };
         this.sdk["onResumeGame"] = function() {
-            cr.logexport("Gamedistribution.com SDK: onResume");
+            cr.logexport("GD_SDK: 广告已禁用");
             self.isShowingBannerAd = false;
             self.runtime.trigger(
                 cr.plugins_.GD_SDK.prototype.cnds.onResumeGame,
@@ -18048,50 +18048,22 @@ cr.plugins_.GD_SDK = function(runtime) {
             );
         };
         this.sdk["onPauseGame"] = function() {
-            cr.logexport("Gamedistribution.com SDK: onPauseGame");
-            self.isShowingBannerAd = true;
+            cr.logexport("GD_SDK: 广告已禁用");
+            self.isShowingBannerAd = false;
             self.runtime.trigger(cr.plugins_.GD_SDK.prototype.cnds.onPauseGame, self);
         };
         this.sdk["onPreloadedAd"] = function() {
-            cr.logexport("Gamedistribution.com SDK: onPreloadedAd");
-            self.isShowingBannerAd = true;
+            cr.logexport("GD_SDK: 广告已禁用");
+            self.isShowingBannerAd = false;
             self.runtime.trigger(
                 cr.plugins_.GD_SDK.prototype.cnds.onPreloadedAd,
                 self
             );
         };
+        // 阻止 InitAds 加载广告 SDK
         this.sdk["InitAds"] = function() {
-            window["GD_OPTIONS"] = {
-                gameId: self.properties[0],
-                advertisementSettings: {
-                    autoplay: false
-                },
-                onEvent: function(event) {
-                    switch (event.name) {
-                        case "SDK_GAME_START":
-                            self.sdk["onResumeGame"]();
-                            break;
-                        case "SDK_GAME_PAUSE":
-                            self.sdk["onPauseGame"]();
-                            break;
-                        case "SDK_READY":
-                            self.sdk["onInit"]();
-                            break;
-                        case "SDK_ERROR":
-                            self.sdk["onError"]();
-                            break;
-                    }
-                }
-            };
-            (function(d, s, id) {
-                var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//api.gamemonetize.com/sdk.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            })(document, "script", "gamemonetize-sdk");
+            cr.logexport("GD_SDK: InitAds 已被拦截，不加载广告 SDK");
+            // 不调用任何外部 SDK
         };
     };
 
@@ -18118,60 +18090,30 @@ cr.plugins_.GD_SDK = function(runtime) {
 
     function Acts() {}
     Acts.prototype.showBanner = function() {
-        if (!isSupported) return;
-        if (typeof window["sdk"]["showBanner"] === "undefined") {
-            cr.logexport(
-                "Gamedistribution.com SDK is not loaded or an ad blocker is present."
-            );
-            this.sdk["onResumeGame"]();
-            return;
-        }
-        window["sdk"]["showBanner"]();
-        cr.logexport("showBanner");
-        this.isShowingBannerAd = true;
+        // 广告已禁用
+        cr.logexport("showBanner: 广告已禁用");
+        this.sdk["onResumeGame"]();
     };
     Acts.prototype.ShowRewardedAd = function() {
-        if (!isSupported) return;
-        if (typeof window["sdk"]["showBanner"] === "undefined") {
-            cr.logexport(
-                "Gamedistribution.com SDK is not loaded or an ad blocker is present."
-            );
-            this.sdk["onResumeGame"]();
-            return;
-        }
-        window["sdk"]["showBanner"]("rewarded");
-        cr.logexport("ShowRewardedAd");
-        this.isShowingBannerAd = true;
+        // 广告已禁用
+        cr.logexport("ShowRewardedAd: 广告已禁用");
+        this.sdk["onResumeGame"]();
     };
     Acts.prototype.PreloadRewardedAd = function() {
-        if (!isSupported) return;
-        if (typeof window["sdk"]["showBanner"] === "undefined") {
-            cr.logexport(
-                "Gamedistribution.com SDK is not loaded or an ad blocker is present."
-            );
-            this.sdk["onResumeGame"]();
-            return;
-        }
-        window["sdk"]
-            ["showBanner"]("rewarded")
-            .then(() => {
-                this.sdk["onPreloadedAd"]();
-            })
-            .catch(error => {
-                this.sdk["onResumeGame"]();
-            });
-        cr.logexport("PreloadRewardedAd");
-        this.isShowingBannerAd = false;
+        // 广告已禁用
+        cr.logexport("PreloadRewardedAd: 广告已禁用");
+        this.sdk["onResumeGame"]();
     };
     Acts.prototype.PlayLog = function() {
-        if (!isSupported) return;
+        // 广告已禁用
     };
     Acts.prototype.CustomLog = function() {
-        if (!isSupported) return;
+        // 广告已禁用
     };
     Acts.prototype.InitAds = function() {
-        if (!isSupported) return;
-        this.sdk["InitAds"]();
+        // 广告已禁用 - 阻止加载外部 SDK
+        cr.logexport("InitAds: 广告已禁用");
+        // 不调用 this.sdk["InitAds"]()
     };
     pluginProto.acts = new Acts();
 

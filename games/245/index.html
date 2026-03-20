@@ -244,7 +244,10 @@
       iframe[src*="googlesyndication"],
       iframe[title="Advertisement"],
       div[id*="google_ads"],
-      div[id*="aswift"] {
+      div[id*="aswift"],
+      div[id*="gamemonetize"],
+      div[class*="ad-banner"],
+      div[class*="advertisement"] {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
@@ -252,6 +255,34 @@
       }
     </style>
     <script>
+      // 阻止 SDK 加载
+      if (window.gamemonetize) window.gamemonetize = {};
+      if (window.sdk_init) window.sdk_init = function() { console.log('Ad SDK blocked'); };
+      if (window.adBreak) window.adBreak = function() { console.log('Ad break blocked'); };
+      if (window.adConfig) window.adConfig = function() { console.log('Ad config blocked'); };
+      
+      // 拦截动态创建的广告脚本
+      var originalCreateElement = document.createElement;
+      document.createElement = function(tagName) {
+        var element = originalCreateElement.call(document, tagName);
+        return element;
+      };
+      
+      // 拦截 script 标签的 src 设置
+      var originalSetAttribute = HTMLScriptElement.prototype.setAttribute;
+      HTMLScriptElement.prototype.setAttribute = function(name, value) {
+        if (name === 'src' && (
+          value.includes('gamemonetize') || 
+          value.includes('sdk_preload') ||
+          value.includes('ads') ||
+          value.includes('advertisement')
+        )) {
+          console.log('Blocked ad script:', value);
+          return;
+        }
+        return originalSetAttribute.call(this, name, value);
+      };
+
       // 定期清除动态插入的广告元素
       setInterval(function() {
         var adSelectors = [
@@ -264,19 +295,24 @@
           'iframe[src*="googlesyndication"]',
           'iframe[title="Advertisement"]',
           'div[id*="google_ads"]',
-          'div[id*="aswift"]'
+          'div[id*="aswift"]',
+          'div[id*="gamemonetize"]',
+          'div[class*="ad-banner"]',
+          'div[class*="advertisement"]'
         ];
         
         adSelectors.forEach(function(selector) {
           var elements = document.querySelectorAll(selector);
           elements.forEach(function(el) {
             if (el && el.parentNode) {
-              el.parentNode.removeChild(el);
+              try {
+                el.parentNode.removeChild(el);
+              } catch(e) {}
             }
           });
         });
 
-        // 阻止广告SDK函数
+        // 阻止广告 SDK 函数
         if (window.sdk_init) window.sdk_init = function() {};
         if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
         if (window.adBreak) window.adBreak = function() {};
@@ -303,16 +339,3 @@
   </script>
   
       
-
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
-
-
-
-
-</body>
-</html>

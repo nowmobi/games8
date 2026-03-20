@@ -5,17 +5,8 @@ var FB_Leaderboard= 'big_snakes';
 
 var isFBInstSDKReady = false;
 var fbData = {};
-// --- AD Params
-var FB_AD_INTERSTATIAL = '332662577521462_335516980569355';
-var FB_AD_REWARD_VIDEO = '332662577521462_337361397051580';
-
-var isInterstitialPreloaded = false;
-var isVideoAdPreloaded = false;
 
 var isFriendInvited = false;
-
-var preloadedInterstitial = null;
-var preloadedVideoAd = null;
 
 var challengeImgData = "";
 var defeatImgData = "";
@@ -40,17 +31,6 @@ function onFBStart() {
   FBInstant.initializeAsync().then(function() {
 
     supportedAPIs = FBInstant.getSupportedAPIs();
-    if (supportedAPIs.includes('getInterstitialAdAsync'))
-    {
-      if(!isInterstitialPreloaded)
-        preloadFBInterstatial();
-    }
-    if(supportedAPIs.includes('getRewardedVideoAsync'))
-    {
-      if(!isVideoAdPreloaded)
-        preloadRewardedVideoAd();
-    }
-
 
     isFBInstSDKReady = true;
     console.log(FB_PREFIX + "SDK Ready");
@@ -202,74 +182,6 @@ function InviteOnFacebook(message,intent)
   });
 
 }
-
-// AD APIs ----
-// ----------------
-// ----------------
-
-function preloadFBInterstatial()
-{
-  FBInstant.getInterstitialAdAsync(
-    FB_AD_INTERSTATIAL, // Your Ad Placement Id
-  ).then(function(interstitial) {
-    // Load the Ad asynchronously
-    preloadedInterstitial = interstitial;
-    return preloadedInterstitial.loadAsync();
-  }).then(function() {
-    console.log('Interstitial preloaded');
-    isInterstitialPreloaded = true;
-  }).catch(function(err){
-    console.error('Interstitial failed to preload: ' + err.message);
-  });
-}
-
-function preloadRewardedVideoAd()
-{
-  if(!isOnMobile)
-    return;
-  FBInstant.getRewardedVideoAsync(
-    FB_AD_REWARD_VIDEO,
-  ).then(function(rewardedVideo) {
-    preloadedVideoAd = rewardedVideo;
-    return preloadedVideoAd.loadAsync();
-  }).then(function() {
-    console.log('Video Ad preloaded');
-    isVideoAdPreloaded = true;
-  }).catch(function(err){
-    console.error('Video failed to preload: ' + err.message);
-  });
-}
-
-function showFBInterstatial()
-{
-  if(preloadedInterstitial==null)
-    return;
-  preloadedInterstitial.showAsync()
-  .then(function() {
-    console.log('Interstitial ad finished successfully'); 
-    isInterstitialPreloaded = false;       
-  })
-  .catch(function(e) {
-    console.error(e.message);
-  });
-}
-
-function showFBRewardedVideoAd()
-{
-	if(preloadedVideoAd == null)
-		return;
-	preloadedVideoAd.showAsync()
-	.then(function() {
-		console.log('Interstitial ad finished successfully');
-		isVideoAdPreloaded = false;
-		ResumeGame();
-	})
-	.catch(function(e) {
-		GameHudScene.onResumeTimeResumed();
-	});
-}
-	
-
 
 // LEADERBOARD ----
 // ----------------
