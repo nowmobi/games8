@@ -1,1 +1,0 @@
-window._CCSettings={platform:"web-mobile",groupList:["default","player","map"],collisionMatrix:[[true,true],[true,false,true],[false,true,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/main/Scenes/Msg.fire",orientation:"landscape",jsList:[]};
