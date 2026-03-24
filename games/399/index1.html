@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KITTYGRAM</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <meta name="msapplication-tap-highlight" content="no"/>
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/easeljs-NEXT.min.js"></script>
+        <script type="text/javascript" src="js/tweenjs.js"></script>
+        <script type="text/javascript" src="js/howler.min.js"></script>
+        <script type="text/javascript" src="js/screenfull.min.js"></script>
+        <script type="text/javascript" src="js/hammer.min.js"></script>
+        <script type="text/javascript" src="js/platform.js"></script>
+        <script type="text/javascript" src="js/ctl_utils.js"></script>
+        <script type="text/javascript" src="js/sprite_lib.js"></script>
+        <script type="text/javascript" src="js/settings.js"></script>
+        <script type="text/javascript" src="js/CMain.js"></script>
+        <script type="text/javascript" src="js/CLang.min.js"></script>
+        <script type="text/javascript" src="js/CPreloader.js"></script>
+        <script type="text/javascript" src="js/CTextButton.js"></script>
+        <script type="text/javascript" src="js/CToggle.js"></script>
+        <script type="text/javascript" src="js/CGfxButton.js"></script>
+        <script type="text/javascript" src="js/CMenu.js"></script>
+        <script type="text/javascript" src="js/CGame.js"></script>
+        <script type="text/javascript" src="js/CInterface.js"></script>
+        <script type="text/javascript" src="js/CCreditsPanel.js"></script>
+        <script type="text/javascript" src="js/CAreYouSurePanel.js"></script>       
+        <script type="text/javascript" src="js/CGUIExpandible.js"></script>
+        <script type="text/javascript" src="js/CBoard.js"></script>
+        <script type="text/javascript" src="js/CBoardCell.js"></script>
+        <script type="text/javascript" src="js/CPieceSettings.js"></script>
+        <script type="text/javascript" src="js/CPiece.js"></script>
+        <script type="text/javascript" src="js/CHelp.js"></script>
+        <script type="text/javascript" src="js/CGameOver.js"></script>
+        <script type="text/javascript" src="js/CLocalSavings.js"></script>
+        <script type="text/javascript" src="js/CRollingScore.js"></script>
+        <script type="text/javascript" src="js/CCTLText.js"></script>
+        <script type="text/javascript" src="js/level_settings.js"></script>
+        <script type="text/javascript" src="js/CLevelMenu.js"></script>
+        <script type="text/javascript" src="js/CLevelsBox.js"></script>
+        <script type="text/javascript" src="js/CAlertLocalStorage.js"></script>
+        <script type="text/javascript" src="js/CLocalSavings.js"></script>
+        <script type="text/javascript" src="js/CLevelButton.js"></script>
+        <script type="text/javascript" src="js/CButHint.js"></script>
+        <script type="text/javascript" src="js/sprintf.js"></script>
+
+        <script type = "text/javascript" >
+            (function (a, b, c) {
+                var d = a.getElementsByTagName(b)[0];
+                a.getElementById(c) || (a = a.createElement(b), a.id = c, 
+                    a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+            })(document, "script", "gamemonetize-sdk"); 
+
+        </script>
+    </head>
+    <body ondragstart="return false;" ondrop="return false;" >
+        <div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div>
+        <script>
+            $(document).ready(function(){
+                window.SDK_OPTIONS = {
+                    gameId: "wm43az3123kq2ecatqjuv3mmoddq1j6m", // Fill the game_id
+                    onEvent: function (a) {
+                        switch (a.name) {
+                            case "SDK_GAME_PAUSE":
+                                // pause game logic / mute audio
+                                //console.log('SDK game paused');
+                                oMain.PauseGame();
+                                break;
+                            case "SDK_GAME_START":
+                                //console.log('SDK game start');
+                                oMain.StartGame();
+                                break;
+                            case "SDK_READY":
+                                   break;
+                            case "SDK_ERROR":
+                                // when sdk get error
+                                break;
+                        }
+                    }
+                }; 
+
+                var oMain = new CMain({    
+                    malus_hint:10000,   //TIME TO REMOVE IF USER USES AN HINT
+                    audio_enable_on_startup:false,//ENABLE/DISABLE AUDIO WHEN GAME STARTS 
+                    fullscreen:true     //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
+                });
+
+                $(oMain).on("start_session", function(evt) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeStartSession();
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("end_session", function(evt) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeEndSession();
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("restart_level", function(evt, iLevel) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeRestartLevel({level:iLevel});
+                    }
+                });
+
+                $(oMain).on("start_level", function(evt, iLevel) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeStartLevel({level:iLevel});
+                    }
+                });
+
+                $(oMain).on("end_level", function(evt,iLevel) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeEndLevel({level:iLevel});
+                    }
+                });
+
+                $(oMain).on("save_score", function(evt,iScore) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeSaveScore({score:iScore});
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("show_interlevel_ad", function(evt) {
+                    if(getParamValue('ctl-arcade') === "true"){
+                        parent.__ctlArcadeShowInterlevelAD();
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+
+                if(isIOS()){
+                    setTimeout(function(){sizeHandler();},200); 
+                }else{ 
+                    sizeHandler(); 
+                }
+            });
+
+        </script>
+        <div class="check-fonts">
+            <p class="check-font-1">test 1</p>
+        </div> 
+
+        <canvas id="canvas" class='ani_hack' width="1920" height="1920"> </canvas>
+        <div id="block_game" style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%; display:none"></div>
+
+    </body>
+</html>

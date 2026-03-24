@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TileTriple</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Scirra Construct">
+
+
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+	     window.SDK_OPTIONS = {
+	        gameId: "ldkj5h7fu9h3zxmh9ajn5tji9hdulroy",
+	        onEvent: function (a) {
+	           switch (a.name) {
+	              case "SDK_GAME_PAUSE":
+	                 // pause game logic / mute audio
+	                 window.adsCtl.canReward = true;  
+	                 window.c3_runtimeInterface._GetLocalRuntime().SetSuspended(true);               
+	                 break;
+	              case "SDK_GAME_START":
+	                 // advertisement done, resume game logic and unmute audio                 
+	                 window.c3_runtimeInterface._GetLocalRuntime().SetSuspended(false);   
+	                 break;
+	              case "COMPLETE":                            
+	              	if(window.adsCtl.canReward && window.adsCtl.isReward){
+	                    window.adsCtl.finishReward();
+	                }
+                    break;
+	              case "SDK_READY":
+	                 // when sdk is ready
+	                 break;
+	           }
+	        }
+	     };
+	  	(function (a, b, c) {
+	     var d = a.getElementsByTagName(b)[0];
+	     a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+	    })(document, "script", "gamemonetize-sdk"); 
+	</script>
+
+</head>
+<body>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/main.js" type="module"></script>
+
+
+</body>
+</html>

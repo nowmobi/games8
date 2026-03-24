@@ -38,7 +38,59 @@
 			-ms-interpolation-mode: nearest-neighbor;
 		}
 	</style>
-</head>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
 
 <body>
 	<div id="gameContainer">

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Merge Number 2048</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html,
+        body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30" data-content-width="640" data-content-height="1136" data-show-paint-rect="false" data-multi-fingered="2"
+        data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <script>
+        var loadScript = function(list, callback) {
+            var loaded = 0;
+            var loadNext = function() {
+                loadSingleScript(list[loaded], function() {
+                    loaded++;
+                    if (loaded >= list.length) {
+                        callback();
+                    } else {
+                        loadNext();
+                    }
+                })
+            };
+            loadNext();
+        };
+
+        var loadSingleScript = function(src, callback) {
+            var s = document.createElement('script');
+            s.async = false;
+            s.src = src;
+            s.addEventListener('load', function() {
+                s.parentNode.removeChild(s);
+                s.removeEventListener('load', arguments.callee, false);
+                callback();
+            }, false);
+            document.body.appendChild(s);
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+        xhr.addEventListener("load", function() {
+            var manifest = JSON.parse(xhr.response);
+            var list = manifest.initial.concat(manifest.game);
+            loadScript(list, function() {
+                /**
+                 * {
+                 * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+                 * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+                 * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+                 * "calculateCanvasScaleFactor": //a function return canvas scale factor
+                 * }
+                 **/
+                egret.runEgret({
+                    renderMode: "webgl",
+                    audioType: 0,
+                    calculateCanvasScaleFactor: function(context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }
+                });
+            });
+        });
+        xhr.send(null);
+    </script>
+	
+	<script type="text/javascript">
+   window.SDK_OPTIONS = {
+      gameId: "0qhoiiohxttj13iq1kg0u0ue0kt3hzi0",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+
+<div id="gameContainer" style="width: 100%; height: 100%;">
+        <div id="content"></div>
+        <a href="vodogame.com" onclick="window.open('https://vodogame.com/?utm_source=www.gamemonetize.com&utm_medium=MainScene-logo&utm_campaign=game-merge-numbers-2048'); return false;"><script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"aCj.QNwGUOfLrCmu67eagpL0xPleX_OUL2kyVMsyHGk-31536000-0"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img data-cfsrc="logo.png" data-cfstyle="top:1%;right:1%;position:absolute;width:120px;transform:translate(-5%,2%);cursor:pointer;height:auto;max-width:30%;z-index:80%" alt="vodo game" style="display:none;visibility:hidden;"><noscript><img src="logo.png" style="top:1%;right:1%;position:absolute;width:120px;transform:translate(-5%,2%);cursor:pointer;height:auto;max-width:30%;z-index:80%" alt="vodo game"></noscript></a>
+    </div>
+	
+	<script type="text/javascript">
+        function Advert1() {
+            if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+                sdk.showBanner();
+            }
+        };
+
+        function Advert2() {
+            if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+                sdk.showBanner();
+            }
+        };
+
+        setTimeout(function() {
+            Advert1();
+        }, 1000);
+        setInterval(function() {
+            Advert2();
+        }, 90000);
+    </script>
+<script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+
+
+</body>
+
+</html>
