@@ -1,0 +1,72 @@
+{
+  "paths": {},
+  "types": [],
+  "uuids": [
+    "c0TTcjnedNdbBiV+ReyoKj",
+    "a5Yhde1g5MxZRMovy7xqFo",
+    "f6/zsE4QFG8o3JJjTBfgUk",
+    "a0gw5CJ9lLZYb5H33MdAZe",
+    "59JStvGutOgb9Zkp50vuWq",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "c6eW9k2AtI/I7mpWXmeOUD",
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "e1QY1/UYZNSoPL+1Uyb6nf",
+    "eeRTKdzNhLpYqIqb6KDEL0",
+    "99zYwcZQlC+bqqMJiwDPqF",
+    "073DC0u5RFm5sI8g6rbsbh"
+  ],
+  "scenes": {
+    "db://assets/loadScene/loadScene.fire": 0
+  },
+  "redirect": [
+    5,
+    0,
+    6,
+    1,
+    7,
+    0
+  ],
+  "deps": [
+    "internal",
+    "resources"
+  ],
+  "packs": {
+    "037d5eaaf": [
+      11,
+      10,
+      0,
+      8,
+      9
+    ],
+    "08081e025": [
+      4,
+      3,
+      1,
+      2
+    ]
+  },
+  "name": "main",
+  "importBase": "import",
+  "nativeBase": "native",
+  "debug": false,
+  "isZip": false,
+  "encrypted": false,
+  "versions": {
+    "import": [
+      "037d5eaaf",
+      "4105c",
+      "08081e025",
+      "8ff53"
+    ],
+    "native": [
+      4,
+      "7f6d7",
+      3,
+      "dc673",
+      1,
+      "943ad",
+      2,
+      "7f1c3"
+    ]
+  }
+}

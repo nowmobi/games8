@@ -1,0 +1,292 @@
+[
+  1,
+  [
+    "15ZKy2aTFLr6e++68fJFzW"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "logo ",
+      "\nlogo .png\nsize: 1066,403\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n2048\n  rotate: false\n  xy: 2, 2\n  size: 562, 399\n  orig: 564, 401\n  offset: 1, 1\n  index: -1\nblock_2048\n  rotate: false\n  xy: 934, 167\n  size: 95, 102\n  orig: 95, 102\n  offset: 0, 0\n  index: -1\ncolor\n  rotate: false\n  xy: 934, 271\n  size: 130, 130\n  orig: 130, 130\n  offset: 0, 0\n  index: -1\nquan\n  rotate: false\n  xy: 566, 35\n  size: 366, 366\n  orig: 366, 366\n  offset: 0, 0\n  index: -1\n",
+      [
+        "logo .png"
+      ],
+      {
+        "skeleton": {
+          "hash": "YSR+h9Z0sCsE+r6wbjy8xBkr+s4",
+          "spine": "3.8.99",
+          "x": -293.98,
+          "y": -213.74,
+          "width": 580.44,
+          "height": 401,
+          "images": "./images/",
+          "audio": "G:/svn/工作/2021/7月/2048/动画源文件/images"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "zong",
+            "parent": "root"
+          },
+          {
+            "name": "quan2",
+            "parent": "zong",
+            "x": 103.46,
+            "y": -3.21
+          },
+          {
+            "name": "color2",
+            "parent": "zong",
+            "x": -216.37,
+            "y": -81.74
+          }
+        ],
+        "slots": [
+          {
+            "name": "quan2",
+            "bone": "quan2",
+            "attachment": "quan"
+          },
+          {
+            "name": "2048",
+            "bone": "zong",
+            "attachment": "2048"
+          },
+          {
+            "name": "color3",
+            "bone": "zong",
+            "attachment": "color2"
+          },
+          {
+            "name": "color2",
+            "bone": "color2",
+            "attachment": "color"
+          },
+          {
+            "name": "block_2048",
+            "bone": "zong",
+            "attachment": "block_2048"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "2048": {
+                "2048": {
+                  "x": -11.98,
+                  "y": -13.24,
+                  "width": 564,
+                  "height": 401
+                }
+              },
+              "block_2048": {
+                "block_2048": {
+                  "x": -216.48,
+                  "y": -82.74,
+                  "width": 95,
+                  "height": 102
+                }
+              },
+              "color2": {
+                "color": {
+                  "x": 0.27,
+                  "width": 130,
+                  "height": 130
+                }
+              },
+              "color3": {
+                "color2": {
+                  "type": "clipping",
+                  "end": "2048",
+                  "vertexCount": 23,
+                  "color": "ce3a3aff",
+                  "vertices": [
+                    -221.87,
+                    -19.25,
+                    -208.87,
+                    -19.43,
+                    -167.12,
+                    -43.02,
+                    -162.57,
+                    -48.01,
+                    -159.87,
+                    -52.78,
+                    -158.08,
+                    -57.86,
+                    -158.28,
+                    -104.06,
+                    -159.76,
+                    -109.41,
+                    -162.23,
+                    -113.91,
+                    -166.18,
+                    -118.65,
+                    -206.16,
+                    -142.1,
+                    -210.68,
+                    -143.5,
+                    -221.5,
+                    -143.36,
+                    -226,
+                    -141.67,
+                    -265.44,
+                    -118.86,
+                    -268.75,
+                    -115.28,
+                    -271.82,
+                    -110.58,
+                    -273.67,
+                    -105.2,
+                    -273.69,
+                    -57.39,
+                    -271.69,
+                    -52.45,
+                    -269.26,
+                    -47.7,
+                    -265.07,
+                    -43.13,
+                    -226.38,
+                    -21.29
+                  ]
+                }
+              },
+              "quan2": {
+                "quan": {
+                  "width": 366,
+                  "height": 366
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "donghua": {
+            "bones": {
+              "quan2": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 2,
+                    "angle": 180
+                  },
+                  {
+                    "time": 4
+                  }
+                ]
+              },
+              "color2": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 2,
+                    "angle": 180
+                  },
+                  {
+                    "time": 4
+                  }
+                ]
+              },
+              "zong": {
+                "translate": [
+                  {
+                    "curve": 0.336,
+                    "c2": 0.59,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "y": -5,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 3,
+                    "y": 5,
+                    "curve": 0.25,
+                    "c3": 0.809,
+                    "c4": 0.48
+                  },
+                  {
+                    "time": 4
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.992,
+                    "y": 0.992,
+                    "curve": 0.336,
+                    "c2": 0.59,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "x": 1.018,
+                    "y": 1.018,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 3,
+                    "x": 0.96,
+                    "y": 0.96,
+                    "curve": 0.25,
+                    "c3": 0.809,
+                    "c4": 0.48
+                  },
+                  {
+                    "time": 4,
+                    "x": 0.992,
+                    "y": 0.992
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

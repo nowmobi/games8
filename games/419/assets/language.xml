@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<language name="en">
+		
+	<solitaire>SOLITAIRE</solitaire>
+
+	<choosegame>CHOOSE YOUR GAME</choosegame>
+	<draw1card>1 Card draw</draw1card> 
+	<draw3card>3 Card draw</draw3card> 
+
+	<solGameSettings>SOLITAIRE GAME SETTINGS</solGameSettings>
+	<rightHanded>Right handed</rightHanded>
+	<displayStats>Display stats</displayStats>
+	<autofinish>Autofinish</autofinish>
+	<showHints>Show hints</showHints>
+	<pickADeck>PICK A DECK</pickADeck>
+	<changeBG>CHANGE BACKGROUND</changeBG>
+	<saveAndExit>SAVE AND EXIT</saveAndExit>
+
+	<menu>MENU</menu> 
+	<resume>Resume</resume> 
+	<statistics_1>STATISTICS 1 CARD DRAW</statistics_1> 
+	<statistics_3>STATISTICS 3 CARD DRAW</statistics_3>
+	<statistics>Statistics</statistics>
+	<newgame1>New game (1 card)</newgame1> 
+	<newgame3>New game (3 card)</newgame3> 
+	<resetthisgame>Restart</resetthisgame> 
+	<sound_off>Sound off</sound_off> 
+	<sound_on>Sound on</sound_on>
+	<more_games>More games</more_games>
+	
+	<you_won>CONGRATULATIONS!</you_won>
+	<APPLAUSE>APPLAUSE!</APPLAUSE>
+	<BEAUTIFUL>BEAUTIFUL!</BEAUTIFUL>
+	<BRAVO>BRAVO, WAY TO GO!</BRAVO>
+	<COMPLIMENTS>COMPLIMENTS!</COMPLIMENTS>
+	<CONGRATULATIONS>CONGRATULATIONS!</CONGRATULATIONS>
+	<EXACTLYRIGHT>EXACTLY RIGHT!</EXACTLYRIGHT>
+	<EXCELLENT>EXCELLENT!</EXCELLENT>
+	<FANTASTIC>FANTASTIC!</FANTASTIC>
+	<FLAWLESS>FLAWLESS!</FLAWLESS>
+	<GOODFORYOU>GOOD FOR YOU!</GOODFORYOU>
+	<GOODGOING>GOOD GOING!</GOODGOING>
+	<GOODJOB>GOOD JOB!</GOODJOB>
+	<GOODTHINKING>GOOD THINKING!</GOODTHINKING>
+	<GOODWORK>GOOD WORK!</GOODWORK>
+	<HOORAY>HIP, HIP, HOORAY!</HOORAY>
+	<IMPRESSED>I AM IMPRESSED!</IMPRESSED>
+	<INCREDIBLE>INCREDIBLE!</INCREDIBLE>
+	<KEEPITUP>KEEP IT UP!</KEEPITUP>
+	<CELEBRATE>LET'S CELEBRATE!</CELEBRATE>
+	<MARVELOUS>MARVELOUS!</MARVELOUS>
+	<NICEGOING>NICE GOING!</NICEGOING>
+	<NICEONE>NICE ONE!</NICEONE>
+	<NOTHINGCANSTOP>NOTHING CAN STOP YOU!</NOTHINGCANSTOP>
+	<OUTOFTHISWORLD>OUT OF THIS WORLD!</OUTOFTHISWORLD>
+	<OUTSTANDING>OUTSTANDING!</OUTSTANDING>
+	<PATONTHEBACK>PAT ON THE BACK!</PATONTHEBACK>
+	<PERFECT>PERFECT!</PERFECT>
+	<PRIZEWINNING>PRIZE-WINNING!</PRIZEWINNING>
+	<SENSATIONAL>SENSATIONAL!</SENSATIONAL>
+	<SUPERIORWORK>SUPERIOR WORK!</SUPERIORWORK>
+	<TERRIFIC>TERRIFIC!</TERRIFIC>
+	<THATSGOOD>THAT'S GOOD!</THATSGOOD>
+	<THATSIT>THAT'S IT!</THATSIT>
+	<THATSNOTBAD>THAT'S NOT BAD!</THATSNOTBAD>
+	<THATSTHEWAY>THAT'S THE WAY!</THATSTHEWAY>
+	<TOPNOTCH>TOPNOTCH!</TOPNOTCH>
+	<TREMENDOUS>TREMENDOUS!</TREMENDOUS>
+	<VICTORY>VICTORY!</VICTORY>
+	<WAYTOGO>WAYTOGO!</WAYTOGO>
+	<WELLDONE>WELL DONE!</WELLDONE>
+	<WELLPLAYED>WELL PLAYED!</WELLPLAYED>
+	<WONDERFUL>WONDERFUL!</WONDERFUL>
+	<WORLDCLASS>WORLD CLASS!</WORLDCLASS>
+	<YOUARECHAMPION>YOU ARE A CHAMPION!</YOUARECHAMPION>
+	<YOUARELEGEND>YOU ARE A TRUE LEGEND!</YOUARELEGEND>
+	<YOUAREVERYGOOD>YOU ARE VERY GOOD AT THIS!</YOUAREVERYGOOD>
+	<YOUDESERVEAMEDAL>YOU DESERVE A MEDAL!</YOUDESERVEAMEDAL>
+	<YOUDIDIT>YOU DID IT!</YOUDIDIT>
+	<YOUGOTITRIGHT>YOU GOT IT RIGHT!</YOUGOTITRIGHT>
+	<YOUHAVEDONEGREATJOB>YOU HAVE DONE A GREAT JOB!</YOUHAVEDONEGREATJOB>
+	<YOUHAVENTMISSEDATHING>YOU HAVEN'T MISSED A THING!</YOUHAVENTMISSEDATHING>
+	<YOUMAKEITLOOKSEASY>YOU MAKE IT LOOK EASY!</YOUMAKEITLOOKSEASY>
+	<YOUWIN>YOU WIN!</YOUWIN>
+	<YOUAREACHAMPION>YOU ARE A CHAMPION!</YOUAREACHAMPION>
+	<YOUAREAGENIOUS>YOU ARE A GENIUS!</YOUAREAGENIOUS>
+	<YOUAREBEST>YOU ARE THE BEST!</YOUAREBEST>
+	<YOUGOTIT>YOU'VE GOT IT!</YOUGOTIT>
+
+
+	<timeplayed>Time played: </timeplayed>
+	<movemade>Moves made: </movemade>
+	<yourscore>Your score: </yourscore>
+	<totalscore>Total score: </totalscore>
+	<best_score>Best score: </best_score>
+	<best_time>Best time: </best_time>
+	<newgame>NEW GAME</newgame>
+	<restart>Restart: </restart>
+	<timebonus>Time Bonus: </timebonus>
+
+	<gamesplayed>Games played: </gamesplayed>
+	<gameswon>Games won: </gameswon>
+	<gameslost>Games lost: </gameslost>
+	<winperc>Win percentage: </winperc>
+	<curwinstrk>Current winning streak: </curwinstrk>
+	<longwinstrk>Longest winning streak: </longwinstrk>
+	<longlosestrk>Longest losing streak: </longlosestrk>
+	<topscore>Top score: </topscore>
+	<avgscorepergame>Average score per game: </avgscorepergame>
+	<avgtimepergame>Average time per game: </avgtimepergame>
+	<okay>OK</okay>
+	<clearstats>CLEAR STATS</clearstats>
+
+	<restart2>Restart</restart2>
+	<areyousure>Are you sure you want to restart the game? All progress will be lost.</areyousure>
+	<keepplaying>KEEP PLAYING</keepplaying>
+
+	</language>		
+</data>

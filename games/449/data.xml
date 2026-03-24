@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language>
+	<theme>CHOOSE A TOPIC</theme>
+	<play>PLAY</play>
+	<replay>PLAY AGAIN</replay>
+	<win>Congratulations! You win</win>
+	<bigwin>We found the Millionaire Kid
+Congratulations! You win</bigwin>
+	<friend>Friend</friend>
+	
+	<character1>Is this your final answer?</character1>
+	<character2>Are you sure?</character2>
+	<character3>No regrets?</character3>
+	<character4>Final answer?</character4>
+	<character5>Are you certain that this is your final answer?</character5>
+	
+	<character6>Let's see...</character6>
+	<character7>No turning back</character7>
+	
+	<character8>Well... I don't think this is the correct answer..</character8>
+	
+	<character9>Ready to continue?</character9>
+	<character10>Are you ready for the next question?</character10>
+	
+	<character11>Awesome! You are so smart!</character11>
+	<character12>I knew you would answer correctly.</character12>
+	
+	<character13>The first question is</character13>
+	
+	<character14>Let start with the question</character14>
+	
+	<character15>Sorry! The time is over.</character15>
+	
+	<character16>We found the Millionaire Kid!</character16>
+	
+	<character17>I believe you will answer more questions.</character17>
+	
+	<character18>Do you confirm to use the assist?</character18>
+	<character19>Computer, remove two wrong answers, please!</character19>
+	<character20>The audience, let's make your choices.</character20>
+	<character21>Let's see what your friend says</character21>
+	
+	<friend1>Umm...</friend1>
+	<friend2>Maybe...</friend2>
+	<friend3>I think </friend3>
+</language>
+
+<tutorial>
+	<c1>Do you know the rules?</c1>
+	<c2>There are fifteen questions in total.</c2>
+	<c3>You have 30 seconds for each question.</c3>
+	<c4>If you're stuck, use our 3 lifelines.</c4>
+	<c5>First lifeline is Ask The Audience.</c5>
+	<c6>Where the audience votes on the correct answer.</c6>
+	<c7>Second lifeline is Phone a Friend.</c7>
+	<c8>Call your friend for the right answer.</c8>
+	<c9>Third lifeline is 50:50</c9>
+	<c10>This removes two wrong answers.</c10>
+	<c11>Let's begin the game, shall we?</c11>
+	<c12>Let's start with the player!</c12>
+</tutorial>
+
+<questiondata>
+	
+	<prize>$ 100|$ 200|$ 300|$ 500|$ 1,000|$ 2,000|$ 4,000|$ 8,000|$ 16,000|$ 32,000|$ 64,000|$ 125,000|$ 250,000|$ 500,000|$ 1 MILLION</prize>
+	<category>MATH|SCIENCE|GENERAL</category>
+	
+		<list1>
+			<q1>
+			Tom has $88 saved up. He uses his money to buy a video game. The video game costs $54. How much money does he have left?|$30|$24|$34|$28|$34
+			</q1>
+
+			<q2>
+			Jack gets $6 for shipping. How much money will he have after shipping 7 times?|$35|$42|$52|$48|$42
+			</q2>
+
+			<q3>
+			Lily spent $128.60 to buy 4 chocolate bars. If each chocolate bar was the same price, how much did 1 cost? |$32.15|$28.19|$30.9|$22.15|$32.15
+			</q3>
+
+			<q4>
+			My mother went to the market for $10.50. She bought meat for $4.75, 3 tomatoes for $1.5. How much money does she have left? |$3|$2.5|$4.25|$3.5|$4.25
+			</q4>
+
+			<q5>
+			Philip draws a shape with 4 equal sides. What shape did he draw?|Cylinder|Square|Rectangle|Triangle|Square
+			</q5>
+
+			<q6>
+			Cody helped his dad for 1 hour and 20 minutes. For how many minutes was he helping his dad? |60 minutes|70 minutes|80 minutes|90 minutes|80 minutes
+			</q6>
+
+			<q7>
+			What is the most reasonable unit for measuring the length of a textbook?|Centimeters|Meters|Kilometers|Millimeters|Centimeters
+			</q7>
+
+			<q8>
+			Ariel left her store at fifteen to six in the evening. Twenty minutes later, she was home. What time was it when she arrived home?|6:15|7:05|6:05|6:10|6:05
+			</q8>
+
+			<q9>
+			John goes to the market and buys 4 squashes that each weigh 300 grams. How many kilograms (kg) of squashes did John buy?|1kg|1.2kg|1.5kg|2kg|1.2kg
+			</q9>
+
+			<q10>
+			The ratio of Sam’s crayons to Sophia’s crayons is 5:3. Sam has 30 crayons. How many does Sophia have?|20|15|18|21|18
+			</q10>
+
+			<q11>
+			A decade ago, France’s population was 62,879,600 people. Now, it is 4% larger. So what is France’s current population? |65,394,784|65,594,784|65,494,784|65,694,784|65,394,784
+			</q11>
+
+			<q12>
+			A garden is 15 meters long by 5 meters wide. What is its area?(m²)|55 m²|65 m²|75 m²|20 m²|75 m²
+			</q12>
+
+			<q13>
+			A triangle has the following side lengths: 5 cm, 6 cm, and 6 cm. What kind of triangle is it?|Equilateral triangle|Scalene triangle|Isosceles triangle|None|Isosceles triangle
+			</q13>
+
+			<q14>
+			Susan has a milk tea stand and sold 18 cups of milk tea. Each cup was 500 millilitres. How many litres did Susan sell in total? |8 litres|9 litres|10 litres|11 litres|9 litres
+			</q14>
+
+			<q15>
+			The circular aquarium has a diameter of 45.6 centimeters. What is the area of this aquarium? (cm²)|1623 cm²|1643 cm²|1632 cm²|1633 cm²|1633 cm²
+			</q15>
+		</list1>
+
+		<list2>
+			<q1>
+			What animals are warm-blooded and lay eggs and take care of their young?|Fish|Birds|Mammals|Amphibians|Birds
+			</q1>
+
+			<q2>
+			What units are used to measure a sound's frequency?|Decibel (dB)|Hertz (Hz)|Volt(V)|Meter (m)|Hertz (Hz)
+			</q2>
+
+			<q3>
+			How many bones are in a giraffe's neck?|5|7|15|21|7
+			</q3>
+
+			<q4>
+			Trees create energy through a process called photosynthesis. What gas is given off during this process?|Oxygen|Carbon dioxide|Hydrogen|Nitrogen|Oxygen
+			</q4>
+
+			<q5>
+			Which organ in the human body pumps blood?|Heart|Kidney|Liver|Intestines|Heart
+			</q5>
+
+			<q6>
+			Which material is an insulator?|Silver|Plastic|Copper|Steel|Plastic
+			</q6>
+
+			<q7>
+			I am a tube in your throat. When you swallow, food or drink travels down through me into your stomach. What am I? |Trachea|Bones|Esophagus|Kidneys|Esophagus
+			</q7>
+
+			<q8>
+			What supplies energy in an electric circuit?|A conductor|Light bulb|A wire|A battery|A battery
+			</q8>
+
+			<q9>
+			What is the caterpillar stage of a butterfly called?|Chrysalis|Larva|Eggs|Bug|Larva
+			</q9>
+
+			<q10>
+			Which part of your brain controls your memory?|Cerebrum|Brain stem|Amygdala|Nerve cells|Cerebrum
+			</q10>
+
+			<q11>
+			What invertebrate is so smart that it sometimes uses tools to hunt?|Octopus|Snail|Jellyfish|Lobster|Octopus
+			</q11>
+
+			<q12>
+			What is the instrument used to measure the air temperature?|Hygrometer|Anemometer|Barometer|Thermometer|Thermometer
+			</q12>
+
+			<q13>
+			Which color has the longest wavelengths of light?|Blue|Yellow|Green|Red|Red
+			</q13>
+
+			<q14>
+			Which characteristic means to take in sustenance?|Transpiration|Reproduction|Respiration|Nutrition|Nutrition
+			</q14>
+
+			<q15>
+			What is an indentation of a shoreline larger than a cove but smaller than a gulf?|Strait|Bay|Cape|Oasis|Bay
+			</q15>
+		</list2>
+
+		<list3>
+			<q1>
+			What is the name of the highest-viewed kids song in the world?|Baby Shark Dance|Bath Song|Johny Johny Yes Papa|Wheels on the Bus|Baby Shark Dance
+			</q1>
+
+			<q2>
+			What was the year of the first humans walking on the moon?|1949|1959|1969|1979|1969
+			</q2>
+
+			<q3>
+			What is the name of the largest river in the world?|Amazon River|Nile River|Yangtze River|Yenisei River|Nile River
+			</q3>
+
+			<q4>
+			What is the name of the tallest building in the world?|One World Trade Center|Lotte World Tower|Burj Khalifa|Shanghai Tower|Burj Khalifa
+			</q4>
+
+			<q5>
+			Which is the smallest continent in the world by area?|Africa|Europe|Australia|Asia|Australia
+			</q5>
+
+			<q6>
+			What is the world's smallest and shallowest ocean?|the Atlantic|the Pacific|the Indian|the Arctic|the Arctic
+			</q6>
+
+			<q7>
+			Which fairy tale is not written by Hans Christian Andersen?|The Little Mermaid|The Princess and the Pea|Cinderella|The Little Match Girl|Cinderella
+			</q7>
+
+			<q8>
+			What awards did Marie Curie win the Nobel Prize?|Literature|Physics|Peace|Chemistry|Chemistry
+			</q8>
+
+			<q9>
+			Where is the biggest amusement park in the world?|Japan|United States|France|China|United States
+			</q9>
+
+			<q10>
+			What did Isaac Newton discover?|Friction|Gravity|Electrostatic|Magnetic|Gravity
+			</q10>
+
+			<q11>
+			What country was Albert Einstein born in?|Mexico|France|Germany|Denmark|Germany
+			</q11>
+
+			<q12>
+			What movie that aren't based on a existing story produced by Walt Disney?|Pinochio|The Lion King|Peter Pan|The Jungle Book|The Lion King
+			</q12>
+
+			<q13>
+			What planet is the hottest in the solar system?|Venus|Mercury|Uranus|Jupiter|Venus
+			</q13>
+
+			<q14>
+			Which song was not written for Christmas?|All I Want for Christmas Is You|Jingle Bells|Santa Claus is coming to town|We wish you a merry Christmas|Jingle Bells
+			</q14>
+
+			<q15>
+			Who is The Father of Science? |Galileo Galilei|Thomas Bartholin|Johannes Kepler|Willebrord Snell|Galileo Galilei
+			</q15>
+		</list3>
+		
+</questiondata>

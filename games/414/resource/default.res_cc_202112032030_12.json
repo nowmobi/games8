@@ -1,0 +1,155 @@
+{
+  "groups": [
+    {
+      "keys": "guide_json",
+      "name": "all"
+    },
+    {
+      "keys": "guide_json",
+      "name": "preload"
+    }
+  ],
+  "resources": [
+    {
+      "url": "assets/CheckBox/checkbox_select_disabled.png",
+      "type": "image",
+      "name": "checkbox_select_disabled_png"
+    },
+    {
+      "url": "assets/CheckBox/checkbox_select_down.png",
+      "type": "image",
+      "name": "checkbox_select_down_png"
+    },
+    {
+      "url": "assets/CheckBox/checkbox_select_up.png",
+      "type": "image",
+      "name": "checkbox_select_up_png"
+    },
+    {
+      "url": "assets/CheckBox/checkbox_unselect.png",
+      "type": "image",
+      "name": "checkbox_unselect_png"
+    },
+    {
+      "url": "assets/ItemRenderer/selected.png",
+      "type": "image",
+      "name": "selected_png"
+    },
+    {
+      "url": "assets/Panel/border.png",
+      "type": "image",
+      "name": "border_png"
+    },
+    {
+      "url": "assets/Panel/header.png",
+      "type": "image",
+      "name": "header_png"
+    },
+    {
+      "url": "assets/RadioButton/radiobutton_select_disabled.png",
+      "type": "image",
+      "name": "radiobutton_select_disabled_png"
+    },
+    {
+      "url": "assets/RadioButton/radiobutton_select_down.png",
+      "type": "image",
+      "name": "radiobutton_select_down_png"
+    },
+    {
+      "url": "assets/RadioButton/radiobutton_select_up.png",
+      "type": "image",
+      "name": "radiobutton_select_up_png"
+    },
+    {
+      "url": "assets/RadioButton/radiobutton_unselect.png",
+      "type": "image",
+      "name": "radiobutton_unselect_png"
+    },
+    {
+      "url": "assets/ScrollBar/roundthumb.png",
+      "type": "image",
+      "name": "roundthumb_png"
+    },
+    {
+      "url": "assets/Slider/thumb.png",
+      "type": "image",
+      "name": "thumb_png"
+    },
+    {
+      "url": "assets/Slider/track.png",
+      "type": "image",
+      "name": "track_png"
+    },
+    {
+      "url": "assets/Slider/tracklight.png",
+      "type": "image",
+      "name": "tracklight_png"
+    },
+    {
+      "url": "assets/ToggleSwitch/handle.png",
+      "type": "image",
+      "name": "handle_png"
+    },
+    {
+      "url": "assets/ToggleSwitch/off.png",
+      "type": "image",
+      "name": "off_png"
+    },
+    {
+      "url": "assets/ToggleSwitch/on.png",
+      "type": "image",
+      "name": "on_png"
+    },
+    {
+      "url": "assets/Button/button_down.png",
+      "type": "image",
+      "name": "button_down_png"
+    },
+    {
+      "url": "assets/Button/button_up.png",
+      "type": "image",
+      "name": "button_up_png"
+    },
+    {
+      "url": "assets/ProgressBar/thumb_pb.png",
+      "type": "image",
+      "name": "thumb_pb_png"
+    },
+    {
+      "url": "assets/ProgressBar/track_pb.png",
+      "type": "image",
+      "name": "track_pb_png"
+    },
+    {
+      "url": "assets/ScrollBar/track_sb.png",
+      "type": "image",
+      "name": "track_sb_png"
+    },
+    {
+      "url": "assets/bg.jpg",
+      "type": "image",
+      "name": "bg_jpg"
+    },
+    {
+      "url": "assets/egret_icon.png",
+      "type": "image",
+      "name": "egret_icon_png"
+    },
+    {
+      "url": "config/description.json",
+      "type": "json",
+      "name": "description_json"
+    },
+    {
+      "url": "gameEui.json",
+      "type": "json",
+      "name": "gameEui_json"
+    },
+    {
+      "url": "image/atlas/guide.json",
+      "type": "sheet",
+      "name": "guide_json",
+      "subkeys": "0_bg_png,0_btn_png,0_font10_png,0_font11_png,0_font1_png,0_font2_png,0_font3_png,0_font4_png,0_font5_png,0_font6_png,0_font7_png,0_font8_png,0_font9_png,0_new_arrow_png,0_new_hand_png,16_font17_png"
+    }
+  ]
+}

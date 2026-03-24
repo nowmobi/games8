@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hexable</title>
+    <link rel="icon" type="image/x-icon" href="media/graphics/sprites/favicon.ico" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- Use this metatag when Apple fixes their IOS 9
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+    -->
+
+    <!--Temporary fix for IOS 9-->
+    <meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no, minimal-ui"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script type="text/javascript" src="game.js"></script>
+
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
+    <div id="ajaxbar">
+        <div id="game"><canvas id="canvas"></canvas></div>
+        <div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
+        <div id="play" class="play" onclick=""><img src="media/graphics/splash/mobile/cover-start.jpg" /></div>
+    </div>
+    <div class="preloadText" style="font-family:'myriadpro-boldcond'">.</div>
+    <div class="preloadText" style="font-family:'myriadpro-semibold'">.</div>
+    <a href="https://playonline.top/?utm_source=gamemonetize&utm_medium=game&utm_campaign=moregames&utm_content=hexable" target="_blank" style="width:200px;position:fixed;bottom:20px;left:20px;z-index:10;color:white"><img width="200px" src="More-Games.png"></a>
+
+</body>
+</html>

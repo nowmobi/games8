@@ -1,0 +1,110 @@
+<!doctype html>
+<!--  manifest="llk.appcache" -->
+<html manifest="llk.appcache">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skibidi Link - hyhygames.com</title>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimal-ui,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+
+<body>
+
+    <script src="lib/hilo-standalone.js"></script>
+    <script src="js/link.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        window.SDK_OPTIONS = {
+            gameId: "846xh4g6afyqlwyb933uisnjcfllmteu",
+            onEvent: function(a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        break;
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        break;
+                    case "SDK_READY":
+                        // when sdk is ready
+                        break;
+                }
+            }
+        };
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+        })(document, "script", "gamemonetize-sdk");
+    </script>
+
+<script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+</body>
+
+</html>

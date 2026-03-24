@@ -1,0 +1,447 @@
+/* Styling for the entire HTML document */
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the body of the HTML document */
+body {
+  display: table-row;
+  background: #000 radial-gradient(1000px 500px, #525354, #2a455b);
+}
+
+/* Styling for the main wrapper of the game */
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Styling for the main content area of the game */
+.content {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* Styling for the sidebar containing game settings */
+.sidebar {
+  float: left;
+  width: 220px;
+  text-align: center;
+  font-family: 'Doppio One', sans-serif;
+  color: #ccc;
+  scale: 1.4;
+}
+
+/* Styling for headings */
+h1,
+h2 {
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+  height: 68px;
+  line-height: 68px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Styling for subheadings (h2) */
+h2 {
+  font-size: 18px;
+}
+
+/* Styling for panels containing game settings */
+.panel {
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Styling for the info panel at the bottom of the screen */
+.info-panel {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styling for the info panel containing game information */
+.panel.info{
+  width: 90%;
+}
+
+/* Styling for blurbs (short game information) */
+.blurb{
+  color: #a9a9a9;
+}
+
+/* Styling for difficulty options */
+.dif-options {
+  clear: both;
+  overflow: hidden;
+  margin: 20px -7px 0;
+}
+
+/* Styling for each difficulty option */
+.dif-options div {
+  float: left;
+  width: 20%;
+}
+
+/* Styling for hidden radio buttons for difficulty options */
+.dif-options input {
+  display: none;
+}
+
+/* Styling for checked radio buttons for difficulty options */
+.dif-options input:checked+label {
+  color: #fff;
+  background-color: #1d6346;
+  border-color: #fff;
+  cursor: default;
+}
+
+/* Styling for labels of difficulty options */
+.dif-options label {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #666;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  color: #999;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* Styling for disabled difficulty options when game is frozen */
+.freeze .dif-options input:not(:checked)+label {
+  font-size: 0;
+  margin: 7px auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
+  color: transparent;
+  line-height: 10px;
+  cursor: default;
+  transition: .2s;
+}
+
+/* Styling for theme options */
+.bor-options {
+  clear: both;
+  overflow: hidden;
+  margin: 20px -7px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for each theme option */
+.bor-options div {
+  margin:0px 10px;
+  float: left;
+}
+
+/* Styling for hidden radio buttons for theme options */
+.bor-options input {
+  display: none;
+}
+
+/* Styling for checked radio buttons for theme options */
+.bor-options input:checked+label {
+  color: #fff;
+  background-color: #1d6346;
+  border-color: #1d6346;
+  cursor: default;
+}
+
+/* Styling for labels of theme options */
+.bor-options label {
+  display: block;
+  background-color: #666;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+}
+
+/* Styling for images within labels of theme options */
+.bor-options label img {
+  width: 60px;
+  padding: 5px;
+}
+
+/* Styling for disabled theme options when game is frozen */
+.freeze .bor-options input:not(:checked)+label {
+  font-size: 0;
+  margin: 7px auto;
+  border-radius: 4px;
+  color: transparent;
+  line-height: 10px;
+  cursor: default;
+  transition: .2s;
+}
+
+/* Styling for sound options */
+.mus-options {
+  clear: both;
+  overflow: hidden;
+  margin: 10px -7px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for each sound option */
+.mus-options div {
+  margin:0px 10px;
+  float: left;
+}
+
+/* Styling for hidden radio buttons for sound options */
+.mus-options input {
+  display: none;
+}
+
+/* Styling for checked radio buttons for sound options */
+.mus-options input:checked+label {
+  color: #fff;
+  background-color: #1d6346;
+  border-color: #1d6346;
+  cursor: default;
+}
+
+/* Styling for labels of sound options */
+.mus-options label {
+  display: block;
+  background-color: #666;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+/* Styling for images within labels of sound options */
+.mus-options label img {
+  width: 60px;
+  padding: 5px;
+}
+
+/* Styling for disabled sound options when game is frozen */
+.freeze .mus-options input:not(:checked)+label {
+  font-size: 0;
+  margin: 7px auto;
+  border-radius: 4px;
+  color: transparent;
+  line-height: 10px;
+  cursor: default;
+  transition: .2s;
+}
+
+/* Styling for the start button */
+.start {
+  margin-top: 20px;
+}
+
+/* Styling for the start button */
+.start button {
+  display: block;
+  width: 100%;
+  padding: 2px 12px 4px;
+  font-family: inherit;
+  font-size: 24px;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  background-color: #1d6346;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Styling to remove the focus outline on the start button when clicked */
+.start button:focus {
+  outline: none;
+}
+
+/* Styling to hide the start button when the game is frozen */
+.freeze .start {
+  display: none;
+}
+
+/* Styling for the information div */
+.info div {
+  margin-top: 10px;
+}
+
+/* Styling for the result panel */
+.result {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  justify-content: center;
+  z-index: 99;
+  animation: result 5s forwards;
+}
+
+/* Styling for the result panel containing game result messages */
+.result-panel {
+  padding: 10px;
+  border-radius: 20px;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(13px);
+  font-family: fantasy;
+}
+
+/* Styling for the result panel heading */
+.result-panel > h1 {
+  font-size: 60px;
+}
+
+/* Styling for the result panel based on game results */
+.result-panel.win{
+  background: #22b14c;
+}
+.result-panel.loss{
+  background: #ed143d;
+}
+.result-panel.tie{
+  background: #eddc14;
+}
+
+/* Styling for the game board */
+.board {
+  position: relative;
+  float: left;
+  width: 428px;
+  height: 428px;
+  background-image: url("../images/boards/board1.png");
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for columns that are lit up during the game */
+.lit-columns,
+.lit-cells,
+.chips,
+.click-columns {
+  position: absolute;
+  width: 428px;
+  height: 428px;
+}
+
+/* Styling for individual lit columns during the game */
+.lit-columns div {
+  float: left;
+  width: 60px;
+  height: 426px;
+  margin: 1px 0 1px 1px;
+  transition: background-color 0.1s;
+}
+
+/* Styling for lit columns during the game */
+.lit-columns .lit {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.1s;
+}
+
+/* Styling for lit cells during the game */
+.lit-cells div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Styling for chips dropped on the board during the game */
+.chips div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Styling for player 1's chip */
+.chips .p1 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/p1-chip.png");
+}
+
+/* Styling for player 2's chip */
+.chips .p2 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/p2-chip.png");
+}
+
+/* Styling for the cursor chip (visual effect) */
+.chips .cursor {
+  bottom: 428px;
+  transition: left 0.1s ease-out;
+}
+
+/* Styling for the dropped chip animation */
+.chips .dropped {
+  transition: bottom ease-in;
+  animation: bounce 0.3s;
+}
+
+/* Styling for clickable columns */
+.click-columns div {
+  float: left;
+  width: 61px;
+  height: 428px;
+}
+
+/* Styling for hover effect on clickable columns */
+.click-columns .hover {
+  cursor: pointer;
+}
+
+/* Keyframes for the bounce animation when a chip is dropped */
+@keyframes bounce {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+  30% {
+    animation-timing-function: ease-in;
+    transform: translateY(-40px);
+  }
+  60% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+  80% {
+    animation-timing-function: ease-in;
+    transform: translateY(-10px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for the result animation */
+@keyframes result{
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

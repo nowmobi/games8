@@ -1,0 +1,1014 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "Bundle1",
+  "deps": [
+    "main",
+    "resources"
+  ],
+  "uuids": [
+    "00/tM57oBBSIjb9rvh5Q7H",
+    "02isrtHBpHUYHthUUYErdm",
+    "02isrtHBpHUYHthUUYErdm@6c48a",
+    "02isrtHBpHUYHthUUYErdm@f9941",
+    "04e733abe",
+    "083f2ce08",
+    "09Ns/VgLhHsJdXeGC08zdE",
+    "09Ns/VgLhHsJdXeGC08zdE@6c48a",
+    "1e5zfno51DRqZzIy6SfZNa@6c48a",
+    "09Ns/VgLhHsJdXeGC08zdE@f9941",
+    "0a4037e31",
+    "0a802a229",
+    "0cb1e4f28",
+    "0d1c48919",
+    "0d8c03e70",
+    "0e272e398",
+    "0e5ac2fef",
+    "2c8xNPCtRJFZx6+zMZ/m7o@6c48a",
+    "46DQdhxMJLA7N/tNiI2ye+",
+    "46DQdhxMJLA7N/tNiI2ye+@6c48a",
+    "4bh1suGQNHSqEtD4SpchaM",
+    "4bh1suGQNHSqEtD4SpchaM@6c48a",
+    "4eJWmFsGpL6LDEbw9eficQ",
+    "4eJWmFsGpL6LDEbw9eficQ@6c48a",
+    "63/fHNSJpHPoRA0LpZEzKF",
+    "63/fHNSJpHPoRA0LpZEzKF@6c48a",
+    "67uCtLBMhF06jlaimM8Sdt",
+    "67uCtLBMhF06jlaimM8Sdt@6c48a",
+    "69gPearSFKcL3F8cUc4dDK",
+    "69gPearSFKcL3F8cUc4dDK@6c48a",
+    "6cFzoMDiVGybTY9s3bnejA",
+    "6cFzoMDiVGybTY9s3bnejA@6c48a",
+    "72EVexZxlAH5v3dKEUM7w/",
+    "72EVexZxlAH5v3dKEUM7w/@6c48a",
+    "7a/DNMXk9EN5maglmU63YP",
+    "7fHiwvMRlPRZHEOz+TY7rU",
+    "7fHiwvMRlPRZHEOz+TY7rU@6c48a",
+    "82puMJgptO9b6znmoIqEBy",
+    "82puMJgptO9b6znmoIqEBy@6c48a",
+    "0ecVfcFjxGeIQ0ge8Vv9CS",
+    "0ed7cdc23",
+    "0ee68489c",
+    "27e/OnyAtL2oDijnlVQVLu",
+    "27e/OnyAtL2oDijnlVQVLu@6c48a",
+    "32ExRRoOlG1ZUuEEcxmkLw",
+    "0fMSbuNfFCJaxOCkR+YA5Y",
+    "0fgkkP0/JD95V3X9K/6jg7",
+    "0fgkkP0/JD95V3X9K/6jg7@6c48a",
+    "0fgkkP0/JD95V3X9K/6jg7@f9941",
+    "0fa844dae",
+    "1btBqf7PpJLKxRIUemFi9w",
+    "1e5zfno51DRqZzIy6SfZNa",
+    "2c8xNPCtRJFZx6+zMZ/m7o",
+    "32ExRRoOlG1ZUuEEcxmkLw@6c48a",
+    "3cB+VuJ+tAho2GiIMKoNt7",
+    "3cB+VuJ+tAho2GiIMKoNt7@6c48a",
+    "986RxgTdlDPrZFKT+ogG2z",
+    "9ezEtXkfVCbKcUTlwJh+L0",
+    "9ezEtXkfVCbKcUTlwJh+L0@6c48a",
+    "9fg1sEJH1G/ZXY6FNk3Zes",
+    "a3r5qFaB9J2J6H38r5LCFs",
+    "a3r5qFaB9J2J6H38r5LCFs@6c48a",
+    "a4lZjQ5SVF9o1xgC0zRq0r",
+    "a4lZjQ5SVF9o1xgC0zRq0r@6c48a",
+    "abfnKWFetOlokK9o6rQynu",
+    "abfnKWFetOlokK9o6rQynu@6c48a",
+    "aeDF68acFIDb96ISL8Y/ba",
+    "aeDF68acFIDb96ISL8Y/ba@6c48a",
+    "b7E/pdwQ9IGIU82q9gaqWy",
+    "b7E/pdwQ9IGIU82q9gaqWy@6c48a",
+    "bbasaPKYNPParp7Q9bcxY7",
+    "bbasaPKYNPParp7Q9bcxY7@6c48a",
+    "be7GFQutlL+Y2ss9iogwa3",
+    "d2KP1+g25FeaNsr3c6YPjf",
+    "d2KP1+g25FeaNsr3c6YPjf@6c48a",
+    "d9qT7nopVMEZIJN7Mk7NuO",
+    "d9qT7nopVMEZIJN7Mk7NuO@6c48a",
+    "daU45K33xG2qddtRAYBFvK",
+    "daU45K33xG2qddtRAYBFvK@6c48a",
+    "deYWd1pQ9Be48qfHefxAGC",
+    "ec7RbjB9tGYI7CFCoxy6dN",
+    "ec7RbjB9tGYI7CFCoxy6dN@6c48a",
+    "eejRovSV1IcqPMltuE75Fp",
+    "ee9i0WzlRIC47jlEIlqFcC",
+    "efUq7nYk9MAKHjrrMrZbQ/",
+    "efUq7nYk9MAKHjrrMrZbQ/@6c48a",
+    "f0ndR5AY1GhLIsuhFiMIIJ",
+    "f1r5dWXtxLxYw3RksnEHNq",
+    "f1r5dWXtxLxYw3RksnEHNq@6c48a",
+    "f2SxpHG2FEs6WOXqC4L3t1",
+    "f2lBTOyfpPWLiS5PwPpQcL",
+    "f2lBTOyfpPWLiS5PwPpQcL@6c48a",
+    "12tknae8VANK5Vp0GtnoOM",
+    "12tknae8VANK5Vp0GtnoOM@6c48a",
+    "12tknae8VANK5Vp0GtnoOM@f9941",
+    "16WUTatVROHaxhvrvBuerM",
+    "16WUTatVROHaxhvrvBuerM@6c48a",
+    "16WUTatVROHaxhvrvBuerM@f9941",
+    "1e5zfno51DRqZzIy6SfZNa@f9941",
+    "20g1ukYUVPvKWKBRznAKo+",
+    "20g1ukYUVPvKWKBRznAKo+@6c48a",
+    "20g1ukYUVPvKWKBRznAKo+@f9941",
+    "27e/OnyAtL2oDijnlVQVLu@f9941",
+    "2bPOwYkgpKqLYNzgBlzWlR",
+    "2bPOwYkgpKqLYNzgBlzWlR@6c48a",
+    "2bPOwYkgpKqLYNzgBlzWlR@f9941",
+    "2c8xNPCtRJFZx6+zMZ/m7o@f9941",
+    "32ExRRoOlG1ZUuEEcxmkLw@f9941",
+    "34rGBiK61DyI4aC2kNIAF1",
+    "34rGBiK61DyI4aC2kNIAF1@6c48a",
+    "34rGBiK61DyI4aC2kNIAF1@f9941",
+    "37O+AIyc1G24Cnt0nyXlSi",
+    "37O+AIyc1G24Cnt0nyXlSi@6c48a",
+    "37O+AIyc1G24Cnt0nyXlSi@f9941",
+    "3736eMIxBMcLkh+u7oZty9",
+    "3736eMIxBMcLkh+u7oZty9@6c48a",
+    "3736eMIxBMcLkh+u7oZty9@f9941",
+    "3cB+VuJ+tAho2GiIMKoNt7@f9941",
+    "42CjCbtEFD1qhpeaO6N1CE",
+    "42CjCbtEFD1qhpeaO6N1CE@6c48a",
+    "42CjCbtEFD1qhpeaO6N1CE@f9941",
+    "46DQdhxMJLA7N/tNiI2ye+@f9941",
+    "4ahaV3BdRPy7CCGKf+1CuT",
+    "4ahaV3BdRPy7CCGKf+1CuT@6c48a",
+    "4ahaV3BdRPy7CCGKf+1CuT@f9941",
+    "4bh1suGQNHSqEtD4SpchaM@f9941",
+    "4dRkXGLTxClKmdz+8dI3gr",
+    "4dRkXGLTxClKmdz+8dI3gr@6c48a",
+    "4dRkXGLTxClKmdz+8dI3gr@f9941",
+    "4eJWmFsGpL6LDEbw9eficQ@f9941",
+    "51eLrOhIBAVbDi5Gp8O9Xg",
+    "52pJgwTy1HTaT15E1ZKF8V",
+    "54TknWPwVPqJqeCR+Y/Czo",
+    "54TknWPwVPqJqeCR+Y/Czo@6c48a",
+    "54TknWPwVPqJqeCR+Y/Czo@f9941",
+    "57UgcWSMhKGYrPQcn4d3+w",
+    "57UgcWSMhKGYrPQcn4d3+w@6c48a",
+    "57UgcWSMhKGYrPQcn4d3+w@f9941",
+    "59t5fL3A5GcpBC037/On6x",
+    "59t5fL3A5GcpBC037/On6x@6c48a",
+    "59t5fL3A5GcpBC037/On6x@f9941",
+    "5cMzIhpklGaooPCUVHEylq",
+    "5cMzIhpklGaooPCUVHEylq@6c48a",
+    "5cMzIhpklGaooPCUVHEylq@f9941",
+    "63/fHNSJpHPoRA0LpZEzKF@f9941",
+    "64ksd9KHBOpYrxvPhdbqf1",
+    "64ksd9KHBOpYrxvPhdbqf1@6c48a",
+    "64ksd9KHBOpYrxvPhdbqf1@f9941",
+    "67uCtLBMhF06jlaimM8Sdt@f9941",
+    "69gPearSFKcL3F8cUc4dDK@f9941",
+    "6cFzoMDiVGybTY9s3bnejA@f9941",
+    "6fTVeUoN1C6LF7OYhAIcbM",
+    "6fTVeUoN1C6LF7OYhAIcbM@6c48a",
+    "6fTVeUoN1C6LF7OYhAIcbM@f9941",
+    "72EVexZxlAH5v3dKEUM7w/@f9941",
+    "7dj5uJT9FMn6OrOOx83tfK@f9941",
+    "7eZ/KK3TFIUaHJVUJTH8s2@f9941",
+    "7fHiwvMRlPRZHEOz+TY7rU@f9941",
+    "809FKXd6ZG2bzMie1gYlrV",
+    "809FKXd6ZG2bzMie1gYlrV@6c48a",
+    "809FKXd6ZG2bzMie1gYlrV@f9941",
+    "82puMJgptO9b6znmoIqEBy@f9941",
+    "91HVqUi0NO4JKpYL9blZ0j",
+    "91HVqUi0NO4JKpYL9blZ0j@6c48a",
+    "91HVqUi0NO4JKpYL9blZ0j@f9941",
+    "92yyjcigFHDJEA4CNO8K81",
+    "92yyjcigFHDJEA4CNO8K81@6c48a",
+    "92yyjcigFHDJEA4CNO8K81@f9941",
+    "95EkngnxZFbYuFpsqVTaFr",
+    "95EkngnxZFbYuFpsqVTaFr@6c48a",
+    "95EkngnxZFbYuFpsqVTaFr@f9941",
+    "97cSgSLXdATr1JVxKYglIw",
+    "97cSgSLXdATr1JVxKYglIw@6c48a",
+    "97cSgSLXdATr1JVxKYglIw@f9941",
+    "9cnQarHpBHdo2vHoGfYUgO",
+    "9cnQarHpBHdo2vHoGfYUgO@6c48a",
+    "9cnQarHpBHdo2vHoGfYUgO@f9941",
+    "9ezEtXkfVCbKcUTlwJh+L0@f9941",
+    "a3r5qFaB9J2J6H38r5LCFs@f9941",
+    "a4lZjQ5SVF9o1xgC0zRq0r@f9941",
+    "a7pOw6rCJGhb97c+cQbOHx",
+    "a7pOw6rCJGhb97c+cQbOHx@6c48a",
+    "a7pOw6rCJGhb97c+cQbOHx@f9941",
+    "a8f/mUPppKmYXAJSvxM2tK",
+    "a8f/mUPppKmYXAJSvxM2tK@6c48a",
+    "a8f/mUPppKmYXAJSvxM2tK@f9941",
+    "abfnKWFetOlokK9o6rQynu@f9941",
+    "ad0t8SjwhHtZdbUpNU85G0",
+    "aeDF68acFIDb96ISL8Y/ba@f9941",
+    "b7E/pdwQ9IGIU82q9gaqWy@f9941",
+    "b7HnyZXkhJ3JqU0LgqB8wA",
+    "b7HnyZXkhJ3JqU0LgqB8wA@6c48a",
+    "b7HnyZXkhJ3JqU0LgqB8wA@f9941",
+    "b7Qoj3DAhDAIN2njdFIwys",
+    "b7Qoj3DAhDAIN2njdFIwys@6c48a",
+    "b7Qoj3DAhDAIN2njdFIwys@f9941",
+    "baSspbV3tCi5KGLYYJgNH5",
+    "bbasaPKYNPParp7Q9bcxY7@f9941",
+    "c7GFCGV5JEqIhg8sVnSmyv",
+    "c7GFCGV5JEqIhg8sVnSmyv@6c48a",
+    "c7GFCGV5JEqIhg8sVnSmyv@f9941",
+    "ceL+7+U+VKp52Niixw/0Lj",
+    "ceL+7+U+VKp52Niixw/0Lj@6c48a",
+    "ceL+7+U+VKp52Niixw/0Lj@f9941",
+    "ce7Rh4afZLqozjiyiLuV01",
+    "ce7Rh4afZLqozjiyiLuV01@6c48a",
+    "ce7Rh4afZLqozjiyiLuV01@f9941",
+    "cftzGv4NhD840n9tjqwrVI",
+    "cftzGv4NhD840n9tjqwrVI@6c48a",
+    "cftzGv4NhD840n9tjqwrVI@f9941",
+    "d2KP1+g25FeaNsr3c6YPjf@f9941",
+    "d3kSRwNXxGd6KXfBfFyxbO",
+    "d3kSRwNXxGd6KXfBfFyxbO@6c48a",
+    "d3kSRwNXxGd6KXfBfFyxbO@f9941",
+    "d50pYoVpFEsK4TQBNrmz+A",
+    "d50pYoVpFEsK4TQBNrmz+A@6c48a",
+    "d50pYoVpFEsK4TQBNrmz+A@f9941",
+    "d9qT7nopVMEZIJN7Mk7NuO@f9941",
+    "daU45K33xG2qddtRAYBFvK@f9941",
+    "dai5X1Kf9PpLU8jUt3gpJ4",
+    "dai5X1Kf9PpLU8jUt3gpJ4@6c48a",
+    "dai5X1Kf9PpLU8jUt3gpJ4@f9941",
+    "ddTsjE8MlL4YxDUHeehLu1",
+    "ddTsjE8MlL4YxDUHeehLu1@6c48a",
+    "ddTsjE8MlL4YxDUHeehLu1@f9941",
+    "deVr66oS5IVYRFetFJVgmN",
+    "deVr66oS5IVYRFetFJVgmN@6c48a",
+    "deVr66oS5IVYRFetFJVgmN@f9941",
+    "e1JCpvYXVIZoFVTaG5AUsI",
+    "e1JCpvYXVIZoFVTaG5AUsI@6c48a",
+    "e1JCpvYXVIZoFVTaG5AUsI@f9941",
+    "e5r/a47tFM07vmR6pk2ooR",
+    "e6zWEfzQpIArV2z7xy4ggo",
+    "e6zWEfzQpIArV2z7xy4ggo@6c48a",
+    "e6zWEfzQpIArV2z7xy4ggo@f9941",
+    "ec7RbjB9tGYI7CFCoxy6dN@f9941",
+    "efUq7nYk9MAKHjrrMrZbQ/@f9941",
+    "f1KiPEuSRDIqJgPZgkKPHo",
+    "f1KiPEuSRDIqJgPZgkKPHo@6c48a",
+    "f1KiPEuSRDIqJgPZgkKPHo@f9941",
+    "f1NBK2rdxDQYhmJMlnplrF",
+    "f1r5dWXtxLxYw3RksnEHNq@f9941",
+    "f2lBTOyfpPWLiS5PwPpQcL@f9941",
+    "f6tyug/6NJVKPh5U3gvNdC",
+    "f6tyug/6NJVKPh5U3gvNdC@6c48a",
+    "f6tyug/6NJVKPh5U3gvNdC@f9941",
+    "faMwLYDEhP5qkk6NDsCfq2",
+    "faMwLYDEhP5qkk6NDsCfq2@6c48a",
+    "faMwLYDEhP5qkk6NDsCfq2@f9941",
+    "famlODR75Cwa8OLAv/4t0L",
+    "fbe++99V1LxKQ3mxBTPEal",
+    "fbe++99V1LxKQ3mxBTPEal@6c48a",
+    "fbe++99V1LxKQ3mxBTPEal@f9941"
+  ],
+  "paths": {
+    "0": [
+      "Prefabs/duiDui/blockJianTou",
+      0
+    ],
+    "6": [
+      "SpriteFrames/11",
+      2
+    ],
+    "7": [
+      "SpriteFrames/11/texture",
+      3,
+      1
+    ],
+    "8": [
+      "SpriteFrames/13/texture",
+      3,
+      1
+    ],
+    "9": [
+      "SpriteFrames/11/spriteFrame",
+      4,
+      1
+    ],
+    "17": [
+      "SpriteFrames/5/texture",
+      3,
+      1
+    ],
+    "18": [
+      "SpriteFrames/1",
+      2
+    ],
+    "19": [
+      "SpriteFrames/1/texture",
+      3,
+      1
+    ],
+    "20": [
+      "SpriteFrames/23",
+      2
+    ],
+    "21": [
+      "SpriteFrames/23/texture",
+      3,
+      1
+    ],
+    "22": [
+      "SpriteFrames/26",
+      2
+    ],
+    "23": [
+      "SpriteFrames/26/texture",
+      3,
+      1
+    ],
+    "24": [
+      "SpriteFrames/9",
+      2
+    ],
+    "25": [
+      "SpriteFrames/9/texture",
+      3,
+      1
+    ],
+    "26": [
+      "SpriteFrames/19",
+      2
+    ],
+    "27": [
+      "SpriteFrames/19/texture",
+      3,
+      1
+    ],
+    "28": [
+      "SpriteFrames/30",
+      2
+    ],
+    "29": [
+      "SpriteFrames/30/texture",
+      3,
+      1
+    ],
+    "30": [
+      "SpriteFrames/14",
+      2
+    ],
+    "31": [
+      "SpriteFrames/14/texture",
+      3,
+      1
+    ],
+    "32": [
+      "SpriteFrames/7",
+      2
+    ],
+    "33": [
+      "SpriteFrames/7/texture",
+      3,
+      1
+    ],
+    "34": [
+      "Prefabs/duiDui/viewTipXinShou",
+      0
+    ],
+    "35": [
+      "SpriteFrames/2",
+      2
+    ],
+    "36": [
+      "SpriteFrames/2/texture",
+      3,
+      1
+    ],
+    "37": [
+      "SpriteFrames/22",
+      2
+    ],
+    "38": [
+      "SpriteFrames/22/texture",
+      3,
+      1
+    ],
+    "39": [
+      "Sound/duidui_bgm",
+      1
+    ],
+    "42": [
+      "SpriteFrames/16",
+      2
+    ],
+    "43": [
+      "SpriteFrames/16/texture",
+      3,
+      1
+    ],
+    "44": [
+      "SpriteFrames/6",
+      2
+    ],
+    "45": [
+      "Sound/duidui_win",
+      1
+    ],
+    "50": [
+      "Prefabs/duiDui/viewResult",
+      0
+    ],
+    "51": [
+      "SpriteFrames/13",
+      2
+    ],
+    "52": [
+      "SpriteFrames/5",
+      2
+    ],
+    "53": [
+      "SpriteFrames/6/texture",
+      3,
+      1
+    ],
+    "54": [
+      "SpriteFrames/3",
+      2
+    ],
+    "55": [
+      "SpriteFrames/3/texture",
+      3,
+      1
+    ],
+    "56": [
+      "Prefabs/viewTip",
+      0
+    ],
+    "57": [
+      "SpriteFrames/8",
+      2
+    ],
+    "58": [
+      "SpriteFrames/8/texture",
+      3,
+      1
+    ],
+    "59": [
+      "Prefabs/duiDui/layerHome",
+      0
+    ],
+    "60": [
+      "SpriteFrames/17",
+      2
+    ],
+    "61": [
+      "SpriteFrames/17/texture",
+      3,
+      1
+    ],
+    "62": [
+      "SpriteFrames/24",
+      2
+    ],
+    "63": [
+      "SpriteFrames/24/texture",
+      3,
+      1
+    ],
+    "64": [
+      "SpriteFrames/15",
+      2
+    ],
+    "65": [
+      "SpriteFrames/15/texture",
+      3,
+      1
+    ],
+    "66": [
+      "SpriteFrames/29",
+      2
+    ],
+    "67": [
+      "SpriteFrames/29/texture",
+      3,
+      1
+    ],
+    "68": [
+      "SpriteFrames/4",
+      2
+    ],
+    "69": [
+      "SpriteFrames/4/texture",
+      3,
+      1
+    ],
+    "70": [
+      "SpriteFrames/21",
+      2
+    ],
+    "71": [
+      "SpriteFrames/21/texture",
+      3,
+      1
+    ],
+    "72": [
+      "Prefabs/selfGG",
+      0
+    ],
+    "73": [
+      "SpriteFrames/20",
+      2
+    ],
+    "74": [
+      "SpriteFrames/20/texture",
+      3,
+      1
+    ],
+    "75": [
+      "SpriteFrames/27",
+      2
+    ],
+    "76": [
+      "SpriteFrames/27/texture",
+      3,
+      1
+    ],
+    "77": [
+      "SpriteFrames/10",
+      2
+    ],
+    "78": [
+      "SpriteFrames/10/texture",
+      3,
+      1
+    ],
+    "79": [
+      "Prefabs/duiDui/viewAddGame",
+      0
+    ],
+    "80": [
+      "SpriteFrames/18",
+      2
+    ],
+    "81": [
+      "SpriteFrames/18/texture",
+      3,
+      1
+    ],
+    "82": [
+      "Prefabs/duiDui/TIP",
+      0
+    ],
+    "83": [
+      "Prefabs/duiDui/viewFHDuiDui",
+      0
+    ],
+    "84": [
+      "SpriteFrames/25",
+      2
+    ],
+    "85": [
+      "SpriteFrames/25/texture",
+      3,
+      1
+    ],
+    "86": [
+      "Prefabs/duiDui/blockDuiDui",
+      0
+    ],
+    "87": [
+      "SpriteFrames/12",
+      2
+    ],
+    "88": [
+      "SpriteFrames/12/texture",
+      3,
+      1
+    ],
+    "89": [
+      "Prefabs/duiDui/layerDuiDui",
+      0
+    ],
+    "90": [
+      "SpriteFrames/28",
+      2
+    ],
+    "91": [
+      "SpriteFrames/28/texture",
+      3,
+      1
+    ],
+    "98": [
+      "SpriteFrames/13/spriteFrame",
+      4,
+      1
+    ],
+    "102": [
+      "SpriteFrames/16/spriteFrame",
+      4,
+      1
+    ],
+    "106": [
+      "SpriteFrames/5/spriteFrame",
+      4,
+      1
+    ],
+    "107": [
+      "SpriteFrames/6/spriteFrame",
+      4,
+      1
+    ],
+    "117": [
+      "SpriteFrames/3/spriteFrame",
+      4,
+      1
+    ],
+    "121": [
+      "SpriteFrames/1/spriteFrame",
+      4,
+      1
+    ],
+    "125": [
+      "SpriteFrames/23/spriteFrame",
+      4,
+      1
+    ],
+    "129": [
+      "SpriteFrames/26/spriteFrame",
+      4,
+      1
+    ],
+    "130": [
+      "Sound/duidui_get",
+      1
+    ],
+    "131": [
+      "Sound/duidui_btn",
+      1
+    ],
+    "144": [
+      "SpriteFrames/9/spriteFrame",
+      4,
+      1
+    ],
+    "148": [
+      "SpriteFrames/19/spriteFrame",
+      4,
+      1
+    ],
+    "149": [
+      "SpriteFrames/30/spriteFrame",
+      4,
+      1
+    ],
+    "150": [
+      "SpriteFrames/14/spriteFrame",
+      4,
+      1
+    ],
+    "154": [
+      "SpriteFrames/7/spriteFrame",
+      4,
+      1
+    ],
+    "157": [
+      "SpriteFrames/2/spriteFrame",
+      4,
+      1
+    ],
+    "161": [
+      "SpriteFrames/22/spriteFrame",
+      4,
+      1
+    ],
+    "177": [
+      "SpriteFrames/8/spriteFrame",
+      4,
+      1
+    ],
+    "178": [
+      "SpriteFrames/17/spriteFrame",
+      4,
+      1
+    ],
+    "179": [
+      "SpriteFrames/24/spriteFrame",
+      4,
+      1
+    ],
+    "186": [
+      "SpriteFrames/15/spriteFrame",
+      4,
+      1
+    ],
+    "187": [
+      "Sound/duidui_lose",
+      1
+    ],
+    "188": [
+      "SpriteFrames/29/spriteFrame",
+      4,
+      1
+    ],
+    "189": [
+      "SpriteFrames/4/spriteFrame",
+      4,
+      1
+    ],
+    "197": [
+      "SpriteFrames/21/spriteFrame",
+      4,
+      1
+    ],
+    "210": [
+      "SpriteFrames/20/spriteFrame",
+      4,
+      1
+    ],
+    "217": [
+      "SpriteFrames/27/spriteFrame",
+      4,
+      1
+    ],
+    "218": [
+      "SpriteFrames/10/spriteFrame",
+      4,
+      1
+    ],
+    "231": [
+      "Sound/duidui_click",
+      1
+    ],
+    "235": [
+      "SpriteFrames/18/spriteFrame",
+      4,
+      1
+    ],
+    "236": [
+      "SpriteFrames/25/spriteFrame",
+      4,
+      1
+    ],
+    "240": [
+      "Sound/duidui_dada",
+      1
+    ],
+    "241": [
+      "SpriteFrames/12/spriteFrame",
+      4,
+      1
+    ],
+    "242": [
+      "SpriteFrames/28/spriteFrame",
+      4,
+      1
+    ],
+    "249": [
+      "Prefabs/duiDui/blockDuiDuiAct",
+      0
+    ]
+  },
+  "scenes": {},
+  "packs": {
+    "04e733abe": [
+      "147",
+      "34"
+    ],
+    "083f2ce08": [
+      "0",
+      "97"
+    ],
+    "0a4037e31": [
+      "105",
+      "176",
+      "221",
+      "79"
+    ],
+    "0a802a229": [
+      "46",
+      "51",
+      "103",
+      "52",
+      "54",
+      "122",
+      "20",
+      "126",
+      "22",
+      "141",
+      "30",
+      "151",
+      "35",
+      "174",
+      "57",
+      "92",
+      "1",
+      "108",
+      "114",
+      "138",
+      "24",
+      "26",
+      "158",
+      "37",
+      "165",
+      "42",
+      "111",
+      "118",
+      "18",
+      "132",
+      "162",
+      "6",
+      "145",
+      "28",
+      "99",
+      "95",
+      "32",
+      "168",
+      "44",
+      "135",
+      "171",
+      "60",
+      "180",
+      "183",
+      "62",
+      "64",
+      "66",
+      "190",
+      "68",
+      "193",
+      "70",
+      "198",
+      "201",
+      "204",
+      "207",
+      "214",
+      "75",
+      "73",
+      "211",
+      "219",
+      "77",
+      "222",
+      "225",
+      "232",
+      "228",
+      "80",
+      "84",
+      "87",
+      "243",
+      "237",
+      "90",
+      "246",
+      "250"
+    ],
+    "0cb1e4f28": [
+      "110",
+      "128",
+      "140",
+      "143",
+      "59",
+      "206"
+    ],
+    "0d1c48919": [
+      "113",
+      "164",
+      "182",
+      "224",
+      "234",
+      "83",
+      "245"
+    ],
+    "0d8c03e70": [
+      "47",
+      "8",
+      "104",
+      "17",
+      "55",
+      "123",
+      "21",
+      "127",
+      "23",
+      "142",
+      "31",
+      "152",
+      "36",
+      "175",
+      "58",
+      "93",
+      "2",
+      "109",
+      "115",
+      "139",
+      "25",
+      "27",
+      "159",
+      "38",
+      "166",
+      "43",
+      "112",
+      "119",
+      "19",
+      "133",
+      "163",
+      "7",
+      "146",
+      "29",
+      "100",
+      "96",
+      "33",
+      "169",
+      "53",
+      "136",
+      "172",
+      "61",
+      "181",
+      "184",
+      "63",
+      "65",
+      "67",
+      "191",
+      "69",
+      "194",
+      "71",
+      "199",
+      "202",
+      "205",
+      "208",
+      "215",
+      "76",
+      "74",
+      "212",
+      "220",
+      "78",
+      "223",
+      "226",
+      "233",
+      "229",
+      "81",
+      "85",
+      "88",
+      "244",
+      "238",
+      "91",
+      "247",
+      "251"
+    ],
+    "0e272e398": [
+      "137",
+      "173",
+      "86"
+    ],
+    "0e5ac2fef": [
+      "50",
+      "124",
+      "153",
+      "248"
+    ],
+    "0ed7cdc23": [
+      "56",
+      "200"
+    ],
+    "0ee68489c": [
+      "3",
+      "48",
+      "94",
+      "101",
+      "134",
+      "160",
+      "167",
+      "170",
+      "185",
+      "192",
+      "195",
+      "209",
+      "213",
+      "216",
+      "230",
+      "89"
+    ],
+    "0fa844dae": [
+      "116",
+      "120",
+      "72",
+      "203",
+      "227",
+      "239",
+      "252"
+    ]
+  },
+  "versions": {
+    "import": [],
+    "native": []
+  },
+  "redirect": [
+    155,
+    "0",
+    156,
+    "1",
+    82,
+    "0"
+  ],
+  "debug": false,
+  "extensionMap": {
+    ".cconb": [
+      "196"
+    ]
+  },
+  "hasPreloadScript": true,
+  "types": [
+    "cc.Prefab",
+    "cc.AudioClip",
+    "cc.ImageAsset",
+    "cc.Texture2D",
+    "cc.SpriteFrame"
+  ]
+}

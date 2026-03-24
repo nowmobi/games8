@@ -1,0 +1,1 @@
+pgf.jsonp("tables/id487176", {"id":"id487176","version":"1.000000","name":"TB_Score","numRows":1,"numCols":2,"flags":9,"tableType":0,"rows":{"id":"0","name":""},"columns":[{"id":"0","name":"Best Score","type":"2","readonly":"0","$":[0]},{"id":"1","name":"Leaderboard ID","type":"1","readonly":"0","$":["COCODODGE"]}]});

@@ -1,0 +1,99 @@
+
+
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <style>
+      html body {width: 100%;height: 100%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #6e6e6e;background-color: #000;} #preview-grame {width: 100%;background-color: #fff;}</style>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         var calcHeight = function() {
+           $('#preview-grame').height($(window).height());
+         }
+
+         $(document).ready(function() {
+           calcHeight();
+         }); 
+
+         $(window).resize(function() {
+           calcHeight();
+         }).load(function() {
+           calcHeight();
+         });
+      </script>
+	  
+ 
+   </head>
+   <body>
+<?php include'html-encoder.php';?>       
+      <iframe id="preview-grame" src="https://sybogame.com/games/skibidi-toilet-match-up/" name="preview-grame" frameborder="0" noresize="noresize">
+      </iframe>
+	  		
+
+    <script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+</body>
+	
+	 
+
+   <script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+</body>
+   
+   <script type="text/javascript">
+   window.SDK_OPTIONS = {
+      gameId: "32c6t6bal7vuoo8l30kdw0nsxuwnlmdf",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+
+<script type="text/javascript">
+        function google_analytics() {
+            if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+                sdk.showBanner();
+            }
+        };
+
+        function google_analytics_ID() {
+            if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+                sdk.showBanner();
+            }
+        };
+        setTimeout(function() {
+            google_analytics();
+        }, 1000);
+        setInterval(function() {
+            google_analytics_ID();
+        }, 80000);
+    </script>
+   
+</html>

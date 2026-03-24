@@ -1,0 +1,22 @@
+{
+  "id": "48281",
+  "title": "Jelly Match 4",
+  "slug": "jelly-match-4",
+  "description": "Pick block sets from left panel and drop them on the board to make a horizontal or vertical row of 4 similar blocks you can rotate the block set by clicking on them. If any of three available sets of blocks cannot accommodate in board, the game will be over. Website Developer <a href='https://www.lofgames.com/'>https://www.lofgames.com/</a>",
+  "instructions": "Use a mouse or touchpad to Pick block sets from left panel and drop them on the board to make a horizontal or vertical row of 4 similar blocks ",
+  "url": "https://html5.gamemonetize.com/r72f7o2oq5dhsfipuhov8oxaeijvm3ke/",
+  "category": "Puzzle",
+  "categorySlug": "puzzle",
+  "tags": [
+    "HTML5",
+    "Jelly",
+    "Match-3",
+    "Matching",
+    "Mobile"
+  ],
+  "thumb": "https://img.gamemonetize.com/r72f7o2oq5dhsfipuhov8oxaeijvm3ke/512x384.jpg",
+  "width": 800,
+  "height": 450,
+  "publisher": "LofGames.com",
+  "crawledAt": "2026-02-01T20:49:54.142Z"
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pixel Christmas</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/createjs.min.js"></script>
+        <script type="text/javascript" src="js/howler.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+    <body ondragstart="return false" ondrop="return false">
+        <div style="position:fixed;background-color:transparent;top:0px;left:0px;width:100%;height:100%"></div>
+        <script>
+$(document).ready(function(){var oMain=new CMain({level_up_lines:5,score_line:[40,100,300,1200],blocks_occurence:[19,19,19,12,12,7,11],start_refresh_game:1,min_refresh_game:.05,step_decrease_refresh_game:.25,audio_enable_on_startup:true,fullscreen:true,check_orientation:false,num_levels_for_ads:1});try{if(isIOS()){setTimeout(function(){sizeHandler()},200)}else{sizeHandler()}}catch(e){console.log(e);setTimeout(function(){sizeHandler()},200)}});try{function showMoreGames(){0<jQuery("#more-games-button").length&&jQuery("#more-games-button").fadeIn()}function hideMoreGames(){0<jQuery("#more-games-button").length&&jQuery("#more-games-button").fadeOut()}function checkMoreGames(a){(jQuery("body").append('<div id="more-games-button"></div>'),jQuery("#more-games-button").on("click",function(){window.open("https://playonline.top/?utm_source=gamemonetize&utm_medium=game&utm_campaign=moregames&utm_content=pixel_christmas");}),jQuery("#more-games-button").fadeIn())}}catch(e){console.log(e)}function ads(){"undefined"==typeof sdk||"undefined"===sdk.showBanner||sdk.showBanner()}window.SDK_OPTIONS={gameId:"9gtvi6l0erodh6wt6lt8rauhbrcvw9b6",onEvent:function(e){switch(e.name){case"SDK_READY":s_oMain.startUpdate();break;case"SDK_GAME_START":s_oMain&&s_oMain.startUpdate();break;case"SDK_GAME_PAUSE":s_oMain&&s_oMain.stopUpdate()}}},function(e,t,i){var n=e.getElementsByTagName(t)[0];e.getElementById(i)||((e=e.createElement(t)).id=i,e.src="https://api.gamemonetize.com/sdk.js",n.parentNode.insertBefore(e,n))}(document,"script","gamemonetize-sdk")
+        </script>
+        <canvas id="canvas" class='ani_hack' width="1920" height="1920"> </canvas>
+        <div data-orientation="portrait" class="orientation-msg-container"><p class="orientation-msg-text">Please rotate your device</p></div>
+        <div id="block_game" style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%; display:none"></div>
+
+    </body>
+</html>

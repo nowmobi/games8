@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta charset="UTF-8">
+      <link rel="manifest" href="manifest.json" />
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <meta name="developed-by" content="gamesrishti studio">
+      <meta name="description" content="Spot 5 differences between 2 potraits.">
+      <meta name="keywords" content="Spot  5 Differences, Difference Games, Mobile Games, Puzzle Games">
+      <meta name="author" content="lofgames.com">
+      <title>Spot 5 Differences Deserts</title>
+      <style>
+         body  {
+         background-image: url("https://lofgames.com/games/com_img/bg_body.webp"); 
+         }
+         *{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-moz-tap-highlight-color: rgba(0, 0, 0, 0);	}
+         #canvas {position:absolute;	margin:auto;left:0;right:0;top:0;bottom:0;}
+         loaderset {position: absolute;display:none; width:10px; height:10px;}.img1 {cursor: pointer; position: relative; z-index: 1;left:0;right:0;top:0;bottom:0;display:none;}.img2 {position: absolute;z-index: 2;top: 10px; left:10px;  width:5;  height:11; display:none;}
+         .loaderPJ {
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         z-index: 1;
+         width: 120px;
+         height: 120px;
+         margin: -76px 0 0 -76px;
+         border: 16px solid #f3f3f3;
+         border-radius: 50%;
+         border-top: 16px solid #3498db;
+         -webkit-animation: spin 2s linear infinite;
+         animation: spin 2s linear infinite;
+         }
+         /* Safari */
+         @-webkit-keyframes spin {
+         0% { -webkit-transform: rotate(0deg); }
+         100% { -webkit-transform: rotate(360deg); }
+         }
+         @keyframes spin {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+         }
+      </style>
+   
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+   <body onload="addListner();" style="margin:0px;overflow:hidden;">
+      <div class="loaderPJ" id="loaderPJx"></div>
+      <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+      <script src="https://lofgames.com/games/lfdp2023e.js?spot_5_differences_deserts" type="text/javascript"></script>
+<script src="spot_5_differences_deserts.js?1690546064533"></script>
+<script>
+// Global Scripts
+	function _0x4bc2(_0x3b593f,_0x5a949e){var _0x1ce88d=_0x1ce8();return _0x4bc2=function(_0x4bc25b,_0x1d3630){_0x4bc25b=_0x4bc25b-0x155;var _0x1bc18d=_0x1ce88d[_0x4bc25b];return _0x1bc18d;},_0x4bc2(_0x3b593f,_0x5a949e);}var _0x22aea6=_0x4bc2;function _0x1ce8(){var _0x56e815=['48762279CZAsjR','createElement','3213832TcxAey','1143432ggiKNd','10nAYbGa','996520JnmmEJ','call','SDK_GAME_PAUSE','pjgke2yfm4f6yorxic0s3ypa1bbd1y1w','SDK_OPTIONS','348wwxhki','getElementById','stage','paused','39IyKcmD','name','5071388TZVvjS','59868oyxksA','sndPause','src','loadmc','parentNode','nextCallFunction','SDK_READY','https://api.gamemonetize.com/sdk.js','Ticker','getElementsByTagName','removeChild','117085TTYqkD'];_0x1ce8=function(){return _0x56e815;};return _0x1ce8();}(function(_0x44da77,_0x279e77){var _0x2efa2a=_0x4bc2,_0x22c05b=_0x44da77();while(!![]){try{var _0x32e2b5=-parseInt(_0x2efa2a(0x166))/0x1*(parseInt(_0x2efa2a(0x169))/0x2)+-parseInt(_0x2efa2a(0x15b))/0x3+-parseInt(_0x2efa2a(0x168))/0x4+-parseInt(_0x2efa2a(0x157))/0x5*(parseInt(_0x2efa2a(0x162))/0x6)+-parseInt(_0x2efa2a(0x15d))/0x7+-parseInt(_0x2efa2a(0x15a))/0x8+parseInt(_0x2efa2a(0x158))/0x9*(parseInt(_0x2efa2a(0x15c))/0xa);if(_0x32e2b5===_0x279e77)break;else _0x22c05b['push'](_0x22c05b['shift']());}catch(_0x393288){_0x22c05b['push'](_0x22c05b['shift']());}}}(_0x1ce8,0xaabcb),window[_0x22aea6(0x161)]={'gameId':_0x22aea6(0x160),'onEvent':function(_0x390802){var _0xc36507=_0x22aea6;switch(_0x390802[_0xc36507(0x167)]){case'SDK_GAME_START':createjs['Ticker']['paused']=![];gv&&(gv[_0xc36507(0x165)]=![],gv[_0xc36507(0x16a)]=![],gv[_0xc36507(0x16c)]&&(gv[_0xc36507(0x164)][_0xc36507(0x156)](gv['loadmc']),gv[_0xc36507(0x16c)]=null));resumeSoundMusic();gv[_0xc36507(0x16e)]&&(gv['nextCallFunction'][_0xc36507(0x15e)](null),gv[_0xc36507(0x16e)]=null);break;case _0xc36507(0x15f):gv&&(gv[_0xc36507(0x165)]=!![],gv['sndPause']=!![]);createjs[_0xc36507(0x171)][_0xc36507(0x165)]=!![],puaseSoundMusic();break;case _0xc36507(0x16f):break;}}},function(_0x4333fe,_0x571d15,_0x417451){var _0x4c5e06=_0x22aea6,_0x2735d1=_0x4333fe[_0x4c5e06(0x155)](_0x571d15)[0x0];_0x4333fe[_0x4c5e06(0x163)](_0x417451)||(_0x4333fe=_0x4333fe[_0x4c5e06(0x159)](_0x571d15),_0x4333fe['id']=_0x417451,_0x4333fe[_0x4c5e06(0x16b)]=_0x4c5e06(0x170),_0x2735d1[_0x4c5e06(0x16d)]['insertBefore'](_0x4333fe,_0x2735d1));}(document,'script','gamemonetize-sdk'));</script>
+      <script>
+      var canvas, stage, exportRoot, fnStartAnimation, loadingBar, preloadBG, loadingAnim,preloaderDiv,beforeBG;
+      var gameWidth = 1280;
+      var gameHeight = 720;
+      var barMaxWidth = 100;
+      var barMaxHeight = 100;
+      var barWidth = 426;
+      var barHeigth = 16;
+      var barXP = 427 ;
+      var barYP = 582;
+      var txtXP = 545;
+      var txtYP = 630;
+      var txtht = 50;
+      var txtwt = 185;
+      var showBbg = false;
+      var gamerendered = false;
+      window.addEventListener('resize', resizePreloader);
+      function init() {
+      var key = Object.keys(AdobeAn.compositions)[0];  
+      var comp = AdobeAn.getComposition(key); 
+      var lib=comp.getLibrary();
+      var loader = new createjs.LoadQueue(true); 
+      loader.setMaxConnections(9);
+      loader.installPlugin(createjs.Sound);
+      loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+      loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+      loader.addEventListener("progress", handleProgress);
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+      canvas.style.display = 'none';
+      preloaderDiv.style.display = 'none';
+      }
+      function handleProgress(e){	
+      loadingBar.style.width =  (e.loaded/e.total) * barMaxWidth +"px";
+      loadingAnim.innerHTML = "LOADING:" + Math.ceil(e.loaded/e.total*100) + "%";
+      loadingBar.style.height= barMaxHeight +"px";
+      resizePreloader();	
+      }
+      function hidePreloader(){	
+      preloaderDiv.style.display = 'none';
+      canvas.style.display = 'block';
+      window.removeEventListener('resize', resizePreloader);	
+      }
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.spot_5_differences_deserts();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+      fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = w*sRatio+'px';				
+			canvas.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(true,'both',true,1);	
+      hidePreloader();	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+function playSound(id, loop) {
+	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+}
+      function resizePreloader(evt){
+      try{
+      var iw = window.innerWidth;
+      var	ih=window.innerHeight;		
+      var hR = ih/gameHeight;
+      var wR = iw/gameWidth;
+      wR = (hR > wR) ? wR : hR;
+      barMaxWidth = barWidth * wR;
+      barMaxHeight = barHeigth *wR;
+      beforeBG.style.width= preloadBG.style.width = (gameWidth*wR)+ 'px';
+      beforeBG.style.height = preloadBG.style.height = (gameHeight *wR)+ 'px';
+      beforeBG.style.left = preloadBG.style.left = ((window.innerWidth-gameWidth*wR)/2)+'px';
+      beforeBG.style.top = preloadBG.style.top = ((window.innerHeight-gameHeight *wR)/2)+'px';			
+      loadingBar.style.left = ((window.innerWidth-gameWidth*wR)/2+barXP*wR) + 'px';
+      loadingBar.style.top =  ((window.innerHeight-gameHeight *wR)/2+ barYP*wR) + 'px';			
+      loadingAnim.style.left = ((window.innerWidth-gameWidth*wR)/2+txtXP*wR )+ 'px';
+      loadingAnim.style.top =  ((window.innerHeight-gameHeight *wR)/2+ txtYP*wR) + 'px';
+      loadingAnim.style.width = (txtwt*wR )+ 'px';
+      loadingAnim.style.height =  (txtht *wR) + 'px';
+      if(showBbg==true){
+      beforeBG.style.display = 'block';
+      }else{
+      beforeBG.style.display = 'none';
+      }
+      if(gamerendered==false){
+      if(showBbg==false){
+      preloadBG.style.display = 'block';
+      loadingBar.style.display = 'block';
+      loadingAnim.style.display = 'block';
+      preloaderDiv.style.display = 'block';	
+      }				
+      }
+      }catch(e){
+      console.log("Error");
+      }
+      }
+      function addListner(){
+      showBbg = true;
+      canvas = document.getElementById("canvas");
+      loadingBar = document.getElementById("loadingBar");
+      preloadBG = document.getElementById("preloadBG");
+      loadingAnim = document.getElementById("loadingAnim");
+      preloaderDiv =  document.getElementById("loaderset");
+      beforeBG = document.getElementById("beforeBG");
+      resizePreloader(null);
+      window.addEventListener("click",onClick);
+      function onClick(e){
+	   if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+				sdk.showBanner();
+		}       
+      showBbg =false;
+      beforeBG.style.display = 'none';
+      window.removeEventListener("click",onClick);
+      init();
+      }
+      }
+      </script>
+      <img id="beforeBG" class="img1" src="images/1280X720.png" />
+      <div class="loaderset" id="loaderset">
+         <img id="preloadBG" class="img1" src="images/preload_mc.jpg?spot_5_differences_deserts" />
+         <img id="loadingBar" class="img2" src="images/bar_mc.png?spot_5_differences_deserts" />	
+         <img id="loadingAnim" class="img2" src="images/loader.gif" />	
+      </div>
+      <script>
+         var PG = document.getElementById("loaderPJx");
+         PG.style.display = 'none';
+      </script>
+      <div id="xyz">
+         <canvas id="canvas" width="1280" height="720" style="position: absolute; display: none;"></canvas>
+      </div>
+   </body>
+</html>

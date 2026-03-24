@@ -1,0 +1,87 @@
+<?xml version="1.0" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<body style="background-color: black;margin:0">
+<div style="overflow: hidden;height:540px;width: 900px;margin:auto">
+    <div id="game-content" >
+        <div id="game-flash" style="text-align:center"></div>
+    </div>
+
+</div>
+
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        "autoplay": "on",
+        "openUrlMode": "allow",
+        "allowScriptAccess": true,
+        "unmuteOverlay": "hidden",
+        "contextMenu": false,
+        "warnOnUnsupportedContent": false,
+        "preloader": false,
+        "upgradeToHttps": window.location.protocol === "https:",
+    };
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("game-flash");
+        container.appendChild(player);
+        player.load("breakfreethegraveyard2.swf");
+    });
+</script>
+
+<script async src="ruffle.js"></script>
+
+<script type="text/javascript">
+   window.SDK_OPTIONS = {
+      gameId: "3ostexk7uv7e4o9ugt6vnw97tujq7lvw",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+                   if (typeof sdk !== 'undefined' && typeof sdk.showBanner !== 'undefined') {
+        sdk.showBanner();
+    }
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+
+function showBannerFromFlash() {
+    if (typeof sdk !== 'undefined' && typeof sdk.showBanner !== 'undefined') {
+        sdk.showBanner();
+    }
+}
+
+<style>
+    ruffle-player {
+        display: block;
+        width: 900px;
+        height: 540px;
+        margin: auto;
+    }
+</style>
+<script>
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk_preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-preload-api");
+</script>
+
+
+</body>
+</html>
+<!-- 0.010289192199707s -->

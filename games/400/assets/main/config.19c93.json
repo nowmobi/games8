@@ -1,0 +1,63 @@
+{
+  "paths": {},
+  "types": [],
+  "uuids": [
+    "59Eqq3sRhOmJgM3uBliUqi",
+    "a7q6RyeqhIFK/VpGUMDNB2",
+    "cbu4mr/FFLr4+yorbGXvYI",
+    "d0YASO/mRMVKZXDl2f/Fku",
+    "0d1C5NXENP45kIWRzRcnbs",
+    "8fDSU52HlDHpnkxN9eUA8y",
+    "a2MjXRFdtLlYQ5ouAFv/+R",
+    "b7bDJbOLdE4rYVix5z7OpT",
+    "ecpdLyjvZBwrvm+cedCcQy"
+  ],
+  "scenes": {
+    "db://assets/Game.fire": 1
+  },
+  "redirect": [
+    6,
+    0,
+    8,
+    1
+  ],
+  "deps": [
+    "resources",
+    "internal"
+  ],
+  "packs": {
+    "06cbae319": [
+      0,
+      2,
+      3
+    ],
+    "06eb8c388": [
+      4,
+      5,
+      1,
+      7
+    ]
+  },
+  "name": "main",
+  "importBase": "import",
+  "nativeBase": "native",
+  "debug": false,
+  "isZip": false,
+  "encrypted": false,
+  "versions": {
+    "import": [
+      "06cbae319",
+      "58737",
+      "06eb8c388",
+      "a933a"
+    ],
+    "native": [
+      0,
+      "2a67f",
+      2,
+      "3dcf3",
+      3,
+      "22771"
+    ]
+  }
+}

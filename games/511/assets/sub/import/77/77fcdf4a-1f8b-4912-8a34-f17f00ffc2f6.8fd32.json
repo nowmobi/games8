@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "02ZxE0lG9BZ5ArKE/tfgru"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "button2",
+      "rect": [
+        0,
+        5,
+        108,
+        26
+      ],
+      "offset": [
+        0,
+        -2.5
+      ],
+      "originalSize": [
+        108,
+        31
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

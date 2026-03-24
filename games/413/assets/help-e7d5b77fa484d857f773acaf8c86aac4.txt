@@ -1,0 +1,5 @@
+You have to match tiles in pairs until all of tiles are gone.
+Once two tiles have been matched, they will disappear.
+When you click on a tile - it becomes highlighted.
+You can select a tile, when it has at least one side edge free.
+(no other tiles touching it, and cannot have any tiles on top of it).

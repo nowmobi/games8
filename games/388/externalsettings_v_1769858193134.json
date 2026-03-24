@@ -1,0 +1,17 @@
+{
+  "VERSION": 4,
+  "ACTIVE_AD": 0,
+  "ACTIVE_MG": 0,
+  "ACTIVE_PM": 1,
+  "ACTIVE_IV": 1,
+  "ACTIVE_IAP": 1,
+  "FORCE_PLATFORM": "",
+  "GAMETAG": "PCOR",
+  "URLIGBanner": "http://playzool.com/ad/IGBanner/index.php",
+  "URLIGInter": "http://playzool.com/ad/IGInter/index.php",
+  "DO NOT TOUCH THIS LINE": "NE PAS TOUCHER CETTE LIGNE",
+  "ACTIVE_LEADERBOARD": 1,
+  "LEADERBOARD_LISTING_VISIBLE": 1,
+  "ACTIVE_ACHIEVEMENT": 1,
+  "SHOW_ACHIEVEMENT_NOTIFICATION": 0
+}

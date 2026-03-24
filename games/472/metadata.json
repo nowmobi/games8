@@ -1,0 +1,21 @@
+{
+  "id": "47556",
+  "title": "GBox ChessMazes",
+  "slug": "gbox-chessmazes",
+  "description": "Deliver the message from the King to the Castle, passing it from one piece to another of the opposite color. This is not a chess game where you play against an opponent. The goal of the game is to solve the maze and help the king get to the castle.",
+  "instructions": "Possible moves are highlighted choose the one you think is correct Build a route to the Castle by moving from one piece to another of the opposite color following the rules of chess If you get stuck press the Reset button at the top of the game board",
+  "url": "https://html5.gamemonetize.com/1mpl217ksxwia35xfpx8oz4gavhp6gyn/",
+  "category": "Puzzle",
+  "categorySlug": "puzzle",
+  "tags": [
+    "Logical",
+    "Maze",
+    "unity",
+    "Unity3D"
+  ],
+  "thumb": "https://img.gamemonetize.com/1mpl217ksxwia35xfpx8oz4gavhp6gyn/512x384.jpg",
+  "width": 800,
+  "height": 600,
+  "publisher": null,
+  "crawledAt": "2026-02-01T23:44:20.341Z"
+}

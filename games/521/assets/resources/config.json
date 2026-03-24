@@ -1,0 +1,89 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "resources",
+  "deps": [],
+  "uuids": [
+    "0e7111d5b",
+    "0f554cb61",
+    "12acyxRm5B0ozvE/LXxyCX",
+    "12acyxRm5B0ozvE/LXxyCX@6c48a",
+    "44S1/qm2tK/IIRCGB1zcS2",
+    "44S1/qm2tK/IIRCGB1zcS2@6c48a",
+    "7eZ/KK3TFIUaHJVUJTH8s2",
+    "7eZ/KK3TFIUaHJVUJTH8s2@6c48a",
+    "12acyxRm5B0ozvE/LXxyCX@f9941",
+    "44S1/qm2tK/IIRCGB1zcS2@f9941",
+    "7eZ/KK3TFIUaHJVUJTH8s2@f9941"
+  ],
+  "paths": {
+    "2": [
+      "loading/jdt_bg",
+      0
+    ],
+    "3": [
+      "loading/jdt_bg/texture",
+      1,
+      1
+    ],
+    "4": [
+      "loading/jdt",
+      0
+    ],
+    "5": [
+      "loading/jdt/texture",
+      1,
+      1
+    ],
+    "6": [
+      "loading/title",
+      0
+    ],
+    "7": [
+      "loading/title/texture",
+      1,
+      1
+    ],
+    "8": [
+      "loading/jdt_bg/spriteFrame",
+      2,
+      1
+    ],
+    "9": [
+      "loading/jdt/spriteFrame",
+      2,
+      1
+    ],
+    "10": [
+      "loading/title/spriteFrame",
+      2,
+      1
+    ]
+  },
+  "scenes": {},
+  "packs": {
+    "0e7111d5b": [
+      "7",
+      "5",
+      "3"
+    ],
+    "0f554cb61": [
+      "6",
+      "4",
+      "2"
+    ]
+  },
+  "versions": {
+    "import": [],
+    "native": []
+  },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "hasPreloadScript": true,
+  "types": [
+    "cc.ImageAsset",
+    "cc.Texture2D",
+    "cc.SpriteFrame"
+  ]
+}

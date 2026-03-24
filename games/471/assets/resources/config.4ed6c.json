@@ -1,0 +1,1283 @@
+{
+  "paths": {
+    "0": [
+      "Audio/bgm_1",
+      0
+    ],
+    "1": [
+      "Audio/block_back",
+      0
+    ],
+    "2": [
+      "Audio/block_pick",
+      0
+    ],
+    "3": [
+      "Audio/block_put",
+      0
+    ],
+    "4": [
+      "Audio/chui",
+      0
+    ],
+    "5": [
+      "Audio/clear",
+      0
+    ],
+    "6": [
+      "Audio/click",
+      0
+    ],
+    "7": [
+      "Audio/dao",
+      0
+    ],
+    "8": [
+      "Audio/drop",
+      0
+    ],
+    "9": [
+      "Audio/fail",
+      0
+    ],
+    "10": [
+      "Audio/fire",
+      0
+    ],
+    "11": [
+      "Audio/jiasu",
+      0
+    ],
+    "12": [
+      "Audio/level_lock",
+      0
+    ],
+    "13": [
+      "Audio/new",
+      0
+    ],
+    "14": [
+      "Audio/niaozhamao",
+      0
+    ],
+    "15": [
+      "Audio/start",
+      0
+    ],
+    "16": [
+      "Audio/success",
+      0
+    ],
+    "17": [
+      "blackBg",
+      1
+    ],
+    "18": [
+      "dragons/2048shuzi",
+      4
+    ],
+    "19": [
+      "dragons/2048shuzi",
+      1
+    ],
+    "20": [
+      "dragons/logo ",
+      4
+    ],
+    "21": [
+      "dragons/logo ",
+      1
+    ],
+    "22": [
+      "dragons/shou",
+      4
+    ],
+    "23": [
+      "dragons/shou",
+      1
+    ],
+    "24": [
+      "dragons/tx_hecheng_1",
+      4
+    ],
+    "25": [
+      "dragons/tx_hecheng_1",
+      1
+    ],
+    "26": [
+      "dragons/tx_hecheng_2",
+      4
+    ],
+    "27": [
+      "dragons/tx_hecheng_2",
+      1
+    ],
+    "28": [
+      "sdk/res/image/btn_chakan",
+      1
+    ],
+    "29": [
+      "sdk/res/image/btn_chakan1",
+      1
+    ],
+    "30": [
+      "sdk/res/image/close",
+      1
+    ],
+    "31": [
+      "sdk/res/image/close2",
+      1
+    ],
+    "32": [
+      "sdk/res/image/native_ad_logo_img",
+      1
+    ],
+    "33": [
+      "sdk/res/image/native_ad_logo_img副本",
+      1
+    ],
+    "34": [
+      "sdk/res/image/tianjiazhoumian1",
+      1
+    ],
+    "35": [
+      "blackBg",
+      2,
+      1
+    ],
+    "36": [
+      "configs/1",
+      3
+    ],
+    "37": [
+      "configs/10",
+      3
+    ],
+    "38": [
+      "configs/100",
+      3
+    ],
+    "39": [
+      "configs/11",
+      3
+    ],
+    "40": [
+      "configs/12",
+      3
+    ],
+    "41": [
+      "configs/13",
+      3
+    ],
+    "42": [
+      "configs/14",
+      3
+    ],
+    "43": [
+      "configs/15",
+      3
+    ],
+    "44": [
+      "configs/16",
+      3
+    ],
+    "45": [
+      "configs/17",
+      3
+    ],
+    "46": [
+      "configs/18",
+      3
+    ],
+    "47": [
+      "configs/19",
+      3
+    ],
+    "48": [
+      "configs/2",
+      3
+    ],
+    "49": [
+      "configs/20",
+      3
+    ],
+    "50": [
+      "configs/21",
+      3
+    ],
+    "51": [
+      "configs/22",
+      3
+    ],
+    "52": [
+      "configs/23",
+      3
+    ],
+    "53": [
+      "configs/24",
+      3
+    ],
+    "54": [
+      "configs/25",
+      3
+    ],
+    "55": [
+      "configs/26",
+      3
+    ],
+    "56": [
+      "configs/27",
+      3
+    ],
+    "57": [
+      "configs/28",
+      3
+    ],
+    "58": [
+      "configs/29",
+      3
+    ],
+    "59": [
+      "configs/3",
+      3
+    ],
+    "60": [
+      "configs/30",
+      3
+    ],
+    "61": [
+      "configs/31",
+      3
+    ],
+    "62": [
+      "configs/32",
+      3
+    ],
+    "63": [
+      "configs/33",
+      3
+    ],
+    "64": [
+      "configs/34",
+      3
+    ],
+    "65": [
+      "configs/35",
+      3
+    ],
+    "66": [
+      "configs/36",
+      3
+    ],
+    "67": [
+      "configs/37",
+      3
+    ],
+    "68": [
+      "configs/38",
+      3
+    ],
+    "69": [
+      "configs/39",
+      3
+    ],
+    "70": [
+      "configs/4",
+      3
+    ],
+    "71": [
+      "configs/40",
+      3
+    ],
+    "72": [
+      "configs/41",
+      3
+    ],
+    "73": [
+      "configs/42",
+      3
+    ],
+    "74": [
+      "configs/43",
+      3
+    ],
+    "75": [
+      "configs/44",
+      3
+    ],
+    "76": [
+      "configs/45",
+      3
+    ],
+    "77": [
+      "configs/46",
+      3
+    ],
+    "78": [
+      "configs/47",
+      3
+    ],
+    "79": [
+      "configs/48",
+      3
+    ],
+    "80": [
+      "configs/49",
+      3
+    ],
+    "81": [
+      "configs/5",
+      3
+    ],
+    "82": [
+      "configs/50",
+      3
+    ],
+    "83": [
+      "configs/51",
+      3
+    ],
+    "84": [
+      "configs/52",
+      3
+    ],
+    "85": [
+      "configs/53",
+      3
+    ],
+    "86": [
+      "configs/54",
+      3
+    ],
+    "87": [
+      "configs/55",
+      3
+    ],
+    "88": [
+      "configs/56",
+      3
+    ],
+    "89": [
+      "configs/57",
+      3
+    ],
+    "90": [
+      "configs/58",
+      3
+    ],
+    "91": [
+      "configs/59",
+      3
+    ],
+    "92": [
+      "configs/6",
+      3
+    ],
+    "93": [
+      "configs/60",
+      3
+    ],
+    "94": [
+      "configs/61",
+      3
+    ],
+    "95": [
+      "configs/62",
+      3
+    ],
+    "96": [
+      "configs/63",
+      3
+    ],
+    "97": [
+      "configs/64",
+      3
+    ],
+    "98": [
+      "configs/65",
+      3
+    ],
+    "99": [
+      "configs/66",
+      3
+    ],
+    "100": [
+      "configs/67",
+      3
+    ],
+    "101": [
+      "configs/68",
+      3
+    ],
+    "102": [
+      "configs/69",
+      3
+    ],
+    "103": [
+      "configs/7",
+      3
+    ],
+    "104": [
+      "configs/70",
+      3
+    ],
+    "105": [
+      "configs/71",
+      3
+    ],
+    "106": [
+      "configs/72",
+      3
+    ],
+    "107": [
+      "configs/73",
+      3
+    ],
+    "108": [
+      "configs/74",
+      3
+    ],
+    "109": [
+      "configs/75",
+      3
+    ],
+    "110": [
+      "configs/76",
+      3
+    ],
+    "111": [
+      "configs/77",
+      3
+    ],
+    "112": [
+      "configs/78",
+      3
+    ],
+    "113": [
+      "configs/79",
+      3
+    ],
+    "114": [
+      "configs/8",
+      3
+    ],
+    "115": [
+      "configs/80",
+      3
+    ],
+    "116": [
+      "configs/81",
+      3
+    ],
+    "117": [
+      "configs/82",
+      3
+    ],
+    "118": [
+      "configs/83",
+      3
+    ],
+    "119": [
+      "configs/84",
+      3
+    ],
+    "120": [
+      "configs/85",
+      3
+    ],
+    "121": [
+      "configs/86",
+      3
+    ],
+    "122": [
+      "configs/87",
+      3
+    ],
+    "123": [
+      "configs/88",
+      3
+    ],
+    "124": [
+      "configs/89",
+      3
+    ],
+    "125": [
+      "configs/9",
+      3
+    ],
+    "126": [
+      "configs/90",
+      3
+    ],
+    "127": [
+      "configs/91",
+      3
+    ],
+    "128": [
+      "configs/92",
+      3
+    ],
+    "129": [
+      "configs/93",
+      3
+    ],
+    "130": [
+      "configs/94",
+      3
+    ],
+    "131": [
+      "configs/95",
+      3
+    ],
+    "132": [
+      "configs/96",
+      3
+    ],
+    "133": [
+      "configs/97",
+      3
+    ],
+    "134": [
+      "configs/98",
+      3
+    ],
+    "135": [
+      "configs/99",
+      3
+    ],
+    "136": [
+      "dragons/2048shuzi",
+      5
+    ],
+    "137": [
+      "dragons/2048shuzi",
+      2,
+      1
+    ],
+    "138": [
+      "dragons/logo ",
+      5
+    ],
+    "139": [
+      "dragons/logo ",
+      2,
+      1
+    ],
+    "140": [
+      "dragons/shou",
+      5
+    ],
+    "141": [
+      "dragons/shou",
+      2,
+      1
+    ],
+    "142": [
+      "dragons/tx_hecheng_1",
+      5
+    ],
+    "143": [
+      "dragons/tx_hecheng_1",
+      2,
+      1
+    ],
+    "144": [
+      "dragons/tx_hecheng_2",
+      5
+    ],
+    "145": [
+      "dragons/tx_hecheng_2",
+      2,
+      1
+    ],
+    "146": [
+      "prefabs/InsufficientPanel",
+      6
+    ],
+    "147": [
+      "prefabs/TipPanel",
+      6
+    ],
+    "148": [
+      "sdk/res/image/btn_chakan",
+      2,
+      1
+    ],
+    "149": [
+      "sdk/res/image/btn_chakan1",
+      2,
+      1
+    ],
+    "150": [
+      "sdk/res/image/close",
+      2,
+      1
+    ],
+    "151": [
+      "sdk/res/image/close2",
+      2,
+      1
+    ],
+    "152": [
+      "sdk/res/image/native_ad_logo_img",
+      2,
+      1
+    ],
+    "153": [
+      "sdk/res/image/native_ad_logo_img副本",
+      2,
+      1
+    ],
+    "154": [
+      "sdk/res/image/tianjiazhoumian1",
+      2,
+      1
+    ],
+    "155": [
+      "sdk/res/prefabs/InstallShortcut",
+      6
+    ],
+    "156": [
+      "sdk/res/prefabs/NativeBannerAd",
+      6
+    ],
+    "157": [
+      "sdk/res/prefabs/NativeBannerAddButtonAd",
+      6
+    ],
+    "158": [
+      "sdk/res/prefabs/NativeBannerLittleBUttonAd",
+      6
+    ],
+    "159": [
+      "sdk/res/prefabs/NativeIconAd",
+      6
+    ],
+    "160": [
+      "sdk/res/prefabs/NativeInsertAd",
+      6
+    ],
+    "161": [
+      "sdk/res/prefabs/NativeSplashAd",
+      6
+    ],
+    "162": [
+      "sdk/res/prefabs/NativeSplashAd001",
+      6
+    ]
+  },
+  "types": [
+    "cc.AudioClip",
+    "cc.Texture2D",
+    "cc.SpriteFrame",
+    "cc.JsonAsset",
+    "cc.Asset",
+    "sp.SkeletonData",
+    "cc.Prefab"
+  ],
+  "uuids": [
+    "e993d9z+ZJVbNN0F2Z8iaT",
+    "42sBDEdFZC+KdSWhUqMLi5",
+    "71D+M24tpIFI3t9zo6+Eug",
+    "6dak1jxddAAJXiMM5+pdE4",
+    "7bTn3ZFstD87bCyrL5llHa",
+    "79tKQPCgVGb5j26RIt4Iua",
+    "59HlOYYUlONKbe0pmg76zn",
+    "57NWWS18xFW6XlnZcvzmln",
+    "c9o96uk5pHUK0xgOTW8+Zr",
+    "62W2FE31hASJh4X8HxM8kW",
+    "efxbuewvJNuoPYMo6DXAE7",
+    "71mxmQJBFFnaod0lfrlo+E",
+    "fc3WxkU6tDFpsBWkOygWNf",
+    "d2Z0N/OBZNV6ssuZWAX9i0",
+    "0dnVF6L8pMaq0opvQlJktt",
+    "2dooBC8I5DO6KyT8Hwynv4",
+    "44jcN9jBJCgbUq9uWlnvj8",
+    "dbmHX4KmZPHo5sJ+94GMdP",
+    "3bIxsJGgxAVLJhEMUeGvAl",
+    "49bA/x041J4L9f+4tHKE+H",
+    "63srAXp8RAgoytmLBEa6d7",
+    "15ZKy2aTFLr6e++68fJFzW",
+    "2aXbhJn/tLA7Z3XueVJXBf",
+    "5e8JjSAj5Aoa0jBnx2uRpw",
+    "323C1KhTpI3KZXOfmjy1QF",
+    "74yJEfB2xDs7Vv22IYbuE8",
+    "ceMyOpyGJEIZ4Y0beO47xs",
+    "b3p7xUAXBKVZXHOWT6fXJb",
+    "91eFrxAe5BzI1oKBKj7slK",
+    "f2scsYlMZB77WKHFqPPUmf",
+    "3a/iPW0bVCP6J62DlYaQdX",
+    "9c2+NBgOhPMbkyMK2d+Jea",
+    "86airNQOZCCobiqwLHyy6x",
+    "d08UqSqG1CeKNL7NSj5H32",
+    "c0J3vow75Fh6fAlKBLjfr6",
+    "d8BgVI1YFNhLK4j5qpuBEf",
+    "ef5eyM8rNL06MLUfUihU6m",
+    "d1ECsG84lJJbFziQN04LvO",
+    "d9wseMmiFDBp0iU9ZNIDPD",
+    "adO03pMMhL5Y7Q6W2iPGBu",
+    "8av8ZoTlBJ8IAVyQNpf51Q",
+    "c7kDpxwWRKhYB/IVuvZ2lw",
+    "62+oqz4bRPcKQN8V8QYu8e",
+    "2eWqL0zRlB2Y8otsG81JlA",
+    "63n3aTbP1G/okwNFWv8N5f",
+    "4adIXXh+NN865Z+Sq+VPSU",
+    "a31OcNK4ZEOYYwcaMcmd4b",
+    "3bj52qHRNI4agA6Jms6FJb",
+    "daSeG3Uy5LUZuewghWt/3K",
+    "efMeZX0d5G6oe95uN7MD9+",
+    "fdsdEgnkdNK640H4cvfaVW",
+    "39ghdsrIJFHqArDRORklus",
+    "80LbMIH41Evb3DfcXF8MT0",
+    "29/AeoXbJJzZDD8/oAGdHp",
+    "52vbiKdVdDDKr3lQ7u+Fle",
+    "eb5EJl869KLLi3JqN0KCAU",
+    "56FPn1LYJBYaYxeIPsIfcu",
+    "dfxkyyHhFMB4Ti4W1rAmHH",
+    "683q0y0qhGdJsSjeBtqfr3",
+    "5fGoP7CPVDGYcm3dt8wODH",
+    "59+7UDKlRGhKfDRSZGETJd",
+    "5f2BOUmJVOKZn++NE6KVQq",
+    "2dEGbvupNNTq+UPr75unkZ",
+    "a0eefXBe1ESYFIHZKGfm7g",
+    "3fzSVUODVJI4qWHPtHmt0x",
+    "33lL29ff5LKY/GDU2pg2Jt",
+    "34pmIY58tH/rf1fQ4lHL9u",
+    "4e7e3ZQcpOIIvz7FcURCka",
+    "fcRIi8AtlAipXWBhrgy0ZT",
+    "ceruvh/uZFXovt/vKX1W3G",
+    "298voXZJJBSqom1AfwkBW6",
+    "3b7ax0qwdEz6APywHnNp3b",
+    "d1XZ8pY6hBa7B0eB35wlEu",
+    "139oAx9ehBjL4Pivj+rhYz",
+    "achGzSUUpPxL5g9ZQFAU8D",
+    "adrGZloIBEp4VRHXMViwus",
+    "8fIAyyTthDtbpcUu/AYYHx",
+    "bcW0MF1XFAGbl2Hh7fSHwT",
+    "2868SNCDJBpbLF7jAELeja",
+    "c2VQKqbP1BEZvJtWuBTQ4N",
+    "1ahoMgNSdIzJhRD8sV45ku",
+    "bcHkf6/PZKHpfDr/lWPZ2d",
+    "1cqKv7OrhFLZn/LK/RuiBB",
+    "8bOn7o7QpFG6OGIg5DTXeL",
+    "41HibsdspHQ6Eup6/DhuVZ",
+    "4eBJsB2/tFO6lj65AcXvCn",
+    "9auqZN1CJFjJ1prCuqX6CO",
+    "89645uOjFFZYXIMy5XSIIA",
+    "febuSwMPhBdazyL8UUcPTU",
+    "9e0+S9wyBAkYGtwVyrwdUe",
+    "afBi3vaQlO+ZAvznkzylgO",
+    "227Ixf7klOQrwXzdONTCVn",
+    "98lTuKS7dFJ5O6vI6sn8It",
+    "dcSuUGtRlKSongzFFdPHSw",
+    "02dsCeMOlHN4SrMMiDFRWw",
+    "0fd3IPa25Jl5DX4mHADS6x",
+    "14Is4FB45LWaYHkutcSTED",
+    "3dmO8m2ihOM5Ohlc3zaMd1",
+    "6a6gFfmrJAlrtAQmG+bPEA",
+    "bevwvg5KdPYYmhBsVuQ7AZ",
+    "98w25NCkJM2rcJ7ePu5TOa",
+    "58WoITy/JCoKLoNPjvkTwe",
+    "0cst9b87lACLw8dubONit+",
+    "7cBdTHlZdD35PBBN8GoKWo",
+    "d4wXLaUlJKQZhaSUWqSJPH",
+    "64CifFvYNCkKnffG96Pnk7",
+    "eahfDcuXdNq7Xi+ArSUPc4",
+    "88f7Ua8nZCJ6sFcUmw24TC",
+    "19qzCBMc5LHLJnaywiuJTc",
+    "41KuD780hDm7m4xhpJfe85",
+    "20ANeisLpAyrp7UKPHQWqQ",
+    "afxJ04UyZGqrng/vPgoX7u",
+    "b0DNZi2N9Kl6CpEOGFWv+M",
+    "e4JQSuZ1JDK6jpQjWZjM5J",
+    "51B8iYhCpB+bSPQbjMe36T",
+    "deQA/unDVG2bqiLdZRQPAf",
+    "d3oPMGZlhMqaqIZRT5wFaK",
+    "569+PoVIZCgqIhajS7dCH4",
+    "7dKT57IVxMVplzk2oQ0eAP",
+    "f5VsdVr5ZGbq67joWBSBxx",
+    "e1D9k15qJKgJ/L8avp4OSQ",
+    "f7A7aBu6xK/aeNtnx8Xnd1",
+    "96WAjkPLNG5LGjwKVhGpIb",
+    "abqdyG8slNjKEeV4fuca1Q",
+    "d0Ipv/8+xBJbo11PBNXpa6",
+    "fd0eA/Sm9G56P86X0F3vtA",
+    "e5fH8MieFAFrtw4jalOeO5",
+    "d56J3bO95MjYo4C5WaKaRf",
+    "55mvYuVstA7oRNT0tcg+O7",
+    "451jt6al9BI6AvJRtue/6e",
+    "90CAFJtcFOXITFcGYYlpgF",
+    "4fo5r+lOZChZGe4vv979qO",
+    "6c2hQ1YPNFQIUa14YXzh+z",
+    "aaHW0r9UpDZ6Qkzu3jR5Wn",
+    "c0xwGvoa1IqIaxaBR8OBgW",
+    "74xXpjak5Eg4u+C2cVjfZZ",
+    "fch+f44O5DToUtv+DeCYsy",
+    "61mowFaVNDv77V9IMrsSN5",
+    "c6eW9k2AtI/I7mpWXmeOUD",
+    "34DpBR6mhED5mLSu/bGdSh",
+    "b2UPJ1bV1I5boD6OBJ+kyB",
+    "e3hwpKB1ZLJYNSIYwq5Pnj",
+    "aa/KkhvRZHBoEjYqUgIHXD",
+    "45pMqvNNdL5J46M17NSlYI",
+    "0brOfYZixA6a+ceRZxOddn",
+    "f79xxr2N9LY4cTJNikEWdz",
+    "83qdloZDtBn6kyBtxCck/w",
+    "2bfEQYl1NC87rvGAZgfLb7",
+    "40EnGoRDZDl6ExY3l4XrkC",
+    "89LL3K1RhCwbbAZuubhXD5",
+    "3dKWLlDoFMS514t3qDDTlB",
+    "6f5mXaz1lBa4aTyCSr0gjt",
+    "18LfoWZHhGLIKG4BxRsSfE",
+    "36omkhTcBIDI4BnFgThGj7",
+    "cf1b7lUb5PyYMmECjJj/59",
+    "cdWj+NpiZCS4Pe5NUWr7Dl",
+    "d28gxrQGpHH4IUS81oaZAz",
+    "5dNo657pxOI4o6DAnSSwpq",
+    "34y8IzgNFAp5hmP9x/S6/7",
+    "aa4sR+hnFKhLFlI/athhMS",
+    "89c9xRSApIDaL/TIXB5kF0",
+    "d40EVyc0NEQr8JqGn2LZwm",
+    "67YqiUHc1Jv6ihLP4XVlVg",
+    "b4P/PCArtIdIH38t6mlw8Y",
+    "e8Ueib+qJEhL6mXAHdnwbi",
+    "71VhFCTINJM6/Ky3oX9nBT",
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "a2MjXRFdtLlYQ5ouAFv/+R",
+    "f0BIwQ8D5Ml7nTNQbh1YlS",
+    "e97GVMl6JHh5Ml5qEDdSGa",
+    "29FYIk+N1GYaeWH/q1NxQO",
+    "02delMVqdBD70a/HSD99FK"
+  ],
+  "scenes": {},
+  "redirect": [
+    166,
+    0,
+    171,
+    0
+  ],
+  "deps": [
+    "internal"
+  ],
+  "packs": {
+    "0455cc79b": [
+      155,
+      154
+    ],
+    "0c339d10f": [
+      170,
+      169,
+      168
+    ],
+    "0aefc3d69": [
+      21,
+      30,
+      19,
+      23,
+      165,
+      25,
+      32,
+      28,
+      31,
+      27,
+      163,
+      34,
+      33,
+      17,
+      164,
+      29
+    ]
+  },
+  "name": "resources",
+  "importBase": "import",
+  "nativeBase": "native",
+  "debug": false,
+  "isZip": false,
+  "encrypted": false,
+  "versions": {
+    "import": [
+      94,
+      "ce07e",
+      "0455cc79b",
+      "96f78",
+      "0aefc3d69",
+      "583f3",
+      144,
+      "f0f71",
+      "0c339d10f",
+      "a9ccb",
+      102,
+      "3b14f",
+      14,
+      "6414d",
+      95,
+      "d8cd7",
+      73,
+      "42bc9",
+      96,
+      "0946e",
+      152,
+      "23c7b",
+      108,
+      "769f6",
+      80,
+      "7f1d6",
+      82,
+      "2eef9",
+      110,
+      "e2c93",
+      91,
+      "bbb53",
+      78,
+      "555b2",
+      70,
+      "f0524",
+      53,
+      "80462",
+      22,
+      "b2839",
+      147,
+      "ccdf4",
+      62,
+      "79c38",
+      15,
+      "c5754",
+      43,
+      "67962",
+      24,
+      "bcb29",
+      65,
+      "5513a",
+      139,
+      "1fb1d",
+      66,
+      "4d55f",
+      158,
+      "08d47",
+      153,
+      "7bb6d",
+      51,
+      "d8f7d",
+      18,
+      "0a3bb",
+      47,
+      "4b072",
+      71,
+      "24051",
+      150,
+      "7a544",
+      97,
+      "bdea6",
+      64,
+      "6f8b4",
+      148,
+      "c440c",
+      84,
+      "c6ae0",
+      109,
+      "c225a",
+      1,
+      "fac85",
+      16,
+      "67282",
+      143,
+      "1fa0a",
+      129,
+      "d654c",
+      45,
+      "791de",
+      85,
+      "53df0",
+      67,
+      "7309e",
+      131,
+      "500f0",
+      114,
+      "63362",
+      54,
+      "bc0a2",
+      128,
+      "135e2",
+      56,
+      "5eeea",
+      117,
+      "7f798",
+      7,
+      "9538d",
+      101,
+      "a334b",
+      6,
+      "bc3ec",
+      60,
+      "691e6",
+      157,
+      "2e1aa",
+      59,
+      "4e333",
+      61,
+      "28abb",
+      137,
+      "8b595",
+      9,
+      "b99ca",
+      42,
+      "ed0ee",
+      44,
+      "b620c",
+      20,
+      "63b37",
+      105,
+      "5e265",
+      162,
+      "b0ecb",
+      58,
+      "1e130",
+      98,
+      "918cc",
+      132,
+      "11d51",
+      3,
+      "11932",
+      151,
+      "dc8e1",
+      2,
+      "33677",
+      11,
+      "ae42a",
+      135,
+      "e09e1",
+      5,
+      "c0168",
+      4,
+      "24689",
+      103,
+      "1c789",
+      118,
+      "ec07f",
+      52,
+      "0093d",
+      146,
+      "9c20f",
+      107,
+      "9686f",
+      149,
+      "f4bd2",
+      160,
+      "6a456",
+      87,
+      "017c8",
+      40,
+      "81527",
+      83,
+      "ed43d",
+      76,
+      "0f41b",
+      130,
+      "65375",
+      122,
+      "bd73c",
+      92,
+      "6a40a",
+      100,
+      "30f59",
+      86,
+      "e8b95",
+      89,
+      "c2d8e",
+      63,
+      "eea70",
+      167,
+      "43d76",
+      46,
+      "3653e",
+      133,
+      "e62c8",
+      159,
+      "21c66",
+      142,
+      "67758",
+      123,
+      "eb0d0",
+      74,
+      "58e6f",
+      39,
+      "b2a40",
+      75,
+      "a1ac6",
+      90,
+      "28a47",
+      111,
+      "f3720",
+      112,
+      "78b99",
+      140,
+      "fdaef",
+      81,
+      "bbafe",
+      77,
+      "a157b",
+      99,
+      "6abf0",
+      134,
+      "4a6d2",
+      79,
+      "4f76a",
+      138,
+      "6469b",
+      41,
+      "47030",
+      8,
+      "0dec2",
+      26,
+      "98364",
+      69,
+      "edca8",
+      124,
+      "265ef",
+      37,
+      "4146c",
+      72,
+      "34f72",
+      13,
+      "7c968",
+      156,
+      "566b1",
+      116,
+      "d8542",
+      104,
+      "2340d",
+      161,
+      "c9ea2",
+      127,
+      "ef076",
+      35,
+      "f7d95",
+      38,
+      "34f75",
+      48,
+      "f76b5",
+      93,
+      "9b6f4",
+      115,
+      "a7ad1",
+      57,
+      "d5342",
+      120,
+      "e3c9e",
+      141,
+      "84940",
+      113,
+      "6b5d7",
+      126,
+      "7d9fe",
+      0,
+      "814b8",
+      106,
+      "006e0",
+      55,
+      "108a9",
+      49,
+      "d6834",
+      10,
+      "b3937",
+      36,
+      "90f66",
+      119,
+      "a6f19",
+      121,
+      "2b22a",
+      145,
+      "f8794",
+      68,
+      "6976e",
+      136,
+      "8d7e2",
+      12,
+      "a4545",
+      50,
+      "6e664",
+      125,
+      "5d0d2",
+      88,
+      "a060a"
+    ],
+    "native": [
+      14,
+      "047ab",
+      21,
+      "48b63",
+      22,
+      "a7077",
+      15,
+      "35d7b",
+      24,
+      "9b610",
+      30,
+      "da8a0",
+      18,
+      "f3dba",
+      1,
+      "95c56",
+      16,
+      "ddfe2",
+      19,
+      "a0af9",
+      7,
+      "a5ff9",
+      6,
+      "bf2ff",
+      23,
+      "91ebf",
+      9,
+      "f0b89",
+      20,
+      "dd031",
+      3,
+      "02b9c",
+      2,
+      "b061b",
+      165,
+      "c06a9",
+      11,
+      "4f3f6",
+      25,
+      "05e5e",
+      5,
+      "f868f",
+      4,
+      "c5ef9",
+      32,
+      "5d542",
+      28,
+      "dfa0e",
+      31,
+      "2f572",
+      27,
+      "8ae19",
+      163,
+      "83fcc",
+      34,
+      "75c6e",
+      8,
+      "74358",
+      26,
+      "86a95",
+      33,
+      "3cba7",
+      13,
+      "8a365",
+      17,
+      "64ccc",
+      164,
+      "90cf4",
+      0,
+      "06be6",
+      10,
+      "9ff4b",
+      29,
+      "8a49d",
+      12,
+      "11ead"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "companyName": "Klemen Z",
+  "productName": "Blue spheres",
+  "dataUrl": "Corrected SDK build.data.unityweb",
+  "asmCodeUrl": "Corrected SDK build.asm.code.unityweb",
+  "asmMemoryUrl": "Corrected SDK build.asm.memory.unityweb",
+  "asmFrameworkUrl": "Corrected SDK build.asm.framework.unityweb",
+  "TOTAL_MEMORY": 268435456,
+  "graphicsAPI": [
+    "WebGL 2.0",
+    "WebGL 1.0"
+  ],
+  "webglContextAttributes": {
+    "preserveDrawingBuffer": false
+  },
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#231F20"
+}
