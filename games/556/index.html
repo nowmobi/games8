@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="utils.js"></script>
+
+
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="manifest" href="./manifest.json" />
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Pride Mahjong" />
+  <meta name="apple-mobile-web-app-title" content="Pride Mahjong" />
+  <meta name="msapplication-starturl" content="./" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icons-192.png" />
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./icons/icons-192.png" />
+
+  <link rel="icon" type="image/png" sizes="512x512" href="./icons/icons-512.png" />
+  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="./icons/icons-512.png" />
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+  <title>Pride Mahjong</title>
+  <style>
+      html,
+      body {
+          height: 100%;
+          margin: 0;
+          background-color: #006633;
+      }
+  </style>
+
+
+  <noscript>Please enable javascript to continue using this application.</noscript>
+
+  <script>
+    window.firstStart = false;
+    window.addEventListener('keydown', ev => {
+      if (['ArrowDown', 'ArrowUp', ' '].includes(ev.key)) {
+        ev.preventDefault();
+      }
+    });
+    window.addEventListener('wheel', ev => ev.preventDefault(), { passive: false });
+  </script>
+
+  <script type="text/javascript">
+    window.compl = null;
+    window.adType = 'none';
+
+    window.SDK_OPTIONS = {
+      gameId: "eg4pqky7f4b6c8epapuzdtvcuggmnspg",
+      onEvent: function (a) {
+        switch (a.name) {
+          case "SDK_GAME_PAUSE":
+            // pause game logic / mute audio
+
+            if(window.compl===null)
+              return;
+            window.wasAds = true;
+            if(window.compl.progressBar)
+              window.compl.progressBar.stopTime();
+            window.compl.sounds.beforeAdsInited = window.compl.sounds.inited;
+            if(window.compl.sounds.inited) {
+              window.compl.sounds.disable();
+            }
+
+            break;
+          case "SDK_GAME_START":
+            if(window.compl===null)
+              return;
+            window.wasAds = true;
+            if(window.compl.progressBar)
+              window.compl.progressBar.resumeTime();
+
+            if(window.compl.sounds.beforeAdsInited) {
+              window.compl.sounds.enable();
+            }
+            window.reward = true;
+            window.compl.checkAds(window.compl.typeOfAds);
+            break;
+          case "SDK_READY":
+            // when sdk is ready
+            break;
+        }
+      }
+    };
+    (function (a, b, c) {
+      var d = a.getElementsByTagName(b)[0];
+      a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+    })(document, "script", "gamemonetize-sdk");
+  </script>
+
+
+
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+<body>
+<div id="game"></div>
+<script type="text/javascript" src="vendors.dfe1ef770f3e09dbd12b.bundle.js"></script><script type="text/javascript" src="main.a0593c881625f875e935.bundle.js"></script></body>
+</html>

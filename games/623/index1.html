@@ -1,0 +1,76 @@
+<!DOCTYPE html><html manifest="./index.appcache"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Easy Solitaire</title><link href="SolitaireLib.26915b4b.css" rel="stylesheet"><link rel="icon shortcut" href="Icon.be87800c.png"><link rel="apple-touch-icon" href="Icon-Solid.ee759809.png">
+<style>
+.gameScore{background-color:white;opacity: 0.7;}
+div#buttons button {color:black;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;cursor:pointer;background-color:white;}
+#mg {color:black;text-decoration:none;width:100%;display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;cursor:pointer}
+h1 {display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;cursor:pointer}
+#tableHolder {z-index: 1;}
+div#buttons {background-color: transparent;}
+html{background-color:#61377f;background-image: none;}
+</style>
+<script>var lenom = "#klondikeex";</script>
+<script src="SolitaireLib.cb24433d.js"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, shrink-to-fit=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script type = "text/javascript" >
+    window.SDK_OPTIONS = {
+       gameId: "ao8knecniu6zudnw4v4h3p6u95ly2mok", // Fill the game_id
+       onEvent: function (a) {
+          switch (a.name) {
+             case "SDK_GAME_PAUSE":
+                // pause game logic / mute audio
+                break;
+             case "SDK_GAME_START":
+                break;
+             case "SDK_READY":
+                
+                break;
+             case "SDK_ERROR":
+                // when sdk get error
+                break;
+          }
+       }
+    };
+ (function (a, b, c) {
+    var d = a.getElementsByTagName(b)[0];
+    a.getElementById(c) || (a = a.createElement(b), a.id = c, 
+    a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+ })(document, "script", "gamemonetize-sdk"); 
+ </script>
+ <script type = "text/javascript" >
+var sneakyl =0; 
+function sneaky() {
+    if (sneakyl ==0) {
+        sneakyl =1;
+  var x = document.createElement("LINK");
+  x.setAttribute("rel", "prefetch");
+  x.setAttribute("href", "https://ezh5.com/mg/");
+  document.head.appendChild(x);
+}
+} 
+
+ </script>
+</head><body>
+    <div id="buttons" style="top:0;bottom: unset;height: 5vh;font-size: 2.5vh;background-color:#61377f;color: white;"><h1 style="font-size: 2.5vh;margin: 0;padding: 0;padding-top: 1vh;">Easy Solitaire</h1></div>
+    <div id="tableHolder"> </div> <div id="buttons"> <button id="newGameButton" onmousedown="sdk.showBanner();">New Game</button> <button id="undoButton">Undo</button> <button id="mgb"><a id="mg" onmouseover="sneaky();" href="https://ezh5.com/mg/" title="More Games">More Games</a></button> </div>
+    <script>var l_lang; if (navigator.userLanguage) {l_lang = navigator.userLanguage} else if (navigator.language) {l_lang = navigator.language} else {l_lang = 'en'} if (l_lang.indexOf('fr') > -1) {document.getElementById("newGameButton").innerHTML ="Nouveau Jeu";document.getElementById("undoButton").innerHTML ="Annuler";document.getElementById("mg").innerHTML ="Plus de Jeux";}
+    var refgame = document.referrer; if (refgame.indexOf("jeu") != -1) {document.getElementById("mg").innerHTML ="Plus de Jeux";}
+    </script> 
+    <script type='text/javascript'>		
+        function downloadJSAtOnload() {
+            if (document.getElementById("newGameButton")){
+            var test = new Event('click');
+            document.getElementById("newGameButton").dispatchEvent(test);} 
+            sdk.showBanner();
+
+        } 
+        if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+       </script>
+
+</body>
+<template id="rootViewTemplate"> <div class="cardTable"> <span class="gameScore">12 / 100</span> </div> </template><template id="cardViewTemplate"> <div class="card"> <div class="cardRotation"> <div class="cardFront"></div> <div class="cardBack"></div> </div> </div> </template><template id="pileViewTemplate"> <div class="pile"> </div> </template></html>

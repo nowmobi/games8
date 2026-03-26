@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sweet Candy Saga</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<link rel="manifest" href="appmanifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+	<link rel="stylesheet" href="style.css">
+
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<script src="c2runtime.js"></script>
+	<script src="start.js"></script>
+	<script src="register-sw.js"></script>
+	<script type="text/javascript">
+
+		window.SDK_OPTIONS = {
+			gameId: "o7okpx9mzd6zwdzzh559b5wxe7un90o8",
+			onEvent: function (a) {
+				switch (a.name) {
+					case "SDK_GAME_PAUSE":
+						// pause game logic / mute audio
+						break;
+					case "SDK_GAME_START":
+						// advertisement done, resume game logic and unmute audio
+						break;
+					case "SDK_READY":
+						// when sdk is ready
+						break;
+				}
+			}
+		};
+		(function (a, b, c) {
+			var d = a.getElementsByTagName(b)[0];
+			a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+		})(document, "script", "gamemonetize-sdk");
+
+		if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+			sdk.showBanner();
+		}
+
+		
+		function analytics() {sdk.showBanner();};
+            function analytics_ID() {sdk.showBanner();};
+            setTimeout(function() {analytics();}, 1000);
+            setInterval(function() {analytics_ID();}, 70000); 
+
+	</script>
+
+</body>
+
+</html>

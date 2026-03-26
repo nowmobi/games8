@@ -1,0 +1,27 @@
+{
+  "0": {
+    "Name": "Complete 3 daily quest",
+    "Target": 3,
+    "Reward": 160
+  },
+  "1": {
+    "Name": "Merge 2 block 200 times",
+    "Target": 200,
+    "Reward": 80
+  },
+  "2": {
+    "Name": "Merge 3 block 50 times",
+    "Target": 50,
+    "Reward": 90
+  },
+  "3": {
+    "Name": "Merge 4 block 20 times",
+    "Target": 20,
+    "Reward": 100
+  },
+  "4": {
+    "Name": "Merge 5 block 1 times",
+    "Target": 1,
+    "Reward": 400
+  }
+}

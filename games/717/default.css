@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	overscroll-behavior-y: contain;
+}
+
+#view {
+	outline: none;
+}
+
+#canvas {
+	outline: none;
+}
+
+@font-face {
+    font-family: 'lobster_twobold';
+    src: url('assets/fonts/lobstertwo-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/lobstertwo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

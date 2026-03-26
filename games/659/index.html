@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no">
+
+    <title>2048: X2 Legend</title>
+
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/png" href="assets/favicon/icon-36x36.png" sizes="36x36">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-72x72.png" sizes="72x72">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-144x144.png" sizes="144x144">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-152x152.png" sizes="152x152">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-512x512.png" sizes="512x512">
+
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-36x36.png" sizes="36x36">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-48x48.png" sizes="48x48">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-96x96.png" sizes="96x96">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-512x512.png" sizes="512x512">
+
+
+
+
+
+
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+<style>
+    @font-face {
+        font-family: 'Murecho';
+        src: url('assets/fonts/static/Murecho-Regular.ttf');
+    }
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #00034a;
+        overflow: hidden;
+
+        -webkit-touch-callout: none !important;                /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none !important;             /* prevent webkit from resizing text to fit */
+        -webkit-user-select: none !important;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    }
+
+    #gameCanvas {
+        background: #000036;
+        z-index: 1;
+        position: relative;
+    }
+</style>
+
+<body>
+<div style="font-family:Murecho; position: absolute; left:-1000px; visibility:hidden;">.</div>
+<div id="panelLeft" style="position: absolute; display:none;width: 200px;height: 50px;background: url('assets/gfx/farbyl.png')"></div>
+<div id="panelMiddle" style="z-index: 0;position: absolute; display:none;width: 200px;height: 50px;background: #000036"></div>
+<div id="panelRight" style="position: absolute; display:none;width: 200px;height: 50px;background: url('assets/gfx/farbyr.png')"></div>
+
+
+    <div id="game">
+
+
+
+        <script src="js/game.js"></script>
+        
+
+    </div>
+
+    <div id="wrongRotation" style="	display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 15; touch-action: none;">
+        <img src="assets/gfx/rotate_screen.png" alt=""/>
+    </div>
+
+    <div id="ads">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "type": "Image",
+  "props": {
+    "zOrder": 1,
+    "y": 0,
+    "x": 0,
+    "width": 12,
+    "skin": "MainScene/img_circle.png",
+    "presetID": 1,
+    "name": "fighter",
+    "isPresetRoot": true,
+    "height": 12,
+    "anchorY": 0.5,
+    "anchorX": 0.5
+  },
+  "compId": 444,
+  "child": [
+    {
+      "type": "Script",
+      "props": {
+        "presetID": 2,
+        "runtime": "script/Fighter.ts"
+      },
+      "compId": 445
+    },
+    {
+      "type": "Script",
+      "props": {
+        "radius": 6,
+        "presetID": 3,
+        "isSensor": true,
+        "runtime": "Laya.CircleCollider"
+      },
+      "compId": 446
+    },
+    {
+      "type": "Script",
+      "props": {
+        "type": "kinematic",
+        "presetID": 4,
+        "runtime": "Laya.RigidBody"
+      },
+      "compId": 447
+    }
+  ],
+  "loadList": [
+    "MainScene/img_circle.png"
+  ],
+  "loadList3D": []
+}

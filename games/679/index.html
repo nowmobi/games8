@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!--Game Monetize//-->
+<script type = "text/javascript" >
+   window.SDK_OPTIONS = {
+       gameId: "tvpp0tzm8oz2o24jbziidhrwnjjvxoup", // Fill the game_id
+       onEvent: function (a) {
+            switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+            case "SDK_ERROR":
+               // when sdk get error
+               break;
+            }
+        }
+    };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))})(document, "script", "gamemonetize-sdk"); 
+</script>
+<!--${APP_TITLE_BEGIN}//-->
+<title>CerberusGame</title>
+<!--${APP_TITLE_END}//-->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<style type="text/css">
+body{
+	height: 100%;
+	overflow: hidden; /* keeps scrollbar off IE */
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	color: #fff;
+	background-color: #000;
+	border: 0 none white;
+	padding: 0;
+	margin: 0;
+}
+canvas{
+	border: 0;
+	padding: 0;
+	margin: auto;
+	display: block;
+	outline: none;
+}
+textarea{
+	background-color: #000;
+	color:rgb(221, 153, 51);
+	border: 0;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	width: 100%;
+}
+
+div.splitter{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	height: 17px;
+	cursor:row-resize;
+	background: #343436;
+	border-bottom: 1px solid black;
+	box-shadow: 0 0 1px black;
+	display: none;
+}
+#GameConsole, #ConsoleButton {
+	display: none;
+}	
+</style>
+<script>
+
+<!--${CANVAS_BEGIN}//-->
+var CANVAS_RESIZE_MODE=1;	//0=locked, 1=stretch, 2=resize
+var CANVAS_WIDTH=480;
+var CANVAS_HEIGHT=800;
+var CONSOLE_SHOW=0;
+<!--${CANVAS_END}//-->
+
+
+window.onload=function( e ){
+
+	var canvas=document.getElementById( "GameCanvas" );
+	var splitter=document.getElementById( "Splitter" );
+	var console=document.getElementById( "GameConsole" );
+	var button=document.getElementById( "ConsoleButton" );
+	
+	var mouseDown=false;
+	var startY=0;
+	var canvasH=CANVAS_HEIGHT;
+	var canvasW=CANVAS_WIDTH;
+	var cmousemove=null;
+	var cmouseup=null;
+	var cmouseout=null;
+	var fscreen=false;
+
+	canvas.width=CANVAS_WIDTH;
+	canvas.height=CANVAS_HEIGHT;
+
+	function eatEvent( e ){
+		if( e.stopPropagation ){
+			e.stopPropagation();
+			e.preventDefault();
+		}else{
+			e.cancelBubble=true;
+			e.returnValue=false;
+		}
+	}
+	
+	function requestFullscreen(){
+		var rfs=canvas.requestFullscreen || canvas.webkitRequestFullScreen || canvas.mozRequestFullScreen;
+		if( rfs ) rfs.call( canvas );
+	}
+	
+	function updateSize(){
+
+	    if (CONSOLE_SHOW === 1) {
+	        splitter.style.display = "block";
+	        console.style.display = "block";
+	        button.style.display = "block";
+	    } else {
+	        splitter.style.display = "none";
+	        console.style.display = "none";
+	        button.style.display = "none";
+	    }
+	  
+		if( fscreen || CONSOLE_SHOW === 0){
+			canvasH=window.innerHeight;
+			canvasW=window.innerWidth;
+		     
+		}else if( canvasH<0 ){
+			canvasH=0;
+		}else if( canvasH+splitter.clientHeight>=window.innerHeight ){
+			canvasH=window.innerHeight-splitter.clientHeight;
+		}
+		
+		switch( CANVAS_RESIZE_MODE ){
+		case 0:
+			canvas.parentNode.style.height=canvasH+"px";
+			break;
+		case 1:
+		
+		    if(canvasW/canvasH>=CANVAS_WIDTH/CANVAS_HEIGHT){
+			 canvas.style.height=canvasH+"px";
+			 break;
+			}else{ 
+			 canvas.style.width=canvasW+"px";
+		     break;
+			} 
+			
+		case 2:
+			canvas.width=document.body.clientWidth;
+			canvas.height=canvasH;
+			canvas.style.height=canvasH+"px";
+			break;
+		}
+		console.style.height=(fscreen ? 0 : window.innerHeight-splitter.clientHeight-canvasH)+"px";
+
+		//Note! Any resize code that modifies canvas.width/canvas.height/canvas.style.width/canvas.style.height should call this to update canvas...
+		if( canvas.updateSize ) canvas.updateSize();
+	}
+	
+	canvas.onfullscreenchange=function( e ){
+		fscreen=(document.fullscreenElement==canvas);
+		updateSize();
+	}
+	
+	canvas.onwebkitfullscreenchange=function( e ){
+		fscreen=(document.webkitFullscreenElement==canvas);
+		updateSize();
+	}
+	
+	canvas.onmozfullscreenchange=function( e ){
+		fscreen=(document.mozFullscreenElement==canvas);
+		updateSize();
+	}
+	
+	splitter.onmousedown=function( e ){
+		mouseDown=true;
+		startY=e.clientY;
+		cmousemove=canvas.onmousemove;
+		cmouseup=canvas.onmouseup;
+		cmouseout=canvas.onmouseout;
+		canvas.onmousemove=null;
+		canvas.onmouseup=null;
+		canvas.onmouseout=null;
+		eatEvent( e );
+	}
+	
+	window.onmousemove=function( e ){
+		if( mouseDown ){
+			var dy=e.clientY-startY;
+			startY+=dy;
+			canvasH+=dy;
+			updateSize();
+			eatEvent( e );
+		}
+	}
+	
+	window.onmouseup=function( e ){
+		if( mouseDown ){
+			canvas.onmousemove=cmousemove;
+			canvas.onmouseup=cmouseup;
+			canvas.onmouseout=cmouseout;
+			mouseDown=false;
+			eatEvent( e );
+			
+			if( canvasH+splitter.clientHeight>=window.innerHeight ) requestFullscreen();
+		}
+	}
+	
+	window.onresize=function( e ){
+		updateSize();
+	}
+	
+	updateSize();
+	
+	BBCerberusGame.Main( canvas );
+}
+</script>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+
+<body>
+
+<div><canvas id="GameCanvas" width="%%HTML5_CANVAS_WIDTH%%" height="%%HTML5_CANVAS_HEIGHT%%" tabindex="1"></canvas></div>
+
+<div id="Splitter" class="splitter"></div>
+
+<div><textarea id="GameConsole" readonly></textarea></div>
+<div id="ConsoleButton" style='position:absolute;bottom:10px;right:30px;'>
+	<button onclick="document.getElementById('GameConsole').value=''" style='background: #343436; padding:10px;color:white;border:0px;cursor:pointer;cursor:hand;'>Clear console</button>
+</div>
+
+<script>
+   GamePix.loading(100);
+   GamePix.loaded().then(function () {})
+   engine.hideOverlay();
+</script>
+
+<script language="javascript" src="main.js">Javascript not supported!</script>
+
+</body>
+</html>

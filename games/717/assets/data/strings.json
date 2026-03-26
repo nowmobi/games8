@@ -1,0 +1,180 @@
+{
+  "shop": {
+    "en": "Shop",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "currency": {
+    "en": "Coins",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "remove_ads": {
+    "en": "Remove Ads",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "restore": {
+    "en": "Restore",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "level": {
+    "en": "Level",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "wait": {
+    "en": "Please wait...",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "watch": {
+    "en": "Watch video",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "video_unavailable": {
+    "en": "Video unavailable, try again later.",
+    "fr": "",
+    "de": "",
+    "it": "",
+    "ru": "",
+    "es": "",
+    "pt": "",
+    "pl": "",
+    "tr": ""
+  },
+  "results": [
+    {
+      "en": "Wow!",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Great!",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Super!",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Fantastic!",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Incredible",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Amazing",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Superb",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    },
+    {
+      "en": "Brilliant",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ru": "",
+      "es": "",
+      "pt": "",
+      "pl": "",
+      "tr": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "language": "en",
+  "total_backgrounds": 35,
+  "save": {
+    "id": "spacescapes_9r0dzs",
+    "version": "1.0.3"
+  },
+  "tutorial_word": "cat",
+  "line_color": "0xffd966",
+  "max_hint_points": 4,
+  "pack_dictionary": false,
+  "dictionary_trim": {
+    "min": 3,
+    "max": 14
+  },
+  "generate_words": false
+}

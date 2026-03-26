@@ -1,0 +1,130 @@
+<html>
+<header><title>Garibaldi Engine MKI</title></header>
+	<!--<script src="https://sdk.crazygames.com/crazygames-sdk-v2.js"></script>-->
+	<!--<script src="https://integration.gamepix.com/sdk/v3/gamepix.sdk.js"></script>-->
+<link href=default.css rel=stylesheet>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimal-ui">
+<style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            overscroll-behavior-y: contain;
+            background-color: black; /* Set the background to black */
+        }
+        canvas
+        {
+            outline: none;
+        }
+		#banner-container {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 320px;
+			height: 50px;
+			z-index: 999999;
+		}
+</style>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  <body>
+	<div class="canvas-container">
+		<canvas id="view"></canvas>
+	</div>
+	<div id="banner-container" style="width: 320px; height: 50px"></div>
+    <script src="bin/bundle.js"></script>
+
+	<script type="text/javascript">
+        window.SDK_OPTIONS = {
+            gameId: "ahwi8eb47d17xywemfazorenjii97j4e",
+            onEvent: function (a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":{
+						// pause game logic / mute audio
+						if (window.pauseGame) {
+							window.pauseGame();
+						}
+						break;
+					}
+                    case "SDK_GAME_START":{
+						// advertisement done, resume game logic and unmute audio
+						if (window.startGame) {
+							window.startGame();
+						}
+						break;
+					}
+                    case "SDK_READY":{
+						// when sdk is ready
+						if (window.readySDK) {
+							window.readySDK();
+						}
+						break;
+					}
+					case "SDK_ERROR":{
+						// when sdk get error
+						console.error("sdk error");
+						break;
+					}
+				}
+            }
+        };
+		(function (a, b, c) {
+			var d = a.getElementsByTagName(b)[0];
+			a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+		})(document, "script", "gamemonetize-sdk");
+	</script>
+</body>
+
+</html>

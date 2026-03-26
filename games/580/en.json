@@ -1,0 +1,29 @@
+{
+  "mapNames": {
+    "0": "PARIS",
+    "1": "GUILIN",
+    "2": "RIO",
+    "3": "TOKYO",
+    "4": "VENICE",
+    "5": "LAS VEGAS"
+  },
+  "level": "Level",
+  "play": "PLAY",
+  "loading": "Loading",
+  "getPowerUpMenu": {
+    "buyShuffle": "BUY SHUFFLE?",
+    "buyMagnet": "BUY MAGNET?",
+    "buyFireworks": "BUY FIREWORKS?",
+    "buyFlashlight": "BUY FLASHLIGHT?",
+    "getFree": "GET FREE"
+  },
+  "tutorial": {
+    "0": "Select free tiles with identical symbols to remove them from the board!",
+    "1": "A tile is 'free' when there is no tile above it and no tile adjacent to it  on one side, at least.",
+    "2": "No moves left. Use Shuffle to rearrange the tiles and continue playing."
+  },
+  "youWon": "YOU WON!",
+  "next": "NEXT",
+  "rr": "Reward received!",
+  "ok": "OK"
+}

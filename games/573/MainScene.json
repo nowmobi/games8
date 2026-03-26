@@ -1,0 +1,5379 @@
+{
+  "type": "Scene",
+  "props": {
+    "width": 640,
+    "runtime": "script/Scenes/MainScene.ts",
+    "name": "MainScene",
+    "mouseEnabled": true,
+    "hitTestPrior": true,
+    "height": 1136
+  },
+  "compId": 2,
+  "child": [
+    {
+      "type": "Panel",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "width": 960,
+        "var": "bgbg",
+        "height": 1680,
+        "bgColor": "#B4FAFA"
+      },
+      "compId": 33
+    },
+    {
+      "type": "Panel",
+      "props": {
+        "x": 0,
+        "width": 1818,
+        "var": "map",
+        "scaleY": 0.35,
+        "scaleX": 0.35,
+        "height": 1136,
+        "centerY": -232
+      },
+      "compId": 31,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": -2,
+            "x": 96,
+            "width": 0,
+            "name": "map1",
+            "height": 0
+          },
+          "compId": 30,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "skin": "map/img_1.png",
+                "name": "map"
+              },
+              "compId": 219
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 76,
+                "x": 110,
+                "width": 218,
+                "name": "touch",
+                "height": 145,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 223,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 79,
+                    "x": 113,
+                    "width": 50,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "name": "building",
+                    "height": 50,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 550
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 117,
+                    "x": 113,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 551
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 38,
+            "x": 267,
+            "width": 0,
+            "name": "map2",
+            "height": 0
+          },
+          "compId": 32,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_2.png",
+                "name": "map"
+              },
+              "compId": 220
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 239,
+                "x": 103.5,
+                "width": 199,
+                "name": "touch",
+                "height": 162,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 224,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 81,
+                    "x": 100,
+                    "width": 50,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "pivotY": 25,
+                    "pivotX": 25,
+                    "name": "building",
+                    "height": 50,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 457
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 119,
+                    "x": 100,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 226
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 43,
+            "x": 355,
+            "width": 0,
+            "name": "map3",
+            "height": 0
+          },
+          "compId": 34,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_3.png",
+                "name": "map"
+              },
+              "compId": 230
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 94,
+                "x": 185,
+                "width": 323,
+                "name": "touch",
+                "height": 188,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 227,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 107,
+                    "x": 153.5,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "name": "building",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 458
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 145,
+                    "x": 154,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 464
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 109,
+            "x": 35,
+            "width": 0,
+            "name": "map4",
+            "height": 0
+          },
+          "compId": 35,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_4.png",
+                "name": "map"
+              },
+              "compId": 234
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 124,
+                "x": 127,
+                "width": 254,
+                "name": "touch",
+                "height": 173,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 275,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 86.5,
+                    "x": 138,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "name": "building",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 459
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 125,
+                    "x": 138,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 277
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 241,
+            "x": 449,
+            "width": 0,
+            "name": "map5",
+            "height": 0
+          },
+          "compId": 36,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_5.png",
+                "name": "map"
+              },
+              "compId": 235
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 99,
+                "x": 119,
+                "width": 224,
+                "name": "touch",
+                "height": 184,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 278,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 92,
+                    "x": 112,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "name": "building",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 460
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 130,
+                    "x": 112,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 466
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 326,
+            "x": 138,
+            "width": 0,
+            "name": "map7",
+            "height": 0
+          },
+          "compId": 38,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_7.png",
+                "name": "map"
+              },
+              "compId": 237
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 112,
+                "x": 107,
+                "width": 187,
+                "rotation": 11,
+                "name": "touch",
+                "height": 197,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 284,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 106.5,
+                    "x": 89,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": -11,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 462
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 147,
+                    "x": 97,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": -11,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 468
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 288,
+            "x": 12,
+            "width": 0,
+            "name": "map6",
+            "height": 0,
+            "alpha": 1
+          },
+          "compId": 37,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_6.png",
+                "name": "map"
+              },
+              "compId": 236
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 240,
+                "x": 82,
+                "width": 170,
+                "rotation": -33,
+                "name": "touch",
+                "height": 525,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 281,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 233,
+                    "x": 107,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 33,
+                    "name": "building",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 461
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 266,
+                    "x": 86,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 33,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 467
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 362,
+            "x": 323,
+            "width": 0,
+            "name": "map8",
+            "height": 0
+          },
+          "compId": 39,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_8.png",
+                "name": "map"
+              },
+              "compId": 238
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 118,
+                "x": 94,
+                "width": 165,
+                "name": "touch",
+                "height": 225,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 287,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 112.5,
+                    "x": 83,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 472
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 151,
+                    "x": 83,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 473
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 425,
+            "x": 492,
+            "width": 0,
+            "name": "map9",
+            "height": 0
+          },
+          "compId": 40,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_9.png",
+                "name": "map"
+              },
+              "compId": 239
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 98.5,
+                "x": 127,
+                "width": 236,
+                "name": "touch",
+                "height": 169,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 290,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 84.5,
+                    "x": 118,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 474
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 123,
+                    "x": 118,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 582,
+            "x": 261,
+            "width": 0,
+            "name": "map10",
+            "height": 0
+          },
+          "compId": 41,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_10.png",
+                "name": "map"
+              },
+              "compId": 240
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 129,
+                "x": 115,
+                "width": 184,
+                "rotation": 9,
+                "name": "touch",
+                "height": 238,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 293,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 102,
+                    "x": 88,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": -9,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 478
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 141,
+                    "x": 95,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": -9,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 479
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 606,
+            "x": 460,
+            "width": 0,
+            "name": "map11",
+            "height": 0
+          },
+          "compId": 42,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_11.png",
+                "name": "map"
+              },
+              "compId": 241
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 122,
+                "x": 127,
+                "width": 218,
+                "name": "touch",
+                "height": 216,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 296,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 79,
+                    "x": 113,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 480
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 117,
+                    "x": 113,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 481
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 81,
+            "x": 695,
+            "width": 0,
+            "name": "map12",
+            "height": 0
+          },
+          "compId": 43,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_12.png",
+                "name": "map"
+              },
+              "compId": 242
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 71,
+                "x": 113.5,
+                "width": 218,
+                "name": "touch",
+                "height": 132,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 299,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 66,
+                    "x": 109,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 482
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 104,
+                    "x": 109,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 483
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 89,
+            "x": 906,
+            "width": 0,
+            "name": "map13",
+            "height": 0
+          },
+          "compId": 44,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_13.png",
+                "name": "map"
+              },
+              "compId": 243
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 122,
+                "x": 76,
+                "width": 127,
+                "name": "touch",
+                "height": 244,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 302,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 129,
+                    "x": 65,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 484
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 167,
+                    "x": 65,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 485
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 174,
+            "x": 1044,
+            "width": 0,
+            "name": "map14",
+            "height": 0
+          },
+          "compId": 63,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_14.png",
+                "name": "map"
+              },
+              "compId": 244
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 97,
+                "x": 92,
+                "width": 172,
+                "name": "touch",
+                "height": 182,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 305,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 93,
+                    "x": 91,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 486
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 131,
+                    "x": 91,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 487
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 219,
+            "x": 686,
+            "width": 0,
+            "name": "map15",
+            "height": 0
+          },
+          "compId": 64,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_15.png",
+                "name": "map"
+              },
+              "compId": 245
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 70,
+                "x": 123,
+                "width": 240,
+                "name": "touch",
+                "height": 129,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 308,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 64.5,
+                    "x": 120,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 488
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 103,
+                    "x": 120,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 489
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 351,
+            "x": 678,
+            "width": 0,
+            "name": "map16",
+            "height": 0
+          },
+          "compId": 65,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_16.png",
+                "name": "map"
+              },
+              "compId": 246
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 75,
+                "x": 126,
+                "width": 253,
+                "name": "touch",
+                "height": 133,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 311,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 62,
+                    "x": 129,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 492
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 100,
+                    "x": 129,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 493
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 333,
+            "x": 923,
+            "width": 0,
+            "name": "map17",
+            "height": 0
+          },
+          "compId": 66,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_17.png",
+                "name": "map"
+              },
+              "compId": 247
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 66.5,
+                "x": 91,
+                "width": 158,
+                "name": "touch",
+                "height": 127,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 314,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 63.5,
+                    "x": 79,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 494
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 101,
+                    "x": 79,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 495
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 365.5,
+            "x": 1089,
+            "width": 0,
+            "name": "map18",
+            "height": 0
+          },
+          "compId": 67,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_18.png",
+                "name": "map"
+              },
+              "compId": 248
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 114,
+                "x": 79.5,
+                "width": 102,
+                "rotation": -5,
+                "name": "touch",
+                "height": 224,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 317,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 102.5,
+                    "x": 46,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 5,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 496
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 141,
+                    "x": 46,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 5,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 497
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 491,
+            "x": 734,
+            "width": 0,
+            "name": "map19",
+            "height": 0
+          },
+          "compId": 68,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_19.png",
+                "name": "map"
+              },
+              "compId": 249
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 71,
+                "x": 127,
+                "width": 250,
+                "name": "touch",
+                "height": 131,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 320,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 65.5,
+                    "x": 125,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 498
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 103,
+                    "x": 125,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 499
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 464,
+            "x": 952,
+            "width": 0,
+            "name": "map20",
+            "height": 0
+          },
+          "compId": 69,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_20.png",
+                "name": "map"
+              },
+              "compId": 250
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 93,
+                "x": 95,
+                "width": 119,
+                "name": "touch",
+                "height": 183,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 323,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 88.5,
+                    "x": 60,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 500
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 127,
+                    "x": 60,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 501
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 627,
+            "x": 700,
+            "width": 0,
+            "name": "map21",
+            "height": 0
+          },
+          "compId": 70,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_21.png",
+                "name": "map"
+              },
+              "compId": 251
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 73.5,
+                "x": 184,
+                "width": 218,
+                "name": "touch",
+                "height": 140,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 326,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 58,
+                    "x": 122,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 502
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 96,
+                    "x": 122,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 503
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 645.5,
+            "x": 991,
+            "width": 0,
+            "name": "map22",
+            "height": 0
+          },
+          "compId": 71,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_22.png",
+                "name": "map"
+              },
+              "compId": 252
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 79.5,
+                "x": 65,
+                "width": 128,
+                "name": "touch",
+                "height": 145,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 332,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 72.5,
+                    "x": 64,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 504
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 111,
+                    "x": 64,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 505
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 701.5,
+            "x": 1107,
+            "width": 0,
+            "name": "map23",
+            "height": 0
+          },
+          "compId": 72,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_23.png",
+                "name": "map"
+              },
+              "compId": 253
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 89,
+                "x": 65,
+                "width": 95,
+                "name": "touch",
+                "height": 171,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 335,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 85.5,
+                    "x": 47.5,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 506
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 124,
+                    "x": 48,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 507
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 652.4999999,
+            "x": 555,
+            "width": 0,
+            "name": "map24",
+            "height": 0
+          },
+          "compId": 73,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_24.png",
+                "name": "map"
+              },
+              "compId": 254
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 293,
+                "x": 292,
+                "width": 323,
+                "name": "touch",
+                "height": 340,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 338,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 121,
+                    "x": 163,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 508
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 159,
+                    "x": 163,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 509
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 798,
+            "x": 1012,
+            "width": 0,
+            "name": "map25",
+            "height": 0
+          },
+          "compId": 74,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_25.png",
+                "name": "map"
+              },
+              "compId": 255
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 79,
+                "x": 57,
+                "width": 105,
+                "name": "touch",
+                "height": 149,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 341,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 74.5,
+                    "x": 55,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 510
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 113,
+                    "x": 55,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 511
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 137.5,
+            "x": 1117,
+            "width": 0,
+            "name": "map26",
+            "height": 0
+          },
+          "compId": 75,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_26.png",
+                "name": "map"
+              },
+              "compId": 256
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 155,
+                "x": 191,
+                "width": 140,
+                "name": "touch",
+                "height": 175,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 344,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 100,
+                    "x": 71,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 512
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 138,
+                    "x": 71,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 513
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 176.5,
+            "x": 1466,
+            "width": 0,
+            "name": "map27",
+            "height": 0
+          },
+          "compId": 76,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_27.png",
+                "name": "map"
+              },
+              "compId": 257
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 72,
+                "x": 103,
+                "width": 156,
+                "name": "touch",
+                "height": 146,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 347,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 83,
+                    "x": 95,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 514
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 121,
+                    "x": 95,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 515
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 150,
+            "x": 1647,
+            "width": 0,
+            "name": "map28",
+            "height": 0
+          },
+          "compId": 77,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_28.png",
+                "name": "map"
+              },
+              "compId": 258
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 63,
+                "x": 40,
+                "width": 77,
+                "rotation": -15,
+                "name": "touch",
+                "height": 116,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 350,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 55,
+                    "x": 41,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 15,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 516
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 93,
+                    "x": 32,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 15,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 517
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 36,
+            "x": 1710,
+            "width": 0,
+            "name": "map29",
+            "height": 0
+          },
+          "compId": 78,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_29.png",
+                "name": "map"
+              },
+              "compId": 259
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 91,
+                "x": 63,
+                "width": 135,
+                "rotation": -16,
+                "name": "touch",
+                "height": 199,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 353,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 86,
+                    "x": 64,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 16,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 518
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 123,
+                    "x": 53,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 16,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 519
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 383,
+            "x": 1214,
+            "width": 0,
+            "name": "map30",
+            "height": 0
+          },
+          "compId": 79,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_30.png",
+                "name": "map"
+              },
+              "compId": 260
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 87,
+                "x": 53,
+                "width": 94,
+                "name": "touch",
+                "height": 166,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 359,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 75,
+                    "x": 47,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 520
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 113,
+                    "x": 47,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 521
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 350,
+            "x": 1307.5,
+            "width": 0,
+            "name": "map31",
+            "height": 0
+          },
+          "compId": 80,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_31.png",
+                "name": "map"
+              },
+              "compId": 261
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 95,
+                "x": 72,
+                "width": 126,
+                "name": "touch",
+                "height": 122,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 362,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 57,
+                    "x": 60,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 522
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 95,
+                    "x": 60,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 523
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 322,
+            "x": 1443,
+            "width": 0,
+            "name": "map32",
+            "height": 0
+          },
+          "compId": 81,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_32.png",
+                "name": "map"
+              },
+              "compId": 262
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 60,
+                "x": 87,
+                "width": 157,
+                "name": "touch",
+                "height": 106,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 365,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 53,
+                    "x": 78.5,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 524
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 91,
+                    "x": 79,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 525
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 346,
+            "x": 1624,
+            "width": 0,
+            "name": "map33",
+            "height": 0
+          },
+          "compId": 82,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_33.png",
+                "name": "map"
+              },
+              "compId": 263
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 52,
+                "x": 43,
+                "width": 89,
+                "name": "touch",
+                "height": 103,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 368,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 51,
+                    "x": 41,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 526
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 89,
+                    "x": 41,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 527
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 249,
+            "x": 1664,
+            "width": 0,
+            "name": "map34",
+            "height": 0
+          },
+          "compId": 83,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_34.png",
+                "name": "map"
+              },
+              "compId": 264
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 49,
+                "x": 71,
+                "width": 147,
+                "rotation": -14,
+                "name": "touch",
+                "height": 70,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 371,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 32,
+                    "x": 60.34791258792768,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 14,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 528
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 70,
+                    "x": 53,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 14,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 529
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 506.5,
+            "x": 1174,
+            "width": 0,
+            "name": "map35",
+            "height": 0
+          },
+          "compId": 84,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_35.png",
+                "name": "map"
+              },
+              "compId": 265
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 60.5,
+                "x": 137,
+                "width": 181,
+                "skewY": -23,
+                "rotation": 16,
+                "name": "touch",
+                "height": 93,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 374,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 42,
+                    "x": 109,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "skewY": 23,
+                    "rotation": -16,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 530
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 82,
+                    "x": 119,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "skewY": 23,
+                    "runtime": "Laya.Text",
+                    "rotation": -16,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 531
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 416,
+            "x": 1394.5,
+            "width": 0,
+            "name": "map36",
+            "height": 0
+          },
+          "compId": 85,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_36.png",
+                "name": "map"
+              },
+              "compId": 266
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 87,
+                "x": 61,
+                "width": 73,
+                "rotation": 41,
+                "name": "touch",
+                "height": 132,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 377,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 62,
+                    "x": 32,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": -41,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 532
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 91,
+                    "x": 57,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": -41,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 533
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 453.5,
+            "x": 1371,
+            "width": 0,
+            "name": "map37",
+            "height": 0
+          },
+          "compId": 86,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_37.png",
+                "name": "map"
+              },
+              "compId": 267
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 82,
+                "x": 182,
+                "width": 125,
+                "skewY": 0,
+                "rotation": -7,
+                "name": "touch",
+                "height": 91,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 380,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 38,
+                    "x": 58.5,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 7,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 534
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 76,
+                    "x": 54,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 7,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 535
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 419,
+            "x": 1491,
+            "width": 0,
+            "name": "map38",
+            "height": 0
+          },
+          "compId": 87,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_38.png",
+                "name": "map"
+              },
+              "compId": 268
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 57,
+                "x": 129,
+                "width": 77,
+                "rotation": -48,
+                "name": "touch",
+                "height": 109,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 383,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 36,
+                    "x": 47,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 48,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 536
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 66,
+                    "x": 18.5,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 48,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 537
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 602.5,
+            "x": 1152,
+            "width": 0,
+            "name": "map39",
+            "height": 0
+          },
+          "compId": 88,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_39.png",
+                "name": "map"
+              },
+              "compId": 269
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 50.5,
+                "x": 127,
+                "width": 231,
+                "skewY": -5,
+                "name": "touch",
+                "height": 80,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 386,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 28,
+                    "x": 109,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "skewY": 5,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 538
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 65,
+                    "x": 109,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "skewY": 5,
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 539
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 571.5,
+            "x": 1362,
+            "width": 0,
+            "name": "map40",
+            "height": 0
+          },
+          "compId": 89,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_40.png",
+                "name": "map"
+              },
+              "compId": 270
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 56,
+                "x": 177,
+                "width": 218,
+                "skewY": -10,
+                "name": "touch",
+                "height": 85,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 389,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 41,
+                    "x": 113,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "skewY": 10,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 540
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 79,
+                    "x": 113,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "skewY": 10,
+                    "runtime": "Laya.Text",
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 541
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 693.5,
+            "x": 1221,
+            "width": 0,
+            "name": "map41",
+            "height": 0
+          },
+          "compId": 90,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_41.png",
+                "name": "map"
+              },
+              "compId": 271
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 91,
+                "x": 57,
+                "width": 111,
+                "name": "touch",
+                "height": 174,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 392,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 79,
+                    "x": 55.5,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 542
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 117,
+                    "x": 56,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 543
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 680.5,
+            "x": 1313,
+            "width": 0,
+            "name": "map42",
+            "height": 0
+          },
+          "compId": 91,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_42.png",
+                "name": "map"
+              },
+              "compId": 272
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 93,
+                "x": 84,
+                "width": 121,
+                "rotation": -13,
+                "name": "touch",
+                "height": 185,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 395,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 79,
+                    "x": 61,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": 13,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 544
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 117,
+                    "x": 52,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": 13,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 545
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 667,
+            "x": 1401,
+            "width": 0,
+            "name": "map43",
+            "height": 0
+          },
+          "compId": 92,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_43.png",
+                "name": "map"
+              },
+              "compId": 273
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 64,
+                "x": 99,
+                "width": 145,
+                "rotation": 45,
+                "name": "touch",
+                "height": 88,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 398,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 41,
+                    "x": 56.5,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "rotation": -45,
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 546
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 68,
+                    "x": 84,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "rotation": -45,
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 547
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 855,
+            "x": 1253.5,
+            "width": 0,
+            "name": "map44",
+            "height": 0
+          },
+          "compId": 93,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "skin": "map/img_44.png",
+                "name": "map"
+              },
+              "compId": 274
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 121,
+                "x": 224,
+                "width": 180,
+                "name": "touch",
+                "height": 205,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 401,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "zOrder": 2,
+                    "y": 83,
+                    "x": 105,
+                    "skin": "Skin/buildSkin/img_0.png",
+                    "presetID": 1,
+                    "name": "building",
+                    "isPresetRoot": true,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 548
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 121,
+                    "x": 105,
+                    "width": 40,
+                    "valign": "top",
+                    "text": "20",
+                    "runtime": "Laya.Text",
+                    "presetID": 2,
+                    "pivotY": 10,
+                    "pivotX": 20,
+                    "name": "fighterNum",
+                    "height": 20,
+                    "fontSize": 28,
+                    "font": "Microsoft YaHei",
+                    "align": "center"
+                  },
+                  "compId": 549
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Sprite",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "var": "fightersSprite"
+      },
+      "compId": 630
+    },
+    {
+      "type": "Sprite",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "var": "tool"
+      },
+      "compId": 443,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": 156,
+            "x": -102,
+            "width": 70,
+            "var": "startTouchBg",
+            "skin": "Skin/img_building.png",
+            "height": 70,
+            "anchorY": 0.5,
+            "anchorX": 0.5,
+            "alpha": 0.5
+          },
+          "compId": 441
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 238,
+            "x": -102,
+            "width": 70,
+            "var": "endTouchBg",
+            "skin": "Skin/img_hot.png",
+            "height": 70,
+            "anchorY": 0.5,
+            "anchorX": 0.5,
+            "alpha": 0.5
+          },
+          "compId": 442
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 437,
+            "x": -95,
+            "width": 56,
+            "var": "arrow",
+            "skin": "map/img_arrow.png",
+            "sizeGrid": "30,28,4,27",
+            "scaleY": 1,
+            "rotation": 430,
+            "height": 68,
+            "anchorY": 1,
+            "anchorX": 0.5,
+            "alpha": 0.6
+          },
+          "compId": 440
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 422,
+            "x": -90,
+            "width": 72,
+            "visible": false,
+            "var": "hand",
+            "skin": "Battle/img_hand.png",
+            "pivotY": 11,
+            "pivotX": 30,
+            "height": 87
+          },
+          "compId": 631
+        }
+      ]
+    },
+    {
+      "type": "Panel",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "width": 640,
+        "var": "topUI",
+        "top": 0,
+        "height": 535,
+        "alpha": 1
+      },
+      "compId": 126,
+      "child": [
+        {
+          "type": "Text",
+          "props": {
+            "y": 104,
+            "x": 320,
+            "width": 640,
+            "var": "textLevel",
+            "valign": "middle",
+            "text": "Level",
+            "strokeColor": "#ffffff",
+            "stroke": 2,
+            "runtime": "Laya.Text",
+            "pivotY": 20,
+            "pivotX": 320,
+            "height": 40,
+            "fontSize": 40,
+            "font": "Microsoft YaHei",
+            "color": "#6c6c6c",
+            "bold": true,
+            "align": "center"
+          },
+          "compId": 62
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 153,
+            "x": 308,
+            "width": 308,
+            "var": "giftProgress",
+            "skin": "MainScene/img_YellowProgress.png",
+            "pivotY": 24,
+            "pivotX": 154,
+            "height": 48
+          },
+          "compId": 664,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 3,
+                "x": 12,
+                "width": 90,
+                "skin": "Skin/img_greyProgress.png",
+                "height": 42
+              },
+              "compId": 668,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 0,
+                    "x": 0,
+                    "width": 90,
+                    "skin": "Skin/img_greenProgress.png",
+                    "sizeGrid": "1,18,0,17",
+                    "height": 42
+                  },
+                  "compId": 669
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 3,
+                "x": 110,
+                "width": 90,
+                "skin": "Skin/img_greyProgress.png",
+                "height": 42
+              },
+              "compId": 670,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 0,
+                    "x": 0,
+                    "width": 90,
+                    "skin": "Skin/img_greenProgress.png",
+                    "sizeGrid": "1,18,0,17",
+                    "height": 42
+                  },
+                  "compId": 671
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 3,
+                "x": 207,
+                "width": 90,
+                "skin": "Skin/img_greyProgress.png",
+                "height": 42
+              },
+              "compId": 672,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 0,
+                    "x": 0,
+                    "width": 0,
+                    "skin": "Skin/img_greenProgress.png",
+                    "sizeGrid": "1,18,0,17",
+                    "height": 42
+                  },
+                  "compId": 673
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 151,
+            "x": 498,
+            "width": 51,
+            "var": "gift",
+            "skin": "Skin/img_gift.png",
+            "pivotY": 26,
+            "pivotX": 26,
+            "height": 51
+          },
+          "compId": 674
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "width": 640,
+        "var": "startGame",
+        "skin": "Common/img_startBg.png",
+        "height": 111,
+        "centerY": 355,
+        "centerX": 0,
+        "bgColor": "#ffffff"
+      },
+      "compId": 94,
+      "child": [
+        {
+          "type": "Text",
+          "props": {
+            "y": 66,
+            "x": 320,
+            "width": 358,
+            "valign": "middle",
+            "text": "Start Game",
+            "runtime": "Laya.Text",
+            "pivotY": 56,
+            "pivotX": 179,
+            "height": 111,
+            "fontSize": 55,
+            "font": "Microsoft YaHei",
+            "color": "#3e3c3d",
+            "bold": true,
+            "align": "center"
+          },
+          "compId": 95
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 70,
+            "x": 371,
+            "width": 72,
+            "skin": "Battle/img_hand.png",
+            "rotation": -23,
+            "pivotY": 12,
+            "pivotX": 30,
+            "height": 87
+          },
+          "compId": 658,
+          "child": [
+            {
+              "type": "Script",
+              "props": {
+                "runtime": "script/Util/Atween.ts"
+              },
+              "compId": 677
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Panel",
+      "props": {
+        "x": 0,
+        "var": "attributeUI",
+        "height": 396,
+        "width": 640,
+        "centerY": 112
+      },
+      "compId": 97,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": 14,
+            "x": 22,
+            "width": 184,
+            "var": "units",
+            "height": 346
+          },
+          "compId": 100,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 204,
+                "x": 92,
+                "width": 184,
+                "var": "unitsCard",
+                "skin": "MainScene/img_greyCard.png",
+                "height": 278,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 112,
+              "child": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 16,
+                    "x": -1,
+                    "width": 186,
+                    "valign": "middle",
+                    "text": "Start",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "height": 30,
+                    "fontSize": 25,
+                    "font": "Microsoft YaHei",
+                    "color": "#003d72",
+                    "align": "center"
+                  },
+                  "compId": 113
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": -55,
+                    "x": -1,
+                    "width": 184,
+                    "valign": "bottom",
+                    "text": "Level",
+                    "strokeColor": "#545454",
+                    "skewX": 0,
+                    "runtime": "Laya.Text",
+                    "name": "lev",
+                    "height": 52,
+                    "fontSize": 40,
+                    "font": "Microsoft YaHei",
+                    "color": "#415462",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 640
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 212,
+                    "x": 4,
+                    "width": 121,
+                    "valign": "middle",
+                    "text": "50",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "name": "coin",
+                    "height": 61,
+                    "fontSize": 35,
+                    "font": "Microsoft YaHei",
+                    "color": "#000000",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 115,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 28.5,
+                        "x": 150,
+                        "skin": "Common/img_coin.png",
+                        "sizeGrid": "29,24,35,25",
+                        "scaleY": 0.4,
+                        "scaleX": 0.4,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 600
+                    }
+                  ]
+                },
+                {
+                  "type": "Box",
+                  "props": {
+                    "y": 222,
+                    "x": 0,
+                    "width": 184,
+                    "visible": false,
+                    "name": "freeLevUp",
+                    "height": 37
+                  },
+                  "compId": 622,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 4,
+                        "x": -1,
+                        "width": 121,
+                        "valign": "middle",
+                        "text": "Free",
+                        "strokeColor": "#545454",
+                        "runtime": "Laya.Text",
+                        "height": 37,
+                        "fontSize": 20,
+                        "font": "Microsoft YaHei",
+                        "color": "#000000",
+                        "bold": true,
+                        "align": "right"
+                      },
+                      "compId": 623
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 19,
+                        "x": 150,
+                        "skin": "Common/img_video_purple.png",
+                        "name": "video",
+                        "centerY": 0,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 625
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 10,
+                    "x": 13,
+                    "skin": "MainScene/img_unitsWhite.png"
+                  },
+                  "compId": 599
+                },
+                {
+                  "type": "Panel",
+                  "props": {
+                    "y": 145,
+                    "x": 4,
+                    "width": 176,
+                    "height": 65
+                  },
+                  "compId": 644,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 0,
+                        "x": 1,
+                        "width": 175,
+                        "valign": "middle",
+                        "text": "upgrade",
+                        "runtime": "Laya.Text",
+                        "height": 65,
+                        "fontSize": 35,
+                        "font": "Microsoft YaHei",
+                        "color": "#000000",
+                        "bold": true,
+                        "align": "center"
+                      },
+                      "compId": 645
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 10.5,
+                        "x": 9,
+                        "var": "arrowUnits",
+                        "skin": "MainScene/img_arrowWhite.png"
+                      },
+                      "compId": 646,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Util/ATweenArrowUp.ts"
+                          },
+                          "compId": 679
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Box",
+                  "props": {
+                    "y": 80,
+                    "x": 0,
+                    "width": 180,
+                    "height": 56
+                  },
+                  "compId": 105,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": -25,
+                        "x": -25,
+                        "width": 158,
+                        "var": "startUnitsNum",
+                        "valign": "middle",
+                        "text": "99999",
+                        "strokeColor": "#545454",
+                        "runtime": "Laya.Text",
+                        "height": 92,
+                        "fontSize": 56,
+                        "font": "Microsoft YaHei",
+                        "color": "#ffffff",
+                        "bold": true,
+                        "align": "right"
+                      },
+                      "compId": 104
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 21.5,
+                        "x": 135,
+                        "text": "N",
+                        "strokeColor": "#545454",
+                        "runtime": "Laya.Text",
+                        "fontSize": 20,
+                        "font": "Microsoft YaHei",
+                        "color": "#003d72"
+                      },
+                      "compId": 103
+                    }
+                  ]
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/Util/Atween.ts"
+                  },
+                  "compId": 678
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 15,
+            "x": 216,
+            "width": 184,
+            "var": "unitsPerSecond",
+            "height": 345
+          },
+          "compId": 101,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 204,
+                "x": 92,
+                "width": 184,
+                "var": "unitsPerSecondCard",
+                "skin": "Common/img_yellowCard.png",
+                "height": 278,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 116,
+              "child": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 16,
+                    "x": -1,
+                    "width": 185,
+                    "valign": "middle",
+                    "text": "Increase",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "height": 30,
+                    "fontSize": 25,
+                    "font": "Microsoft YaHei",
+                    "color": "#974600",
+                    "align": "center"
+                  },
+                  "compId": 117
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": -55,
+                    "x": -1,
+                    "width": 184,
+                    "valign": "bottom",
+                    "text": "Level",
+                    "strokeColor": "#545454",
+                    "skewX": 0,
+                    "runtime": "Laya.Text",
+                    "name": "lev",
+                    "height": 52,
+                    "fontSize": 40,
+                    "font": "Microsoft YaHei",
+                    "color": "#415462",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 601
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 212,
+                    "x": 4,
+                    "width": 121,
+                    "valign": "middle",
+                    "text": "50",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "name": "coin",
+                    "height": 61,
+                    "fontSize": 35,
+                    "font": "Microsoft YaHei",
+                    "color": "#0b0b0b",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 602,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 28.5,
+                        "x": 150,
+                        "skin": "Common/img_coin.png",
+                        "sizeGrid": "29,24,35,25",
+                        "scaleY": 0.4,
+                        "scaleX": 0.4,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 603
+                    }
+                  ]
+                },
+                {
+                  "type": "Box",
+                  "props": {
+                    "y": 222,
+                    "x": 0,
+                    "width": 184,
+                    "visible": false,
+                    "name": "freeLevUp",
+                    "height": 37
+                  },
+                  "compId": 626,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 4,
+                        "x": -1,
+                        "width": 121,
+                        "valign": "middle",
+                        "text": "Free",
+                        "strokeColor": "#545454",
+                        "runtime": "Laya.Text",
+                        "height": 37,
+                        "fontSize": 20,
+                        "font": "Microsoft YaHei",
+                        "color": "#000000",
+                        "bold": true,
+                        "align": "right"
+                      },
+                      "compId": 627
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 19,
+                        "x": 150,
+                        "skin": "Common/img_video_purple.png",
+                        "name": "video",
+                        "centerY": 0,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 628
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 18,
+                    "x": 14,
+                    "skin": "Battle/img_add.png"
+                  },
+                  "compId": 609
+                },
+                {
+                  "type": "Panel",
+                  "props": {
+                    "y": 145,
+                    "x": 4,
+                    "width": 176,
+                    "height": 65
+                  },
+                  "compId": 641,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 0,
+                        "x": 1,
+                        "width": 175,
+                        "valign": "middle",
+                        "text": "upgrade",
+                        "runtime": "Laya.Text",
+                        "height": 65,
+                        "fontSize": 35,
+                        "font": "Microsoft YaHei",
+                        "color": "#000000",
+                        "bold": true,
+                        "align": "center"
+                      },
+                      "compId": 642
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 10.5,
+                        "x": 9,
+                        "var": "arrowUnitsPerSec",
+                        "skin": "MainScene/img_arrowWhite.png"
+                      },
+                      "compId": 643,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Util/ATweenArrowUp.ts"
+                          },
+                          "compId": 681
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Box",
+                  "props": {
+                    "y": 80,
+                    "x": 0,
+                    "width": 180,
+                    "height": 56
+                  },
+                  "compId": 637,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": -25,
+                        "x": -11,
+                        "width": 149,
+                        "var": "produceSpeed",
+                        "valign": "middle",
+                        "text": "23.42",
+                        "strokeColor": "#545454",
+                        "runtime": "Laya.Text",
+                        "height": 92,
+                        "fontSize": 50,
+                        "font": "Microsoft YaHei",
+                        "color": "#ffffff",
+                        "bold": true,
+                        "align": "right"
+                      },
+                      "compId": 638
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 21.5,
+                        "x": 137,
+                        "text": "n/s",
+                        "strokeColor": "#974600",
+                        "runtime": "Laya.Text",
+                        "fontSize": 20,
+                        "font": "Microsoft YaHei",
+                        "color": "#974600"
+                      },
+                      "compId": 639
+                    }
+                  ]
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/Util/Atween.ts"
+                  },
+                  "compId": 680
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 23,
+            "x": 433,
+            "width": 180,
+            "visible": false,
+            "var": "coinsPerHour",
+            "height": 403
+          },
+          "compId": 102,
+          "child": [
+            {
+              "type": "Box",
+              "props": {
+                "y": 0,
+                "x": 0,
+                "width": 180,
+                "height": 56
+              },
+              "compId": 109,
+              "child": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 11.5,
+                    "x": 53,
+                    "width": 74,
+                    "var": "offlineEarnings",
+                    "valign": "middle",
+                    "text": "999",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "height": 30,
+                    "fontSize": 30,
+                    "font": "Microsoft YaHei",
+                    "color": "#5e5e5e",
+                    "bold": true,
+                    "align": "left"
+                  },
+                  "compId": 110
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 42,
+                    "x": 51,
+                    "text": "gold/s",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "color": "#5e5e5e"
+                  },
+                  "compId": 111
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "Battle/img_offline.png"
+                  },
+                  "compId": 598
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 201.5,
+                "x": 90,
+                "width": 184,
+                "skin": "Common/img_greenCard.png",
+                "height": 278,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 120,
+              "child": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 11,
+                    "x": -1,
+                    "width": 186,
+                    "valign": "middle",
+                    "text": "Offline",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "height": 30,
+                    "fontSize": 20,
+                    "font": "Microsoft YaHei",
+                    "color": "#5e5e5e",
+                    "align": "center"
+                  },
+                  "compId": 121
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 161,
+                    "x": 0,
+                    "width": 184,
+                    "valign": "middle",
+                    "text": "Level",
+                    "strokeColor": "#545454",
+                    "skewY": -3,
+                    "skewX": 0,
+                    "runtime": "Laya.Text",
+                    "name": "lev",
+                    "height": 52,
+                    "fontSize": 24,
+                    "font": "Microsoft YaHei",
+                    "color": "#415462",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 604
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 212,
+                    "x": 4,
+                    "width": 121,
+                    "valign": "middle",
+                    "text": "50",
+                    "strokeColor": "#545454",
+                    "runtime": "Laya.Text",
+                    "name": "coin",
+                    "height": 61,
+                    "fontSize": 24,
+                    "font": "Microsoft YaHei",
+                    "color": "#415462",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 605,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 28.5,
+                        "x": 150,
+                        "skin": "Common/img_coin.png",
+                        "sizeGrid": "29,24,35,25",
+                        "scaleY": 0.4,
+                        "scaleX": 0.4,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 606
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 91,
+                    "x": 92,
+                    "skin": "Common/img_coin.png",
+                    "sizeGrid": "29,24,35,25",
+                    "scaleY": 0.9,
+                    "scaleX": 0.9,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 607
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 210,
+            "x": 518,
+            "visible": false,
+            "var": "shopCard",
+            "skin": "MainScene/img_shopCard.png",
+            "anchorY": 0.5,
+            "anchorX": 0.5
+          },
+          "compId": 660,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 203,
+                "x": 112,
+                "width": 116,
+                "skin": "MainScene/img_shopContent.png",
+                "pivotY": 55,
+                "pivotX": 58,
+                "height": 110
+              },
+              "compId": 661,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 61,
+                    "width": 80,
+                    "var": "shopContent",
+                    "skin": "Skin/buildSkin/img_29.png",
+                    "pivotY": 40,
+                    "pivotX": 40,
+                    "height": 80,
+                    "centerX": 0
+                  },
+                  "compId": 662
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/Util/Atween.ts"
+                  },
+                  "compId": 682
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 14,
+                "x": 47,
+                "width": 50,
+                "var": "redPoint",
+                "skin": "Skin/img_hot.png",
+                "pivotY": 25,
+                "pivotX": 25,
+                "height": 50
+              },
+              "compId": 676,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 25,
+                    "x": 25,
+                    "width": 7,
+                    "skin": "Common/img_l.png",
+                    "rotation": -12,
+                    "pivotY": 16,
+                    "pivotX": 4,
+                    "height": 31
+                  },
+                  "compId": 675,
+                  "child": [
+                    {
+                      "type": "Script",
+                      "props": {
+                        "runtime": "script/Util/RedPointTween.ts"
+                      },
+                      "compId": 683
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "width": 640,
+        "visible": false,
+        "var": "battleStart",
+        "skin": "Common/img_startBg.png",
+        "height": 148,
+        "centerY": 224,
+        "centerX": 0,
+        "bgColor": "#ffffff"
+      },
+      "compId": 408,
+      "child": [
+        {
+          "type": "Text",
+          "props": {
+            "y": 74,
+            "x": 320,
+            "width": 358,
+            "var": "textBattleStart",
+            "valign": "middle",
+            "text": "Fight!",
+            "scaleY": 1,
+            "scaleX": 1,
+            "runtime": "Laya.Text",
+            "pivotY": 56,
+            "pivotX": 179,
+            "height": 111,
+            "fontSize": 55,
+            "font": "Microsoft YaHei",
+            "color": "#3e3c3d",
+            "bold": true,
+            "align": "center"
+          },
+          "compId": 409
+        }
+      ]
+    },
+    {
+      "type": "Sprite",
+      "props": {
+        "y": -177,
+        "x": 0,
+        "width": 640,
+        "var": "battleUI",
+        "mouseThrough": true,
+        "height": 138
+      },
+      "compId": 734,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": 101,
+            "x": 48,
+            "var": "btnBack",
+            "skin": "Battle/img_back.png",
+            "anchorY": 0.5,
+            "anchorX": 0.5
+          },
+          "compId": 735,
+          "child": [
+            {
+              "type": "Script",
+              "props": {
+                "runtime": "script/Util/Atween.ts"
+              },
+              "compId": 738
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 65,
+            "x": 178,
+            "visible": false,
+            "var": "enemyProgress",
+            "skin": "Battle/img_redRect.png",
+            "sizeGrid": "24,32,26,30"
+          },
+          "compId": 736,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": 4,
+                "x": 4,
+                "width": 276,
+                "skin": "Battle/img_blueRect.png",
+                "sizeGrid": "20,30,17,26",
+                "height": 60
+              },
+              "compId": 739
+            },
+            {
+              "type": "Text",
+              "props": {
+                "y": 34,
+                "x": 142,
+                "width": 286,
+                "valign": "middle",
+                "text": "last",
+                "runtime": "Laya.Text",
+                "pivotY": 35,
+                "pivotX": 142,
+                "height": 70,
+                "fontSize": 35,
+                "font": "Microsoft YaHei",
+                "color": "#f3f3f3",
+                "bold": true,
+                "align": "center"
+              },
+              "compId": 740
+            }
+          ]
+        },
+        {
+          "type": "Text",
+          "props": {
+            "y": 90,
+            "x": 320,
+            "width": 640,
+            "var": "battleTextLevel",
+            "valign": "middle",
+            "text": "Level 1",
+            "strokeColor": "#ffffff",
+            "stroke": 2,
+            "runtime": "Laya.Text",
+            "pivotY": 20,
+            "pivotX": 320,
+            "height": 40,
+            "fontSize": 40,
+            "font": "Microsoft YaHei",
+            "color": "#6c6c6c",
+            "bold": true,
+            "align": "center"
+          },
+          "compId": 737
+        }
+      ]
+    },
+    {
+      "type": "Panel",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "width": 640,
+        "visible": false,
+        "var": "pauseUI",
+        "height": 1136,
+        "alpha": 1
+      },
+      "compId": 420,
+      "child": [
+        {
+          "type": "Panel",
+          "props": {
+            "y": 0,
+            "x": 0,
+            "width": 640,
+            "height": 1136,
+            "bgColor": "#000000",
+            "alpha": 0.4
+          },
+          "compId": 426
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 645,
+            "width": 381,
+            "skin": "Common/img_whitePro.png",
+            "sizeGrid": "14,26,14,18",
+            "height": 217,
+            "centerX": 0,
+            "anchorY": 0.5,
+            "anchorX": 0.5
+          },
+          "compId": 430,
+          "child": [
+            {
+              "type": "Text",
+              "props": {
+                "y": -41,
+                "x": 186,
+                "width": 119,
+                "valign": "middle",
+                "text": "Quit",
+                "runtime": "Laya.Text",
+                "pivotY": 20,
+                "pivotX": 55,
+                "height": 53,
+                "fontSize": 38,
+                "font": "Microsoft YaHei",
+                "color": "#ffffff",
+                "bold": true,
+                "align": "center"
+              },
+              "compId": 431
+            },
+            {
+              "type": "Text",
+              "props": {
+                "y": 82,
+                "x": 191,
+                "width": 383,
+                "valign": "middle",
+                "text": "Quit Game?",
+                "runtime": "Laya.Text",
+                "pivotY": 20,
+                "pivotX": 192,
+                "height": 40,
+                "fontSize": 40,
+                "font": "Microsoft YaHei",
+                "color": "#6c6c6c",
+                "bold": true,
+                "align": "center"
+              },
+              "compId": 432
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 219,
+                "x": 127,
+                "var": "btnYes",
+                "skin": "Battle/img_btnGreen.png",
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 434,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 49,
+                    "x": 57,
+                    "skin": "Battle/img_goal.png",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 613
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/Util/Atween.ts"
+                  },
+                  "compId": 685
+                }
+              ]
+            },
+            {
+              "type": "Button",
+              "props": {
+                "y": 219,
+                "x": 250,
+                "var": "BtnNo",
+                "stateNum": 1,
+                "skin": "Battle/img_btnRed.png",
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 435,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 49,
+                    "x": 55,
+                    "width": 50,
+                    "skin": "Battle/img_x.png",
+                    "pivotY": 25,
+                    "pivotX": 25,
+                    "height": 49
+                  },
+                  "compId": 614
+                },
+                {
+                  "type": "Script",
+                  "props": {
+                    "runtime": "script/Util/Atween.ts"
+                  },
+                  "compId": 686
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Panel",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "width": 640,
+        "visible": false,
+        "var": "endUI",
+        "height": 1136,
+        "alpha": 1
+      },
+      "compId": 552,
+      "child": [
+        {
+          "type": "Panel",
+          "props": {
+            "y": 0,
+            "x": 0,
+            "width": 640,
+            "height": 1136,
+            "bgColor": "#000000",
+            "alpha": 0.4
+          },
+          "compId": 554
+        },
+        {
+          "type": "Panel",
+          "props": {
+            "y": 0,
+            "x": 0,
+            "width": 640,
+            "visible": false,
+            "var": "winUI",
+            "height": 1136,
+            "alpha": 1
+          },
+          "compId": 564,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "x": 320,
+                "width": 456,
+                "skin": "Common/img_whitePro.png",
+                "sizeGrid": "14,26,14,18",
+                "height": 250,
+                "bottom": 396,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 566,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -145,
+                    "x": 226,
+                    "skin": "Battle/img_cup.png",
+                    "skewY": 0,
+                    "rotation": -4,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 563
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": 76.5,
+                    "x": 228,
+                    "width": 640,
+                    "valign": "middle",
+                    "var": "yourreward",
+                    "text": "Reward",
+                    "runtime": "Laya.Text",
+                    "pivotY": 48,
+                    "pivotX": 320,
+                    "height": 96,
+                    "fontSize": 50,
+                    "font": "Microsoft YaHei",
+                    "color": "#3f3f3f",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 568
+                },
+                {
+                  "type": "Box",
+                  "props": {
+                    "y": 155,
+                    "x": 228,
+                    "width": 457,
+                    "height": 62,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 618,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 0,
+                        "x": 50,
+                        "width": 208,
+                        "var": "textWinReward",
+                        "valign": "middle",
+                        "text": "+99999",
+                        "runtime": "Laya.Text",
+                        "height": 62,
+                        "fontSize": 50,
+                        "font": "Microsoft YaHei",
+                        "color": "#1c76e4",
+                        "bold": true,
+                        "align": "right"
+                      },
+                      "compId": 619
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "x": 285,
+                        "skin": "Common/img_coin.png",
+                        "sizeGrid": "29,24,35,25",
+                        "scaleY": 0.5,
+                        "scaleX": 0.5,
+                        "centerY": 0,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 620
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": 261,
+                    "x": 226,
+                    "var": "imgGetReward3",
+                    "skin": "Common/img_greenBtn.png",
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 571,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "y": 67,
+                        "x": 95,
+                        "width": 251,
+                        "var": "imgVideo",
+                        "height": 84,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 572,
+                      "child": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "x": -446,
+                            "width": 56,
+                            "visible": false,
+                            "skin": "Common/img_whiteVideoLittle.png",
+                            "name": "video",
+                            "height": 40,
+                            "centerY": 0,
+                            "anchorY": 0.5,
+                            "anchorX": 0.5
+                          },
+                          "compId": 573
+                        },
+                        {
+                          "type": "Box",
+                          "props": {
+                            "y": 63,
+                            "x": 125.5,
+                            "width": 122,
+                            "name": "des",
+                            "height": 42,
+                            "anchorY": 0.5,
+                            "anchorX": 0.5
+                          },
+                          "compId": 621,
+                          "child": [
+                            {
+                              "type": "Text",
+                              "props": {
+                                "y": 0,
+                                "x": -19,
+                                "width": 105,
+                                "var": "textWinReward3",
+                                "valign": "middle",
+                                "text": "99999",
+                                "runtime": "Laya.Text",
+                                "height": 42,
+                                "fontSize": 30,
+                                "font": "Microsoft YaHei",
+                                "color": "#ffffff",
+                                "bold": true,
+                                "align": "right"
+                              },
+                              "compId": 574
+                            },
+                            {
+                              "type": "Image",
+                              "props": {
+                                "x": 103,
+                                "skin": "Common/img_coin.png",
+                                "sizeGrid": "29,24,35,25",
+                                "scaleY": 0.3,
+                                "scaleX": 0.3,
+                                "centerY": 0,
+                                "anchorY": 0.5,
+                                "anchorX": 0.5
+                              },
+                              "compId": 575
+                            },
+                            {
+                              "type": "Text",
+                              "props": {
+                                "y": 25,
+                                "x": 60,
+                                "width": 116,
+                                "valign": "middle",
+                                "text": "",
+                                "runtime": "Laya.Text",
+                                "height": 34,
+                                "fontSize": 30,
+                                "font": "Microsoft YaHei",
+                                "color": "#ffffff",
+                                "bold": false,
+                                "align": "right"
+                              },
+                              "compId": 576
+                            },
+                            {
+                              "type": "Image",
+                              "props": {
+                                "y": -20,
+                                "x": 80,
+                                "skin": "Common/img_video_purple.png",
+                                "name": "video",
+                                "anchorY": 0.5,
+                                "anchorX": 0.5
+                              },
+                              "compId": 725
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 25,
+                        "x": 25,
+                        "width": 253,
+                        "visible": false,
+                        "var": "textNext",
+                        "valign": "middle",
+                        "text": "Next",
+                        "runtime": "Laya.Text",
+                        "height": 84,
+                        "fontSize": 50,
+                        "font": "Microsoft YaHei",
+                        "color": "#ffffff",
+                        "bold": true,
+                        "align": "center"
+                      },
+                      "compId": 653,
+                      "child": [
+                        {
+                          "type": "Script",
+                          "props": {
+                            "runtime": "script/Util/Atween.ts"
+                          },
+                          "compId": 687
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Text",
+              "props": {
+                "y": 199,
+                "x": 320,
+                "width": 640,
+                "valign": "middle",
+                "text": "",
+                "strokeColor": "#ffffff",
+                "stroke": 20,
+                "runtime": "Laya.Text",
+                "pivotY": 48,
+                "pivotX": 320,
+                "height": 96,
+                "fontSize": 110,
+                "font": "Microsoft YaHei",
+                "color": "#9bff78",
+                "bold": true,
+                "align": "center"
+              },
+              "compId": 567
+            },
+            {
+              "type": "Label",
+              "props": {
+                "x": 320,
+                "width": 164,
+                "var": "textGetReward",
+                "valign": "middle",
+                "text": "Get",
+                "pivotY": 27,
+                "pivotX": 82,
+                "height": 54,
+                "fontSize": 40,
+                "font": "Microsoft YaHei",
+                "color": "#000000",
+                "bottom": 240,
+                "bold": false,
+                "align": "center"
+              },
+              "compId": 578
+            }
+          ]
+        },
+        {
+          "type": "Panel",
+          "props": {
+            "y": 0,
+            "x": 0,
+            "width": 640,
+            "visible": false,
+            "var": "failUI",
+            "height": 1136,
+            "alpha": 1
+          },
+          "compId": 579,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "x": 320,
+                "width": 456,
+                "skin": "Common/img_whitePro.png",
+                "sizeGrid": "14,26,14,18",
+                "height": 250,
+                "bottom": 388,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 581,
+              "child": [
+                {
+                  "type": "Box",
+                  "props": {
+                    "y": 125,
+                    "x": 228,
+                    "width": 457,
+                    "height": 62,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5
+                  },
+                  "compId": 617,
+                  "child": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "y": 0,
+                        "x": 68,
+                        "width": 208,
+                        "var": "textFailReward",
+                        "valign": "middle",
+                        "text": "+99999",
+                        "runtime": "Laya.Text",
+                        "height": 62,
+                        "fontSize": 50,
+                        "font": "Microsoft YaHei",
+                        "color": "#1c76e4",
+                        "bold": true,
+                        "align": "right"
+                      },
+                      "compId": 584
+                    },
+                    {
+                      "type": "Image",
+                      "props": {
+                        "x": 306,
+                        "skin": "Common/img_coin.png",
+                        "sizeGrid": "29,24,35,25",
+                        "scaleY": 0.5,
+                        "scaleX": 0.5,
+                        "centerY": 0,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                      },
+                      "compId": 585
+                    }
+                  ]
+                },
+                {
+                  "type": "Image",
+                  "props": {
+                    "y": -378,
+                    "x": 14,
+                    "skin": "Battle/img_fail.png"
+                  },
+                  "compId": 611
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "y": -246,
+                    "x": 228,
+                    "width": 640,
+                    "valign": "middle",
+                    "text": "Lose",
+                    "strokeColor": "#ffffff",
+                    "stroke": 20,
+                    "runtime": "Laya.Text",
+                    "pivotY": 48,
+                    "pivotX": 320,
+                    "height": 96,
+                    "fontSize": 110,
+                    "font": "Microsoft YaHei",
+                    "color": "#ff525a",
+                    "bold": true,
+                    "align": "center"
+                  },
+                  "compId": 592
+                }
+              ]
+            },
+            {
+              "type": "Label",
+              "props": {
+                "x": 320,
+                "width": 164,
+                "var": "textContinue",
+                "valign": "middle",
+                "text": "Go On",
+                "pivotY": 27,
+                "pivotX": 82,
+                "height": 54,
+                "fontSize": 30,
+                "font": "Microsoft YaHei",
+                "color": "#ffffff",
+                "bottom": 282,
+                "bold": true,
+                "align": "center"
+              },
+              "compId": 593
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "props": {
+        "var": "imgCoin",
+        "top": 72,
+        "skin": "Common/img_blackPro.png",
+        "right": 451,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 405,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": 26,
+            "x": 140,
+            "skin": "Common/img_coin.png",
+            "sizeGrid": "29,24,35,25",
+            "scaleY": 0.5,
+            "scaleX": 0.5,
+            "anchorY": 0.5,
+            "anchorX": 0.5
+          },
+          "compId": 406
+        },
+        {
+          "type": "Text",
+          "props": {
+            "y": 26,
+            "x": 60,
+            "width": 119,
+            "var": "textCoin",
+            "valign": "middle",
+            "text": "999999",
+            "runtime": "Laya.Text",
+            "pivotY": 27,
+            "pivotX": 60,
+            "height": 53,
+            "fontSize": 38,
+            "font": "Microsoft YaHei",
+            "color": "#f3f3f3",
+            "bold": true,
+            "align": "center"
+          },
+          "compId": 407
+        }
+      ]
+    },
+    {
+      "type": "Label",
+      "props": {
+        "x": 321.9999999999999,
+        "width": 640,
+        "visible": false,
+        "var": "battleTip",
+        "valign": "middle",
+        "strokeColor": "#ffffff",
+        "stroke": 2,
+        "italic": false,
+        "height": 40,
+        "fontSize": 40,
+        "font": "Microsoft YaHei",
+        "color": "#6c6c6c",
+        "bottom": 140,
+        "bold": true,
+        "anchorY": 0.5,
+        "anchorX": 0.5,
+        "alpha": 0.8,
+        "align": "center"
+      },
+      "compId": 652,
+      "child": [
+        {
+          "type": "Label",
+          "props": {
+            "y": 20,
+            "x": 201,
+            "width": 203,
+            "visible": true,
+            "valign": "middle",
+            "text": "Drag",
+            "strokeColor": "#ffffff",
+            "stroke": 2,
+            "pivotY": 20,
+            "pivotX": 204,
+            "italic": false,
+            "height": 40,
+            "fontSize": 40,
+            "font": "Microsoft YaHei",
+            "color": "#e30300",
+            "bold": true,
+            "alpha": 0.8,
+            "align": "right"
+          },
+          "compId": 655
+        },
+        {
+          "type": "Label",
+          "props": {
+            "y": 20,
+            "x": 200,
+            "width": 438,
+            "visible": true,
+            "valign": "middle",
+            "text": "capture",
+            "strokeColor": "#ffffff",
+            "stroke": 2,
+            "pivotY": 20,
+            "italic": false,
+            "height": 40,
+            "fontSize": 40,
+            "font": "Microsoft YaHei",
+            "color": "#6c6c6c",
+            "bold": true,
+            "alpha": 0.8,
+            "align": "left"
+          },
+          "compId": 657
+        },
+        {
+          "type": "Script",
+          "props": {
+            "runtime": "script/Util/Atween.ts"
+          },
+          "compId": 688
+        }
+      ]
+    },
+    {
+      "type": "Sprite",
+      "props": {
+        "y": 8,
+        "x": 136,
+        "width": 120,
+        "visible": false,
+        "texture": "",
+        "name": "btn_mgame",
+        "height": 60
+      },
+      "compId": 690
+    },
+    {
+      "type": "Sprite",
+      "props": {
+        "y": 8,
+        "x": 16,
+        "width": 120,
+        "visible": false,
+        "texture": "",
+        "name": "btn_mgame",
+        "height": 60
+      },
+      "compId": 689
+    },
+    {
+      "type": "Script",
+      "props": {
+        "btn_yinsi": "@node:689",
+        "btn_moregame": "@node:690",
+        "runtime": "script/btn_YG.ts"
+      },
+      "compId": 694
+    },
+    {
+      "type": "Sprite",
+      "props": {
+        "y": 0,
+        "x": 0,
+        "width": 640,
+        "texture": "gameloadingfj.png",
+        "name": "jkgg",
+        "mouseEnabled": true,
+        "height": 1136
+      },
+      "compId": 741
+    }
+  ],
+  "loadList": [
+    "map/img_1.png",
+    "Skin/buildSkin/img_0.png",
+    "map/img_2.png",
+    "map/img_3.png",
+    "map/img_4.png",
+    "map/img_5.png",
+    "map/img_7.png",
+    "prefab/building.prefab",
+    "map/img_6.png",
+    "map/img_8.png",
+    "map/img_9.png",
+    "map/img_10.png",
+    "map/img_11.png",
+    "map/img_12.png",
+    "map/img_13.png",
+    "map/img_14.png",
+    "map/img_15.png",
+    "map/img_16.png",
+    "map/img_17.png",
+    "map/img_18.png",
+    "map/img_19.png",
+    "map/img_20.png",
+    "map/img_21.png",
+    "map/img_22.png",
+    "map/img_23.png",
+    "map/img_24.png",
+    "map/img_25.png",
+    "map/img_26.png",
+    "map/img_27.png",
+    "map/img_28.png",
+    "map/img_29.png",
+    "map/img_30.png",
+    "map/img_31.png",
+    "map/img_32.png",
+    "map/img_33.png",
+    "map/img_34.png",
+    "map/img_35.png",
+    "map/img_36.png",
+    "map/img_37.png",
+    "map/img_38.png",
+    "map/img_39.png",
+    "map/img_40.png",
+    "map/img_41.png",
+    "map/img_42.png",
+    "map/img_43.png",
+    "map/img_44.png",
+    "Skin/img_building.png",
+    "Skin/img_hot.png",
+    "map/img_arrow.png",
+    "Battle/img_hand.png",
+    "MainScene/img_YellowProgress.png",
+    "Skin/img_greyProgress.png",
+    "Skin/img_greenProgress.png",
+    "Skin/img_gift.png",
+    "Common/img_startBg.png",
+    "MainScene/img_greyCard.png",
+    "Common/img_coin.png",
+    "Common/img_video_purple.png",
+    "MainScene/img_unitsWhite.png",
+    "MainScene/img_arrowWhite.png",
+    "Common/img_yellowCard.png",
+    "Battle/img_add.png",
+    "Battle/img_offline.png",
+    "Common/img_greenCard.png",
+    "MainScene/img_shopCard.png",
+    "MainScene/img_shopContent.png",
+    "Skin/buildSkin/img_29.png",
+    "Common/img_l.png",
+    "Battle/img_back.png",
+    "Battle/img_redRect.png",
+    "Battle/img_blueRect.png",
+    "Common/img_whitePro.png",
+    "Battle/img_btnGreen.png",
+    "Battle/img_goal.png",
+    "Battle/img_btnRed.png",
+    "Battle/img_x.png",
+    "Battle/img_cup.png",
+    "Common/img_greenBtn.png",
+    "Common/img_whiteVideoLittle.png",
+    "Battle/img_fail.png",
+    "Common/img_blackPro.png",
+    "gameloadingfj.png"
+  ],
+  "loadList3D": []
+}

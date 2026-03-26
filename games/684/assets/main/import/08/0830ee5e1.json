@@ -1,0 +1,6614 @@
+[
+  1,
+  [
+    "16dXW393xG25yHj1OMknO9",
+    "6cjeKz3lxEpLEExrr1kXqy",
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "34ioAj6UtCFLbNeEILjz/0",
+    "9aSyyWC+1Ft5d+aVpynCAh",
+    "acjP82baBEKqjZmxjlns+5",
+    "905G188DlDAqQFuxspIzEW",
+    "a5SWKOjnFGn6ubbcHMzstj",
+    "54my+9JC1OEaN1MACJl+CG",
+    "97AudYfu5GhpBZ8kEy8Usk",
+    "ddvaSNT99EO75id70K2fnG",
+    "322EXiU8NMTIxQp6N6u3ko",
+    "6e3+XW44dOjJ7TRKnzr+47",
+    "fcLR+fFuZBq6Zwf+tVhkgJ",
+    "a8SGBCm1xIPqX0afc8EQvw",
+    "9714RFlu9CsLpxc7PY+Le9",
+    "7eTv3PawdHp4YeLsWhA4Uo",
+    "b1GLP+dWBF4YlyqBBmUc6Y",
+    "d7m0DPo6dAzrYbK4KOjlge",
+    "4airACa4JOCrM/MwzoG63W",
+    "29eqVFPJNNqrzR1BG3K2Bx",
+    "52s2ourSVPoqfZxler6w97",
+    "09rMplg8hMk4PxsHpXiLNr",
+    "8c20Sso/ZEn7NUfNSM+EBh",
+    "d5WoK1ZjBBfr3nXNFQ29Ex",
+    "6eBWFz0oVHPLIGQKf/9Thu",
+    "f6CWSRHphDmpg3BiWGbw4M",
+    "7dvFxmSO9OaLj4jkxolA+s",
+    "a4ZUS5kMpMvZK7yiDwKXbu",
+    "1f9iRFLcpMjo36tbxKixc7",
+    "98+NN9UTlI35IN3o49i1T6",
+    "600XNqHmxAa7NzgXnaUbT5",
+    "41CgJfcSZJcL6PW66M/koV",
+    "acGR8xFOdONLqp2eT7uPNw",
+    "c5gaeKwQ1ARrJKgruW6CMJ",
+    "1cZr8g3VNChr7OXRblOZT7"
+  ],
+  [
+    "value",
+    "_textureSetter",
+    "node",
+    "_spriteFrame",
+    "root",
+    "data",
+    "mSpt_CardType",
+    "mNode_State",
+    "mNode_Border",
+    "mNode_CardType",
+    "BGUnMatch",
+    "BGMatched",
+    "spriteFrame",
+    "mLab_ScoreValue",
+    "mSpt_Symbot",
+    "mSpt_Describe",
+    "_N$file"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_opacity",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_parent",
+        "_children",
+        "_trs",
+        "_color",
+        "_anchorPoint"
+      ],
+      1,
+      9,
+      4,
+      5,
+      1,
+      2,
+      7,
+      5,
+      5
+    ],
+    [
+      "cc.Sprite",
+      [
+        "_sizeMode",
+        "node",
+        "_materials",
+        "_spriteFrame"
+      ],
+      2,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_trs"
+      ],
+      2,
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root"
+      ],
+      2,
+      1
+    ],
+    [
+      "cc.AnimationClip",
+      [
+        "_name",
+        "_duration",
+        "curveData"
+      ],
+      1,
+      11
+    ],
+    [
+      "cc.AnimationClip",
+      [
+        "_name",
+        "_duration",
+        "wrapMode",
+        "curveData"
+      ],
+      -1
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "86d7fcC4TRHvo6pS20xDiyR",
+      [
+        "node",
+        "mSpt_CardType"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "a9c99Cy9NhOsZ28i5MBruO5",
+      [
+        "node",
+        "mNode_CardType",
+        "mNode_Border",
+        "mNode_State",
+        "BGUnMatch",
+        "BGMatched"
+      ],
+      3,
+      1,
+      1,
+      1,
+      1,
+      6,
+      6
+    ],
+    [
+      "cc.LabelAtlas",
+      [
+        "_name",
+        "fontSize",
+        "_fntConfig"
+      ],
+      0
+    ],
+    [
+      "cc.Layout",
+      [
+        "_resize",
+        "_N$layoutType",
+        "_N$spacingX",
+        "node",
+        "_layoutSize"
+      ],
+      0,
+      1,
+      5
+    ],
+    [
+      "37739ph7YdIbakr/VY/WAts",
+      [
+        "node",
+        "mSpt_Describe",
+        "mSpt_Symbot",
+        "mLab_ScoreValue"
+      ],
+      3,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "cc.Label",
+      [
+        "_string",
+        "_fontSize",
+        "_isSystemFontUsed",
+        "_spacingX",
+        "_N$horizontalAlign",
+        "_N$verticalAlign",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      4,
+      0,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      2,
+      3,
+      1
+    ],
+    [
+      7,
+      0,
+      2
+    ],
+    [
+      4,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    [
+      1,
+      0,
+      6,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      6,
+      2,
+      3,
+      4,
+      7,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      5,
+      2,
+      3,
+      8,
+      4,
+      3
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      8,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      6,
+      2,
+      3,
+      4,
+      9,
+      7,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      4,
+      7,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      2,
+      1,
+      2,
+      1
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      8,
+      0,
+      1,
+      1
+    ],
+    [
+      9,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      1
+    ],
+    [
+      10,
+      0,
+      1,
+      2,
+      4
+    ],
+    [
+      11,
+      0,
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    [
+      12,
+      0,
+      1,
+      2,
+      3,
+      1
+    ],
+    [
+      13,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "card_front",
+          "rect": [
+            0,
+            0,
+            70,
+            86
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            70,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "tutorial",
+          35.5,
+          [
+            {},
+            "paths",
+            11,
+            [
+              {
+                "TutorialPanel": {
+                  "props": {
+                    "opacity": [
+                      {
+                        "frame": 0,
+                        "value": 0
+                      },
+                      {
+                        "frame": 0.5,
+                        "value": 255
+                      }
+                    ]
+                  }
+                },
+                "CursorRoot": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0,
+                        "value": false
+                      },
+                      {
+                        "frame": 0.6666666666666666,
+                        "value": true
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": false
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": true
+                      },
+                      {
+                        "frame": 19.35,
+                        "value": false
+                      },
+                      {
+                        "frame": 19.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 20.666666666666668,
+                        "value": false
+                      },
+                      {
+                        "frame": 20.833333333333332,
+                        "value": true
+                      },
+                      {
+                        "frame": 35.5,
+                        "value": false
+                      }
+                    ],
+                    "position": [
+                      {
+                        "frame": 0.6666666666666666,
+                        "value": [
+                          1.8,
+                          -8,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 1.3333333333333333,
+                        "value": [
+                          1.965,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 2,
+                        "value": [
+                          1.965,
+                          -8,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 2.6666666666666665,
+                        "value": [
+                          1.965,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 3.3333333333333335,
+                        "value": [
+                          1.965,
+                          -8,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 3.6666666666666665,
+                        "value": [
+                          1.965,
+                          -8,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 4.333333333333333,
+                        "value": [
+                          -28,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 4.833333333333333,
+                        "value": [
+                          -28,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 5.833333333333333,
+                        "value": [
+                          -165,
+                          -8,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 9.833333333333334,
+                        "value": [
+                          -165,
+                          -8,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 10.333333333333334,
+                        "value": [
+                          -165,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 11,
+                        "value": [
+                          -165,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 11.5,
+                        "value": [
+                          -95,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 11.666666666666666,
+                        "value": [
+                          -95,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 12.333333333333334,
+                        "value": [
+                          45,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 13,
+                        "value": [
+                          -95,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 13.666666666666666,
+                        "value": [
+                          45,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 14.333333333333334,
+                        "value": [
+                          -95,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 14.833333333333334,
+                        "value": [
+                          -95,
+                          -3,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 15.666666666666666,
+                        "value": [
+                          45,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 16.166666666666668,
+                        "value": [
+                          45,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 17,
+                        "value": [
+                          -25,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": [
+                          -25,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 17.583333333333332,
+                        "value": [
+                          185,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": [
+                          185,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 18.833333333333332,
+                        "value": [
+                          116,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 19.35,
+                        "value": [
+                          116,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 19.5,
+                        "value": [
+                          185,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 20.166666666666668,
+                        "value": [
+                          116,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 20.666666666666668,
+                        "value": [
+                          116,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 20.833333333333332,
+                        "value": [
+                          185,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 21.083333333333332,
+                        "value": [
+                          185,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": [
+                          116,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 22.083333333333332,
+                        "value": [
+                          116,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 22.75,
+                        "value": [
+                          -94,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 22.916666666666668,
+                        "value": [
+                          -94,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 23.583333333333332,
+                        "value": [
+                          -165,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 23.916666666666668,
+                        "value": [
+                          -165,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.083333333333332,
+                        "value": [
+                          252,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.25,
+                        "value": [
+                          252,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": [
+                          -96,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.916666666666668,
+                        "value": [
+                          -96,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.583333333333332,
+                        "value": [
+                          -235,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": [
+                          -235,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": [
+                          185,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.583333333333332,
+                        "value": [
+                          185,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 30.25,
+                        "value": [
+                          253,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 30.75,
+                        "value": [
+                          253,
+                          -9,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.416666666666668,
+                        "value": [
+                          113,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": [
+                          113,
+                          80,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": [
+                          113,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 32.56666666666667,
+                        "value": [
+                          113,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.21666666666667,
+                        "value": [
+                          252.613,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.416666666666664,
+                        "value": [
+                          252.613,
+                          -90,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 35.166666666666664,
+                        "value": [
+                          -236,
+                          -90,
+                          0
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "CursorRoot/Touch": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0,
+                        "value": false
+                      },
+                      {
+                        "frame": 4.333333333333333,
+                        "value": true
+                      },
+                      {
+                        "frame": 4.5,
+                        "value": false
+                      },
+                      {
+                        "frame": 5.833333333333333,
+                        "value": true
+                      },
+                      {
+                        "frame": 6,
+                        "value": false
+                      },
+                      {
+                        "frame": 10.333333333333334,
+                        "value": true
+                      },
+                      {
+                        "frame": 10.5,
+                        "value": false
+                      },
+                      {
+                        "frame": 14.333333333333334,
+                        "value": true
+                      },
+                      {
+                        "frame": 14.5,
+                        "value": false
+                      },
+                      {
+                        "frame": 15.666666666666666,
+                        "value": true
+                      },
+                      {
+                        "frame": 15.833333333333334,
+                        "value": false
+                      },
+                      {
+                        "frame": 17,
+                        "value": true
+                      },
+                      {
+                        "frame": 17.166666666666668,
+                        "value": false
+                      },
+                      {
+                        "frame": 30.25,
+                        "value": true
+                      },
+                      {
+                        "frame": 30.416666666666668,
+                        "value": false
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "frame": 4.333333333333333,
+                        "value": 128
+                      },
+                      {
+                        "frame": 4.416666666666667,
+                        "value": 255
+                      },
+                      {
+                        "frame": 4.5,
+                        "value": 128
+                      },
+                      {
+                        "frame": 5.833333333333333,
+                        "value": 128
+                      },
+                      {
+                        "frame": 5.916666666666667,
+                        "value": 255
+                      },
+                      {
+                        "frame": 6,
+                        "value": 128
+                      },
+                      {
+                        "frame": 10.333333333333334,
+                        "value": 128
+                      },
+                      {
+                        "frame": 10.416666666666666,
+                        "value": 255
+                      },
+                      {
+                        "frame": 10.5,
+                        "value": 128
+                      },
+                      {
+                        "frame": 14.333333333333334,
+                        "value": 128
+                      },
+                      {
+                        "frame": 14.416666666666666,
+                        "value": 255
+                      },
+                      {
+                        "frame": 14.5,
+                        "value": 128
+                      },
+                      {
+                        "frame": 15.666666666666666,
+                        "value": 128
+                      },
+                      {
+                        "frame": 15.75,
+                        "value": 255
+                      },
+                      {
+                        "frame": 15.833333333333334,
+                        "value": 128
+                      },
+                      {
+                        "frame": 17,
+                        "value": 128
+                      },
+                      {
+                        "frame": 17.083333333333332,
+                        "value": 255
+                      },
+                      {
+                        "frame": 17.166666666666668,
+                        "value": 128
+                      },
+                      {
+                        "frame": 30.25,
+                        "value": 128
+                      },
+                      {
+                        "frame": 30.333333333333332,
+                        "value": 255
+                      },
+                      {
+                        "frame": 30.416666666666668,
+                        "value": 128
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_3/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 4.666666666666667,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_3/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 4.666666666666667,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_1/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 10.666666666666666,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_1/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 23.75,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_1/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 10.666666666666666,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_2/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 23.75,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_2/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 14.666666666666666,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_4/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 14.666666666666666,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_4/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 16,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_5/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 32.416666666666664,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_6/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 29.416666666666668,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_7/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 30.583333333333332,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_0/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 29.416666666666668,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_5/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 21.916666666666668,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_6/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 30.583333333333332,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_1_7/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 26.75,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_0/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 32.416666666666664,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_3/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 17.333333333333332,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_4/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 16,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_5/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 17.333333333333332,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_6/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 21.916666666666668,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_2_7/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 35.333333333333336,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "CursorRoot/Press": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5166666666666667,
+                        "value": false
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": true
+                      },
+                      {
+                        "frame": 18.833333333333332,
+                        "value": false
+                      },
+                      {
+                        "frame": 19.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 20.666666666666668,
+                        "value": false
+                      },
+                      {
+                        "frame": 21.083333333333332,
+                        "value": true
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": false
+                      },
+                      {
+                        "frame": 22.916666666666668,
+                        "value": true
+                      },
+                      {
+                        "frame": 23.583333333333332,
+                        "value": false
+                      },
+                      {
+                        "frame": 25.25,
+                        "value": true
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": false
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": true
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": false
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": true
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": false
+                      },
+                      {
+                        "frame": 33.416666666666664,
+                        "value": true
+                      },
+                      {
+                        "frame": 35.166666666666664,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "CursorRoot/Press/Direct/cursor_move_dir": {
+                  "props": {
+                    "angle": [
+                      {
+                        "frame": 0,
+                        "value": 0
+                      },
+                      {
+                        "frame": 18,
+                        "value": 0
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": 0
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": 0
+                      },
+                      {
+                        "frame": 31.416666666666668,
+                        "value": 0
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": 180
+                      },
+                      {
+                        "frame": 33.2,
+                        "value": 180
+                      },
+                      {
+                        "frame": 33.416666666666664,
+                        "value": 0
+                      }
+                    ],
+                    "active": []
+                  }
+                },
+                "CursorRoot/Press/Direct": {
+                  "props": {
+                    "angle": [
+                      {
+                        "frame": 0,
+                        "value": 0
+                      },
+                      {
+                        "frame": 18,
+                        "value": 0
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": 90
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": 90
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": -90
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": -90
+                      },
+                      {
+                        "frame": 31.416666666666668,
+                        "value": -90
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": 0
+                      },
+                      {
+                        "frame": 33.2,
+                        "value": 0
+                      },
+                      {
+                        "frame": 33.416666666666664,
+                        "value": 90
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_2/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 26.75,
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TopMovingCard_1": {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 18,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 18.833333333333332,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 19.35,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 19.5,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 20.166666666666668,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 20.666666666666668,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 20.833333333333332,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.583333333333332,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": [
+                          -245,
+                          -135,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": [
+                          175,
+                          -135,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.35,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.483333333333334,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": [
+                          105,
+                          -48,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": false
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": true
+                      },
+                      {
+                        "frame": 19.35,
+                        "value": false
+                      },
+                      {
+                        "frame": 19.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 20.666666666666668,
+                        "value": false
+                      },
+                      {
+                        "frame": 27.583333333333332,
+                        "value": false
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": true
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": false
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": true
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": false
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "frame": 0.5,
+                        "value": 255
+                      },
+                      {
+                        "frame": 18,
+                        "value": 255
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": 128
+                      },
+                      {
+                        "frame": 20.666666666666668,
+                        "value": 128
+                      },
+                      {
+                        "frame": 20.833333333333332,
+                        "value": 255
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TopMovingCard_2": {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.583333333333332,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": [
+                          -175,
+                          -135,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": [
+                          245,
+                          -135,
+                          0
+                        ]
+                      }
+                    ],
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": false
+                      },
+                      {
+                        "frame": 27.583333333333332,
+                        "value": false
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": true
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": false
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "frame": 0.5,
+                        "value": 255
+                      }
+                    ]
+                  }
+                },
+                "TutorialPanel/TutorialCard_0_0/CardType": {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 35.333333333333336,
+                        "value": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "Mask",
+              11,
+              [
+                {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0,
+                        "value": false
+                      },
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 4.833333333333333,
+                        "value": false
+                      },
+                      {
+                        "frame": 5.666666666666667,
+                        "value": true
+                      },
+                      {
+                        "frame": 14.833333333333334,
+                        "value": false
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": true
+                      },
+                      {
+                        "frame": 22.083333333333332,
+                        "value": false
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "frame": 0.5,
+                        "value": 0
+                      },
+                      {
+                        "frame": 0.9833333333333333,
+                        "value": 255
+                      },
+                      {
+                        "frame": 4,
+                        "value": 255
+                      },
+                      {
+                        "frame": 4.833333333333333,
+                        "value": 0
+                      },
+                      {
+                        "frame": 5.666666666666667,
+                        "value": 0
+                      },
+                      {
+                        "frame": 6.666666666666667,
+                        "value": 255
+                      },
+                      {
+                        "frame": 10.5,
+                        "value": 255
+                      },
+                      {
+                        "frame": 11,
+                        "value": 0
+                      },
+                      {
+                        "frame": 11.5,
+                        "value": 255
+                      },
+                      {
+                        "frame": 14.5,
+                        "value": 255
+                      },
+                      {
+                        "frame": 14.833333333333334,
+                        "value": 0
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": 0
+                      },
+                      {
+                        "frame": 18.166666666666668,
+                        "value": 255
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": 255
+                      },
+                      {
+                        "frame": 22.083333333333332,
+                        "value": 0
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Mask",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          0
+                        ],
+                        [
+                          {
+                            "frame": 5.666666666666667
+                          },
+                          "value",
+                          6,
+                          1
+                        ],
+                        [
+                          {
+                            "frame": 11
+                          },
+                          "value",
+                          6,
+                          2
+                        ],
+                        [
+                          {
+                            "frame": 17.5
+                          },
+                          "value",
+                          6,
+                          3
+                        ]
+                      ],
+                      11,
+                      11,
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "Describe",
+              11,
+              [
+                {
+                  "props": {
+                    "active": [
+                      {
+                        "frame": 0,
+                        "value": false
+                      },
+                      {
+                        "frame": 0.5,
+                        "value": true
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "frame": 0,
+                        "value": 255
+                      },
+                      {
+                        "frame": 0.5,
+                        "value": 0
+                      },
+                      {
+                        "frame": 0.6666666666666666,
+                        "value": 255
+                      },
+                      {
+                        "frame": 5,
+                        "value": 255
+                      },
+                      {
+                        "frame": 5.5,
+                        "value": 0
+                      },
+                      {
+                        "frame": 6,
+                        "value": 255
+                      },
+                      {
+                        "frame": 11,
+                        "value": 255
+                      },
+                      {
+                        "frame": 11.016666666666667,
+                        "value": 100
+                      },
+                      {
+                        "frame": 11.5,
+                        "value": 0
+                      },
+                      {
+                        "frame": 11.716666666666667,
+                        "value": 255
+                      },
+                      {
+                        "frame": 17,
+                        "value": 255
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": 0
+                      },
+                      {
+                        "frame": 18,
+                        "value": 255
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          4
+                        ],
+                        [
+                          {
+                            "frame": 5.5
+                          },
+                          "value",
+                          6,
+                          5
+                        ],
+                        [
+                          {
+                            "frame": 5.516666666666667
+                          },
+                          "value",
+                          6,
+                          6
+                        ],
+                        [
+                          {
+                            "frame": 11.5
+                          },
+                          "value",
+                          6,
+                          7
+                        ],
+                        [
+                          {
+                            "frame": 17.5
+                          },
+                          "value",
+                          6,
+                          8
+                        ]
+                      ],
+                      11,
+                      11,
+                      11,
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_3",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -35,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 0.6666666666666666,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 1.3333333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 2,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 2.6666666666666665,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 3.3333333333333335,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 4.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 4.833333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          9
+                        ],
+                        [
+                          {
+                            "frame": 4.666666666666667
+                          },
+                          "value",
+                          6,
+                          10
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_3",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.833333333333332,
+                        "value": [
+                          -35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.05,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28.5,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28.75,
+                        "value": [
+                          -35,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 0.6666666666666666,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 1.3333333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 2,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 2.6666666666666665,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 3.3333333333333335,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 4.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 4.833333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          11
+                        ],
+                        [
+                          {
+                            "frame": 4.666666666666667
+                          },
+                          "value",
+                          6,
+                          12
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_1",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 22.916666666666668,
+                        "value": [
+                          -175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 23.583333333333332,
+                        "value": [
+                          -105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.416666666666664,
+                        "value": [
+                          -105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.666666666666664,
+                        "value": [
+                          -35,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 6,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 6.666666666666667,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 7.333333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 8,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 8.666666666666666,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 9.333333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 10,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 10.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 10.833333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          13
+                        ],
+                        [
+                          {
+                            "frame": 10.666666666666666
+                          },
+                          "value",
+                          6,
+                          14
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_2",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -105,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 26.916666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          15
+                        ],
+                        [
+                          {
+                            "frame": 26.75
+                          },
+                          "value",
+                          6,
+                          16
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_0",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -245,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 35.166666666666664,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 35.5,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          17
+                        ],
+                        [
+                          {
+                            "frame": 35.333333333333336
+                          },
+                          "value",
+                          6,
+                          18
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_4",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          35,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 15.833333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 16.166666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          19
+                        ],
+                        [
+                          {
+                            "frame": 16
+                          },
+                          "value",
+                          6,
+                          20
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_5",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          105,
+                          -48,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": [
+                          105,
+                          -48,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.666666666666664,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.916666666666664,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 32.56666666666667,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          21
+                        ],
+                        [
+                          {
+                            "frame": 32.4
+                          },
+                          "value",
+                          6,
+                          22
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_6",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          175,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 29.583333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          23
+                        ],
+                        [
+                          {
+                            "frame": 29.416666666666668
+                          },
+                          "value",
+                          6,
+                          24
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_7",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          245,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 30.416666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 30.75,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          25
+                        ],
+                        [
+                          {
+                            "frame": 30.583333333333332
+                          },
+                          "value",
+                          6,
+                          26
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_1",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.316666666666666,
+                        "value": [
+                          -175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": [
+                          -35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28,
+                        "value": [
+                          -35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28.25,
+                        "value": [
+                          -175,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 6,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 6.666666666666667,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 7.333333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 8,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 8.666666666666666,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 9.333333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 10,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 10.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 10.833333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          27
+                        ],
+                        [
+                          {
+                            "frame": 10.666666666666666
+                          },
+                          "value",
+                          6,
+                          28
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_0_1",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -175,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 6,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 6.666666666666667,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 7.333333333333333,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 8,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 8.666666666666666,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 9.333333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": 0.8,
+                          "y": 0.8
+                        }
+                      },
+                      {
+                        "frame": 10,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 23.583333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 23.916666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          29
+                        ],
+                        [
+                          {
+                            "frame": 23.75
+                          },
+                          "value",
+                          6,
+                          30
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_2",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 22.916666666666668,
+                        "value": [
+                          -105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 23.583333333333332,
+                        "value": [
+                          -175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.666666666666664,
+                        "value": [
+                          -175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.916666666666664,
+                        "value": [
+                          -105,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 23.583333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 23.916666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          31
+                        ],
+                        [
+                          {
+                            "frame": 23.75
+                          },
+                          "value",
+                          6,
+                          32
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_2",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.05,
+                        "value": [
+                          -105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.316666666666666,
+                        "value": [
+                          35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28.25,
+                        "value": [
+                          35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28.5,
+                        "value": [
+                          -105,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 14.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 14.833333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          33
+                        ],
+                        [
+                          {
+                            "frame": 14.666666666666666
+                          },
+                          "value",
+                          6,
+                          34
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_4",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.516666666666666,
+                        "value": [
+                          35,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.783333333333335,
+                        "value": [
+                          175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28.75,
+                        "value": [
+                          175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29,
+                        "value": [
+                          35,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 14.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 14.833333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          35
+                        ],
+                        [
+                          {
+                            "frame": 14.666666666666666
+                          },
+                          "value",
+                          6,
+                          36
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_0",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -245,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": [
+                          -245,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": [
+                          175,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 29.583333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          37
+                        ],
+                        [
+                          {
+                            "frame": 29.416666666666668
+                          },
+                          "value",
+                          6,
+                          38
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_5",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.25,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.516666666666666,
+                        "value": [
+                          245,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29,
+                        "value": [
+                          245,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.566666666666666,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.9,
+                        "value": [
+                          105,
+                          -48,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 22.083333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          39
+                        ],
+                        [
+                          {
+                            "frame": 21.916666666666668
+                          },
+                          "value",
+                          6,
+                          40
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_6",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.25,
+                        "value": [
+                          175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": [
+                          -175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": [
+                          -175,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 29.25,
+                        "value": [
+                          245,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 30.416666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 30.75,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          41
+                        ],
+                        [
+                          {
+                            "frame": 30.583333333333332
+                          },
+                          "value",
+                          6,
+                          42
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_1_7",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          245,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 25.25,
+                        "value": [
+                          245,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": [
+                          -105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 27.75,
+                        "value": [
+                          -105,
+                          -134,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 28,
+                        "value": [
+                          -245,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 26.583333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 26.916666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          43
+                        ],
+                        [
+                          {
+                            "frame": 26.75
+                          },
+                          "value",
+                          6,
+                          44
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_0",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -245,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.916666666666664,
+                        "value": [
+                          -245,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 35.166666666666664,
+                        "value": [
+                          -175,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 32.25,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 32.583333333333336,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          45
+                        ],
+                        [
+                          {
+                            "frame": 32.416666666666664
+                          },
+                          "value",
+                          6,
+                          46
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_3",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          -35,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.166666666666664,
+                        "value": [
+                          -35,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.416666666666664,
+                        "value": [
+                          35,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 17.166666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          47
+                        ],
+                        [
+                          {
+                            "frame": 17.333333333333332
+                          },
+                          "value",
+                          6,
+                          48
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_4",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          35,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.916666666666664,
+                        "value": [
+                          35,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 34.166666666666664,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 15.833333333333334,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 16.166666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          49
+                        ],
+                        [
+                          {
+                            "frame": 16
+                          },
+                          "value",
+                          6,
+                          50
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_5",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 21.083333333333332,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.416666666666664,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.666666666666664,
+                        "value": [
+                          245,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 17.166666666666668,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 17.5,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          51
+                        ],
+                        [
+                          {
+                            "frame": 17.333333333333332
+                          },
+                          "value",
+                          6,
+                          52
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_6",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 21.083333333333332,
+                        "value": [
+                          175,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 31.9,
+                        "value": [
+                          105,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 32.233333333333334,
+                        "value": [
+                          105,
+                          -134,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 21.75,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 22.083333333333332,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          53
+                        ],
+                        [
+                          {
+                            "frame": 21.916666666666668
+                          },
+                          "value",
+                          6,
+                          54
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TutorialCard_2_7",
+              11,
+              [
+                {
+                  "props": {
+                    "position": [
+                      {
+                        "frame": 0.5,
+                        "value": [
+                          245,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 33.416666666666664,
+                        "value": [
+                          245,
+                          -220,
+                          0
+                        ]
+                      },
+                      {
+                        "frame": 35.166666666666664,
+                        "value": [
+                          -245,
+                          -220,
+                          0
+                        ]
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "frame": 0.5,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 35.166666666666664,
+                        "value": {
+                          "z": 0,
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      {
+                        "frame": 35.5,
+                        "value": {
+                          "z": 0,
+                          "x": -1,
+                          "y": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0.5
+                          },
+                          "value",
+                          6,
+                          55
+                        ],
+                        [
+                          {
+                            "frame": 35.333333333333336
+                          },
+                          "value",
+                          6,
+                          56
+                        ]
+                      ],
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TopMovingCard_1/CardType",
+              11,
+              [
+                {},
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 18.166666666666668
+                          },
+                          "value",
+                          6,
+                          57
+                        ],
+                        [
+                          {
+                            "frame": 25.666666666666668
+                          },
+                          "value",
+                          6,
+                          58
+                        ],
+                        [
+                          {
+                            "frame": 30.083333333333332
+                          },
+                          "value",
+                          6,
+                          59
+                        ]
+                      ],
+                      11,
+                      11,
+                      11
+                    ]
+                  ]
+                ]
+              ],
+              "TutorialPanel/TopMovingCard_2/CardType",
+              11,
+              [
+                {},
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 25.666666666666668
+                          },
+                          "value",
+                          6,
+                          60
+                        ]
+                      ],
+                      11
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        6,
+        7,
+        8,
+        9,
+        3,
+        10,
+        3,
+        11,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    [
+      [
+        {
+          "name": "number_maps",
+          "rect": [
+            0,
+            0,
+            260,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            260,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        16
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tutorial_describe_4",
+          "rect": [
+            0,
+            0,
+            571,
+            57
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            571,
+            57
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        17
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tutorial_describe_3",
+          "rect": [
+            0,
+            0,
+            572,
+            57
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            572,
+            57
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        18
+      ]
+    ],
+    [
+      [
+        {
+          "name": "statistics_text_ljjc",
+          "rect": [
+            0,
+            1,
+            112,
+            22
+          ],
+          "offset": [
+            0,
+            -0.5
+          ],
+          "originalSize": [
+            112,
+            23
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        19
+      ]
+    ],
+    [
+      [
+        {
+          "name": "step04",
+          "rect": [
+            0,
+            0,
+            570,
+            268
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            570,
+            268
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        20
+      ]
+    ],
+    [
+      [
+        {
+          "name": "plus_g",
+          "rect": [
+            0,
+            0,
+            33,
+            33
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            33,
+            33
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        21
+      ]
+    ],
+    [
+      [
+        {
+          "name": "card_back",
+          "rect": [
+            0,
+            0,
+            70,
+            86
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            70,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        22
+      ]
+    ],
+    [
+      [
+        [
+          2,
+          "TutorialCard"
+        ],
+        [
+          7,
+          "TutorialCard",
+          [
+            -5
+          ],
+          [
+            [
+              1,
+              -2,
+              [
+                1
+              ],
+              2
+            ],
+            [
+              18,
+              -4,
+              -3
+            ]
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            70,
+            86
+          ]
+        ],
+        [
+          14,
+          "CardType",
+          1,
+          [
+            -6
+          ],
+          [
+            0,
+            "7ehk7a5zxHG70rBgXbrhPO",
+            1
+          ],
+          [
+            5,
+            70,
+            86
+          ]
+        ],
+        [
+          15,
+          2,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        4,
+        1,
+        0,
+        2,
+        1,
+        0,
+        6,
+        3,
+        0,
+        2,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        -1,
+        3,
+        0,
+        5,
+        1,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        -1,
+        -1,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        [
+          2,
+          "Prefab_Card"
+        ],
+        [
+          8,
+          "Prefeb_MJ",
+          [
+            -7,
+            -8,
+            -9
+          ],
+          [
+            [
+              1,
+              -2,
+              [
+                6
+              ],
+              7
+            ],
+            [
+              19,
+              -6,
+              -5,
+              -4,
+              -3,
+              8,
+              9
+            ]
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            70,
+            86
+          ],
+          [
+            204,
+            795,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          9,
+          "CardState",
+          128,
+          1,
+          [
+            [
+              1,
+              -10,
+              [
+                0
+              ],
+              1
+            ]
+          ],
+          [
+            0,
+            "59RHqS5PJPG7TmSlcGK+1P",
+            1
+          ],
+          [
+            4,
+            4278255615
+          ],
+          [
+            5,
+            70,
+            86
+          ]
+        ],
+        [
+          10,
+          "CardType",
+          1,
+          [
+            [
+              1,
+              -11,
+              [
+                2
+              ],
+              3
+            ]
+          ],
+          [
+            0,
+            "d93CvQu35LrZgV8HMd7xZo",
+            1
+          ],
+          [
+            5,
+            40,
+            36
+          ]
+        ],
+        [
+          11,
+          "Border",
+          1,
+          [
+            [
+              1,
+              -12,
+              [
+                4
+              ],
+              5
+            ]
+          ],
+          [
+            0,
+            "57WrjuZv9MW6g+G0xE66Dn",
+            1
+          ],
+          [
+            4,
+            4293321564
+          ],
+          [
+            5,
+            70,
+            86
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        4,
+        1,
+        0,
+        2,
+        1,
+        0,
+        7,
+        2,
+        0,
+        8,
+        4,
+        0,
+        9,
+        3,
+        0,
+        2,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        -2,
+        3,
+        0,
+        -3,
+        4,
+        0,
+        2,
+        2,
+        0,
+        2,
+        3,
+        0,
+        2,
+        4,
+        0,
+        5,
+        1,
+        12
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        3,
+        -1,
+        3,
+        -1,
+        3,
+        -1,
+        3,
+        10,
+        11
+      ],
+      [
+        2,
+        0,
+        2,
+        23,
+        2,
+        24,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "default_sprite",
+          "rect": [
+            0,
+            2,
+            40,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            40,
+            40
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        25
+      ]
+    ],
+    [
+      [
+        {
+          "name": "step02",
+          "rect": [
+            0,
+            0,
+            570,
+            268
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            570,
+            268
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        26
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tutorial_describe_1",
+          "rect": [
+            0,
+            0,
+            572,
+            56
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            572,
+            56
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        27
+      ]
+    ],
+    [
+      [
+        {
+          "name": "step03",
+          "rect": [
+            0,
+            0,
+            570,
+            268
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            570,
+            268
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        28
+      ]
+    ],
+    [
+      [
+        [
+          20,
+          "number_maps",
+          31.68,
+          {
+            "commonHeight": 36,
+            "fontSize": 31,
+            "atlasName": "number_maps",
+            "fontDefDictionary": {
+              "48": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "49": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 26,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "50": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 52,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "51": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 78,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "52": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 104,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "53": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 130,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "54": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 156,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "55": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 182,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "56": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 208,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "57": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 26,
+                "rect": {
+                  "x": 234,
+                  "y": 0,
+                  "width": 26,
+                  "height": 36
+                }
+              }
+            },
+            "kerningDict": {}
+          }
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        12
+      ],
+      [
+        29
+      ]
+    ],
+    [
+      [
+        {
+          "name": "step01",
+          "rect": [
+            0,
+            0,
+            570,
+            268
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            570,
+            268
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        30
+      ]
+    ],
+    [
+      [
+        [
+          2,
+          "PrefabScore"
+        ],
+        [
+          12,
+          "PrefabScore",
+          [
+            -7,
+            -8,
+            -9
+          ],
+          [
+            [
+              21,
+              1,
+              1,
+              2,
+              -2,
+              [
+                5,
+                350.81,
+                0
+              ]
+            ],
+            [
+              22,
+              -6,
+              -5,
+              -4,
+              -3
+            ]
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            350.81,
+            0
+          ],
+          [
+            0,
+            0,
+            0.5
+          ],
+          [
+            362.043,
+            1125.463,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          13,
+          "TextSymbol",
+          1,
+          [
+            [
+              16,
+              0,
+              -10,
+              [
+                1
+              ],
+              2
+            ]
+          ],
+          [
+            0,
+            "0514fZefVFlbyxiXAQV0Bu",
+            1
+          ],
+          [
+            5,
+            28,
+            28
+          ],
+          [
+            197,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "TextDescribe",
+          1,
+          [
+            -11
+          ],
+          [
+            0,
+            "d1Y9holxZNSZj+BQzZs8EZ",
+            1
+          ],
+          [
+            5,
+            181,
+            35
+          ],
+          [
+            90.5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          17,
+          0,
+          3,
+          [
+            0
+          ]
+        ],
+        [
+          4,
+          "TextScore",
+          1,
+          [
+            -12
+          ],
+          [
+            0,
+            "80CzdtZUtK+5FUK2SDGe9n",
+            1
+          ],
+          [
+            5,
+            137.81,
+            40
+          ],
+          [
+            281.905,
+            3,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          23,
+          "10000",
+          30,
+          false,
+          3,
+          1,
+          1,
+          5,
+          [
+            3
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        4,
+        1,
+        0,
+        2,
+        1,
+        0,
+        13,
+        6,
+        0,
+        14,
+        2,
+        0,
+        15,
+        4,
+        0,
+        2,
+        1,
+        0,
+        -1,
+        3,
+        0,
+        -2,
+        2,
+        0,
+        -3,
+        5,
+        0,
+        2,
+        2,
+        0,
+        -1,
+        4,
+        0,
+        -1,
+        6,
+        0,
+        5,
+        1,
+        12
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        6
+      ],
+      [
+        -1,
+        -1,
+        3,
+        -1,
+        3,
+        16
+      ],
+      [
+        2,
+        2,
+        31,
+        2,
+        32,
+        33
+      ]
+    ],
+    [
+      [
+        {
+          "name": "border",
+          "rect": [
+            0,
+            0,
+            70,
+            86
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            70,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        34
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tutorial_describe_2",
+          "rect": [
+            0,
+            0,
+            571,
+            57
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            571,
+            57
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        35
+      ]
+    ],
+    [
+      [
+        [
+          6,
+          "shuffling",
+          2.1666666666666665,
+          2,
+          {
+            "paths": {
+              "LodingAction/C2": {
+                "props": {
+                  "position": [
+                    {
+                      "frame": 0,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.16666666666666666,
+                      "value": [
+                        0,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.3333333333333333,
+                      "value": [
+                        -106,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.5,
+                      "value": [
+                        -106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.8333333333333334,
+                      "value": [
+                        -106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.1666666666666667,
+                      "value": [
+                        0,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.3333333333333333,
+                      "value": [
+                        106,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.5,
+                      "value": [
+                        106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.8333333333333333,
+                      "value": [
+                        106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 2,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    }
+                  ]
+                }
+              },
+              "LodingAction/C1": {
+                "props": {
+                  "position": [
+                    {
+                      "frame": 0.16666666666666666,
+                      "value": [
+                        -106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.3333333333333333,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.5,
+                      "value": [
+                        0,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.6666666666666666,
+                      "value": [
+                        106,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.8333333333333334,
+                      "value": [
+                        106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.1666666666666667,
+                      "value": [
+                        106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.3333333333333333,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.5,
+                      "value": [
+                        0,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.6666666666666667,
+                      "value": [
+                        -106,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.8333333333333333,
+                      "value": [
+                        -106,
+                        0,
+                        0
+                      ]
+                    }
+                  ]
+                }
+              },
+              "LodingAction/C3": {
+                "props": {
+                  "position": [
+                    {
+                      "frame": 0.5,
+                      "value": [
+                        106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.6666666666666666,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 0.8333333333333334,
+                      "value": [
+                        0,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1,
+                      "value": [
+                        -106,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.1666666666666667,
+                      "value": [
+                        -106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.5,
+                      "value": [
+                        -106,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.6666666666666667,
+                      "value": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 1.8333333333333333,
+                      "value": [
+                        0,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 2,
+                      "value": [
+                        106,
+                        130,
+                        0
+                      ]
+                    },
+                    {
+                      "frame": 2.1666666666666665,
+                      "value": [
+                        106,
+                        0,
+                        0
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      ],
+      0,
+      0,
+      [],
+      [],
+      []
+    ]
+  ]
+]

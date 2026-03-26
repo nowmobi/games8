@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <strings>
+
+        <string id="GAME_OVER">
+            <en>Game over</en>
+            <es>Fin del juego</es>
+            <de>Spiele ende</de>
+            <it>Fine del gioco</it>
+            <fr>Partie terminée</fr>
+            <ru>ИГРА ОКОНЧЕНА!</ru>
+            <pt>Fim de jogo</pt>
+        </string>
+
+        <string id="GAME_STATS">
+            <en>Game Stats</en>
+            <es>Estadísticas de Juego</es>
+            <de>Spielstatistik</de>
+            <it>Statistiche di Gioco</it>
+            <fr>Statistiques Partie</fr>
+            <ru>Статистика игры</ru>
+            <pt>Estatísticas do Jogo</pt>
+        </string>
+
+        <string id="INSTRUCTIONS">
+            <en>Instructions</en>
+            <es>Instrucciones</es>
+            <de>Anleitung</de>
+            <it>Istruzioni</it>
+            <fr>Instructions</fr>
+            <ru>Инструкция</ru>
+            <pt>Instruções</pt>
+        </string>
+
+        <string id="SCORE">
+            <en>Score</en>
+            <es>Puntuación</es>
+            <de>Punkte</de>
+            <it>Punteggio</it>
+            <fr>Score</fr>
+            <ru>СЧЕТ</ru>
+            <pt>Pontuação</pt>
+        </string>
+
+        <string id="NEXT">
+            <en>Next</en>
+            <es>Siguiente</es>
+            <de>Nächste</de>
+            <it>Seguente</it>
+            <fr>Suivant</fr>
+            <ru>Будущий</ru>
+            <pt>Seguinte</pt>
+        </string>
+
+        <string id="TAP_TO_PLAY">
+            <en>Tap to Start</en>
+            <es>Toca para comenzar</es>
+            <de>Tippe, zum Starten</de>
+            <it>Tocca per iniziare</it>
+            <fr>Touchez pour commencer</fr>
+            <ru>Нажмите, чтобы начать</ru>
+            <pt>Toque para Iniciar</pt>
+        </string>
+
+        <string id="SPEED">
+            <en>Speed</en>
+            <es>Velocidad</es>
+            <de>Schnelligkeit</de>
+            <it>Velocità</it>
+            <fr>Vitesse</fr>
+            <ru>Скорость</ru>
+            <pt>Velocidade</pt>
+        </string>
+
+        <string id="BEST">
+            <en>Best</en>
+            <es>Récord</es>
+            <de>Bestleistung</de>
+            <it>Record</it>
+            <fr>Meilleur</fr>
+            <ru>Лучший</ru>
+            <pt>Melhor</pt>
+        </string>
+
+        <string id="BEST_MERGE">
+            <en>Best merge</en>
+            <es>Mejor combinación</es>
+            <de>Beste Kombination</de>
+            <it>Record unione</it>
+            <fr>Meilleure fusion</fr>
+            <ru>Лучшее объединение</ru>
+            <pt>Melhor mescla</pt>
+        </string>
+
+        <string id="SWAP_TITLE">
+            <en>Swap</en>
+            <es>Intercambiar</es>
+            <de>Tauschen</de>
+            <it>Scambia</it>
+            <fr>Échanger</fr>
+            <ru>Заменить</ru>
+            <pt>Swap (Trocar)</pt>
+        </string>
+
+        <string id="SWAP_DESCR">
+            <en>Swipe 2 blocks to swap</en>
+            <es>Desliza 2 bloques para intercambiar</es>
+            <de>Ziehen Sie 2 Blöcke zum Tauschen</de>
+            <it>Passare il dito su 2 blocchi da scambiare</it>
+            <fr>Glissez 2 blocs à échanger</fr>
+            <ru>Свайп 2 блока, которые вы хотите заменить</ru>
+            <pt>Deslize 2 blocos para trocar</pt>
+        </string>
+
+        <string id="SWAP_INSTR_DESCR">
+            <en>Swaps the position of 2 chosen adjacent blocks</en>
+            <es>Intercambia la posición de 2 bloques adyacentes elegidos</es>
+            <de>Vertauscht die Position von 2 ausgewählten benachbarten Blöcken</de>
+            <it>Scambia la posizione di 2 blocchi adiacenti scelti</it>
+            <fr>Échange la position de 2 blocs adjacents choisis</fr>
+            <ru>Заменяет положение 2 выбранных соседних блоков</ru>
+            <pt>Troca a posição de 2 blocos adjacentes escolhidos</pt>
+        </string>
+
+        <string id="SMASH_TITLE">
+            <en>Smash</en>
+            <es>Aplastar</es>
+            <de>Zerschmettern</de>
+            <it>Smash</it>
+            <fr>Choc</fr>
+            <ru>Разбить</ru>
+            <pt>Esmagamento</pt>
+        </string>
+
+        <string id="SMASH_DESCR">
+            <en>Select a block to remove</en>
+            <es>Selecciona un bloque para eliminarlo</es>
+            <de>Wählen Sie einen Block zum Entfernen</de>
+            <it>Selezionare un blocco da rimuovere</it>
+            <fr>Sélectionnez un bloc à retirer</fr>
+            <ru>Выберите блок, который вы хотите удалить</ru>
+            <pt>Selecione um bloco para remover</pt>
+        </string>
+
+        <string id="SMASH_INSTR_DESCR">
+            <en>Removes 1 block that you choose</en>
+            <es>Elimina 1 bloque que elijas</es>
+            <de>Entfernt 1 Block, den Sie auswählen</de>
+            <it>Rimuove 1 blocco a scelta</it>
+            <fr>Supprime 1 bloc que vous choisissez</fr>
+            <ru>Удаляет 1 блок по вашему выбору</ru>
+            <pt>Remove 1 bloco que você escolher</pt>
+        </string>
+
+        <string id="BACK_TITLE">
+            <en>Undo</en>
+            <es>Deshacer</es>
+            <de>Rückgängig</de>
+            <it>Annulla</it>
+            <fr>Annuler</fr>
+            <ru>Вернуть</ru>
+            <pt>Desfazer</pt>
+        </string>
+
+        <string id="BACK_INSTR_DESCR">
+            <en>Returns the last block if it was not merged</en>
+            <es>Devuelve el último bloque si no se ha fusionado</es>
+            <de>Gibt den letzten Block zurück, wenn er nicht zusammengeführt wurde</de>
+            <it>Restituisce l'ultimo blocco, se non è stato unito.</it>
+            <fr>Renvoie le dernier bloc s'il n'a pas été fusionné</fr>
+            <ru>Возвращает последний блок, если он не был соединен.</ru>
+            <pt>Retorna o último bloco se ele não tiver sido mesclado</pt>
+        </string>
+
+        <string id="WELL_DONE">
+            <en>Well done</en>
+            <es>¡Bien hecho</es>
+            <de>Sehr gut</de>
+            <it>Ben fatto</it>
+            <fr>Trés bien joué</fr>
+            <ru>Отлично сработано</ru>
+            <pt>Boa</pt>
+        </string>
+
+        <string id="NEXT_GOAL">
+            <en>Next goal</en>
+            <es>Próximo objetivo</es>
+            <de>Nächstes Ziel</de>
+            <it>Prossimo obiettivo</it>
+            <fr>Objectif suivant</fr>
+            <ru>Следующая цель</ru>
+            <pt>Próxima meta</pt>
+        </string>
+
+        <string id="CLAIM">
+            <en>Claim</en>
+            <es>Canjear</es>
+            <de>Abholen</de>
+            <it>Riscuoti</it>
+            <fr>Réclamer</fr>
+            <ru>ПОЛУЧИТЬ</ru>
+            <pt>Reivindicar</pt>
+        </string>
+
+        <string id="SURE">
+            <en>Are you sure?\nCurrent progress will be lost.</en>
+            <es>¿Seguro?\n Perderás el progreso actual.</es>
+            <de>Sicher?\n Dein aktueller Fortschritt wird gelöscht.</de>
+            <it>Confermi?\nPerderai i progressi attuali.</it>
+            <fr>Vous êtes sûr(e) ?\nVotre progression actuelle sera perdue.</fr>
+            <ru>ВЫ УВЕРЕНЫ?\nВАШ ТЕКУЩИЙ ИГРОВОЙ ПРОГРЕСС БУДЕТ ПОТЕРЯН.</ru>
+            <pt>Tem certeza?\nO progresso atual será perdido.</pt>
+        </string>
+
+        <string id="MERGED_AGAIN">
+            <en>merged again!\nDouble it?</en>
+            <es>fusionado de nuevo!\n¿Doblarlo?</es>
+            <de>wieder zusammengeführt!\nVerdoppeln?</de>
+            <it>unito di nuovo!\nRaddoppiato?</it>
+            <fr>fusionné à nouveau!\nLe doubler?</fr>
+            <ru>снова объединился!\nУдвоить?</ru>
+            <pt>mesclado novamente!\nDuplicar?</pt>
+        </string>
+
+        <string id="NO_THANKS">
+            <en>No, thanks</en>
+            <es>No, gracias</es>
+            <de>Nein, danke</de>
+            <it>No, grazie</it>
+            <fr>Non, merci</fr>
+            <ru>Нет, спасибо</ru>
+            <pt>Não, obrigado</pt>
+        </string>
+
+        <string id="REWARD">
+            <en>Reward</en>
+            <es>Recompensa</es>
+            <de>Belohnung</de>
+            <it>Ricompensa</it>
+            <fr>Récompense</fr>
+            <ru>Вознаграждение</ru>
+            <pt>Recompensa</pt>
+        </string>
+
+        <string id="REWARDED">
+            <en>Rewarded</en>
+            <es>Recompensa</es>
+            <de>Belohnung</de>
+            <it>Ricompensa</it>
+            <fr>Récompense</fr>
+            <ru>Вознаграждение</ru>
+            <pt>Recompensa</pt>
+        </string>
+
+        <string id="CONTINUE">
+            <en>Continue?</en>
+            <es>¿Continuar?</es>
+            <de>Weiter?</de>
+            <it>Continuare?</it>
+            <fr>Continuer?</fr>
+            <ru>Продолжить?</ru>
+            <pt>Continuar?</pt>
+        </string>
+
+        <string id="OK">
+            <en>OK</en>
+            <es>Aceptar</es>
+            <de>OK</de>
+            <it>OK</it>
+            <fr>OK</fr>
+            <ru>ОК</ru>
+            <pt>OK</pt>
+        </string>
+
+        <string id="FREE">
+            <en>FREE</en>
+            <es>GRATIS</es>
+            <de>KOSTENLOS</de>
+            <it>GRATIS</it>
+            <fr>GRATUIT</fr>
+            <ru>Бесплатно</ru>
+            <pt>GRÁTIS</pt>
+        </string>
+
+        <string id="STUCK">
+            <en>You are stuck.\nRemove the lowest 2 rows?</en>
+            <es>Estás atascado.\n¿Quitar las 2 filas inferiores?</es>
+            <de>Sie stecken fest.\nDie untersten 2 Reihen entfernen?</de>
+            <it>Siete bloccati.\nRimuovere le 2 righe più basse?</it>
+            <fr>Vous êtes bloqué.\nEnlever les 2 rangées les plus basses?</fr>
+            <ru>Вы застряли.\nУдалить 2 самых нижних ряда?</ru>
+            <pt>Você está preso.\nRemover as duas linhas mais baixas?</pt>
+        </string>
+
+        <string id="INSTRUCTIONS_TEXT">
+            <en>Tap on the desired columns to drop the falling numbers. Connect identical numbers to merge them into higher numbers. You can also combine more than two numbers for higher multiples.</en>
+            <de>Tippe auf die gewünschten Spalten, um die auftauchenden Zahlen fallenzulassen. Verbinde identische Zahlen, um sie zu größeren Zahlen zu vereinigen. Du kannst auch mehr als zwei Zahlen kombinieren, um höhere Vielfache zu bilden.</de>
+            <es>Toca las columnas que quieras para que bajen los números que caen. Combina números idénticos para que se conviertan en números mayores. También puedes combinar más de dos números para obtener múltiplos mayores.</es>
+            <it>Tocca le colonne desiderate per eliminare i numeri che cadono. Unisci i numeri uguali per formare numeri più alti. Puoi anche combinare più di due numeri per multipli più alti.</it>
+            <fr>Touchez les colonnes souhaitées pour relâcher les nombres qui tombent. Connectez des nombres identiques pour les fusionner en nombres plus élevés. Vous pouvez également combiner plus de deux nombres pour des multiples plus élevés.</fr>
+            <ru>Нажмите на нужные столбцы, чтобы объединить числа. Соединяйте одинаковые числа, чтобы объединить их в более высокие числа. Вы также можете объединить более двух чисел.</ru>
+            <pt>Toque nas colunas desejadas para soltar os números decrescentes. Conecte números idênticos para mesclá-los em números mais altos. Você também pode combinar mais de dois números para múltiplos mais altos.</pt>
+        </string>
+
+        <string id="GOOD">
+            <en>Good!</en>
+            <es>¡Bien!</es>
+            <de>Gut!</de>
+            <it>Bene!</it>
+            <fr>Bien!</fr>
+            <ru>Хорошо!</ru>
+            <pt>Bom!</pt>
+        </string>
+
+        <string id="NICE">
+            <en>Nice!</en>
+            <es>¡Genial!</es>
+            <de>Toll!</de>
+            <it>Ottimo!</it>
+            <fr>Joli!</fr>
+            <ru>ОТЛИЧНО!</ru>
+            <pt>Ótimo!</pt>
+        </string>
+
+        <string id="AMAZING">
+            <en>Amazing!</en>
+            <es>¡Fantástico!</es>
+            <de>Fantastisch!</de>
+            <it>Fantastico!</it>
+            <fr>Impressionnant!</fr>
+            <ru>Удивительно!</ru>
+            <pt>Fantástico!</pt>
+        </string>
+
+        <string id="INCREDIBLE">
+            <en>Incredible!</en>
+            <es>¡Increíble!</es>
+            <de>Unglaublich!</de>
+            <it>Incredibile!</it>
+            <fr>Incroyable!</fr>
+            <ru>Невероятно!</ru>
+            <pt>Inacreditável!</pt>
+        </string>
+
+        <string id="VOID">
+            <en></en>
+            <es></es>
+            <de></de>
+            <it></it>
+            <fr></fr>
+            <ru></ru>
+            <pt></pt>
+        </string>
+
+    </strings>
+</stringresources>

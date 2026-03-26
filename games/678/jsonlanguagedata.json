@@ -1,0 +1,255 @@
+{
+  "c2array": true,
+  "size": [
+    7,
+    11,
+    1
+  ],
+  "data": [
+    [
+      [
+        "PLAY"
+      ],
+      [
+        "ROTATE"
+      ],
+      [
+        "CUT THE ROPE"
+      ],
+      [
+        "LEVEL FAILED! TRY AGAIN!"
+      ],
+      [
+        "SCORE"
+      ],
+      [
+        "DRAG ME"
+      ],
+      [
+        "TOUCH TO REMOVE"
+      ],
+      [
+        "WELL DONE! ARE YOU READY FOR THE NEXT LEVEL?"
+      ],
+      [
+        "COLLECT AS MANY GIFTS AS POSSIBLE! HAVE FUN AND MARRY CHRISTMAS!"
+      ],
+      [
+        "WATCH ADS"
+      ],
+      [
+        "WELL DONE! YOU ARE THE WINNER!"
+      ]
+    ],
+    [
+      [
+        "JUGAR"
+      ],
+      [
+        "GIRAR"
+      ],
+      [
+        "CORTAR LA CUERDA"
+      ],
+      [
+        "¡NIVEL FRACASADO! ¡INTENTAR OTRA VEZ!"
+      ],
+      [
+        "PUNTOS"
+      ],
+      [
+        "ARRÁSTRAME"
+      ],
+      [
+        "TOQUE PARA QUITAR"
+      ],
+      [
+        "¡BIEN HECHO! ¿ESTÁS LISTO PARA EL SIGUIENTE NIVEL?"
+      ],
+      [
+        "¡RECOGE TANTOS REGALOS COMO POSIBLE! ¡DIVIÉRTETE Y CÁSATE CON LA NAVIDAD!"
+      ],
+      [
+        "VER ANUNCIOS"
+      ],
+      [
+        "¡BIEN HECHO! ¡ERES EL GANADOR!"
+      ]
+    ],
+    [
+      [
+        "JOGAR"
+      ],
+      [
+        "GIRAR"
+      ],
+      [
+        "CORTE A CORDA"
+      ],
+      [
+        "NÍVEL FALHADO! TENTE NOVAMENTE!"
+      ],
+      [
+        "PONTOS"
+      ],
+      [
+        "ARRASTE-ME"
+      ],
+      [
+        "TOQUE PARA REMOVER"
+      ],
+      [
+        "BOM TRABALHO! VOCÊ ESTÁ PRONTO PARA O PRÓXIMO NÍVEL?"
+      ],
+      [
+        "COLETE O MAIOR PRESENTE POSSÍVEL! DIVIRTA-SE E CASE COM O NATAL!"
+      ],
+      [
+        "ASSISTIR ANÚNCIOS"
+      ],
+      [
+        "BOM TRABALHO! VOCÊ É O VENCEDOR!"
+      ]
+    ],
+    [
+      [
+        "JOUER"
+      ],
+      [
+        "TOURNER"
+      ],
+      [
+        "COUPE LA CORDE"
+      ],
+      [
+        "NIVEAU ÉCHOUÉ! ESSAYER À NOUVEAU!"
+      ],
+      [
+        "SCORE"
+      ],
+      [
+        "TIRE MOI"
+      ],
+      [
+        "TOUCHER POUR RETIRER"
+      ],
+      [
+        "BIEN JOUÉ! ÊTES-VOUS PRÊT POUR LE NIVEAU SUIVANT ?"
+      ],
+      [
+        "COLLECTEZ AUTANT DE CADEAUX QUE POSSIBLE ! AMUSEZ-VOUS ET MARIEZ NOËL !"
+      ],
+      [
+        "REGARDER LES PUBLICITÉS"
+      ],
+      [
+        "BIEN JOUÉ! TU ES LE VAINQUEUR!"
+      ]
+    ],
+    [
+      [
+        "SPELA"
+      ],
+      [
+        "ROTERA"
+      ],
+      [
+        "KLIPP REPET"
+      ],
+      [
+        "NIVà MISSLYCKAD! FÖRSÖK IGEN!"
+      ],
+      [
+        "POÄNG"
+      ],
+      [
+        "DRA MIG"
+      ],
+      [
+        "TRYCK FÖR ATT TA BORT"
+      ],
+      [
+        "BRà GJORT! ÄR DU REDO FÖR NÄSTA NIVà?"
+      ],
+      [
+        "SAMLA Sà MàNGA PRESENTER SOM MÖJLIGT! HA KUL OCH GOD JUL!"
+      ],
+      [
+        "SE ANNONSER"
+      ],
+      [
+        "BRA GJORT! DU ÄR VINNAREN!"
+      ]
+    ],
+    [
+      [
+        "IGRAJ"
+      ],
+      [
+        "ROTIRAJ"
+      ],
+      [
+        "PRESIJECI KONOPAC"
+      ],
+      [
+        "NISTE USPJELI! POKUSAJ PONOVO!"
+      ],
+      [
+        "POENI"
+      ],
+      [
+        "POVUCI ME"
+      ],
+      [
+        "DODIRNI DA UKLONIS"
+      ],
+      [
+        "DOBRO URADJENO! DA LI STE SPREMNI ZA SLJEDECI NIVO?"
+      ],
+      [
+        "PRIKUPITE STO VISE POKLONA! ZABAVITE SE I SRETAN BOZIC!"
+      ],
+      [
+        "POGLEDAJ REKLAME"
+      ],
+      [
+        "DOBRO URADENO! TI SI POBJEDNIK!"
+      ]
+    ],
+    [
+      [
+        "SPIELEN"
+      ],
+      [
+        "DREHEN"
+      ],
+      [
+        "Schneiden Sie das Seil durch"
+      ],
+      [
+        "LEVEL GESCHEITERT! VERSUCHEN SIE ES ERNEUT!"
+      ],
+      [
+        "PUNKTZAHL"
+      ],
+      [
+        "ZIEH MICH"
+      ],
+      [
+        "BERÜHREN, UM ZU ENTFERNEN"
+      ],
+      [
+        "GUT GEMACHT! SIND SIE BEREIT FÜR DAS NÄCHSTE LEVEL?"
+      ],
+      [
+        "SAMMLE SO VIELE GESCHENKE WIE MÖGLICH! HABEN SIE SPASS UND HEIRATEN SIE WEIHNACHTEN!"
+      ],
+      [
+        "ANZEIGEN ANSEHEN"
+      ],
+      [
+        "GUT GEMACHT! DU BIST DER SIEGER!"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1472 @@
+[
+  {
+    "idx": 7036,
+    "initial_board": "....#.................Ab#.Bx.a.#........#.....#.x",
+    "answer_count": 5,
+    "leaf_count": 80,
+    "fail_count": 38,
+    "coin_count": 2,
+    "x_count": 2,
+    "wall_count": 5
+  },
+  {
+    "idx": 171,
+    "initial_board": "x....B.......#..........A.ab...........#x.......#",
+    "answer_count": 6,
+    "leaf_count": 85,
+    "fail_count": 38,
+    "coin_count": 2,
+    "x_count": 2,
+    "wall_count": 3
+  },
+  {
+    "idx": 9317,
+    "initial_board": ".................a.....##..A...B.#..#.b...x..x.x.",
+    "answer_count": 6,
+    "leaf_count": 159,
+    "fail_count": 149,
+    "coin_count": 2,
+    "x_count": 3,
+    "wall_count": 4
+  },
+  {
+    "idx": 3323,
+    "initial_board": "....B..#...A...........#....#......x....#b....a..",
+    "answer_count": 7,
+    "leaf_count": 140,
+    "fail_count": 105,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 4
+  },
+  {
+    "idx": 8772,
+    "initial_board": "....x...x.B.......x..#x.b...#...#...A.#..#x...a..",
+    "answer_count": 7,
+    "leaf_count": 122,
+    "fail_count": 148,
+    "coin_count": 2,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 8785,
+    "initial_board": "....................#..#....#bA.......#....B..a..",
+    "answer_count": 8,
+    "leaf_count": 249,
+    "fail_count": 196,
+    "coin_count": 2,
+    "x_count": 0,
+    "wall_count": 4
+  },
+  {
+    "idx": 5130,
+    "initial_board": "#...#........x.......#C.....#aA...B.#c......xb...",
+    "answer_count": 8,
+    "leaf_count": 271,
+    "fail_count": 148,
+    "coin_count": 3,
+    "x_count": 2,
+    "wall_count": 5
+  },
+  {
+    "idx": 1355,
+    "initial_board": "A.#.Bb...................#......#...#..a.........",
+    "answer_count": 9,
+    "leaf_count": 133,
+    "fail_count": 76,
+    "coin_count": 2,
+    "x_count": 0,
+    "wall_count": 4
+  },
+  {
+    "idx": 4048,
+    "initial_board": "...........#..#.x.A.x.x...B.x.....b.....x..a...#.",
+    "answer_count": 9,
+    "leaf_count": 79,
+    "fail_count": 70,
+    "coin_count": 2,
+    "x_count": 5,
+    "wall_count": 3
+  },
+  {
+    "idx": 2393,
+    "initial_board": ".........a....A......b.B#......c#....#..C.#......",
+    "answer_count": 9,
+    "leaf_count": 1659,
+    "fail_count": 1355,
+    "coin_count": 3,
+    "x_count": 0,
+    "wall_count": 4
+  },
+  {
+    "idx": 8572,
+    "initial_board": "#.#........b....a..............A...x.......B.#...",
+    "answer_count": 10,
+    "leaf_count": 339,
+    "fail_count": 231,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 3
+  },
+  {
+    "idx": 7571,
+    "initial_board": ".b..#..a....#.B..x........x......##....A.........",
+    "answer_count": 10,
+    "leaf_count": 389,
+    "fail_count": 381,
+    "coin_count": 2,
+    "x_count": 2,
+    "wall_count": 4
+  },
+  {
+    "idx": 6473,
+    "initial_board": "..c...x..C....x...B..#.a..b.#.....A.........#.x..",
+    "answer_count": 10,
+    "leaf_count": 1549,
+    "fail_count": 1394,
+    "coin_count": 3,
+    "x_count": 3,
+    "wall_count": 3
+  },
+  {
+    "idx": 9810,
+    "initial_board": "....x.a.A...b......x#....B............x....#.##..",
+    "answer_count": 11,
+    "leaf_count": 190,
+    "fail_count": 153,
+    "coin_count": 2,
+    "x_count": 3,
+    "wall_count": 4
+  },
+  {
+    "idx": 1525,
+    "initial_board": ".x.......x...A............x...#.......a#x..b..x#B",
+    "answer_count": 11,
+    "leaf_count": 786,
+    "fail_count": 983,
+    "coin_count": 2,
+    "x_count": 5,
+    "wall_count": 3
+  },
+  {
+    "idx": 4275,
+    "initial_board": "...Cc..a.A.....#.b#.....#..........#..#.B......x.",
+    "answer_count": 11,
+    "leaf_count": 2993,
+    "fail_count": 3106,
+    "coin_count": 3,
+    "x_count": 1,
+    "wall_count": 5
+  },
+  {
+    "idx": 4841,
+    "initial_board": "a.....#.......b..#..#.x....x.........#.B..A......",
+    "answer_count": 12,
+    "leaf_count": 671,
+    "fail_count": 692,
+    "coin_count": 2,
+    "x_count": 2,
+    "wall_count": 4
+  },
+  {
+    "idx": 2079,
+    "initial_board": "C.......b..#......#...AB.....c..a.......x..#.....",
+    "answer_count": 12,
+    "leaf_count": 3657,
+    "fail_count": 4198,
+    "coin_count": 3,
+    "x_count": 1,
+    "wall_count": 3
+  },
+  {
+    "idx": 7626,
+    "initial_board": ".#..C.....BD.#..........Aa....#.....#.c.....db...",
+    "answer_count": 12,
+    "leaf_count": 6260,
+    "fail_count": 5993,
+    "coin_count": 4,
+    "x_count": 0,
+    "wall_count": 4
+  },
+  {
+    "idx": 965,
+    "initial_board": ".....a#.#..x...........#..B#....b..#............A",
+    "answer_count": 13,
+    "leaf_count": 385,
+    "fail_count": 391,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 5
+  },
+  {
+    "idx": 4567,
+    "initial_board": ".#..x.x..Ax....C.xb...........B......ca.#.##.#...",
+    "answer_count": 13,
+    "leaf_count": 6254,
+    "fail_count": 8166,
+    "coin_count": 3,
+    "x_count": 4,
+    "wall_count": 5
+  },
+  {
+    "idx": 3260,
+    "initial_board": "..#..c...#x.....#.....Bb..C.xx.......ad.#xA..#..D",
+    "answer_count": 13,
+    "leaf_count": 10021,
+    "fail_count": 12482,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 5
+  },
+  {
+    "idx": 8629,
+    "initial_board": "....#.....a.Ab#.........#..#B.........x........#.",
+    "answer_count": 14,
+    "leaf_count": 1090,
+    "fail_count": 1118,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 5
+  },
+  {
+    "idx": 2063,
+    "initial_board": "..x.....c.AB.....x..#...#....ba.....C.#..x.##....",
+    "answer_count": 14,
+    "leaf_count": 8825,
+    "fail_count": 11323,
+    "coin_count": 3,
+    "x_count": 3,
+    "wall_count": 5
+  },
+  {
+    "idx": 3766,
+    "initial_board": "d...x......Db#.........x.a....B..#.c.x.A..C.#....",
+    "answer_count": 14,
+    "leaf_count": 7899,
+    "fail_count": 10907,
+    "coin_count": 4,
+    "x_count": 3,
+    "wall_count": 3
+  },
+  {
+    "idx": 9626,
+    "initial_board": "x..#..Ab.....#a....###..........#..#.....B.......",
+    "answer_count": 15,
+    "leaf_count": 1322,
+    "fail_count": 1032,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 7
+  },
+  {
+    "idx": 8435,
+    "initial_board": ".###..#a...B....#.x...##.....#.##..b.#.#A#.##....",
+    "answer_count": 15,
+    "leaf_count": 236,
+    "fail_count": 261,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 15
+  },
+  {
+    "idx": 6844,
+    "initial_board": ".#Ax..#.x...x...B#..#..xx....xx..b#.#....x.xa#x#.",
+    "answer_count": 15,
+    "leaf_count": 199,
+    "fail_count": 255,
+    "coin_count": 2,
+    "x_count": 10,
+    "wall_count": 8
+  },
+  {
+    "idx": 2671,
+    "initial_board": ".A..a.x.B......#x.......x.#x..#x#...bxx....#x.x#x",
+    "answer_count": 15,
+    "leaf_count": 117,
+    "fail_count": 177,
+    "coin_count": 2,
+    "x_count": 10,
+    "wall_count": 6
+  },
+  {
+    "idx": 7159,
+    "initial_board": "..c#...##.##.#......A.#......C..b.B..a#....###...",
+    "answer_count": 15,
+    "leaf_count": 8765,
+    "fail_count": 8293,
+    "coin_count": 3,
+    "x_count": 0,
+    "wall_count": 11
+  },
+  {
+    "idx": 847,
+    "initial_board": "...A..#........C...........Bb.##.#....c.#.#.a....",
+    "answer_count": 15,
+    "leaf_count": 18691,
+    "fail_count": 20166,
+    "coin_count": 3,
+    "x_count": 0,
+    "wall_count": 6
+  },
+  {
+    "idx": 5174,
+    "initial_board": ".#...#xx#x#.x#Bc.##xxb....#.x#.#.#C...x.a...Ax.#.",
+    "answer_count": 15,
+    "leaf_count": 915,
+    "fail_count": 1141,
+    "coin_count": 3,
+    "x_count": 9,
+    "wall_count": 12
+  },
+  {
+    "idx": 6394,
+    "initial_board": "#..##...a......#x.....#x........BA..x..cx.#b.C...",
+    "answer_count": 15,
+    "leaf_count": 1918,
+    "fail_count": 2702,
+    "coin_count": 3,
+    "x_count": 4,
+    "wall_count": 6
+  },
+  {
+    "idx": 8326,
+    "initial_board": "...bxx.x.....A..#.axx..#....##..xCBx#x..c..##..##",
+    "answer_count": 15,
+    "leaf_count": 1606,
+    "fail_count": 2736,
+    "coin_count": 3,
+    "x_count": 8,
+    "wall_count": 9
+  },
+  {
+    "idx": 3373,
+    "initial_board": "..D..c.....d....#Ba..#b.....C.......#.#.....A#...",
+    "answer_count": 15,
+    "leaf_count": 140378,
+    "fail_count": 132469,
+    "coin_count": 4,
+    "x_count": 0,
+    "wall_count": 5
+  },
+  {
+    "idx": 5578,
+    "initial_board": "..dC...##...c..a....Ax.....D.#x.B..###b..#.x.x...",
+    "answer_count": 15,
+    "leaf_count": 16371,
+    "fail_count": 19628,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 7
+  },
+  {
+    "idx": 7873,
+    "initial_board": "..c####.###a.....dx#.....DA.xC#.#x.##..#...x#.B.b",
+    "answer_count": 15,
+    "leaf_count": 1184,
+    "fail_count": 1673,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 14
+  },
+  {
+    "idx": 8460,
+    "initial_board": "...Cb........#Dc...#.#...B#..Ee#..a...d..#...A..#",
+    "answer_count": 15,
+    "leaf_count": 92983,
+    "fail_count": 93564,
+    "coin_count": 5,
+    "x_count": 0,
+    "wall_count": 7
+  },
+  {
+    "idx": 7163,
+    "initial_board": "#....C#.#.ec#E...#......D....##...B..ab#d.A......",
+    "answer_count": 15,
+    "leaf_count": 89405,
+    "fail_count": 105562,
+    "coin_count": 5,
+    "x_count": 0,
+    "wall_count": 8
+  },
+  {
+    "idx": 5105,
+    "initial_board": "..#.A#.c.d..#..af...D#F..#C##bB#...##..E#.#.#e..#",
+    "answer_count": 15,
+    "leaf_count": 34110,
+    "fail_count": 26239,
+    "coin_count": 6,
+    "x_count": 0,
+    "wall_count": 14
+  },
+  {
+    "idx": 1277,
+    "initial_board": ".....#.#f#.D.#....a#..cC#.E.d#.A..Fb#...e#.B..##.",
+    "answer_count": 15,
+    "leaf_count": 86484,
+    "fail_count": 85074,
+    "coin_count": 6,
+    "x_count": 0,
+    "wall_count": 11
+  },
+  {
+    "idx": 372,
+    "initial_board": "D#....x..#.Cb.....d...##.cF...B..#..#E...f..eA.a.",
+    "answer_count": 15,
+    "leaf_count": 184637,
+    "fail_count": 206504,
+    "coin_count": 6,
+    "x_count": 1,
+    "wall_count": 6
+  },
+  {
+    "idx": 7044,
+    "initial_board": "..a.E..xAC.F.bx.#..eB#.x....#x.#c##..f......Dd...",
+    "answer_count": 15,
+    "leaf_count": 68757,
+    "fail_count": 93208,
+    "coin_count": 6,
+    "x_count": 4,
+    "wall_count": 6
+  },
+  {
+    "idx": 4739,
+    "initial_board": "..###.b.a...#..##........B.x..#.#.#.........#..A#",
+    "answer_count": 16,
+    "leaf_count": 544,
+    "fail_count": 477,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 11
+  },
+  {
+    "idx": 277,
+    "initial_board": "....B..#a#.A.....x..#...#.###....#..#x.##x....b.#",
+    "answer_count": 16,
+    "leaf_count": 129,
+    "fail_count": 153,
+    "coin_count": 2,
+    "x_count": 3,
+    "wall_count": 12
+  },
+  {
+    "idx": 2082,
+    "initial_board": "#...........#....x.x..#...a...b....x#.x...A...x#B",
+    "answer_count": 16,
+    "leaf_count": 1132,
+    "fail_count": 1749,
+    "coin_count": 2,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 1545,
+    "initial_board": "b.A#.##.c#..#..C.#..#.......xa#..B..#.x.xx#......",
+    "answer_count": 16,
+    "leaf_count": 1217,
+    "fail_count": 1335,
+    "coin_count": 3,
+    "x_count": 4,
+    "wall_count": 10
+  },
+  {
+    "idx": 4872,
+    "initial_board": "......xC...#.#a.....Ax..B...#..x.#.....cb###.xx..",
+    "answer_count": 16,
+    "leaf_count": 6773,
+    "fail_count": 9230,
+    "coin_count": 3,
+    "x_count": 5,
+    "wall_count": 7
+  },
+  {
+    "idx": 2735,
+    "initial_board": "#..#.#.#Cd##.D....#b.#c#......##B#...a..#...x.A##",
+    "answer_count": 16,
+    "leaf_count": 14868,
+    "fail_count": 16805,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 15
+  },
+  {
+    "idx": 3659,
+    "initial_board": "..x##x.#x##...D.......C.cx#.#.d.....a.#.Ab.#xB..x",
+    "answer_count": 16,
+    "leaf_count": 22214,
+    "fail_count": 31980,
+    "coin_count": 4,
+    "x_count": 6,
+    "wall_count": 9
+  },
+  {
+    "idx": 1845,
+    "initial_board": ".d#.E#..##e.b#..c...C.D.#........#.#.Ba.#.x.A.#..",
+    "answer_count": 16,
+    "leaf_count": 246198,
+    "fail_count": 210625,
+    "coin_count": 5,
+    "x_count": 1,
+    "wall_count": 10
+  },
+  {
+    "idx": 4645,
+    "initial_board": "#..##.##e.#####..##.xE..Bd..###Db.A........#a.cC.",
+    "answer_count": 16,
+    "leaf_count": 31109,
+    "fail_count": 39363,
+    "coin_count": 5,
+    "x_count": 1,
+    "wall_count": 16
+  },
+  {
+    "idx": 4101,
+    "initial_board": "..#....xeEDb.#.FfB..#.c.#..A.#.d.Ca.#.#...#.###..",
+    "answer_count": 16,
+    "leaf_count": 148471,
+    "fail_count": 143564,
+    "coin_count": 6,
+    "x_count": 1,
+    "wall_count": 11
+  },
+  {
+    "idx": 946,
+    "initial_board": "##.#C.c..#..#b..EF#......#..#.Aa#dB#.....f.x.#eD.",
+    "answer_count": 16,
+    "leaf_count": 51016,
+    "fail_count": 63034,
+    "coin_count": 6,
+    "x_count": 1,
+    "wall_count": 11
+  },
+  {
+    "idx": 817,
+    "initial_board": "..A...........b.x...........#x......B.a...#.....#",
+    "answer_count": 17,
+    "leaf_count": 785,
+    "fail_count": 854,
+    "coin_count": 2,
+    "x_count": 2,
+    "wall_count": 3
+  },
+  {
+    "idx": 7965,
+    "initial_board": "......#.x...#..B...xb........#...x....x.......aA.",
+    "answer_count": 17,
+    "leaf_count": 742,
+    "fail_count": 1099,
+    "coin_count": 2,
+    "x_count": 4,
+    "wall_count": 3
+  },
+  {
+    "idx": 5200,
+    "initial_board": ".#..a.##...#.x.b.##....##Bx#C..A.#..#c..##.x#.#.#",
+    "answer_count": 17,
+    "leaf_count": 2781,
+    "fail_count": 2527,
+    "coin_count": 3,
+    "x_count": 3,
+    "wall_count": 16
+  },
+  {
+    "idx": 6114,
+    "initial_board": "x...#..B.#x.Cx...#....#..#.A.........a##.cx#.#xb.",
+    "answer_count": 17,
+    "leaf_count": 12781,
+    "fail_count": 15621,
+    "coin_count": 3,
+    "x_count": 5,
+    "wall_count": 9
+  },
+  {
+    "idx": 348,
+    "initial_board": "..b.c#..xx....x#.#..x.A##..#..#..##a..#.CB.##....",
+    "answer_count": 17,
+    "leaf_count": 2123,
+    "fail_count": 3165,
+    "coin_count": 3,
+    "x_count": 4,
+    "wall_count": 12
+  },
+  {
+    "idx": 8957,
+    "initial_board": ".####Bc#D.#.......b....#...xCdA##..#...a...##....",
+    "answer_count": 17,
+    "leaf_count": 40962,
+    "fail_count": 42620,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 12
+  },
+  {
+    "idx": 5827,
+    "initial_board": "...C..#.c...#.a#........b...D..B.A....xd.......x.",
+    "answer_count": 17,
+    "leaf_count": 43073,
+    "fail_count": 54909,
+    "coin_count": 4,
+    "x_count": 2,
+    "wall_count": 3
+  },
+  {
+    "idx": 9491,
+    "initial_board": "x....C...x.......x......d.##D#.a.....b.c.A....B..",
+    "answer_count": 17,
+    "leaf_count": 78127,
+    "fail_count": 119351,
+    "coin_count": 4,
+    "x_count": 3,
+    "wall_count": 3
+  },
+  {
+    "idx": 4624,
+    "initial_board": ".A.....#.....Cd..B..ca..E..###.e.....#.b....#D.x.",
+    "answer_count": 17,
+    "leaf_count": 108139,
+    "fail_count": 101514,
+    "coin_count": 5,
+    "x_count": 1,
+    "wall_count": 6
+  },
+  {
+    "idx": 1787,
+    "initial_board": "..x#.x....eAa..D...E.#....c.C..B.bd....#...#x....",
+    "answer_count": 17,
+    "leaf_count": 165651,
+    "fail_count": 210710,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 4
+  },
+  {
+    "idx": 2516,
+    "initial_board": "Dd..#C...x..#..#..E....x#c.......BA#.#...e..ab...",
+    "answer_count": 17,
+    "leaf_count": 69472,
+    "fail_count": 111083,
+    "coin_count": 5,
+    "x_count": 2,
+    "wall_count": 6
+  },
+  {
+    "idx": 9055,
+    "initial_board": "Df..a#.cC..A...dF....#.....#....#.E..#eb...xB..#.",
+    "answer_count": 17,
+    "leaf_count": 203063,
+    "fail_count": 200178,
+    "coin_count": 6,
+    "x_count": 1,
+    "wall_count": 6
+  },
+  {
+    "idx": 57,
+    "initial_board": ".x.....C...ed..E.c.x......#.#Dbxxf.x.B#..FAa....x",
+    "answer_count": 17,
+    "leaf_count": 23460,
+    "fail_count": 35430,
+    "coin_count": 6,
+    "x_count": 6,
+    "wall_count": 3
+  },
+  {
+    "idx": 1797,
+    "initial_board": "#..#.#A.b..#...#..........x.....#.#x..a.##..#...B",
+    "answer_count": 18,
+    "leaf_count": 1002,
+    "fail_count": 1045,
+    "coin_count": 2,
+    "x_count": 2,
+    "wall_count": 10
+  },
+  {
+    "idx": 3102,
+    "initial_board": "#.x#..A.Bx.xx...x.xx.x........bx......a#..x.....x",
+    "answer_count": 18,
+    "leaf_count": 217,
+    "fail_count": 372,
+    "coin_count": 2,
+    "x_count": 11,
+    "wall_count": 3
+  },
+  {
+    "idx": 4998,
+    "initial_board": ".A..cC.....#.bx................##a##.B#.##.....#.",
+    "answer_count": 18,
+    "leaf_count": 15303,
+    "fail_count": 17405,
+    "coin_count": 3,
+    "x_count": 1,
+    "wall_count": 9
+  },
+  {
+    "idx": 8106,
+    "initial_board": "xx.....A...cb...x...a...#........B.C.#.x..#.x...x",
+    "answer_count": 18,
+    "leaf_count": 2663,
+    "fail_count": 3700,
+    "coin_count": 3,
+    "x_count": 6,
+    "wall_count": 3
+  },
+  {
+    "idx": 4637,
+    "initial_board": ".#A.x...x.#x...C.x.#x....#....x...B...a.##c.b...x",
+    "answer_count": 18,
+    "leaf_count": 3227,
+    "fail_count": 5478,
+    "coin_count": 3,
+    "x_count": 7,
+    "wall_count": 6
+  },
+  {
+    "idx": 7855,
+    "initial_board": ".bx#...c..#.a.......C.d..B..A...D.....#...#......",
+    "answer_count": 18,
+    "leaf_count": 100997,
+    "fail_count": 116315,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 4
+  },
+  {
+    "idx": 7563,
+    "initial_board": "..A.#......d.CB....#x.#...ab.x..D.c.#..x#.....#..",
+    "answer_count": 18,
+    "leaf_count": 157576,
+    "fail_count": 215146,
+    "coin_count": 4,
+    "x_count": 3,
+    "wall_count": 6
+  },
+  {
+    "idx": 597,
+    "initial_board": "..##.##..###dC..#B..#..##x.#x.D.a.b#....Eex#...Ac",
+    "answer_count": 18,
+    "leaf_count": 9971,
+    "fail_count": 13527,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 14
+  },
+  {
+    "idx": 1594,
+    "initial_board": "C..x..xx.dc.x.#b.a.#.x..Ax#B.#.......Dxe...x.xE..",
+    "answer_count": 18,
+    "leaf_count": 22172,
+    "fail_count": 34024,
+    "coin_count": 5,
+    "x_count": 9,
+    "wall_count": 4
+  },
+  {
+    "idx": 1487,
+    "initial_board": "..x.x.....#aB.#....x.#......##..x..b....x..A.....",
+    "answer_count": 19,
+    "leaf_count": 884,
+    "fail_count": 1353,
+    "coin_count": 2,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 3502,
+    "initial_board": "..a.#....#..#..#..C#.....b.....#....#cA.x.#....B.",
+    "answer_count": 19,
+    "leaf_count": 10745,
+    "fail_count": 14023,
+    "coin_count": 3,
+    "x_count": 1,
+    "wall_count": 8
+  },
+  {
+    "idx": 6787,
+    "initial_board": "xxx.xa..c.x..#..x..b.x....C.....x.Bxx..A...x...##",
+    "answer_count": 19,
+    "leaf_count": 1544,
+    "fail_count": 2965,
+    "coin_count": 3,
+    "x_count": 11,
+    "wall_count": 3
+  },
+  {
+    "idx": 5255,
+    "initial_board": "...db.xa..D..........#....c..#C.....B.......#...A",
+    "answer_count": 19,
+    "leaf_count": 71643,
+    "fail_count": 68736,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 3
+  },
+  {
+    "idx": 1676,
+    "initial_board": ".....C.A....c......x.x#B.......#.ax..#Dd.b#x#...#",
+    "answer_count": 19,
+    "leaf_count": 5977,
+    "fail_count": 8376,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 6
+  },
+  {
+    "idx": 3195,
+    "initial_board": ".......B...#A...x..d....bCa.#.....Dc...#x.x.x....",
+    "answer_count": 19,
+    "leaf_count": 24430,
+    "fail_count": 41055,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 3
+  },
+  {
+    "idx": 822,
+    "initial_board": "e..#.a........#...c..db.xAE.C.....#.......DB.....",
+    "answer_count": 19,
+    "leaf_count": 153852,
+    "fail_count": 202567,
+    "coin_count": 5,
+    "x_count": 1,
+    "wall_count": 3
+  },
+  {
+    "idx": 427,
+    "initial_board": ".x#x.B.ba.x..x.........x.Ac.......e.....dE..C.#D#",
+    "answer_count": 19,
+    "leaf_count": 58893,
+    "fail_count": 86521,
+    "coin_count": 5,
+    "x_count": 5,
+    "wall_count": 3
+  },
+  {
+    "idx": 6717,
+    "initial_board": ".#..#..A##cCx#.##x.#...a.db#.D.##...F.e#xEB...f##",
+    "answer_count": 19,
+    "leaf_count": 72733,
+    "fail_count": 103676,
+    "coin_count": 6,
+    "x_count": 3,
+    "wall_count": 14
+  },
+  {
+    "idx": 7568,
+    "initial_board": "B..x....xx..x..a............#bx#.x.A.x........#..",
+    "answer_count": 20,
+    "leaf_count": 654,
+    "fail_count": 1164,
+    "coin_count": 2,
+    "x_count": 7,
+    "wall_count": 3
+  },
+  {
+    "idx": 7678,
+    "initial_board": "..a...#........B...x..x..c..C.#..##...b.A..#..#.#",
+    "answer_count": 20,
+    "leaf_count": 15145,
+    "fail_count": 21469,
+    "coin_count": 3,
+    "x_count": 2,
+    "wall_count": 7
+  },
+  {
+    "idx": 4599,
+    "initial_board": "..#....#..b.a...cx.#....B...x......#...d#CD.A#..#",
+    "answer_count": 20,
+    "leaf_count": 140889,
+    "fail_count": 197613,
+    "coin_count": 4,
+    "x_count": 2,
+    "wall_count": 7
+  },
+  {
+    "idx": 5864,
+    "initial_board": ".#.D#C....#.#...#.Bx.#c.......A.x#...b.###.a.d..#",
+    "answer_count": 20,
+    "leaf_count": 128909,
+    "fail_count": 237519,
+    "coin_count": 4,
+    "x_count": 2,
+    "wall_count": 11
+  },
+  {
+    "idx": 1697,
+    "initial_board": "#....x.AC#...b..d..e.....a...c.B....#x.E.x.D....#",
+    "answer_count": 20,
+    "leaf_count": 98842,
+    "fail_count": 137456,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 4
+  },
+  {
+    "idx": 8115,
+    "initial_board": "A...x.###.x.Db......Bx..x#a.C...E...dc.e.#.x#....",
+    "answer_count": 20,
+    "leaf_count": 58394,
+    "fail_count": 100727,
+    "coin_count": 5,
+    "x_count": 5,
+    "wall_count": 6
+  },
+  {
+    "idx": 5476,
+    "initial_board": "#.dbF.a.....#..D..e#.f....#A.xcC....xB.E...#.###.",
+    "answer_count": 20,
+    "leaf_count": 201735,
+    "fail_count": 237061,
+    "coin_count": 6,
+    "x_count": 2,
+    "wall_count": 8
+  },
+  {
+    "idx": 9955,
+    "initial_board": "Fa.f.D.Cd...x...A..c.#x.x#..#b.#e.#x...E...B..#..",
+    "answer_count": 20,
+    "leaf_count": 54933,
+    "fail_count": 88036,
+    "coin_count": 6,
+    "x_count": 4,
+    "wall_count": 6
+  },
+  {
+    "idx": 5689,
+    "initial_board": ".x.........#xC...a.###....BAb....c......##.......",
+    "answer_count": 21,
+    "leaf_count": 19585,
+    "fail_count": 23628,
+    "coin_count": 3,
+    "x_count": 2,
+    "wall_count": 6
+  },
+  {
+    "idx": 8577,
+    "initial_board": "c........A.x..a#xx.......x#..b.B.....#C..........",
+    "answer_count": 21,
+    "leaf_count": 2985,
+    "fail_count": 5242,
+    "coin_count": 3,
+    "x_count": 4,
+    "wall_count": 3
+  },
+  {
+    "idx": 8500,
+    "initial_board": "..#.#.##d..........C.#aB..b.#xD.x...##....##..A.c",
+    "answer_count": 21,
+    "leaf_count": 56086,
+    "fail_count": 81869,
+    "coin_count": 4,
+    "x_count": 2,
+    "wall_count": 10
+  },
+  {
+    "idx": 72,
+    "initial_board": ".#eE......xx....x..A.....#.Cd.Db...a#x.c...Bx....",
+    "answer_count": 21,
+    "leaf_count": 17103,
+    "fail_count": 27404,
+    "coin_count": 5,
+    "x_count": 5,
+    "wall_count": 3
+  },
+  {
+    "idx": 3223,
+    "initial_board": "A..x.#.D....#B.xx..x.#CFd...Ef.....c..a.x.##eb.#.",
+    "answer_count": 21,
+    "leaf_count": 399392,
+    "fail_count": 627441,
+    "coin_count": 6,
+    "x_count": 5,
+    "wall_count": 6
+  },
+  {
+    "idx": 8619,
+    "initial_board": "..b...#..xx.......#.A.......aB...#.......x...##..",
+    "answer_count": 22,
+    "leaf_count": 1094,
+    "fail_count": 1377,
+    "coin_count": 2,
+    "x_count": 3,
+    "wall_count": 5
+  },
+  {
+    "idx": 3543,
+    "initial_board": "Bx.x.#....#bx..#...........#x..c.C.x#x.xa#......A",
+    "answer_count": 22,
+    "leaf_count": 2383,
+    "fail_count": 3852,
+    "coin_count": 3,
+    "x_count": 7,
+    "wall_count": 6
+  },
+  {
+    "idx": 3354,
+    "initial_board": "x.A#B.##...#.#c.......#.......D#...da.b.........C",
+    "answer_count": 22,
+    "leaf_count": 314848,
+    "fail_count": 357916,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 7
+  },
+  {
+    "idx": 9463,
+    "initial_board": ".....aC.#....d...b......A......x.Bc.Dx........#.#",
+    "answer_count": 22,
+    "leaf_count": 190310,
+    "fail_count": 303606,
+    "coin_count": 4,
+    "x_count": 2,
+    "wall_count": 3
+  },
+  {
+    "idx": 4764,
+    "initial_board": "....A......##..a....#..C...B..Ed..Dx.e....#xb...c",
+    "answer_count": 22,
+    "leaf_count": 105890,
+    "fail_count": 116170,
+    "coin_count": 5,
+    "x_count": 2,
+    "wall_count": 4
+  },
+  {
+    "idx": 3286,
+    "initial_board": "A#xx.E..bc.......#...a..C.......xDBe..d#x.#..####",
+    "answer_count": 22,
+    "leaf_count": 508950,
+    "fail_count": 735965,
+    "coin_count": 5,
+    "x_count": 4,
+    "wall_count": 8
+  },
+  {
+    "idx": 7054,
+    "initial_board": "#........#Cx..#x.b#.x...x...x.A......a.#.Bc.x#xx.",
+    "answer_count": 23,
+    "leaf_count": 1683,
+    "fail_count": 3266,
+    "coin_count": 3,
+    "x_count": 8,
+    "wall_count": 6
+  },
+  {
+    "idx": 7768,
+    "initial_board": ".......D#..c.#.....b...dA..#..x.C.B...........#.a",
+    "answer_count": 23,
+    "leaf_count": 126693,
+    "fail_count": 181393,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 4
+  },
+  {
+    "idx": 4664,
+    "initial_board": ".C#.x..#.....e...x..xEca..D.#......##d...B#Ab.#.#",
+    "answer_count": 23,
+    "leaf_count": 339196,
+    "fail_count": 414433,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 8
+  },
+  {
+    "idx": 6106,
+    "initial_board": "xE.#xx#.B.#x.C...x.c.a...#x..#A..x##de...xxb.#xD.",
+    "answer_count": 23,
+    "leaf_count": 35822,
+    "fail_count": 62927,
+    "coin_count": 5,
+    "x_count": 10,
+    "wall_count": 8
+  },
+  {
+    "idx": 5744,
+    "initial_board": "....x#...b.Da##.fF#Ax#.##.c#..#.ed......#.BCx..Ex",
+    "answer_count": 23,
+    "leaf_count": 459544,
+    "fail_count": 664768,
+    "coin_count": 6,
+    "x_count": 4,
+    "wall_count": 10
+  },
+  {
+    "idx": 8777,
+    "initial_board": "...x..#....#x#b.xax..#x#....#.A.x...#...xBx..#.#.",
+    "answer_count": 24,
+    "leaf_count": 238,
+    "fail_count": 437,
+    "coin_count": 2,
+    "x_count": 8,
+    "wall_count": 9
+  },
+  {
+    "idx": 2335,
+    "initial_board": "...xd.c......D...#........b..B.a.......A..#C..#..",
+    "answer_count": 24,
+    "leaf_count": 288312,
+    "fail_count": 370195,
+    "coin_count": 4,
+    "x_count": 1,
+    "wall_count": 3
+  },
+  {
+    "idx": 849,
+    "initial_board": "..daAcx.....b#...#.x....x..xxx...C#.D..#..#....B.",
+    "answer_count": 24,
+    "leaf_count": 32571,
+    "fail_count": 59051,
+    "coin_count": 4,
+    "x_count": 6,
+    "wall_count": 5
+  },
+  {
+    "idx": 5746,
+    "initial_board": "......c#..B....a.#..#.C.e#....E.d.b.#D..#A.x#..xx",
+    "answer_count": 24,
+    "leaf_count": 533291,
+    "fail_count": 736350,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 7
+  },
+  {
+    "idx": 6669,
+    "initial_board": "#.x..e.#cC..AE#.x.#b.B..#.a#..x...d....##...xD.x.",
+    "answer_count": 24,
+    "leaf_count": 49790,
+    "fail_count": 92245,
+    "coin_count": 5,
+    "x_count": 5,
+    "wall_count": 8
+  },
+  {
+    "idx": 8434,
+    "initial_board": "xa#.#e.x.b...B.....F.f.#xA..c...#xxCx.dE...x.D.xx",
+    "answer_count": 24,
+    "leaf_count": 121323,
+    "fail_count": 198691,
+    "coin_count": 6,
+    "x_count": 9,
+    "wall_count": 4
+  },
+  {
+    "idx": 6378,
+    "initial_board": "A..#..C#xc.#..##....x##..B..##........#.b..#....a",
+    "answer_count": 25,
+    "leaf_count": 10758,
+    "fail_count": 13028,
+    "coin_count": 3,
+    "x_count": 2,
+    "wall_count": 11
+  },
+  {
+    "idx": 1699,
+    "initial_board": "C...x.x.x..#.x....xDcx#b#.d.A.....B.a...x##x.#x..",
+    "answer_count": 25,
+    "leaf_count": 22867,
+    "fail_count": 38069,
+    "coin_count": 4,
+    "x_count": 9,
+    "wall_count": 6
+  },
+  {
+    "idx": 6866,
+    "initial_board": ".....x...D.#.x#.#..d....a.....b#E..C.B.x.#A..e..c",
+    "answer_count": 25,
+    "leaf_count": 597739,
+    "fail_count": 1001014,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 5
+  },
+  {
+    "idx": 3073,
+    "initial_board": "#e#....b.B.D..a....x....dx.#f......A.#xcE.....CF.",
+    "answer_count": 25,
+    "leaf_count": 616663,
+    "fail_count": 1141288,
+    "coin_count": 6,
+    "x_count": 3,
+    "wall_count": 4
+  },
+  {
+    "idx": 9166,
+    "initial_board": "D....##b.A..c....x....B..a...#x.......Cx.......dx",
+    "answer_count": 26,
+    "leaf_count": 16451,
+    "fail_count": 28132,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 3
+  },
+  {
+    "idx": 252,
+    "initial_board": "x#.#...Ea.#.#d.A.B.#...#..e#.....Dx#C.bxc..#.....",
+    "answer_count": 26,
+    "leaf_count": 29284,
+    "fail_count": 39826,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 9
+  },
+  {
+    "idx": 7350,
+    "initial_board": "#.#.xB...CcabDx#A.........x..#d.x#EF.e.fx........",
+    "answer_count": 26,
+    "leaf_count": 245567,
+    "fail_count": 439121,
+    "coin_count": 6,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 9655,
+    "initial_board": "#b...#.....#..xcB.x...A#...a....C.#.#.#x..##.#...",
+    "answer_count": 27,
+    "leaf_count": 3335,
+    "fail_count": 4659,
+    "coin_count": 3,
+    "x_count": 3,
+    "wall_count": 10
+  },
+  {
+    "idx": 380,
+    "initial_board": ".#C.x..A..B...bcx.x#.#..d...xx....D.a..#...#.....",
+    "answer_count": 27,
+    "leaf_count": 30595,
+    "fail_count": 55509,
+    "coin_count": 4,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 7605,
+    "initial_board": "x#x.....a......d#.D...b#...C..x...A...#cBx.e#.E.x",
+    "answer_count": 27,
+    "leaf_count": 401196,
+    "fail_count": 648114,
+    "coin_count": 5,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 1775,
+    "initial_board": "#.xx.A..x.#..B.xca....#..x....b.C....x.de...D..E#",
+    "answer_count": 27,
+    "leaf_count": 230932,
+    "fail_count": 464456,
+    "coin_count": 5,
+    "x_count": 6,
+    "wall_count": 4
+  },
+  {
+    "idx": 8176,
+    "initial_board": "..#.A.x..x.#.#C.#.F..#.Dfx.Ex.eB...x.cd.a.x....b.",
+    "answer_count": 27,
+    "leaf_count": 350928,
+    "fail_count": 685727,
+    "coin_count": 6,
+    "x_count": 6,
+    "wall_count": 5
+  },
+  {
+    "idx": 4267,
+    "initial_board": "..#.......#.#....#...cA.C.....#..E.e...BaD.bxd..#",
+    "answer_count": 28,
+    "leaf_count": 408339,
+    "fail_count": 742336,
+    "coin_count": 5,
+    "x_count": 1,
+    "wall_count": 6
+  },
+  {
+    "idx": 1425,
+    "initial_board": "..c..x.C#..x#Aad..x......#x.xDb.B......x.x.x.....",
+    "answer_count": 29,
+    "leaf_count": 22053,
+    "fail_count": 39703,
+    "coin_count": 4,
+    "x_count": 8,
+    "wall_count": 3
+  },
+  {
+    "idx": 9556,
+    "initial_board": "......D#.d#.......x.#Cx.#e.E.A..x.a..c..b.....#.B",
+    "answer_count": 29,
+    "leaf_count": 248568,
+    "fail_count": 483726,
+    "coin_count": 5,
+    "x_count": 3,
+    "wall_count": 5
+  },
+  {
+    "idx": 1869,
+    "initial_board": "x.#..x.b#.a..x..fA.....#D.c.B#CEFex...d.....#####",
+    "answer_count": 29,
+    "leaf_count": 214915,
+    "fail_count": 372213,
+    "coin_count": 6,
+    "x_count": 4,
+    "wall_count": 9
+  },
+  {
+    "idx": 9708,
+    "initial_board": "x....A#..Cc#fa...#........b..B#FxxE.#.e.dD......#",
+    "answer_count": 30,
+    "leaf_count": 124966,
+    "fail_count": 201029,
+    "coin_count": 6,
+    "x_count": 3,
+    "wall_count": 6
+  },
+  {
+    "idx": 5273,
+    "initial_board": "b......A.#.#..C##....c....B.....x..a.....xx.#..xx",
+    "answer_count": 31,
+    "leaf_count": 7883,
+    "fail_count": 11616,
+    "coin_count": 3,
+    "x_count": 5,
+    "wall_count": 5
+  },
+  {
+    "idx": 4988,
+    "initial_board": "...#.B.d..bx#..a..x..#.......C.D.#xA..xc......#..",
+    "answer_count": 31,
+    "leaf_count": 98202,
+    "fail_count": 174212,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 5
+  },
+  {
+    "idx": 3752,
+    "initial_board": "#...dD...ac.#..E#x#.....#C##.e.....b.#AB.#.#.##x#",
+    "answer_count": 31,
+    "leaf_count": 72510,
+    "fail_count": 102363,
+    "coin_count": 5,
+    "x_count": 2,
+    "wall_count": 13
+  },
+  {
+    "idx": 3633,
+    "initial_board": "###.##.xB..b#xe..x.a.#..F....Ec#.#.x.Ax#f..dD...C",
+    "answer_count": 32,
+    "leaf_count": 215628,
+    "fail_count": 359974,
+    "coin_count": 6,
+    "x_count": 5,
+    "wall_count": 10
+  },
+  {
+    "idx": 3966,
+    "initial_board": ".xB.xx...#a.xD.........d..E.b.ec.#.x....#..Cx..xA",
+    "answer_count": 33,
+    "leaf_count": 711340,
+    "fail_count": 1167657,
+    "coin_count": 5,
+    "x_count": 7,
+    "wall_count": 3
+  },
+  {
+    "idx": 2936,
+    "initial_board": "xx...BEx..x...........a.xAdDc#.#b.CxFe#.f#.#x....",
+    "answer_count": 34,
+    "leaf_count": 839011,
+    "fail_count": 1634385,
+    "coin_count": 6,
+    "x_count": 7,
+    "wall_count": 5
+  },
+  {
+    "idx": 67,
+    "initial_board": "B...x..##...#D...c..b.A..ed...xx....a..C#x.....E.",
+    "answer_count": 35,
+    "leaf_count": 271045,
+    "fail_count": 481527,
+    "coin_count": 5,
+    "x_count": 4,
+    "wall_count": 4
+  },
+  {
+    "idx": 1555,
+    "initial_board": ".fd.E.#.#AB.#xcF#xb...#...eDa..####....#..C##..#.",
+    "answer_count": 36,
+    "leaf_count": 914449,
+    "fail_count": 1629972,
+    "coin_count": 6,
+    "x_count": 2,
+    "wall_count": 13
+  },
+  {
+    "idx": 1138,
+    "initial_board": "B......#....xx...ab.##.CD.A.x.#..#..#c.x.....d...",
+    "answer_count": 37,
+    "leaf_count": 13495,
+    "fail_count": 22636,
+    "coin_count": 4,
+    "x_count": 4,
+    "wall_count": 6
+  },
+  {
+    "idx": 9722,
+    "initial_board": "x#xc#b..xx.E.....e...#.da....x.....B...#.CA.x.#D.",
+    "answer_count": 39,
+    "leaf_count": 709709,
+    "fail_count": 1190923,
+    "coin_count": 5,
+    "x_count": 6,
+    "wall_count": 5
+  },
+  {
+    "idx": 9128,
+    "initial_board": "B##D.....#..f..beFA#.##Ea#...dc..#...##...C##..x#",
+    "answer_count": 44,
+    "leaf_count": 240993,
+    "fail_count": 391160,
+    "coin_count": 6,
+    "x_count": 1,
+    "wall_count": 13
+  },
+  {
+    "idx": 7789,
+    "initial_board": "..xx..a#...c.B....#xA...x..b.x........x.Cx..#....",
+    "answer_count": 46,
+    "leaf_count": 3483,
+    "fail_count": 7027,
+    "coin_count": 3,
+    "x_count": 7,
+    "wall_count": 3
+  },
+  {
+    "idx": 3583,
+    "initial_board": ".....##.##.......###..#.A#.....x.B...##.#a#b#..##",
+    "answer_count": 47,
+    "leaf_count": 468,
+    "fail_count": 566,
+    "coin_count": 2,
+    "x_count": 1,
+    "wall_count": 16
+  },
+  {
+    "idx": 7924,
+    "initial_board": "...#x.xx#.#.D...#.bC####.x##A#.....d.c.x.#B..#a..",
+    "answer_count": 48,
+    "leaf_count": 21062,
+    "fail_count": 42873,
+    "coin_count": 4,
+    "x_count": 5,
+    "wall_count": 13
+  },
+  {
+    "idx": 1410,
+    "initial_board": "xc#B#.#.....x#....x..AdEe.aC#bx##...###.D.#.#...#",
+    "answer_count": 48,
+    "leaf_count": 72754,
+    "fail_count": 120560,
+    "coin_count": 5,
+    "x_count": 4,
+    "wall_count": 13
+  }
+]

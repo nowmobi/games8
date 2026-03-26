@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Mahjong Match Club</title>
+
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="full-screen" content="yes"/>
+  <meta name="screen-orientation" content="portrait"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+  
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <link rel="stylesheet" type="text/css" href="style-desktop.css"/>
+  <link rel="icon" href="favicon.ico"/>
+  <script src="cc-resolution.js" charset="utf-8"></script>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    html {
+        touch-action: none
+    }
+    body {
+        overflow: hidden;
+        /* 页面背景颜色 */
+        background: #8dd083;
+    }
+    #splash-root p {
+        color: #ffffff;
+    }
+</style>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+<body>
+<div id="Game" style="width:750px; height: 1334px;">
+  <canvas id="GameCanvas" width="750" height="1334"></canvas>
+  <div id="splash" style="display: none">
+    <div class="progress-bar stripes">
+      <span style="width: 0%"></span>
+    </div>
+  </div>
+</div>
+<script src="src/settings.js" charset="utf-8"></script>
+<script src="main.js" charset="utf-8"></script>
+<script type="text/javascript" src="loadTop.js"></script>
+<script type="text/javascript">
+    console.timeEnd = console.time = console.error = console.log = console.info = console.warn = function () { };
+    loadTop.init({appName: "Mahjong-Match-Club"});
+    loadTop.setGameLogoScale(0);
+    loadTop.setBackgroundColor("#8dd083");
+    //loadTop.hideLoading();
+    (function () {
+        // open web debugger console
+        if (typeof VConsole !== 'undefined') {
+            window.vConsole = new VConsole();
+        }
+
+        var debug = window._CCSettings.debug;
+        var splash = document.getElementById('splash');
+        splash.style.display = 'block';
+
+        function loadScript (moduleName, cb) {
+        function scriptLoaded () {
+            document.body.removeChild(domScript);
+            domScript.removeEventListener('load', scriptLoaded, false);
+            cb && cb();
+        };
+        var domScript = document.createElement('script');
+        domScript.async = true;
+        domScript.src = moduleName;
+        domScript.addEventListener('load', scriptLoaded, false);
+        document.body.appendChild(domScript);
+        }
+
+        loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
+        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+            loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+        }
+        else {
+            window.boot();
+        }
+        });
+    })();
+    resolution.init(750, 1334);
+</script>
+
+</body>
+</html>

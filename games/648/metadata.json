@@ -1,0 +1,22 @@
+{
+  "id": "50065",
+  "title": "Cookie Match",
+  "slug": "cookie-match",
+  "description": "Cookie Match is a sliding puzzle game where you must match each cookie to its corresponding cutter. If you move the cookies off the edge of the board or into knives, they&rsquo;ll be destroyed. Use the tubs of butter as barriers to keep the cookies in one piece.",
+  "instructions": "Mouse drag or touch drag to move all cookies",
+  "url": "https://html5.gamemonetize.com/rvgj4wbimpenxgkx3pw7bl9hrmmxnvyh/",
+  "category": "Puzzle",
+  "categorySlug": "puzzle",
+  "tags": [
+    "1 Player",
+    "Block",
+    "Board",
+    "Hypercasual",
+    "Puzzle"
+  ],
+  "thumb": "https://img.gamemonetize.com/rvgj4wbimpenxgkx3pw7bl9hrmmxnvyh/512x384.jpg",
+  "width": 800,
+  "height": 600,
+  "publisher": null,
+  "crawledAt": "2026-02-01T18:53:46.030Z"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "49991",
+  "title": "Blocks 8",
+  "slug": "blocks-8",
+  "description": "Simple but fun and challenging block puzzle tetris arcade game! Fill a row or column with the pieces you have available to score! The logic is similar with tetris, but you can move the blocks freely by dragging and drooping the pieces.",
+  "instructions": "Drag and drop the block pieces bellow in the board in a way that fills a row or column to clean the board and score points ",
+  "url": "https://html5.gamemonetize.com/fd59gp2141j48dwbmte07pee03jcv0s6/",
+  "category": "Puzzle",
+  "categorySlug": "puzzle",
+  "tags": [
+    "1 Player",
+    "Block",
+    "HTML5",
+    "Puzzle",
+    "Tetris"
+  ],
+  "thumb": "https://img.gamemonetize.com/fd59gp2141j48dwbmte07pee03jcv0s6/512x384.jpg",
+  "width": 1080,
+  "height": 1920,
+  "publisher": "OnduckGames",
+  "crawledAt": "2026-02-01T19:13:53.816Z"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "Image",
+  "props": {
+    "zOrder": 2,
+    "y": 0,
+    "x": 0,
+    "skin": "MainScene/img_circle.png",
+    "name": "building",
+    "isPresetRoot": true,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "presetID": 1
+  },
+  "compId": 131,
+  "child": [
+    {
+      "type": "Text",
+      "props": {
+        "y": 63,
+        "x": 25,
+        "width": 40,
+        "valign": "top",
+        "text": "20",
+        "pivotY": 10,
+        "pivotX": 20,
+        "name": "fighterNum",
+        "height": 20,
+        "fontSize": 18,
+        "font": "Microsoft YaHei",
+        "align": "center",
+        "runtime": "Laya.Text",
+        "presetID": 2
+      },
+      "compId": 132
+    }
+  ],
+  "loadList": [
+    "MainScene/img_circle.png"
+  ],
+  "loadList3D": []
+}

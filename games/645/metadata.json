@@ -1,0 +1,23 @@
+{
+  "id": "50032",
+  "title": "Pipe Match",
+  "slug": "pipe-match",
+  "description": "Pipe Match is a rotating card game where the goal is to connect all pipes to the end. Click on a pipe to rotate it clockwise. Pipes that are faded out are not connected and pipes with a dark gray background can&rsquo;t be moved. To undo a previous move, click the rotating arrow button. To restart the whole puzzle, click the arrow in the circle.",
+  "instructions": "Mouse click or Touch",
+  "url": "https://html5.gamemonetize.com/pyke54t83mxkyomgt8bi4pz51rgkymi3/",
+  "category": "Puzzle",
+  "categorySlug": "puzzle",
+  "tags": [
+    "1 Player",
+    "2D",
+    "Block",
+    "Hypercasual",
+    "Pipe",
+    "Puzzle"
+  ],
+  "thumb": "https://img.gamemonetize.com/pyke54t83mxkyomgt8bi4pz51rgkymi3/512x384.jpg",
+  "width": 600,
+  "height": 800,
+  "publisher": null,
+  "crawledAt": "2026-02-01T19:01:28.775Z"
+}
