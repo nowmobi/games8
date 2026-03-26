@@ -1,3 +1,0 @@
-bundle.load("bgm.lm", () => {
-
-});
