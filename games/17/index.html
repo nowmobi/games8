@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>Angela Christmas Dress up Game</title>
+    <script type="text/javascript" src="vendor/phaser.min.js"></script>
+    <script type="text/javascript" src="vendor/animation.js"></script>
+    <script>
+        var soundcheck = false
+        var soundstart = 0
+        var soundcheck1 = true
+        window.SDK_OPTIONS = {
+            gameId: "geaxn44jupqac8f179a0azzf69vjsoq9",
+            onEvent: function(a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":
+                        game.scene.scenes[pageNo].scene.pause()
+                        if (soundcheck) {
+                            soundstart = 1
+                            if (!isMuted) {
+                                music.pause()
+                                soundmute.setFrame(1)
+                            }
+                            if (!isMuted1) {
+                                soundcheck1 = isMuted1
+                                isMuted1 = true
+                                clicksound.pause()
+                                clickmute.setFrame(1)
+                            }
+
+                        }
+
+                        break;
+                    case "SDK_GAME_START":
+                        game.scene.scenes[pageNo].scene.resume()
+                        if (soundcheck) {
+                            soundstart = 0
+                            if (!isMuted) {
+                                music.resume()
+                                soundmute.setFrame(0)
+                            } else {
+                                music.pause()
+                                soundmute.setFrame(1)
+                            }
+                            if (!soundcheck1) {
+                                soundcheck1 = true
+                                isMuted1 = false
+                                if (!isMuted1) {
+                                    clicksound.resume()
+                                    clickmute.setFrame(0)
+                                } else {
+                                    clicksound.pause()
+                                    clickmute.setFrame(1)
+                                }
+                            }
+                        }
+
+
+                        break;
+                    case "SDK_READY":
+                        // when sdk is ready
+                        break;
+                }
+            }
+        };
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+        })(document, "script", "gamemonetize-sdk");
+    </script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+
+    <style>
+      /* 隐藏所有广告容器 */
+      #imaContainer,
+      #imaContainer_new,
+      #sdk__advertisement,
+      #gmLoadingText,
+      iframe[src*="imasdk"],
+      iframe[src*="doubleclick"],
+      iframe[src*="googlesyndication"],
+      iframe[title="Advertisement"],
+      div[id*="google_ads"],
+      div[id*="aswift"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // 定期清除动态插入的广告元素
+      setInterval(function() {
+        var adSelectors = [
+          '#imaContainer',
+          '#imaContainer_new', 
+          '#sdk__advertisement',
+          '#gmLoadingText',
+          'iframe[src*="imasdk"]',
+          'iframe[src*="doubleclick"]',
+          'iframe[src*="googlesyndication"]',
+          'iframe[title="Advertisement"]',
+          'div[id*="google_ads"]',
+          'div[id*="aswift"]'
+        ];
+        
+        adSelectors.forEach(function(selector) {
+          var elements = document.querySelectorAll(selector);
+          elements.forEach(function(el) {
+            if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          });
+        });
+
+        // 阻止广告SDK函数
+        if (window.sdk_init) window.sdk_init = function() {};
+        if (window.sdk) window.sdk = { showBanner: function() {}, requestAd: function() {} };
+        if (window.adBreak) window.adBreak = function() {};
+        if (window.adConfig) window.adConfig = function() {};
+      }, 500);
+    </script>
+
+  </head>
+
+<body>
+    <div id='theGame'>
+
+        <script src="game.js"></script>
+    </div>
+</body>
+
+</html>

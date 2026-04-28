@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>Angela Perfect Valentine</title>
+    <script type="text/javascript" src="vendor/phaser.min.js"></script>
+    <script type="text/javascript" src="vendor/animation.js"></script>
+    <script>
+        var soundcheck = false
+        var clickdone = false
+        var soundcheck1 = true
+        window.SDK_OPTIONS = {
+            gameId: "jj7xmfi5s8yvt6scnnmzt11nkwe65h98",
+            onEvent: function(a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":
+                        if (soundcheck) {
+                            if (!isMuted) {
+                                music.pause()
+                                soundmute.setFrame(1)
+                            }
+                            if (!isMuted1) {
+                                clicksound.pause()
+                                clickmute.setFrame(1)
+                            }
+                        }
+                        break;
+                    case "SDK_GAME_START":
+                        if (soundcheck) {
+                            if (!isMuted) {
+                                music.resume()
+                                soundmute.setFrame(0)
+                            } else {
+                                music.pause()
+                                soundmute.setFrame(1)
+                            }
+                            if (!isMuted1) {
+                                clicksound.resume()
+                                clickmute.setFrame(0)
+                            } else {
+                                clicksound.pause()
+                                clickmute.setFrame(1)
+                            }
+                        }
+
+                        break;
+                    case "SDK_READY":
+                        // when sdk is ready
+                        break;
+                }
+            }
+        };
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+        })(document, "script", "gamemonetize-sdk");
+    </script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .wgThumbnail {
+            background-image: url(https://cdn.cutedressup.in/games/ellie-and-ben-christmas-preparation/512x512.jpg) !important;
+        }
+
+        .wgSplashPreroll .wgBg {
+            background-image: url(https://cdn.cutedressup.in/games/ellie-and-ben-christmas-preparation/512x512.jpg) !important;
+        }
+
+        .wgThumbnail.small,
+        .wgThumb>div {
+            background-image: url(https://cdn.cutedressup.in/games/ellie-and-ben-christmas-preparation/512x512.jpg) !important;
+        }
+
+        .wgBg .wgBgImage {
+            background-image: url(https://cdn.cutedressup.in/games/ellie-and-ben-christmas-preparation/512x512.jpg) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='theGame'>
+
+        <script src="game.js"></script>
+    </div>
+</body>
+
+</html>
